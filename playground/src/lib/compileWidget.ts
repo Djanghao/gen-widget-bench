@@ -1,5 +1,6 @@
 import * as esbuild from 'esbuild-wasm'
 import React from 'react'
+import { validateImportSpecifier } from './libraryCatalog'
 
 const ESBUILD_WASM_URL = 'https://unpkg.com/esbuild-wasm@0.27.3/esbuild.wasm'
 
@@ -13,6 +14,15 @@ export class WidgetCompileError extends Error {
 }
 
 type TransformSource = (source: string) => Promise<string>
+type ModuleMap = Record<string, unknown>
+type ModuleEvaluator = (
+  moduleObj: { exports: Record<string, unknown> },
+  exportsObj: Record<string, unknown>,
+  requireFn: (specifier: string) => unknown,
+  react: typeof React,
+) => Record<string, unknown>
+
+let defaultModuleMapPromise: Promise<ModuleMap> | null = null
 
 async function ensureEsbuildReady(): Promise<void> {
   if (!initialized) {
@@ -41,20 +51,54 @@ async function defaultTransformSource(source: string): Promise<string> {
   return result.code
 }
 
-function evaluateWidgetModule(code: string): React.ComponentType {
+async function loadDefaultModuleMap(): Promise<ModuleMap> {
+  if (!defaultModuleMapPromise) {
+    defaultModuleMapPromise = Promise.all([
+      import('lucide-react'),
+      import('recharts'),
+    ]).then(([lucideReact, recharts]) => {
+      return {
+        'lucide-react': lucideReact,
+        react: React,
+        recharts,
+      }
+    })
+  }
+
+  return defaultModuleMapPromise
+}
+
+function createWidgetRequire(moduleMap: ModuleMap): (specifier: string) => unknown {
+  return (specifier: string): unknown => {
+    const validationError = validateImportSpecifier(specifier)
+    if (validationError) {
+      throw new WidgetCompileError(validationError)
+    }
+
+    if (!(specifier in moduleMap)) {
+      throw new WidgetCompileError(`Import "${specifier}" is allowed but not configured in runtime.`)
+    }
+
+    return moduleMap[specifier]
+  }
+}
+
+function evaluateWidgetModule(code: string, moduleMap: ModuleMap): React.ComponentType {
   const module = { exports: {} as Record<string, unknown> }
+  const widgetRequire = createWidgetRequire(moduleMap)
 
   const evaluator = new Function(
     'module',
     'exports',
+    'require',
     'React',
     `
       ${code}
       return module.exports;
     `,
-  ) as (moduleObj: { exports: Record<string, unknown> }, exportsObj: Record<string, unknown>, react: typeof React) => Record<string, unknown>
+  ) as ModuleEvaluator
 
-  const exportsObject = evaluator(module, module.exports, React)
+  const exportsObject = evaluator(module, module.exports, widgetRequire, React)
   const widget = exportsObject.default
 
   if (!widget) {
@@ -79,14 +123,16 @@ function toErrorMessage(error: unknown): string {
 export async function compileWidget(
   source: string,
   options?: {
+    moduleMap?: ModuleMap
     transformSource?: TransformSource
   },
 ): Promise<{ component: React.ComponentType }> {
   const transformSource = options?.transformSource ?? defaultTransformSource
 
   try {
+    const moduleMap = options?.moduleMap ?? await loadDefaultModuleMap()
     const code = await transformSource(source)
-    const component = evaluateWidgetModule(code)
+    const component = evaluateWidgetModule(code, moduleMap)
     return { component }
   } catch (error) {
     if (error instanceof WidgetCompileError) {

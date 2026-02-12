@@ -167,6 +167,168 @@ button:disabled {
   padding: 20px;
 }
 
+.viewer-modal-trigger {
+  font-size: 0.78rem;
+  min-height: 32px;
+  padding: 0 10px;
+}
+
+.viewer-widget-stage {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+
+.widget-modal-backdrop {
+  background: rgba(15, 23, 42, 0.5);
+  inset: 0;
+  position: fixed;
+  z-index: 40;
+}
+
+.widget-modal-shell {
+  align-content: center;
+  display: grid;
+  gap: 8px;
+  height: 100%;
+  justify-items: center;
+  min-height: 0;
+  padding: 14px;
+}
+
+.widget-modal-toolbar {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  width: min(100%, 960px);
+}
+
+.widget-modal-size {
+  background: rgba(241, 245, 249, 0.95);
+  border: 1px solid #d5dde8;
+  border-radius: 999px;
+  color: #334155;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+}
+
+.widget-modal-close {
+  min-height: 32px;
+  padding: 0 12px;
+}
+
+.widget-modal-frame {
+  background: #f8fbff;
+  border: 1px solid #d6deec;
+  border-radius: 14px;
+  box-shadow: 0 24px 45px rgba(15, 23, 42, 0.2);
+  max-height: calc(100dvh - 56px);
+  max-width: calc(100vw - 56px);
+  min-height: 220px;
+  min-width: 260px;
+  overflow: hidden;
+  position: relative;
+}
+
+.widget-modal-frame.is-resizing {
+  box-shadow: 0 26px 50px rgba(15, 23, 42, 0.3);
+}
+
+.widget-modal-content {
+  align-content: start;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  overflow: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.widget-modal-widget-stage {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+
+.widget-modal-hint {
+  color: #e2e8f0;
+  font-size: 0.78rem;
+  margin: 0;
+  text-align: center;
+}
+
+.resize-handle {
+  position: absolute;
+  z-index: 3;
+}
+
+.resize-handle-n {
+  cursor: ns-resize;
+  height: 12px;
+  left: 14px;
+  right: 14px;
+  top: -6px;
+}
+
+.resize-handle-s {
+  bottom: -6px;
+  cursor: ns-resize;
+  height: 12px;
+  left: 14px;
+  right: 14px;
+}
+
+.resize-handle-e {
+  bottom: 14px;
+  cursor: ew-resize;
+  right: -6px;
+  top: 14px;
+  width: 12px;
+}
+
+.resize-handle-w {
+  bottom: 14px;
+  cursor: ew-resize;
+  left: -6px;
+  top: 14px;
+  width: 12px;
+}
+
+.resize-handle-ne {
+  cursor: nesw-resize;
+  height: 14px;
+  right: -7px;
+  top: -7px;
+  width: 14px;
+}
+
+.resize-handle-nw {
+  cursor: nwse-resize;
+  height: 14px;
+  left: -7px;
+  top: -7px;
+  width: 14px;
+}
+
+.resize-handle-se {
+  bottom: -7px;
+  cursor: nwse-resize;
+  height: 14px;
+  right: -7px;
+  width: 14px;
+}
+
+.resize-handle-sw {
+  bottom: -7px;
+  cursor: nesw-resize;
+  height: 14px;
+  left: -7px;
+  width: 14px;
+}
+
 .empty-state {
   color: var(--muted);
   font-size: 0.9rem;
@@ -210,6 +372,10 @@ button:disabled {
 
   .panel {
     min-height: 0;
+  }
+
+  .widget-modal-toolbar {
+    width: 100%;
   }
 }
 
