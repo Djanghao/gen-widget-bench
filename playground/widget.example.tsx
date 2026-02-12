@@ -87,13 +87,15 @@ export default function Widget() {
       </header>
 
       <div
+        data-testid="revenue-mini-cards"
         style={{
           display: 'grid',
           gap: 10,
-          gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
+          gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
         }}
       >
         <MetricCard
+          testId="revenue-mini-card-1"
           color="#0f766e"
           icon={<DollarSign size={16} />}
           title="Revenue"
@@ -101,6 +103,7 @@ export default function Widget() {
           value="$20.9k"
         />
         <MetricCard
+          testId="revenue-mini-card-2"
           color="#2563eb"
           icon={<Users size={16} />}
           title="Active Users"
@@ -108,6 +111,7 @@ export default function Widget() {
           value="13.4k"
         />
         <MetricCard
+          testId="revenue-mini-card-3"
           color="#7c3aed"
           icon={<TrendingUp size={16} />}
           title="Orders"
@@ -115,6 +119,7 @@ export default function Widget() {
           value="134"
         />
         <MetricCard
+          testId="revenue-mini-card-4"
           color="#dc2626"
           icon={<AlertTriangle size={16} />}
           title="Open Alerts"
@@ -124,13 +129,14 @@ export default function Widget() {
       </div>
 
       <div
+        data-testid="dashboard-alignment-grid"
         style={{
           display: 'grid',
           gap: 12,
-          gridTemplateColumns: 'minmax(0, 1.5fr) minmax(0, 1fr)',
+          gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
         }}
       >
-        <Panel title="Revenue vs Orders (7d)">
+        <Panel dataTestId="card-revenue-vs-orders-7d" title="Revenue vs Orders (7d)">
           <div style={{ height: 220, width: '100%' }}>
             <ResponsiveContainer height="100%" width="100%">
               <LineChart data={revenueTrend}>
@@ -146,7 +152,7 @@ export default function Widget() {
           </div>
         </Panel>
 
-        <Panel title="Device Split">
+        <Panel dataTestId="card-device-split" title="Device Split">
           <div style={{ height: 220, width: '100%' }}>
             <ResponsiveContainer height="100%" width="100%">
               <PieChart>
@@ -173,16 +179,7 @@ export default function Widget() {
             ))}
           </div>
         </Panel>
-      </div>
-
-      <div
-        style={{
-          display: 'grid',
-          gap: 12,
-          gridTemplateColumns: 'minmax(0, 1.3fr) minmax(0, 1fr)',
-        }}
-      >
-        <Panel title="Traffic Channels">
+        <Panel dataTestId="card-traffic-channels" title="Traffic Channels">
           <div style={{ height: 210, width: '100%' }}>
             <ResponsiveContainer height="100%" width="100%">
               <BarChart data={channelMix}>
@@ -196,7 +193,7 @@ export default function Widget() {
           </div>
         </Panel>
 
-        <Panel title="Alerts & Tasks">
+        <Panel dataTestId="card-alerts-tasks" title="Alerts & Tasks">
           <div style={{ display: 'grid', gap: 10 }}>
             {alerts.map((alert) => (
               <div
@@ -241,9 +238,10 @@ export default function Widget() {
   )
 }
 
-function Panel(props: { children: ReactNode; title: string }) {
+function Panel(props: { children: ReactNode; dataTestId?: string; title: string }) {
   return (
     <article
+      data-testid={props.dataTestId}
       style={{
         background: '#ffffff',
         border: '1px solid #dbe3ef',
@@ -263,12 +261,14 @@ function Panel(props: { children: ReactNode; title: string }) {
 function MetricCard(props: {
   color: string
   icon: ReactNode
+  testId?: string
   title: string
   trend: string
   value: string
 }) {
   return (
     <article
+      data-testid={props.testId}
       style={{
         background: '#fff',
         border: '1px solid #dbe3ef',
