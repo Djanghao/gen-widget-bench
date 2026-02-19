@@ -2,7 +2,7 @@ import { type ComponentType, useEffect, useMemo, useRef, useState } from 'react'
 import { WidgetEditor } from './components/WidgetEditor'
 import { WidgetViewer } from './components/WidgetViewer'
 import { compileWidget, WidgetCompileError } from './lib/compileWidget'
-import { fetchWidgetSource, saveWidgetSource, type WidgetOrigin } from './lib/widgetApi'
+import { fetchWidgetSource, resetWidgetSource, saveWidgetSource, type WidgetOrigin } from './lib/widgetApi'
 
 const COMPILE_DEBOUNCE_MS = 400
 
@@ -12,14 +12,20 @@ function formatTimestamp(timestamp: number): string {
 
 function App() {
   const [source, setSource] = useState('')
-  const [exampleSource, setExampleSource] = useState('')
   const [origin, setOrigin] = useState<WidgetOrigin>('example')
   const [component, setComponent] = useState<ComponentType | null>(null)
   const [compileError, setCompileError] = useState<string | null>(null)
   const [loadingError, setLoadingError] = useState<string | null>(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [isSaving, setIsSaving] = useState(false)
+  const [isResetting, setIsResetting] = useState(false)
+  const [isGuideOpen, setIsGuideOpen] = useState(false)
+  const [refreshToken, setRefreshToken] = useState(0)
+  const [rechartsComponents, setRechartsComponents] = useState<string[]>([])
+  const [guideLoadError, setGuideLoadError] = useState<string | null>(null)
+  const [isGuideLoading, setIsGuideLoading] = useState(false)
   const [lastSavedAt, setLastSavedAt] = useState<number | null>(null)
+  const [lastSavedPath, setLastSavedPath] = useState<string | null>(null)
   const [saveError, setSaveError] = useState<string | null>(null)
   const compileRequestId = useRef(0)
 
@@ -34,10 +40,10 @@ function App() {
         }
 
         setSource(payload.source)
-        setExampleSource(payload.exampleSource)
         setOrigin(payload.origin)
         setLoadingError(null)
         setSaveError(null)
+        setLastSavedPath(null)
         setIsLoaded(true)
       } catch (error) {
         if (isCancelled) {
@@ -93,17 +99,93 @@ function App() {
     }
   }, [isLoaded, source])
 
+  useEffect(() => {
+    if (!isGuideOpen) {
+      return
+    }
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsGuideOpen(false)
+      }
+    }
+
+    window.addEventListener('keydown', handleEscape)
+    return () => {
+      window.removeEventListener('keydown', handleEscape)
+    }
+  }, [isGuideOpen])
+
+  useEffect(() => {
+    if (!isGuideOpen) {
+      return
+    }
+
+    if (rechartsComponents.length > 0) {
+      return
+    }
+
+    let isCancelled = false
+    setIsGuideLoading(true)
+    setGuideLoadError(null)
+
+    void import('recharts')
+      .then((rechartsModule) => {
+        if (isCancelled) {
+          return
+        }
+
+        const loadedRecharts = Object.keys(rechartsModule)
+          .filter((name) => /^[A-Z]/.test(name))
+          .sort((left, right) => left.localeCompare(right))
+
+        setRechartsComponents(loadedRecharts)
+      })
+      .catch((error: unknown) => {
+        if (isCancelled) {
+          return
+        }
+
+        const message = error instanceof Error
+          ? error.message
+          : 'Failed to load recharts component list.'
+        setGuideLoadError(message)
+      })
+      .finally(() => {
+        if (isCancelled) {
+          return
+        }
+        setIsGuideLoading(false)
+      })
+
+    return () => {
+      isCancelled = true
+    }
+  }, [isGuideOpen, rechartsComponents.length])
+
   const originLabel = useMemo(() => {
     return origin === 'local' ? 'Loaded from local widget.tsx' : 'Loaded from widget.example.tsx'
   }, [origin])
-  const statusMessage = `${originLabel}${lastSavedAt ? ` • Saved at ${formatTimestamp(lastSavedAt)}` : ''}${saveError ? ` • Save failed: ${saveError}` : ''}`
+  const statusMessage = `${originLabel}${lastSavedAt ? ` • Saved at ${formatTimestamp(lastSavedAt)}` : ''}${lastSavedPath ? ` • File: ${lastSavedPath}` : ''}${saveError ? ` • Action failed: ${saveError}` : ''}`
 
   async function onSave(): Promise<void> {
+    const name = window.prompt('Enter a file name. It will be saved as "timestamp-name.tsx".')
+    if (name === null) {
+      return
+    }
+
+    const trimmedName = name.trim()
+    if (!trimmedName) {
+      setSaveError('Please provide a non-empty file name before saving.')
+      return
+    }
+
     setIsSaving(true)
     try {
-      await saveWidgetSource(source)
+      const payload = await saveWidgetSource(source, trimmedName)
       setOrigin('local')
       setLastSavedAt(Date.now())
+      setLastSavedPath(payload.snapshotPath ?? payload.snapshotFileName ?? null)
       setSaveError(null)
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Failed to save widget.tsx.'
@@ -113,10 +195,25 @@ function App() {
     }
   }
 
-  function onReset(): void {
-    setSource(exampleSource)
-    setOrigin('example')
-    setSaveError(null)
+  async function onReset(): Promise<void> {
+    setIsResetting(true)
+    try {
+      const payload = await resetWidgetSource()
+      setSource(payload.source)
+      setOrigin(payload.origin)
+      setLastSavedAt(null)
+      setLastSavedPath(null)
+      setSaveError(null)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Failed to reset widget.tsx.'
+      setSaveError(message)
+    } finally {
+      setIsResetting(false)
+    }
+  }
+
+  function onRefresh(): void {
+    setRefreshToken((prev) => prev + 1)
   }
 
   if (loadingError) {
@@ -145,19 +242,58 @@ function App() {
           {statusMessage}
         </p>
         <div className="toolbar-actions">
-          <button disabled={isSaving} onClick={() => void onSave()} type="button">
+          <button disabled={isSaving || isResetting} onClick={() => void onSave()} type="button">
             {isSaving ? 'Saving...' : 'Save'}
           </button>
-          <button onClick={onReset} type="button">
-            Reset to Example
+          <button disabled={isSaving || isResetting} onClick={() => setIsGuideOpen(true)} type="button">
+            Widget Guide
+          </button>
+          <button disabled={isSaving || isResetting} onClick={onRefresh} type="button">
+            Refresh
+          </button>
+          <button disabled={isSaving || isResetting} onClick={() => void onReset()} type="button">
+            {isResetting ? 'Resetting...' : 'Reset to Example'}
           </button>
         </div>
       </header>
 
       <section className="playground-grid">
         <WidgetEditor onChange={setSource} source={source} />
-        <WidgetViewer compileError={compileError} component={component} />
+        <WidgetViewer compileError={compileError} component={component} refreshToken={refreshToken} />
       </section>
+
+      {isGuideOpen ? (
+        <div
+          aria-labelledby="widget-guide-title"
+          aria-modal="true"
+          className="guide-modal-backdrop"
+          onClick={() => setIsGuideOpen(false)}
+          role="dialog"
+        >
+          <div className="guide-modal" onClick={(event) => event.stopPropagation()}>
+            <div className="guide-modal-header">
+              <h2 id="widget-guide-title">Widget Guide</h2>
+              <button onClick={() => setIsGuideOpen(false)} type="button">
+                Close
+              </button>
+            </div>
+            <div className="guide-modal-body">
+              <section className="guide-section">
+                <h3 className="guide-subtitle">recharts components</h3>
+                <p className="guide-text">{rechartsComponents.length} components</p>
+                {isGuideLoading ? <p className="guide-text">Loading components...</p> : null}
+                <div className="guide-chip-list">
+                  {rechartsComponents.map((name) => (
+                    <code className="guide-chip" key={name}>{name}</code>
+                  ))}
+                </div>
+              </section>
+
+              {guideLoadError ? <p className="guide-text guide-error">{guideLoadError}</p> : null}
+            </div>
+          </div>
+        </div>
+      ) : null}
     </main>
   )
 }

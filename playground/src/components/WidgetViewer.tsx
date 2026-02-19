@@ -4,6 +4,7 @@ import { Component, createElement } from 'react'
 interface WidgetViewerProps {
   compileError: string | null
   component: ComponentType | null
+  refreshToken: number
 }
 
 interface RuntimeBoundaryState {
@@ -121,7 +122,7 @@ class RuntimeBoundary extends Component<{ children: ReactNode }, RuntimeBoundary
   }
 }
 
-export function WidgetViewer({ compileError, component }: WidgetViewerProps) {
+export function WidgetViewer({ compileError, component, refreshToken }: WidgetViewerProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [frameSize, setFrameSize] = useState<FrameSize>(() => getDefaultFrameSize())
   const [resizeSession, setResizeSession] = useState<ResizeSession | null>(null)
@@ -239,7 +240,7 @@ export function WidgetViewer({ compileError, component }: WidgetViewerProps) {
 
     return (
       <div className={stageClassName}>
-        <RuntimeBoundary>{createElement(component)}</RuntimeBoundary>
+        <RuntimeBoundary key={refreshToken}>{createElement(component)}</RuntimeBoundary>
       </div>
     )
   }
