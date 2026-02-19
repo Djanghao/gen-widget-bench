@@ -68,11 +68,26 @@ async function loadDefaultModuleMap(): Promise<ModuleMap> {
   return defaultModuleMapPromise
 }
 
-function createWidgetRequire(moduleMap: ModuleMap): (specifier: string) => unknown {
+function parseDataSource(dataSource: string): unknown {
+  try {
+    return JSON.parse(dataSource)
+  } catch {
+    throw new WidgetCompileError('data.json must contain valid JSON.')
+  }
+}
+
+function createWidgetRequire(
+  moduleMap: ModuleMap,
+  dataModule: unknown,
+): (specifier: string) => unknown {
   return (specifier: string): unknown => {
     const validationError = validateImportSpecifier(specifier)
     if (validationError) {
       throw new WidgetCompileError(validationError)
+    }
+
+    if (specifier === './data.json') {
+      return dataModule
     }
 
     if (!(specifier in moduleMap)) {
@@ -83,9 +98,13 @@ function createWidgetRequire(moduleMap: ModuleMap): (specifier: string) => unkno
   }
 }
 
-function evaluateWidgetModule(code: string, moduleMap: ModuleMap): React.ComponentType {
+function evaluateWidgetModule(
+  code: string,
+  moduleMap: ModuleMap,
+  dataModule: unknown,
+): React.ComponentType {
   const module = { exports: {} as Record<string, unknown> }
-  const widgetRequire = createWidgetRequire(moduleMap)
+  const widgetRequire = createWidgetRequire(moduleMap, dataModule)
 
   const evaluator = new Function(
     'module',
@@ -122,6 +141,7 @@ function toErrorMessage(error: unknown): string {
 
 export async function compileWidget(
   source: string,
+  dataSource: string,
   options?: {
     moduleMap?: ModuleMap
     transformSource?: TransformSource
@@ -131,8 +151,9 @@ export async function compileWidget(
 
   try {
     const moduleMap = options?.moduleMap ?? await loadDefaultModuleMap()
+    const dataModule = parseDataSource(dataSource)
     const code = await transformSource(source)
-    const component = evaluateWidgetModule(code, moduleMap)
+    const component = evaluateWidgetModule(code, moduleMap, dataModule)
     return { component }
   } catch (error) {
     if (error instanceof WidgetCompileError) {

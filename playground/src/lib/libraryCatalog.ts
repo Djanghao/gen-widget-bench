@@ -1,4 +1,5 @@
 const ALLOWED_IMPORTS = ['react', 'recharts', 'lucide-react'] as const
+const ALLOWED_LOCAL_IMPORTS = new Set(['./data.json'])
 
 type AllowedImport = (typeof ALLOWED_IMPORTS)[number]
 
@@ -17,8 +18,12 @@ export function getAllowedImportsText(): string {
 }
 
 export function validateImportSpecifier(specifier: string): string | null {
+  if (ALLOWED_LOCAL_IMPORTS.has(specifier)) {
+    return null
+  }
+
   if (isRelativeSpecifier(specifier)) {
-    return `Relative imports are not supported in widget.tsx: "${specifier}".`
+    return `Relative imports are not supported in widget.tsx: "${specifier}". Only "./data.json" is allowed.`
   }
 
   if (isAllowedImport(specifier)) {

@@ -10,8 +10,12 @@ function formatTimestamp(timestamp: number): string {
   return new Date(timestamp).toLocaleTimeString()
 }
 
+type EditorFile = 'data' | 'widget'
+
 function App() {
-  const [source, setSource] = useState('')
+  const [widgetSource, setWidgetSource] = useState('')
+  const [dataSource, setDataSource] = useState('{}')
+  const [activeEditorFile, setActiveEditorFile] = useState<EditorFile>('widget')
   const [origin, setOrigin] = useState<WidgetOrigin>('example')
   const [component, setComponent] = useState<ComponentType | null>(null)
   const [compileError, setCompileError] = useState<string | null>(null)
@@ -39,7 +43,8 @@ function App() {
           return
         }
 
-        setSource(payload.source)
+        setWidgetSource(payload.source)
+        setDataSource(payload.dataSource)
         setOrigin(payload.origin)
         setLoadingError(null)
         setSaveError(null)
@@ -69,7 +74,7 @@ function App() {
 
     const requestId = ++compileRequestId.current
     const timeoutId = window.setTimeout(() => {
-      void compileWidget(source)
+      void compileWidget(widgetSource, dataSource)
         .then((result) => {
           if (requestId !== compileRequestId.current) {
             return
@@ -87,7 +92,7 @@ function App() {
             ? error.message
             : error instanceof Error
               ? error.message
-              : 'Failed to compile widget.tsx.'
+              : 'Failed to compile widget.tsx with data.json.'
 
           setComponent(null)
           setCompileError(message)
@@ -97,7 +102,7 @@ function App() {
     return () => {
       window.clearTimeout(timeoutId)
     }
-  }, [isLoaded, source])
+  }, [dataSource, isLoaded, widgetSource])
 
   useEffect(() => {
     if (!isGuideOpen) {
@@ -164,12 +169,12 @@ function App() {
   }, [isGuideOpen, rechartsComponents.length])
 
   const originLabel = useMemo(() => {
-    return origin === 'local' ? 'Loaded from local widget.tsx' : 'Loaded from widget.example.tsx'
+    return origin === 'local' ? 'Loaded from local widget.tsx + data.json' : 'Loaded from widget.example.tsx + data.example.json'
   }, [origin])
   const statusMessage = `${originLabel}${lastSavedAt ? ` • Saved at ${formatTimestamp(lastSavedAt)}` : ''}${lastSavedPath ? ` • File: ${lastSavedPath}` : ''}${saveError ? ` • Action failed: ${saveError}` : ''}`
 
   async function onSave(): Promise<void> {
-    const name = window.prompt('Enter a file name. It will be saved as "timestamp-name.tsx".')
+    const name = window.prompt('Enter a file name. It will be saved as "timestamp-name/widget.tsx + data.json".')
     if (name === null) {
       return
     }
@@ -182,13 +187,13 @@ function App() {
 
     setIsSaving(true)
     try {
-      const payload = await saveWidgetSource(source, trimmedName)
+      const payload = await saveWidgetSource(widgetSource, dataSource, trimmedName)
       setOrigin('local')
       setLastSavedAt(Date.now())
-      setLastSavedPath(payload.snapshotPath ?? payload.snapshotFileName ?? null)
+      setLastSavedPath(payload.snapshotPath ?? null)
       setSaveError(null)
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Failed to save widget.tsx.'
+      const message = error instanceof Error ? error.message : 'Failed to save widget files.'
       setSaveError(message)
     } finally {
       setIsSaving(false)
@@ -199,13 +204,14 @@ function App() {
     setIsResetting(true)
     try {
       const payload = await resetWidgetSource()
-      setSource(payload.source)
+      setWidgetSource(payload.source)
+      setDataSource(payload.dataSource)
       setOrigin(payload.origin)
       setLastSavedAt(null)
       setLastSavedPath(null)
       setSaveError(null)
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Failed to reset widget.tsx.'
+      const message = error instanceof Error ? error.message : 'Failed to reset widget files.'
       setSaveError(message)
     } finally {
       setIsResetting(false)
@@ -258,7 +264,14 @@ function App() {
       </header>
 
       <section className="playground-grid">
-        <WidgetEditor onChange={setSource} source={source} />
+        <WidgetEditor
+          activeFile={activeEditorFile}
+          dataSource={dataSource}
+          onActiveFileChange={setActiveEditorFile}
+          onDataSourceChange={setDataSource}
+          onWidgetSourceChange={setWidgetSource}
+          widgetSource={widgetSource}
+        />
         <WidgetViewer compileError={compileError} component={component} refreshToken={refreshToken} />
       </section>
 

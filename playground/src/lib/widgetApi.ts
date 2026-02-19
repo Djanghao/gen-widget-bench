@@ -1,6 +1,8 @@
 export type WidgetOrigin = 'example' | 'local'
 
 export interface WidgetSourceResponse {
+  dataSource: string
+  exampleDataSource: string
   exampleSource: string
   origin: WidgetOrigin
   source: string
@@ -8,7 +10,6 @@ export interface WidgetSourceResponse {
 
 export interface SaveWidgetResponse {
   ok: true
-  snapshotFileName?: string
   snapshotPath?: string
 }
 
@@ -38,9 +39,13 @@ export async function fetchWidgetSource(): Promise<WidgetSourceResponse> {
   return response.json() as Promise<WidgetSourceResponse>
 }
 
-export async function saveWidgetSource(source: string, name?: string): Promise<SaveWidgetResponse> {
+export async function saveWidgetSource(
+  source: string,
+  dataSource: string,
+  name?: string,
+): Promise<SaveWidgetResponse> {
   const response = await fetch('/api/widget/source', {
-    body: JSON.stringify(name ? { name, source } : { source }),
+    body: JSON.stringify(name ? { dataSource, name, source } : { dataSource, source }),
     headers: {
       'Content-Type': 'application/json',
     },

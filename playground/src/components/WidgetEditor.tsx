@@ -1,22 +1,60 @@
 import Editor from '@monaco-editor/react'
 
+type EditorFile = 'data' | 'widget'
+
 interface WidgetEditorProps {
-  onChange: (nextSource: string) => void
-  source: string
+  activeFile: EditorFile
+  dataSource: string
+  onActiveFileChange: (file: EditorFile) => void
+  onDataSourceChange: (nextSource: string) => void
+  onWidgetSourceChange: (nextSource: string) => void
+  widgetSource: string
 }
 
-export function WidgetEditor({ onChange, source }: WidgetEditorProps) {
+export function WidgetEditor({
+  activeFile,
+  dataSource,
+  onActiveFileChange,
+  onDataSourceChange,
+  onWidgetSourceChange,
+  widgetSource,
+}: WidgetEditorProps) {
+  const isWidgetTab = activeFile === 'widget'
+  const filename = isWidgetTab ? 'widget.tsx' : 'data.json'
+
   return (
     <div className="panel editor-panel">
       <div className="panel-header">
         <h2>Editor</h2>
-        <span className="filename">widget.tsx</span>
+        <div className="editor-file-tabs">
+          <button
+            className={`editor-file-tab${isWidgetTab ? ' is-active' : ''}`}
+            onClick={() => onActiveFileChange('widget')}
+            type="button"
+          >
+            widget.tsx
+          </button>
+          <button
+            className={`editor-file-tab${!isWidgetTab ? ' is-active' : ''}`}
+            onClick={() => onActiveFileChange('data')}
+            type="button"
+          >
+            data.json
+          </button>
+        </div>
+        <span className="filename">{filename}</span>
       </div>
       <div className="panel-body">
         <Editor
-          defaultLanguage="typescript"
-          language="typescript"
-          onChange={(value) => onChange(value ?? '')}
+          defaultLanguage={isWidgetTab ? 'typescript' : 'json'}
+          language={isWidgetTab ? 'typescript' : 'json'}
+          onChange={(value) => {
+            if (isWidgetTab) {
+              onWidgetSourceChange(value ?? '')
+              return
+            }
+            onDataSourceChange(value ?? '')
+          }}
           options={{
             automaticLayout: true,
             fontFamily: '"JetBrains Mono", monospace',
@@ -26,9 +64,9 @@ export function WidgetEditor({ onChange, source }: WidgetEditorProps) {
             scrollBeyondLastLine: false,
             wordWrap: 'on',
           }}
-          path="widget.tsx"
+          path={filename}
           theme="vs-light"
-          value={source}
+          value={isWidgetTab ? widgetSource : dataSource}
         />
       </div>
     </div>

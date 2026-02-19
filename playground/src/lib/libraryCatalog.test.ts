@@ -6,6 +6,7 @@ describe('libraryCatalog', () => {
     expect(validateImportSpecifier('recharts')).toBeNull()
     expect(validateImportSpecifier('lucide-react')).toBeNull()
     expect(validateImportSpecifier('react')).toBeNull()
+    expect(validateImportSpecifier('./data.json')).toBeNull()
   })
 
   it('rejects non-whitelisted libraries', () => {

@@ -4,7 +4,9 @@ import type { Plugin, ViteDevServer } from 'vite'
 import react from '@vitejs/plugin-react'
 import {
   deleteLocalWidgetSource,
+  readExampleDataSource,
   readExampleSource,
+  readWidgetDataSource,
   readWidgetSource,
   resolveWidgetStorePaths,
   saveNamedWidgetSource,
@@ -50,6 +52,14 @@ function hasSourceField(body: unknown): body is { source: string } {
   return typeof (body as { source?: unknown }).source === 'string'
 }
 
+function hasDataSourceField(body: unknown): body is { dataSource: string } {
+  if (typeof body !== 'object' || !body) {
+    return false
+  }
+
+  return typeof (body as { dataSource?: unknown }).dataSource === 'string'
+}
+
 function getSnapshotName(body: unknown): string | null {
   if (typeof body !== 'object' || !body) {
     return null
@@ -79,12 +89,16 @@ const widgetApiPlugin = (): Plugin => ({
 
       if (request.method === 'GET' && pathname === '/api/widget/source') {
         try {
-          const [widget, exampleSource] = await Promise.all([
+          const [widget, exampleSource, exampleDataSource] = await Promise.all([
             readWidgetSource(paths),
             readExampleSource(paths),
+            readExampleDataSource(paths),
           ])
+          const dataSource = await readWidgetDataSource(paths, widget.origin)
 
           writeJson(response, 200, {
+            dataSource,
+            exampleDataSource,
             exampleSource,
             origin: widget.origin,
             source: widget.source,
@@ -100,24 +114,35 @@ const widgetApiPlugin = (): Plugin => ({
         try {
           const body = await readJsonBody(request)
           const source = hasSourceField(body) ? body.source : ''
+          const dataSource = hasDataSourceField(body) ? body.dataSource : ''
           const snapshotName = getSnapshotName(body)
 
           if (!source.trim()) {
             writeJson(response, 400, { error: 'Request body must include a non-empty "source" string.' })
             return
           }
+          if (!dataSource.trim()) {
+            writeJson(response, 400, { error: 'Request body must include a non-empty "dataSource" string.' })
+            return
+          }
+
+          try {
+            JSON.parse(dataSource)
+          } catch {
+            writeJson(response, 400, { error: '"dataSource" must be valid JSON.' })
+            return
+          }
 
           if (snapshotName) {
-            const saved = await saveNamedWidgetSource(paths, source, snapshotName)
+            const saved = await saveNamedWidgetSource(paths, source, dataSource, snapshotName)
             writeJson(response, 200, {
               ok: true,
-              snapshotFileName: saved.fileName,
-              snapshotPath: path.relative(process.cwd(), saved.filePath),
+              snapshotPath: path.relative(process.cwd(), saved.snapshotDirPath),
             })
             return
           }
 
-          await writeWidgetSource(paths, source)
+          await writeWidgetSource(paths, source, dataSource)
           writeJson(response, 200, { ok: true })
         } catch (error) {
           const message = error instanceof Error ? error.message : 'Failed to write widget source.'
@@ -129,8 +154,13 @@ const widgetApiPlugin = (): Plugin => ({
       if (request.method === 'DELETE' && pathname === '/api/widget/source') {
         try {
           await deleteLocalWidgetSource(paths)
-          const exampleSource = await readExampleSource(paths)
+          const [exampleSource, exampleDataSource] = await Promise.all([
+            readExampleSource(paths),
+            readExampleDataSource(paths),
+          ])
           writeJson(response, 200, {
+            dataSource: exampleDataSource,
+            exampleDataSource,
             exampleSource,
             ok: true,
             origin: 'example',

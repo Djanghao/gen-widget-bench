@@ -15,7 +15,7 @@ const moduleMap = {
 
 describe('compileWidget', () => {
   it('returns a renderable component from transformed code', async () => {
-    const result = await compileWidget('ignored', {
+    const result = await compileWidget('ignored', '{}', {
       transformSource: async () =>
         'module.exports.default = function Widget(){ return React.createElement("div", null, "ok") }',
     })
@@ -24,7 +24,7 @@ describe('compileWidget', () => {
   })
 
   it('allows whitelisted imports', async () => {
-    const result = await compileWidget('ignored', {
+    const result = await compileWidget('ignored', '{}', {
       moduleMap,
       transformSource: async () =>
         'const recharts = require("recharts"); module.exports.default = function Widget(){ return recharts.LineChart }',
@@ -35,7 +35,7 @@ describe('compileWidget', () => {
 
   it('fails when import is outside whitelist', async () => {
     await expect(
-      compileWidget('ignored', {
+      compileWidget('ignored', '{}', {
         moduleMap,
         transformSource: async () =>
           'const antd = require("antd"); module.exports.default = function Widget(){ return antd.Button }',
@@ -45,7 +45,7 @@ describe('compileWidget', () => {
 
   it('fails on relative imports to keep single-file model', async () => {
     await expect(
-      compileWidget('ignored', {
+      compileWidget('ignored', '{}', {
         moduleMap,
         transformSource: async () =>
           'const util = require("./util"); module.exports.default = function Widget(){ return util }',
@@ -55,16 +55,36 @@ describe('compileWidget', () => {
 
   it('fails when default export is missing', async () => {
     await expect(
-      compileWidget('ignored', {
+      compileWidget('ignored', '{}', {
         moduleMap,
         transformSource: async () => 'module.exports.named = 42',
       }),
     ).rejects.toThrow(WidgetCompileError)
   })
 
+  it('allows importing data from ./data.json', async () => {
+    const result = await compileWidget('ignored', '{"message":"ok"}', {
+      moduleMap,
+      transformSource: async () =>
+        'const data = require("./data.json"); module.exports.default = function Widget(){ return data.message }',
+    })
+
+    expect((result.component as () => string)()).toBe('ok')
+  })
+
+  it('fails when data.json is invalid', async () => {
+    await expect(
+      compileWidget('ignored', '{', {
+        moduleMap,
+        transformSource: async () =>
+          'module.exports.default = function Widget(){ return null }',
+      }),
+    ).rejects.toThrow('data.json must contain valid JSON.')
+  })
+
   it('normalizes transform errors', async () => {
     await expect(
-      compileWidget('ignored', {
+      compileWidget('ignored', '{}', {
         moduleMap,
         transformSource: async () => {
           throw new Error('transform failed')

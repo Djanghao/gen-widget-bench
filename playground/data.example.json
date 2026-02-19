@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "rpm": "1,580",
+    "cpu": "76%",
+    "errorRate": "1.4%"
+  },
+  "stream": [
+    { "hour": "08", "requests": 840 },
+    { "hour": "09", "requests": 920 },
+    { "hour": "10", "requests": 1040 },
+    { "hour": "11", "requests": 1180 },
+    { "hour": "12", "requests": 1260 },
+    { "hour": "13", "requests": 1340 },
+    { "hour": "14", "requests": 1450 },
+    { "hour": "15", "requests": 1560 },
+    { "hour": "16", "requests": 1580 }
+  ],
+  "services": [
+    { "name": "API Gateway", "value": 38, "color": "#22d3ee" },
+    { "name": "Checkout", "value": 27, "color": "#38bdf8" },
+    { "name": "Catalog", "value": 21, "color": "#2dd4bf" },
+    { "name": "Search", "value": 14, "color": "#a78bfa" }
+  ]
+}

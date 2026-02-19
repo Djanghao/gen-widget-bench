@@ -136,6 +136,7 @@ button:disabled {
   align-items: center;
   border-bottom: 1px solid var(--border);
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   min-height: 52px;
   padding: 0 14px;
@@ -150,6 +151,38 @@ button:disabled {
   color: var(--muted);
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.8rem;
+  margin-left: 8px;
+  padding-left: 10px;
+  border-left: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.editor-file-tabs {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.editor-file-tab {
+  background: #eef2ff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  color: #475569;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  min-height: 28px;
+  padding: 0 10px;
+}
+
+.editor-file-tab:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.editor-file-tab.is-active {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #eff6ff;
 }
 
 .panel-body {

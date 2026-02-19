@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "serviceIndex": "Index 88.4",
+    "peakRidership": "320k",
+    "punctuality": "91%",
+    "incidents": "9"
+  },
+  "ridership": [
+    { "hour": "06", "value": 112 },
+    { "hour": "08", "value": 258 },
+    { "hour": "10", "value": 224 },
+    { "hour": "12", "value": 236 },
+    { "hour": "14", "value": 248 },
+    { "hour": "16", "value": 286 },
+    { "hour": "18", "value": 320 },
+    { "hour": "20", "value": 206 }
+  ],
+  "alerts": [
+    { "name": "Central Lane Delay", "value": "+6 min" },
+    { "name": "Airport Headway", "value": "Stable" },
+    { "name": "Fleet Availability", "value": "93%" }
+  ]
+}

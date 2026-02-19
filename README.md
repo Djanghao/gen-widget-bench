@@ -1,14 +1,10 @@
 # gen-widget-bench
 
-Benchmark workspace for UI generation tasks using a React + TypeScript widget playground and automated layout checks.
+React + TypeScript widget playground for editing, compiling, and previewing `widget.tsx` with `data.json`.
 
 ## What this repo contains
 
 - `playground/`: Vite app for editing, compiling, and previewing a widget.
-- `tasks/`: challenge instructions and submission JSON output.
-- `tasks/task1.md`: current task spec (`ui-dashboard-hard-2tasks-v1`, Chinese).
-- `tasks/task1.en.md`: English version of the same task spec.
-- `tasks/submissions/ui-dashboard-hard-2tasks-v1.json`: expected submission file location.
 
 ## Prerequisites
 
@@ -29,17 +25,23 @@ Open the local URL printed by Vite (default is usually `http://localhost:5173` u
 
 ## Widget workflow
 
-1. Edit `playground/widget.example.tsx` (task constraints may limit edits to this file only).
+1. Edit `widget.tsx` and `data.json` from the two editor tabs.
 2. The app compiles the widget source in-browser and renders it in the preview pane.
-3. Use **Save** in the UI to persist the current source to `playground/.local/widget.tsx`.
-4. Use **Reset to Example** to restore the example source.
+3. Use **Save** in the UI to persist local files (`playground/.local/widget.tsx` and `playground/.local/data.json`) and create a named snapshot.
+4. Use **Reset to Example** to restore the default example source.
+5. Use **Refresh** to force remount and rerender the current widget.
+6. Use **Widget Guide** to view the supported component list.
 
 The dev server exposes:
 
 - `GET /api/widget/source`
 - `PUT /api/widget/source`
+- `DELETE /api/widget/source`
 
-These endpoints are used by the editor/viewer flow and Playwright tests.
+`PUT /api/widget/source` accepts:
+
+- `{ "source": "...", "dataSource": "{...}" }` to save current local widget/data source.
+- `{ "source": "...", "dataSource": "{...}", "name": "my-widget" }` to save and write a timestamped snapshot directory with both files.
 
 ## Scripts
 
@@ -52,15 +54,3 @@ npm run lint        # ESLint
 npm run test        # Vitest (run once)
 npm run test:watch  # Vitest (watch mode)
 ```
-
-Run end-to-end layout checks:
-
-```bash
-npx playwright test
-```
-
-## Challenge + submission
-
-- Read constraints in `tasks/task1.md` or `tasks/task1.en.md`.
-- Implement required UI/DOM references in the widget source.
-- Write/update submission JSON in `tasks/submissions/ui-dashboard-hard-2tasks-v1.json`.
