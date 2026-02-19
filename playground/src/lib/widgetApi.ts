@@ -6,6 +6,12 @@ export interface WidgetSourceResponse {
   source: string
 }
 
+export interface SaveWidgetResponse {
+  ok: true
+  snapshotFileName?: string
+  snapshotPath?: string
+}
+
 interface ApiErrorPayload {
   error?: string
 }
@@ -32,9 +38,9 @@ export async function fetchWidgetSource(): Promise<WidgetSourceResponse> {
   return response.json() as Promise<WidgetSourceResponse>
 }
 
-export async function saveWidgetSource(source: string): Promise<void> {
+export async function saveWidgetSource(source: string, name?: string): Promise<SaveWidgetResponse> {
   const response = await fetch('/api/widget/source', {
-    body: JSON.stringify({ source }),
+    body: JSON.stringify(name ? { name, source } : { source }),
     headers: {
       'Content-Type': 'application/json',
     },
@@ -44,4 +50,18 @@ export async function saveWidgetSource(source: string): Promise<void> {
   if (!response.ok) {
     throw new Error(await parseApiError(response))
   }
+
+  return response.json() as Promise<SaveWidgetResponse>
+}
+
+export async function resetWidgetSource(): Promise<WidgetSourceResponse> {
+  const response = await fetch('/api/widget/source', {
+    method: 'DELETE',
+  })
+
+  if (!response.ok) {
+    throw new Error(await parseApiError(response))
+  }
+
+  return response.json() as Promise<WidgetSourceResponse>
 }

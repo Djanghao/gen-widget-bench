@@ -1,10 +1,13 @@
 import type { IncomingMessage, ServerResponse } from 'node:http'
+import path from 'node:path'
 import type { Plugin, ViteDevServer } from 'vite'
 import react from '@vitejs/plugin-react'
 import {
+  deleteLocalWidgetSource,
   readExampleSource,
   readWidgetSource,
   resolveWidgetStorePaths,
+  saveNamedWidgetSource,
   writeWidgetSource,
 } from './dev/widgetStore'
 import { defineConfig } from 'vitest/config'
@@ -47,6 +50,20 @@ function hasSourceField(body: unknown): body is { source: string } {
   return typeof (body as { source?: unknown }).source === 'string'
 }
 
+function getSnapshotName(body: unknown): string | null {
+  if (typeof body !== 'object' || !body) {
+    return null
+  }
+
+  const name = (body as { name?: unknown }).name
+  if (typeof name !== 'string') {
+    return null
+  }
+
+  const trimmed = name.trim()
+  return trimmed ? trimmed : null
+}
+
 const widgetApiPlugin = (): Plugin => ({
   enforce: 'pre',
   configureServer(server: ViteDevServer) {
@@ -83,9 +100,20 @@ const widgetApiPlugin = (): Plugin => ({
         try {
           const body = await readJsonBody(request)
           const source = hasSourceField(body) ? body.source : ''
+          const snapshotName = getSnapshotName(body)
 
           if (!source.trim()) {
             writeJson(response, 400, { error: 'Request body must include a non-empty "source" string.' })
+            return
+          }
+
+          if (snapshotName) {
+            const saved = await saveNamedWidgetSource(paths, source, snapshotName)
+            writeJson(response, 200, {
+              ok: true,
+              snapshotFileName: saved.fileName,
+              snapshotPath: path.relative(process.cwd(), saved.filePath),
+            })
             return
           }
 
@@ -93,6 +121,23 @@ const widgetApiPlugin = (): Plugin => ({
           writeJson(response, 200, { ok: true })
         } catch (error) {
           const message = error instanceof Error ? error.message : 'Failed to write widget source.'
+          writeJson(response, 500, { error: message })
+        }
+        return
+      }
+
+      if (request.method === 'DELETE' && pathname === '/api/widget/source') {
+        try {
+          await deleteLocalWidgetSource(paths)
+          const exampleSource = await readExampleSource(paths)
+          writeJson(response, 200, {
+            exampleSource,
+            ok: true,
+            origin: 'example',
+            source: exampleSource,
+          })
+        } catch (error) {
+          const message = error instanceof Error ? error.message : 'Failed to reset widget source.'
           writeJson(response, 500, { error: message })
         }
         return

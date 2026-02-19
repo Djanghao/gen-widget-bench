@@ -1,12 +1,14 @@
 // @vitest-environment node
 
-import { mkdtemp, rm, writeFile } from 'node:fs/promises'
+import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
 import {
+  deleteLocalWidgetSource,
   readWidgetSource,
   resolveWidgetStorePaths,
+  saveNamedWidgetSource,
   writeWidgetSource,
 } from './widgetStore'
 
@@ -43,5 +45,33 @@ describe('widgetStore', () => {
     const result = await readWidgetSource(paths)
     expect(result.origin).toBe('local')
     expect(result.source).toContain('LocalWidget')
+  })
+
+  it('deletes local source and falls back to example after reset', async () => {
+    const projectRoot = await createTempProject('export default function Example() { return null }')
+    const paths = resolveWidgetStorePaths(projectRoot)
+
+    await writeWidgetSource(paths, 'export default function Local() { return <div>Local</div> }')
+    await deleteLocalWidgetSource(paths)
+
+    const result = await readWidgetSource(paths)
+    expect(result.origin).toBe('example')
+    expect(result.source).toContain('Example')
+  })
+
+  it('saves named snapshot with timestamp plus name', async () => {
+    const projectRoot = await createTempProject('export default function Example() { return null }')
+    const paths = resolveWidgetStorePaths(projectRoot)
+    const savedSource = 'export default function Saved() { return <div>Saved</div> }'
+    const fixedNow = new Date('2026-02-19T08:09:10')
+
+    const snapshot = await saveNamedWidgetSource(paths, savedSource, 'my test file', fixedNow)
+    expect(snapshot.fileName).toBe('20260219-080910-my-test-file.tsx')
+
+    const savedSnapshotSource = await readFile(snapshot.filePath, 'utf8')
+    expect(savedSnapshotSource).toContain('Saved')
+
+    const currentWidgetSource = await readFile(paths.localFilePath, 'utf8')
+    expect(currentWidgetSource).toContain('Saved')
   })
 })
