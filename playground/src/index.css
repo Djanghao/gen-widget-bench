@@ -156,12 +156,25 @@ button:disabled {
   gap: 6px;
   margin-left: auto;
   min-width: 0;
+  overflow: hidden;
 }
 
 .editor-example-picker {
-  flex: 1 1 170px;
   display: flex;
+  flex: 1 1 130px;
+  max-width: 180px;
   min-width: 0;
+}
+
+.editor-example-picker:first-child {
+  flex: 1 1 150px;
+  max-width: 220px;
+}
+
+.editor-example-picker:last-child {
+  flex: 1 1 120px;
+  display: flex;
+  max-width: 180px;
 }
 
 .editor-example-select {
@@ -173,7 +186,7 @@ button:disabled {
   font-size: 0.78rem;
   max-width: 100%;
   min-height: 26px;
-  min-width: 100px;
+  min-width: 0;
   padding: 0 8px;
   width: 100%;
 }

@@ -1,0 +1,23 @@
+{
+  "market": "US Tech Session",
+  "ticker": "NVDA",
+  "price": "$911.24",
+  "change": "+3.92%",
+  "volume": "42.6M",
+  "series": [
+    { "time": "09:30", "price": 874, "ma": 871 },
+    { "time": "10:00", "price": 882, "ma": 876 },
+    { "time": "10:30", "price": 889, "ma": 882 },
+    { "time": "11:00", "price": 897, "ma": 888 },
+    { "time": "11:30", "price": 903, "ma": 894 },
+    { "time": "12:00", "price": 899, "ma": 897 },
+    { "time": "12:30", "price": 907, "ma": 901 },
+    { "time": "13:00", "price": 911, "ma": 904 }
+  ],
+  "watchlist": [
+    { "symbol": "AAPL", "move": "+1.2%" },
+    { "symbol": "MSFT", "move": "+0.8%" },
+    { "symbol": "AMD", "move": "+2.4%" },
+    { "symbol": "TSLA", "move": "-0.6%" }
+  ]
+}

@@ -6,6 +6,7 @@ import path from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
 import {
   deleteLocalWidgetSource,
+  listWidgetExampleWidgetFiles,
   listWidgetExamples,
   readWidgetExample,
   readWidgetDataSource,
@@ -121,8 +122,10 @@ describe('widgetStore', () => {
     ])
     await Promise.all([
       writeFile(path.join(projectRoot, 'examples', 'alpha-demo', 'widget.tsx'), 'export default function Alpha() { return null }', 'utf8'),
+      writeFile(path.join(projectRoot, 'examples', 'alpha-demo', 'widget.codex.tsx'), 'export default function AlphaCodex() { return null }', 'utf8'),
       writeFile(path.join(projectRoot, 'examples', 'alpha-demo', 'data.json'), '{"title":"alpha"}', 'utf8'),
       writeFile(path.join(projectRoot, 'examples', 'zeta-mini', 'widget.tsx'), 'export default function Zeta() { return null }', 'utf8'),
+      writeFile(path.join(projectRoot, 'examples', 'zeta-mini', 'README.md'), '# notes', 'utf8'),
       writeFile(path.join(projectRoot, 'examples', 'zeta-mini', 'data.json'), '{"title":"zeta"}', 'utf8'),
     ])
 
@@ -134,11 +137,20 @@ describe('widgetStore', () => {
       { id: 'zeta-mini', name: 'Zeta Mini' },
     ])
 
+    const alphaWidgetFiles = await listWidgetExampleWidgetFiles(paths, 'alpha-demo')
+    expect(alphaWidgetFiles).toEqual(['widget.tsx', 'widget.codex.tsx'])
+
     const selected = await readWidgetExample(paths, 'zeta-mini')
     expect(selected.id).toBe('zeta-mini')
     expect(selected.name).toBe('Zeta Mini')
+    expect(selected.widgetFileName).toBe('widget.tsx')
+    expect(selected.widgetFiles).toEqual(['widget.tsx'])
     expect(selected.source).toContain('Zeta')
     expect(selected.dataSource).toContain('"zeta"')
+
+    const selectedCodex = await readWidgetExample(paths, 'alpha-demo', 'widget.codex.tsx')
+    expect(selectedCodex.widgetFileName).toBe('widget.codex.tsx')
+    expect(selectedCodex.source).toContain('AlphaCodex')
   })
 
   it('rejects invalid example id', async () => {
@@ -149,5 +161,20 @@ describe('widgetStore', () => {
     const paths = resolveWidgetStorePaths(projectRoot)
 
     await expect(readWidgetExample(paths, '../invalid')).rejects.toThrow('Invalid example id.')
+  })
+
+  it('rejects invalid widget file name', async () => {
+    const projectRoot = await createTempProject(
+      'export default function Example() { return null }',
+      '{"title":"example"}',
+    )
+    await mkdir(path.join(projectRoot, 'examples', 'alpha-demo'), { recursive: true })
+    await Promise.all([
+      writeFile(path.join(projectRoot, 'examples', 'alpha-demo', 'widget.tsx'), 'export default function Alpha() { return null }', 'utf8'),
+      writeFile(path.join(projectRoot, 'examples', 'alpha-demo', 'data.json'), '{"title":"alpha"}', 'utf8'),
+    ])
+
+    const paths = resolveWidgetStorePaths(projectRoot)
+    await expect(readWidgetExample(paths, 'alpha-demo', '../hack.tsx')).rejects.toThrow('Invalid widget file name.')
   })
 })

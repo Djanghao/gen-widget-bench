@@ -27,6 +27,8 @@ export interface WidgetExampleSourceResponse {
   id: string
   name: string
   source: string
+  widgetFileName: string
+  widgetFiles: string[]
 }
 
 interface ApiErrorPayload {
@@ -96,8 +98,18 @@ export async function fetchWidgetExamples(): Promise<WidgetExamplesResponse> {
   return response.json() as Promise<WidgetExamplesResponse>
 }
 
-export async function fetchWidgetExampleSource(exampleId: string): Promise<WidgetExampleSourceResponse> {
-  const response = await fetch(`/api/widget/examples/${encodeURIComponent(exampleId)}`)
+export async function fetchWidgetExampleSource(
+  exampleId: string,
+  widgetFileName?: string,
+): Promise<WidgetExampleSourceResponse> {
+  const params = new URLSearchParams()
+  if (widgetFileName) {
+    params.set('file', widgetFileName)
+  }
+  const queryText = params.toString()
+  const requestUrl = `/api/widget/examples/${encodeURIComponent(exampleId)}${queryText ? `?${queryText}` : ''}`
+
+  const response = await fetch(requestUrl)
   if (!response.ok) {
     throw new Error(await parseApiError(response))
   }

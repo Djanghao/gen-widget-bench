@@ -13,9 +13,12 @@ interface WidgetEditorProps {
   activeFile: EditorFile
   dataSource: string
   exampleId: string
+  exampleWidgetFile: string
+  exampleWidgetFiles: string[]
   examples: WidgetExampleOption[]
   isExampleLoading: boolean
   onExampleChange: (exampleId: string) => void
+  onExampleWidgetFileChange: (widgetFileName: string) => void
   onActiveFileChange: (file: EditorFile) => void
   onDataSourceChange: (nextSource: string) => void
   onWidgetSourceChange: (nextSource: string) => void
@@ -26,9 +29,12 @@ export function WidgetEditor({
   activeFile,
   dataSource,
   exampleId,
+  exampleWidgetFile,
+  exampleWidgetFiles,
   examples,
   isExampleLoading,
   onExampleChange,
+  onExampleWidgetFileChange,
   onActiveFileChange,
   onDataSourceChange,
   onWidgetSourceChange,
@@ -36,7 +42,8 @@ export function WidgetEditor({
 }: WidgetEditorProps) {
   const editorRef = useRef<MonacoEditor.IStandaloneCodeEditor | null>(null)
   const isWidgetTab = activeFile === 'widget'
-  const filename = isWidgetTab ? 'widget.tsx' : 'data.json'
+  const resolvedWidgetFileName = exampleWidgetFile || 'widget.tsx'
+  const filename = isWidgetTab ? resolvedWidgetFileName : 'data.json'
 
   useEffect(() => {
     if (!editorRef.current) {
@@ -73,6 +80,22 @@ export function WidgetEditor({
               {examples.map((example) => (
                 <option key={example.id} value={example.id}>
                   {example.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="editor-example-picker">
+            <select
+              aria-label="Select widget file"
+              className="editor-example-select"
+              disabled={isExampleLoading || !exampleId || exampleWidgetFiles.length === 0}
+              onChange={(event) => onExampleWidgetFileChange(event.target.value)}
+              value={exampleWidgetFile}
+            >
+              <option value="">{exampleId ? 'Select .tsx file...' : 'Pick folder first'}</option>
+              {exampleWidgetFiles.map((widgetFileName) => (
+                <option key={widgetFileName} value={widgetFileName}>
+                  {widgetFileName}
                 </option>
               ))}
             </select>

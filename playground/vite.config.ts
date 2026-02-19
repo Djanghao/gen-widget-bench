@@ -87,7 +87,8 @@ const widgetApiPlugin = (): Plugin => ({
         return
       }
 
-      const pathname = new URL(request.url, 'http://localhost').pathname
+      const requestUrl = new URL(request.url, 'http://localhost')
+      const pathname = requestUrl.pathname
 
       if (request.method === 'GET' && pathname === '/api/widget/examples') {
         try {
@@ -110,6 +111,7 @@ const widgetApiPlugin = (): Plugin => ({
       if (request.method === 'GET' && pathname.startsWith(examplePathPrefix)) {
         const encodedExampleId = pathname.slice(examplePathPrefix.length)
         const exampleId = decodeURIComponent(encodedExampleId)
+        const widgetFileName = requestUrl.searchParams.get('file') ?? undefined
 
         if (!exampleId) {
           writeJson(response, 400, { error: 'Example id is required.' })
@@ -117,12 +119,16 @@ const widgetApiPlugin = (): Plugin => ({
         }
 
         try {
-          const example = await readWidgetExample(paths, exampleId)
+          const example = await readWidgetExample(paths, exampleId, widgetFileName)
           writeJson(response, 200, example)
         } catch (error) {
           const asNodeError = error as NodeJS.ErrnoException
-          if (error instanceof Error && error.message === 'Invalid example id.') {
+          if (error instanceof Error && (error.message === 'Invalid example id.' || error.message === 'Invalid widget file name.')) {
             writeJson(response, 400, { error: error.message })
+            return
+          }
+          if (error instanceof Error && (error.message.startsWith('Widget file "') || error.message.startsWith('No .tsx files found in example'))) {
+            writeJson(response, 404, { error: error.message })
             return
           }
           if (asNodeError.code === 'ENOENT') {

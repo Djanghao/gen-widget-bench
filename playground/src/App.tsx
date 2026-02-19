@@ -25,7 +25,9 @@ function App() {
   const [dataSource, setDataSource] = useState('{}')
   const [activeEditorFile, setActiveEditorFile] = useState<EditorFile>('widget')
   const [examples, setExamples] = useState<WidgetExample[]>([])
+  const [exampleWidgetFiles, setExampleWidgetFiles] = useState<string[]>([])
   const [selectedExampleId, setSelectedExampleId] = useState('')
+  const [selectedExampleWidgetFile, setSelectedExampleWidgetFile] = useState('')
   const [isExampleLoading, setIsExampleLoading] = useState(false)
   const [exampleError, setExampleError] = useState<string | null>(null)
   const [origin, setOrigin] = useState<WidgetOrigin>('example')
@@ -68,7 +70,9 @@ function App() {
         setWidgetSource(payload.source)
         setDataSource(payload.dataSource)
         setExamples(loadedExamples)
+        setExampleWidgetFiles([])
         setSelectedExampleId('')
+        setSelectedExampleWidgetFile('')
         setExampleError(loadedExampleError)
         setOrigin(payload.origin)
         setLoadingError(null)
@@ -231,7 +235,9 @@ function App() {
       const payload = await resetWidgetSource()
       setWidgetSource(payload.source)
       setDataSource(payload.dataSource)
+      setExampleWidgetFiles([])
       setSelectedExampleId('')
+      setSelectedExampleWidgetFile('')
       setOrigin(payload.origin)
       setLastSavedAt(null)
       setLastSavedPath(null)
@@ -254,18 +260,26 @@ function App() {
     }
 
     if (!exampleId) {
+      setExampleWidgetFiles([])
       setSelectedExampleId('')
+      setSelectedExampleWidgetFile('')
       setExampleError(null)
       return
     }
 
     const previousExampleId = selectedExampleId
+    const previousWidgetFiles = exampleWidgetFiles
+    const previousWidgetFile = selectedExampleWidgetFile
     setSelectedExampleId(exampleId)
+    setExampleWidgetFiles([])
+    setSelectedExampleWidgetFile('')
     setIsExampleLoading(true)
     setExampleError(null)
 
     try {
       const payload = await fetchWidgetExampleSource(exampleId)
+      setExampleWidgetFiles(payload.widgetFiles)
+      setSelectedExampleWidgetFile(payload.widgetFileName)
       setWidgetSource(payload.source)
       setDataSource(payload.dataSource)
       setActiveEditorFile('widget')
@@ -275,7 +289,41 @@ function App() {
       setSaveError(null)
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Failed to load selected example.'
+      setExampleWidgetFiles(previousWidgetFiles)
       setSelectedExampleId(previousExampleId)
+      setSelectedExampleWidgetFile(previousWidgetFile)
+      setExampleError(message)
+    } finally {
+      setIsExampleLoading(false)
+    }
+  }
+
+  async function onExampleWidgetFileChange(widgetFileName: string): Promise<void> {
+    if (!selectedExampleId || !widgetFileName || widgetFileName === selectedExampleWidgetFile) {
+      return
+    }
+
+    const previousWidgetFile = selectedExampleWidgetFile
+    const previousWidgetFiles = exampleWidgetFiles
+    setSelectedExampleWidgetFile(widgetFileName)
+    setIsExampleLoading(true)
+    setExampleError(null)
+
+    try {
+      const payload = await fetchWidgetExampleSource(selectedExampleId, widgetFileName)
+      setExampleWidgetFiles(payload.widgetFiles)
+      setSelectedExampleWidgetFile(payload.widgetFileName)
+      setWidgetSource(payload.source)
+      setDataSource(payload.dataSource)
+      setActiveEditorFile('widget')
+      setOrigin('example')
+      setLastSavedAt(null)
+      setLastSavedPath(null)
+      setSaveError(null)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Failed to load selected widget file.'
+      setSelectedExampleWidgetFile(previousWidgetFile)
+      setExampleWidgetFiles(previousWidgetFiles)
       setExampleError(message)
     } finally {
       setIsExampleLoading(false)
@@ -328,9 +376,12 @@ function App() {
           activeFile={activeEditorFile}
           dataSource={dataSource}
           exampleId={selectedExampleId}
+          exampleWidgetFile={selectedExampleWidgetFile}
+          exampleWidgetFiles={exampleWidgetFiles}
           examples={examples}
           isExampleLoading={isExampleLoading}
           onExampleChange={(exampleId) => void onExampleChange(exampleId)}
+          onExampleWidgetFileChange={(widgetFileName) => void onExampleWidgetFileChange(widgetFileName)}
           onActiveFileChange={setActiveEditorFile}
           onDataSourceChange={setDataSource}
           onWidgetSourceChange={setWidgetSource}

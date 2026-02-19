@@ -34,6 +34,8 @@ export interface WidgetExampleSource {
   id: string
   name: string
   source: string
+  widgetFileName: string
+  widgetFiles: string[]
 }
 
 export function resolveWidgetStorePaths(rootDir: string): WidgetStorePaths {
@@ -59,6 +61,30 @@ function validateExampleId(exampleId: string): boolean {
   return /^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(exampleId)
 }
 
+function validateWidgetFileName(widgetFileName: string): boolean {
+  return /^[A-Za-z0-9][A-Za-z0-9._-]*\.tsx$/.test(widgetFileName) && !widgetFileName.endsWith('.d.ts')
+}
+
+function sortWidgetFileNames(fileNames: string[]): string[] {
+  return [...fileNames].sort((left, right) => {
+    if (left === 'widget.tsx') {
+      return -1
+    }
+    if (right === 'widget.tsx') {
+      return 1
+    }
+    return left.localeCompare(right)
+  })
+}
+
+function resolveWidgetExampleDirPath(paths: WidgetStorePaths, exampleId: string): string {
+  if (!validateExampleId(exampleId)) {
+    throw new Error('Invalid example id.')
+  }
+
+  return path.join(paths.examplesDirPath, exampleId)
+}
+
 export async function listWidgetExamples(paths: WidgetStorePaths): Promise<WidgetExampleListItem[]> {
   const entries = await readdir(paths.examplesDirPath, { withFileTypes: true })
 
@@ -71,17 +97,46 @@ export async function listWidgetExamples(paths: WidgetStorePaths): Promise<Widge
     .sort((left, right) => left.id.localeCompare(right.id))
 }
 
+export async function listWidgetExampleWidgetFiles(
+  paths: WidgetStorePaths,
+  exampleId: string,
+): Promise<string[]> {
+  const exampleDirPath = resolveWidgetExampleDirPath(paths, exampleId)
+  const entries = await readdir(exampleDirPath, { withFileTypes: true })
+
+  const widgetFiles = sortWidgetFileNames(
+    entries
+      .filter((entry) => entry.isFile())
+      .map((entry) => entry.name)
+      .filter((name) => validateWidgetFileName(name)),
+  )
+
+  if (widgetFiles.length === 0) {
+    throw new Error(`No .tsx files found in example "${exampleId}".`)
+  }
+
+  return widgetFiles
+}
+
 export async function readWidgetExample(
   paths: WidgetStorePaths,
   exampleId: string,
+  widgetFileName?: string,
 ): Promise<WidgetExampleSource> {
-  if (!validateExampleId(exampleId)) {
-    throw new Error('Invalid example id.')
+  const exampleDirPath = resolveWidgetExampleDirPath(paths, exampleId)
+  const widgetFiles = await listWidgetExampleWidgetFiles(paths, exampleId)
+  const requestedWidgetFileName = widgetFileName?.trim() ?? ''
+  const selectedWidgetFileName = requestedWidgetFileName || widgetFiles[0]
+
+  if (requestedWidgetFileName && !validateWidgetFileName(requestedWidgetFileName)) {
+    throw new Error('Invalid widget file name.')
+  }
+  if (!widgetFiles.includes(selectedWidgetFileName)) {
+    throw new Error(`Widget file "${selectedWidgetFileName}" not found in example "${exampleId}".`)
   }
 
-  const exampleDirPath = path.join(paths.examplesDirPath, exampleId)
   const [source, dataSource] = await Promise.all([
-    readFile(path.join(exampleDirPath, 'widget.tsx'), 'utf8'),
+    readFile(path.join(exampleDirPath, selectedWidgetFileName), 'utf8'),
     readFile(path.join(exampleDirPath, 'data.json'), 'utf8'),
   ])
 
@@ -90,6 +145,8 @@ export async function readWidgetExample(
     id: exampleId,
     name: formatExampleName(exampleId),
     source,
+    widgetFileName: selectedWidgetFileName,
+    widgetFiles,
   }
 }
 
