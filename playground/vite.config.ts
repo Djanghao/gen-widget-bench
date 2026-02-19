@@ -4,7 +4,9 @@ import type { Plugin, ViteDevServer } from 'vite'
 import react from '@vitejs/plugin-react'
 import {
   deleteLocalWidgetSource,
+  listWidgetExamples,
   readExampleDataSource,
+  readWidgetExample,
   readExampleSource,
   readWidgetDataSource,
   readWidgetSource,
@@ -86,6 +88,53 @@ const widgetApiPlugin = (): Plugin => ({
       }
 
       const pathname = new URL(request.url, 'http://localhost').pathname
+
+      if (request.method === 'GET' && pathname === '/api/widget/examples') {
+        try {
+          const examples = await listWidgetExamples(paths)
+          writeJson(response, 200, { examples })
+        } catch (error) {
+          const asNodeError = error as NodeJS.ErrnoException
+          if (asNodeError.code === 'ENOENT') {
+            writeJson(response, 200, { examples: [] })
+            return
+          }
+
+          const message = error instanceof Error ? error.message : 'Failed to list widget examples.'
+          writeJson(response, 500, { error: message })
+        }
+        return
+      }
+
+      const examplePathPrefix = '/api/widget/examples/'
+      if (request.method === 'GET' && pathname.startsWith(examplePathPrefix)) {
+        const encodedExampleId = pathname.slice(examplePathPrefix.length)
+        const exampleId = decodeURIComponent(encodedExampleId)
+
+        if (!exampleId) {
+          writeJson(response, 400, { error: 'Example id is required.' })
+          return
+        }
+
+        try {
+          const example = await readWidgetExample(paths, exampleId)
+          writeJson(response, 200, example)
+        } catch (error) {
+          const asNodeError = error as NodeJS.ErrnoException
+          if (error instanceof Error && error.message === 'Invalid example id.') {
+            writeJson(response, 400, { error: error.message })
+            return
+          }
+          if (asNodeError.code === 'ENOENT') {
+            writeJson(response, 404, { error: `Example "${exampleId}" not found.` })
+            return
+          }
+
+          const message = error instanceof Error ? error.message : 'Failed to read widget example.'
+          writeJson(response, 500, { error: message })
+        }
+        return
+      }
 
       if (request.method === 'GET' && pathname === '/api/widget/source') {
         try {

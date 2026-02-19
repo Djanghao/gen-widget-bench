@@ -4,9 +4,18 @@ import type { editor as MonacoEditor } from 'monaco-editor'
 
 type EditorFile = 'data' | 'widget'
 
+interface WidgetExampleOption {
+  id: string
+  name: string
+}
+
 interface WidgetEditorProps {
   activeFile: EditorFile
   dataSource: string
+  exampleId: string
+  examples: WidgetExampleOption[]
+  isExampleLoading: boolean
+  onExampleChange: (exampleId: string) => void
   onActiveFileChange: (file: EditorFile) => void
   onDataSourceChange: (nextSource: string) => void
   onWidgetSourceChange: (nextSource: string) => void
@@ -16,6 +25,10 @@ interface WidgetEditorProps {
 export function WidgetEditor({
   activeFile,
   dataSource,
+  exampleId,
+  examples,
+  isExampleLoading,
+  onExampleChange,
   onActiveFileChange,
   onDataSourceChange,
   onWidgetSourceChange,
@@ -46,21 +59,40 @@ export function WidgetEditor({
     <div className="panel editor-panel">
       <div className="panel-header">
         <h2>Editor</h2>
-        <div className="editor-file-tabs">
-          <button
-            className={`editor-file-tab${isWidgetTab ? ' is-active' : ''}`}
-            onClick={() => onActiveFileChange('widget')}
-            type="button"
-          >
-            widget.tsx
-          </button>
-          <button
-            className={`editor-file-tab${!isWidgetTab ? ' is-active' : ''}`}
-            onClick={() => onActiveFileChange('data')}
-            type="button"
-          >
-            data.json
-          </button>
+        <div className="editor-header-controls">
+          <div className="editor-example-picker">
+            <select
+              aria-label="Select example"
+              className="editor-example-select"
+              disabled={isExampleLoading}
+              id="example-select"
+              onChange={(event) => onExampleChange(event.target.value)}
+              value={exampleId}
+            >
+              <option value="">Select example...</option>
+              {examples.map((example) => (
+                <option key={example.id} value={example.id}>
+                  {example.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="editor-file-tabs">
+            <button
+              className={`editor-file-tab${isWidgetTab ? ' is-active' : ''}`}
+              onClick={() => onActiveFileChange('widget')}
+              type="button"
+            >
+              widget.tsx
+            </button>
+            <button
+              className={`editor-file-tab${!isWidgetTab ? ' is-active' : ''}`}
+              onClick={() => onActiveFileChange('data')}
+              type="button"
+            >
+              data.json
+            </button>
+          </div>
         </div>
         <span className="filename">{filename}</span>
       </div>

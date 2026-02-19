@@ -13,6 +13,22 @@ export interface SaveWidgetResponse {
   snapshotPath?: string
 }
 
+export interface WidgetExample {
+  id: string
+  name: string
+}
+
+export interface WidgetExamplesResponse {
+  examples: WidgetExample[]
+}
+
+export interface WidgetExampleSourceResponse {
+  dataSource: string
+  id: string
+  name: string
+  source: string
+}
+
 interface ApiErrorPayload {
   error?: string
 }
@@ -69,4 +85,22 @@ export async function resetWidgetSource(): Promise<WidgetSourceResponse> {
   }
 
   return response.json() as Promise<WidgetSourceResponse>
+}
+
+export async function fetchWidgetExamples(): Promise<WidgetExamplesResponse> {
+  const response = await fetch('/api/widget/examples')
+  if (!response.ok) {
+    throw new Error(await parseApiError(response))
+  }
+
+  return response.json() as Promise<WidgetExamplesResponse>
+}
+
+export async function fetchWidgetExampleSource(exampleId: string): Promise<WidgetExampleSourceResponse> {
+  const response = await fetch(`/api/widget/examples/${encodeURIComponent(exampleId)}`)
+  if (!response.ok) {
+    throw new Error(await parseApiError(response))
+  }
+
+  return response.json() as Promise<WidgetExampleSourceResponse>
 }

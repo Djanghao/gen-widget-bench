@@ -2,7 +2,15 @@ import { type ComponentType, useEffect, useMemo, useRef, useState } from 'react'
 import { WidgetEditor } from './components/WidgetEditor'
 import { WidgetViewer } from './components/WidgetViewer'
 import { compileWidget, WidgetCompileError } from './lib/compileWidget'
-import { fetchWidgetSource, resetWidgetSource, saveWidgetSource, type WidgetOrigin } from './lib/widgetApi'
+import {
+  fetchWidgetExampleSource,
+  fetchWidgetExamples,
+  fetchWidgetSource,
+  resetWidgetSource,
+  saveWidgetSource,
+  type WidgetExample,
+  type WidgetOrigin,
+} from './lib/widgetApi'
 
 const COMPILE_DEBOUNCE_MS = 400
 
@@ -16,6 +24,10 @@ function App() {
   const [widgetSource, setWidgetSource] = useState('')
   const [dataSource, setDataSource] = useState('{}')
   const [activeEditorFile, setActiveEditorFile] = useState<EditorFile>('widget')
+  const [examples, setExamples] = useState<WidgetExample[]>([])
+  const [selectedExampleId, setSelectedExampleId] = useState('')
+  const [isExampleLoading, setIsExampleLoading] = useState(false)
+  const [exampleError, setExampleError] = useState<string | null>(null)
   const [origin, setOrigin] = useState<WidgetOrigin>('example')
   const [component, setComponent] = useState<ComponentType | null>(null)
   const [compileError, setCompileError] = useState<string | null>(null)
@@ -39,12 +51,25 @@ function App() {
     async function loadSource(): Promise<void> {
       try {
         const payload = await fetchWidgetSource()
+        let loadedExamples: WidgetExample[] = []
+        let loadedExampleError: string | null = null
+
+        try {
+          const examplesPayload = await fetchWidgetExamples()
+          loadedExamples = examplesPayload.examples
+        } catch (error) {
+          loadedExampleError = error instanceof Error ? error.message : 'Failed to load examples.'
+        }
+
         if (isCancelled) {
           return
         }
 
         setWidgetSource(payload.source)
         setDataSource(payload.dataSource)
+        setExamples(loadedExamples)
+        setSelectedExampleId('')
+        setExampleError(loadedExampleError)
         setOrigin(payload.origin)
         setLoadingError(null)
         setSaveError(null)
@@ -171,7 +196,7 @@ function App() {
   const originLabel = useMemo(() => {
     return origin === 'local' ? 'Loaded from local widget.tsx + data.json' : 'Loaded from widget.example.tsx + data.example.json'
   }, [origin])
-  const statusMessage = `${originLabel}${lastSavedAt ? ` • Saved at ${formatTimestamp(lastSavedAt)}` : ''}${lastSavedPath ? ` • File: ${lastSavedPath}` : ''}${saveError ? ` • Action failed: ${saveError}` : ''}`
+  const statusMessage = `${originLabel}${lastSavedAt ? ` • Saved at ${formatTimestamp(lastSavedAt)}` : ''}${lastSavedPath ? ` • File: ${lastSavedPath}` : ''}${saveError ? ` • Action failed: ${saveError}` : ''}${exampleError ? ` • Examples: ${exampleError}` : ''}`
 
   async function onSave(): Promise<void> {
     const name = window.prompt('Enter a file name. It will be saved as "timestamp-name/widget.tsx + data.json".')
@@ -206,6 +231,7 @@ function App() {
       const payload = await resetWidgetSource()
       setWidgetSource(payload.source)
       setDataSource(payload.dataSource)
+      setSelectedExampleId('')
       setOrigin(payload.origin)
       setLastSavedAt(null)
       setLastSavedPath(null)
@@ -220,6 +246,40 @@ function App() {
 
   function onRefresh(): void {
     setRefreshToken((prev) => prev + 1)
+  }
+
+  async function onExampleChange(exampleId: string): Promise<void> {
+    if (exampleId === selectedExampleId) {
+      return
+    }
+
+    if (!exampleId) {
+      setSelectedExampleId('')
+      setExampleError(null)
+      return
+    }
+
+    const previousExampleId = selectedExampleId
+    setSelectedExampleId(exampleId)
+    setIsExampleLoading(true)
+    setExampleError(null)
+
+    try {
+      const payload = await fetchWidgetExampleSource(exampleId)
+      setWidgetSource(payload.source)
+      setDataSource(payload.dataSource)
+      setActiveEditorFile('widget')
+      setOrigin('example')
+      setLastSavedAt(null)
+      setLastSavedPath(null)
+      setSaveError(null)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Failed to load selected example.'
+      setSelectedExampleId(previousExampleId)
+      setExampleError(message)
+    } finally {
+      setIsExampleLoading(false)
+    }
   }
 
   if (loadingError) {
@@ -248,16 +308,16 @@ function App() {
           {statusMessage}
         </p>
         <div className="toolbar-actions">
-          <button disabled={isSaving || isResetting} onClick={() => void onSave()} type="button">
+          <button disabled={isSaving || isResetting || isExampleLoading} onClick={() => void onSave()} type="button">
             {isSaving ? 'Saving...' : 'Save'}
           </button>
-          <button disabled={isSaving || isResetting} onClick={() => setIsGuideOpen(true)} type="button">
+          <button disabled={isSaving || isResetting || isExampleLoading} onClick={() => setIsGuideOpen(true)} type="button">
             Widget Guide
           </button>
-          <button disabled={isSaving || isResetting} onClick={onRefresh} type="button">
+          <button disabled={isSaving || isResetting || isExampleLoading} onClick={onRefresh} type="button">
             Refresh
           </button>
-          <button disabled={isSaving || isResetting} onClick={() => void onReset()} type="button">
+          <button disabled={isSaving || isResetting || isExampleLoading} onClick={() => void onReset()} type="button">
             {isResetting ? 'Resetting...' : 'Reset to Example'}
           </button>
         </div>
@@ -267,6 +327,10 @@ function App() {
         <WidgetEditor
           activeFile={activeEditorFile}
           dataSource={dataSource}
+          exampleId={selectedExampleId}
+          examples={examples}
+          isExampleLoading={isExampleLoading}
+          onExampleChange={(exampleId) => void onExampleChange(exampleId)}
           onActiveFileChange={setActiveEditorFile}
           onDataSourceChange={setDataSource}
           onWidgetSourceChange={setWidgetSource}

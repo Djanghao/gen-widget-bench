@@ -1,11 +1,13 @@
 // @vitest-environment node
 
-import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
 import {
   deleteLocalWidgetSource,
+  listWidgetExamples,
+  readWidgetExample,
   readWidgetDataSource,
   readWidgetSource,
   resolveWidgetStorePaths,
@@ -105,5 +107,47 @@ describe('widgetStore', () => {
     expect(currentWidgetSource).toContain('Saved')
     const currentDataSource = await readFile(paths.localDataFilePath, 'utf8')
     expect(currentDataSource).toContain('saved')
+  })
+
+  it('lists and reads folder-based examples', async () => {
+    const projectRoot = await createTempProject(
+      'export default function Example() { return null }',
+      '{"title":"example"}',
+    )
+
+    await Promise.all([
+      mkdir(path.join(projectRoot, 'examples', 'alpha-demo'), { recursive: true }),
+      mkdir(path.join(projectRoot, 'examples', 'zeta-mini'), { recursive: true }),
+    ])
+    await Promise.all([
+      writeFile(path.join(projectRoot, 'examples', 'alpha-demo', 'widget.tsx'), 'export default function Alpha() { return null }', 'utf8'),
+      writeFile(path.join(projectRoot, 'examples', 'alpha-demo', 'data.json'), '{"title":"alpha"}', 'utf8'),
+      writeFile(path.join(projectRoot, 'examples', 'zeta-mini', 'widget.tsx'), 'export default function Zeta() { return null }', 'utf8'),
+      writeFile(path.join(projectRoot, 'examples', 'zeta-mini', 'data.json'), '{"title":"zeta"}', 'utf8'),
+    ])
+
+    const paths = resolveWidgetStorePaths(projectRoot)
+    const examples = await listWidgetExamples(paths)
+
+    expect(examples).toEqual([
+      { id: 'alpha-demo', name: 'Alpha Demo' },
+      { id: 'zeta-mini', name: 'Zeta Mini' },
+    ])
+
+    const selected = await readWidgetExample(paths, 'zeta-mini')
+    expect(selected.id).toBe('zeta-mini')
+    expect(selected.name).toBe('Zeta Mini')
+    expect(selected.source).toContain('Zeta')
+    expect(selected.dataSource).toContain('"zeta"')
+  })
+
+  it('rejects invalid example id', async () => {
+    const projectRoot = await createTempProject(
+      'export default function Example() { return null }',
+      '{"title":"example"}',
+    )
+    const paths = resolveWidgetStorePaths(projectRoot)
+
+    await expect(readWidgetExample(paths, '../invalid')).rejects.toThrow('Invalid example id.')
   })
 })

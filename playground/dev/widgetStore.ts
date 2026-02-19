@@ -1,9 +1,10 @@
-import { mkdir, readFile, unlink, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, unlink, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
 export type WidgetOrigin = 'local' | 'example'
 
 export interface WidgetStorePaths {
+  examplesDirPath: string
   exampleFilePath: string
   exampleDataFilePath: string
   localFilePath: string
@@ -23,13 +24,72 @@ export interface NamedWidgetSaveResult {
   widgetFilePath: string
 }
 
+export interface WidgetExampleListItem {
+  id: string
+  name: string
+}
+
+export interface WidgetExampleSource {
+  dataSource: string
+  id: string
+  name: string
+  source: string
+}
+
 export function resolveWidgetStorePaths(rootDir: string): WidgetStorePaths {
   return {
+    examplesDirPath: path.resolve(rootDir, 'examples'),
     exampleDataFilePath: path.resolve(rootDir, 'data.example.json'),
     exampleFilePath: path.resolve(rootDir, 'widget.example.tsx'),
     localDataFilePath: path.resolve(rootDir, '.local', 'data.json'),
     localFilePath: path.resolve(rootDir, '.local', 'widget.tsx'),
     snapshotsDirPath: path.resolve(rootDir, '.local', 'snapshots'),
+  }
+}
+
+function formatExampleName(exampleId: string): string {
+  return exampleId
+    .split('-')
+    .filter(Boolean)
+    .map((part) => `${part[0]?.toUpperCase() ?? ''}${part.slice(1)}`)
+    .join(' ')
+}
+
+function validateExampleId(exampleId: string): boolean {
+  return /^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(exampleId)
+}
+
+export async function listWidgetExamples(paths: WidgetStorePaths): Promise<WidgetExampleListItem[]> {
+  const entries = await readdir(paths.examplesDirPath, { withFileTypes: true })
+
+  return entries
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => ({
+      id: entry.name,
+      name: formatExampleName(entry.name),
+    }))
+    .sort((left, right) => left.id.localeCompare(right.id))
+}
+
+export async function readWidgetExample(
+  paths: WidgetStorePaths,
+  exampleId: string,
+): Promise<WidgetExampleSource> {
+  if (!validateExampleId(exampleId)) {
+    throw new Error('Invalid example id.')
+  }
+
+  const exampleDirPath = path.join(paths.examplesDirPath, exampleId)
+  const [source, dataSource] = await Promise.all([
+    readFile(path.join(exampleDirPath, 'widget.tsx'), 'utf8'),
+    readFile(path.join(exampleDirPath, 'data.json'), 'utf8'),
+  ])
+
+  return {
+    dataSource,
+    id: exampleId,
+    name: formatExampleName(exampleId),
+    source,
   }
 }
 
