@@ -1,4 +1,6 @@
-import Editor from '@monaco-editor/react'
+import { useEffect, useRef } from 'react'
+import Editor, { type OnMount } from '@monaco-editor/react'
+import type { editor as MonacoEditor } from 'monaco-editor'
 
 type EditorFile = 'data' | 'widget'
 
@@ -19,8 +21,26 @@ export function WidgetEditor({
   onWidgetSourceChange,
   widgetSource,
 }: WidgetEditorProps) {
+  const editorRef = useRef<MonacoEditor.IStandaloneCodeEditor | null>(null)
   const isWidgetTab = activeFile === 'widget'
   const filename = isWidgetTab ? 'widget.tsx' : 'data.json'
+
+  useEffect(() => {
+    if (!editorRef.current) {
+      return
+    }
+
+    window.requestAnimationFrame(() => {
+      editorRef.current?.focus()
+    })
+  }, [activeFile])
+
+  const handleEditorMount: OnMount = (editor) => {
+    editorRef.current = editor
+    window.requestAnimationFrame(() => {
+      editor.focus()
+    })
+  }
 
   return (
     <div className="panel editor-panel">
@@ -48,6 +68,7 @@ export function WidgetEditor({
         <Editor
           defaultLanguage={isWidgetTab ? 'typescript' : 'json'}
           language={isWidgetTab ? 'typescript' : 'json'}
+          onMount={handleEditorMount}
           onChange={(value) => {
             if (isWidgetTab) {
               onWidgetSourceChange(value ?? '')
