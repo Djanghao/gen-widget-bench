@@ -1,0 +1,74 @@
+{
+  "listName": "Reminders",
+  "date": {
+    "day": 20,
+    "month": "FEB",
+    "year": 2026
+  },
+  "tasks": [
+    {
+      "id": "r-001",
+      "title": "Pick up arts & crafts supplies",
+      "completed": false,
+      "priority": 1,
+      "dueISO": "2026-02-20T10:00:00-08:00",
+      "tags": ["Errands"]
+    },
+    {
+      "id": "r-002",
+      "title": "Send cookie recipe to Rigo",
+      "completed": false,
+      "priority": 2,
+      "dueISO": "2026-02-20T14:30:00-08:00",
+      "tags": ["Personal"]
+    },
+    {
+      "id": "r-003",
+      "title": "Book club prep",
+      "completed": false,
+      "priority": 1,
+      "dueISO": "2026-02-20T19:00:00-08:00",
+      "tags": ["Reading"]
+    },
+    {
+      "id": "r-004",
+      "title": "Hike with Darla",
+      "completed": false,
+      "priority": 2,
+      "dueISO": "2026-02-21T08:00:00-08:00",
+      "tags": ["Health"]
+    },
+    {
+      "id": "r-005",
+      "title": "Schedule car maintenance",
+      "completed": false,
+      "priority": 3,
+      "dueISO": "2026-02-22T09:00:00-08:00",
+      "tags": ["Auto"]
+    },
+    {
+      "id": "r-006",
+      "title": "Cancel membership",
+      "completed": false,
+      "priority": 1,
+      "dueISO": "2026-02-19T18:00:00-08:00",
+      "tags": ["Admin"]
+    },
+    {
+      "id": "r-007",
+      "title": "Check spare tire",
+      "completed": false,
+      "priority": 2,
+      "dueISO": null,
+      "tags": ["Auto"]
+    },
+    {
+      "id": "r-008",
+      "title": "Pay internet bill",
+      "completed": true,
+      "priority": 1,
+      "dueISO": "2026-02-19T21:00:00-08:00",
+      "tags": ["Bills"]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "station": "Tiburon",
+  "timezone": "America/Los_Angeles",
+  "map": {
+    "lat": 37.8735,
+    "lng": -122.4566,
+    "zoom": 12
+  },
+  "lines": [
+    {
+      "id": "line-ferry-a",
+      "name": "Ferry A",
+      "destination": "SF Ferry Building",
+      "departures": [
+        {
+          "scheduledISO": "2026-02-20T15:10:00-08:00",
+          "delayMin": 0,
+          "canceled": false,
+          "crowd": "mid"
+        },
+        {
+          "scheduledISO": "2026-02-20T15:40:00-08:00",
+          "delayMin": 12,
+          "canceled": false,
+          "crowd": "high"
+        }
+      ]
+    },
+    {
+      "id": "line-ferry-b",
+      "name": "Ferry B",
+      "destination": "Angel Island",
+      "departures": [
+        {
+          "scheduledISO": "2026-02-20T15:05:00-08:00",
+          "delayMin": 0,
+          "canceled": true,
+          "crowd": "low"
+        },
+        {
+          "scheduledISO": "2026-02-20T15:32:00-08:00",
+          "delayMin": 4,
+          "canceled": false,
+          "crowd": "low"
+        }
+      ]
+    }
+  ]
+}

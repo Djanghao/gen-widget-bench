@@ -1,0 +1,30 @@
+{
+  "dateISO": "2026-02-20",
+  "timezone": "America/Los_Angeles",
+  "totalMinutes": 163,
+  "hourly": [
+    { "hour": "06", "minutes": 18 },
+    { "hour": "07", "minutes": 26 },
+    { "hour": "08", "minutes": 42 },
+    { "hour": "09", "minutes": 31 },
+    { "hour": "10", "minutes": 20 },
+    { "hour": "11", "minutes": 14 },
+    { "hour": "12", "minutes": 12 },
+    { "hour": "13", "minutes": 0 },
+    { "hour": "14", "minutes": 0 },
+    { "hour": "15", "minutes": 0 }
+  ],
+  "categories": [
+    { "name": "Productivity", "minutes": 66, "color": "#2f7df6" },
+    { "name": "Social", "minutes": 31, "color": "#20d3ff" },
+    { "name": "Entertainment", "minutes": 23, "color": "#ffb800" }
+  ],
+  "topApps": [
+    { "name": "Numbers", "minutes": 58, "icon": "numbers" },
+    { "name": "ChatGPT", "minutes": 22, "icon": "chatgpt" },
+    { "name": "YouTube", "minutes": 18, "icon": "youtube" },
+    { "name": "WhatsApp", "minutes": 9, "icon": "whatsapp" },
+    { "name": "Mail", "minutes": 8, "icon": "mail" },
+    { "name": "Music", "minutes": 5, "icon": "music" }
+  ]
+}
