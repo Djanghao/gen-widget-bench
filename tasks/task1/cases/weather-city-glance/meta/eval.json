@@ -1,82 +1,95 @@
 {
   "caseId": "weather-city-glance",
   "name": "Weather City Glance Widget",
-  "subtask": "instruction-only",
+  "subtask": "instruction-image-target",
   "rules": [
     {
       "type": "exists",
-      "target": { "selector": "section", "description": "Root section element" }
+      "target": { "eid": "root", "description": "Root widget container" }
     },
     {
       "type": "exists",
-      "target": { "selector": "header", "description": "Header section" }
+      "target": { "eid": "header", "description": "Header section" }
+    },
+    {
+      "type": "exists",
+      "target": { "eid": "alert-banner", "description": "Alert banner" }
+    },
+    {
+      "type": "exists",
+      "target": { "eid": "forecast-grid", "description": "Hourly forecast grid" }
     },
     {
       "type": "hierarchy",
-      "parent": { "selector": "section", "description": "Root section" },
-      "child": { "selector": "header", "description": "Header inside section" }
+      "parent": { "eid": "root", "description": "Root container" },
+      "child": { "eid": "header", "description": "Header inside root" }
+    },
+    {
+      "type": "hierarchy",
+      "parent": { "eid": "root", "description": "Root container" },
+      "child": { "eid": "forecast-grid", "description": "Forecast grid inside root" }
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "city-name", "description": "City name element" },
       "expected": "Tiburon"
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "current-temp", "description": "Current temperature" },
       "expected": "65"
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "high-low", "description": "High/low temperatures" },
       "expected": "72"
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "high-low", "description": "High/low temperatures" },
       "expected": "55"
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "condition-text", "description": "Condition text" },
       "expected": "Clear"
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "alert-banner", "description": "Alert banner" },
       "expected": "Patchy fog near shoreline"
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "stat-humidity", "description": "Humidity stat" },
       "expected": "48"
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "stat-wind", "description": "Wind stat" },
       "expected": "9"
     },
     {
       "type": "count",
-      "selector": "section *",
-      "description": "Hourly forecast items (at least 6 child containers for hours)",
+      "selector": "[data-eid='forecast-grid'] > *",
+      "description": "Hourly forecast items (6 hour slots)",
       "expected": 6,
       "op": "gte"
     },
     {
       "type": "text-contains",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "hour-0-time", "description": "First hour time label" },
       "expected": "9PM"
     },
     {
       "type": "style",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "root", "description": "Root container" },
       "property": "borderRadius",
       "expected": "24px"
     },
     {
       "type": "style",
-      "target": { "selector": "section", "description": "Root section" },
+      "target": { "eid": "root", "description": "Root container" },
       "property": "maxWidth",
       "expected": "360px"
     },

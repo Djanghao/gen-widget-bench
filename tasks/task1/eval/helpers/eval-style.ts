@@ -1,10 +1,12 @@
 import type { Page } from '@playwright/test'
 import type { StyleRule, RuleResult } from './types.js'
+import { resolveSelector } from './resolve-target.js'
 
 const STAGE = '.viewer-widget-stage'
 
 export async function evalStyle(page: Page, rule: StyleRule): Promise<RuleResult> {
-  const selector = `${STAGE} ${rule.target.selector}`
+  const resolved = resolveSelector(rule.target)
+  const selector = `${STAGE} ${resolved}`
   const element = page.locator(selector).first()
   const count = await page.locator(selector).count()
 
@@ -12,7 +14,7 @@ export async function evalStyle(page: Page, rule: StyleRule): Promise<RuleResult
     return {
       rule,
       pass: false,
-      message: `Style check failed: element "${rule.target.description}" (${rule.target.selector}) not found`,
+      message: `Style check failed: element "${rule.target.description}" (${resolved}) not found`,
     }
   }
 

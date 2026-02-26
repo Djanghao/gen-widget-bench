@@ -69,21 +69,17 @@ async function evaluateRule(page: import('@playwright/test').Page, rule: EvalRul
   }
 }
 
-// Parse CLI args: --case <caseId> and --model <modelName>
-function parseArgs(): { filterCase?: string; filterModel?: string } {
-  const args = process.argv
-  let filterCase: string | undefined
-  let filterModel: string | undefined
-  for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--case' && args[i + 1]) filterCase = args[i + 1]
-    if (args[i] === '--model' && args[i + 1]) filterModel = args[i + 1]
+// Read filter from env: EVAL_CASE and EVAL_MODEL
+function parseFilters(): { filterCase?: string; filterModel?: string } {
+  return {
+    filterCase: process.env.EVAL_CASE || undefined,
+    filterModel: process.env.EVAL_MODEL || undefined,
   }
-  return { filterCase, filterModel }
 }
 
 test('GenWidget-Create Benchmark (Task 1)', async ({ page, baseURL }) => {
   const url = baseURL ?? 'http://127.0.0.1:43073'
-  const { filterCase, filterModel } = parseArgs()
+  const { filterCase, filterModel } = parseFilters()
 
   let caseIds = await discoverCases()
   if (filterCase) {

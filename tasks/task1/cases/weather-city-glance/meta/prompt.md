@@ -1,33 +1,55 @@
-# Weather City Glance Widget
+# GenWidget-Create: Weather City Glance
 
-Create a React weather widget component that displays current weather conditions for a city using the provided data.
+## Task
 
-## Requirements
+Recreate the widget shown in **`gt/target.png`** as a React component. Your output must match the target image's appearance, layout, data, and structure as closely as possible.
 
-### Layout & Structure
-- Root element must be a `<section>` element
-- Display an alert banner at the top if `alerts` array is non-empty, showing the alert title
-- Show a header section with the current temperature, high/low temperatures, a weather icon, city name, and condition text
-- Include a stats row showing "feels like" temperature, humidity percentage, and wind speed
-- Display an hourly forecast grid showing the next 6 hours with time, icon, and temperature
+## Input (Read These Files)
 
-### Data
-- Import weather data from `./data.json`
-- Temperature values should display with "F" suffix (e.g., "65F")
-- Humidity should display with "%" suffix
-- Wind should display with "mph" suffix
-- Use the `icon` field to display a text glyph: "◔" for moon icons, "◉" for sun icons, "◌" otherwise
+| File | What to do |
+|------|------------|
+| `gt/target.png` | **Look at this image.** It is the target — your widget must visually match it. Extract all visible data values (text, numbers, labels) from the image. |
+| `meta/elements.json` | **Read this file.** It defines the element catalog. Every element listed must appear in your `widget.tsx` with the exact `data-eid` attribute value. |
 
-### Styling
-- Dark theme with blue gradient background
-- Rounded corners (border-radius ~24px on root)
-- White/light text colors
-- Max width of 360px
-- Alert banner should have a warm amber/yellow tint
-- Hourly forecast items should have a darker background with subtle border
-- Use CSS Grid for the hourly forecast layout (6 columns)
+## Output (Write These Files)
 
-### Constraints
-- Only use `react` and `./data.json` imports
-- Export the component as `default`
-- Use inline styles only (no CSS files)
+Write exactly two files into `submissions/<your-model-name>/` (create the directory):
+
+| File | Content |
+|------|---------|
+| `submissions/<your-model-name>/widget.tsx` | React component reproducing the target widget |
+| `submissions/<your-model-name>/data.json` | JSON data extracted from the target image, imported by widget.tsx |
+
+## Constraints
+
+### Allowed Operations
+- **Read**: `gt/target.png`, `meta/elements.json`, `meta/prompt.md` (this file)
+- **Write**: only `submissions/<your-model-name>/widget.tsx` and `data.json`
+- Do NOT read, write, or reference any other files
+
+### Code Rules
+- `widget.tsx` must **default export** a React component
+- Allowed imports: `react`, `recharts`, `lucide-react`, `./data.json` — no others
+- Use **inline styles only** — no CSS files, no className-based styling
+- Data import: `import data from './data.json'`
+
+## Element Annotation
+
+Read `meta/elements.json`. For **every** element in that file, your JSX must include the matching `data-eid` attribute. Rules:
+
+- The `data-eid` value must **exactly match** the `eid` field in `elements.json`
+- Do NOT invent your own identifiers — only use values from the catalog
+- You must annotate **ALL** elements, not just some
+- The `tag` field in the catalog is a suggestion; you may use a different HTML tag, but the `data-eid` must be exact
+- The `parent` field shows the intended nesting hierarchy
+
+Example:
+```tsx
+<section data-eid="root" style={{ ... }}>
+  <div data-eid="alert-banner">...</div>
+  <header data-eid="header">
+    <div data-eid="current-temp">65F</div>
+    <div data-eid="city-name">Tiburon</div>
+  </header>
+</section>
+```

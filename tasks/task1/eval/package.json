@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "npx playwright test",
+    "eval": "npx playwright test",
     "test:install": "npx playwright install chromium"
   },
   "dependencies": {

@@ -38,6 +38,7 @@ export default function Widget() {
 
   return (
     <section
+      data-eid="root"
       style={{
         background:
           'radial-gradient(circle at 18% 12%, rgba(75, 132, 255, 0.48) 0%, rgba(15, 25, 56, 0.95) 52%, #0a0f22 100%)',
@@ -53,6 +54,7 @@ export default function Widget() {
     >
       {alert ? (
         <div
+          data-eid="alert-banner"
           style={{
             background: 'rgba(255, 196, 102, 0.2)',
             border: '1px solid rgba(255, 196, 102, 0.5)',
@@ -67,30 +69,31 @@ export default function Widget() {
         </div>
       ) : null}
 
-      <header style={{ alignItems: 'start', display: 'flex', justifyContent: 'space-between' }}>
+      <header data-eid="header" style={{ alignItems: 'start', display: 'flex', justifyContent: 'space-between' }}>
         <div style={{ display: 'grid', gap: 2 }}>
-          <div style={{ fontSize: 30, fontWeight: 700, lineHeight: 1 }}>{weather.current.tempF}F</div>
-          <div style={{ color: '#dbe7ff', fontSize: 12 }}>
+          <div data-eid="current-temp" style={{ fontSize: 30, fontWeight: 700, lineHeight: 1 }}>{weather.current.tempF}F</div>
+          <div data-eid="high-low" style={{ color: '#dbe7ff', fontSize: 12 }}>
             H:{weather.current.highF}F L:{weather.current.lowF}F
           </div>
         </div>
         <div style={{ textAlign: 'right' }}>
-          <div style={{ fontSize: 20, lineHeight: 1 }}>{iconGlyph(weather.current.icon)}</div>
-          <div style={{ fontSize: 16, fontWeight: 600 }}>{weather.city}</div>
-          <div style={{ color: '#dbe7ff', fontSize: 12 }}>{weather.condition}</div>
+          <div data-eid="weather-icon" style={{ fontSize: 20, lineHeight: 1 }}>{iconGlyph(weather.current.icon)}</div>
+          <div data-eid="city-name" style={{ fontSize: 16, fontWeight: 600 }}>{weather.city}</div>
+          <div data-eid="condition-text" style={{ color: '#dbe7ff', fontSize: 12 }}>{weather.condition}</div>
         </div>
       </header>
 
-      <div style={{ color: '#b7cdfb', display: 'flex', fontSize: 11, gap: 12 }}>
-        <span>Feels {weather.current.feelsF}F</span>
-        <span>Humidity {weather.current.humidityPct}%</span>
-        <span>Wind {weather.current.windMph}mph</span>
+      <div data-eid="stats-row" style={{ color: '#b7cdfb', display: 'flex', fontSize: 11, gap: 12 }}>
+        <span data-eid="stat-feels">Feels {weather.current.feelsF}F</span>
+        <span data-eid="stat-humidity">Humidity {weather.current.humidityPct}%</span>
+        <span data-eid="stat-wind">Wind {weather.current.windMph}mph</span>
       </div>
 
-      <div style={{ display: 'grid', gap: 6, gridTemplateColumns: 'repeat(6, minmax(0, 1fr))' }}>
-        {weather.hourly.slice(0, 6).map((hour) => (
+      <div data-eid="forecast-grid" style={{ display: 'grid', gap: 6, gridTemplateColumns: 'repeat(6, minmax(0, 1fr))' }}>
+        {weather.hourly.slice(0, 6).map((hour, i) => (
           <div
             key={hour.time}
+            data-eid={`hour-${i}`}
             style={{
               background: 'rgba(11, 21, 45, 0.5)',
               border: '1px solid rgba(143, 181, 255, 0.22)',
@@ -101,13 +104,12 @@ export default function Widget() {
               padding: '6px 4px',
             }}
           >
-            <span style={{ color: '#bbd0ff', fontSize: 10 }}>{hour.time}</span>
-            <span style={{ fontSize: 13, lineHeight: 1 }}>{iconGlyph(hour.icon)}</span>
-            <strong style={{ fontSize: 12, lineHeight: 1 }}>{hour.tempF == null ? '--' : `${hour.tempF}F`}</strong>
+            <span data-eid={i === 0 ? 'hour-0-time' : undefined} style={{ color: '#bbd0ff', fontSize: 10 }}>{hour.time}</span>
+            <span data-eid={i === 0 ? 'hour-0-icon' : undefined} style={{ fontSize: 13, lineHeight: 1 }}>{iconGlyph(hour.icon)}</span>
+            <strong data-eid={i === 0 ? 'hour-0-temp' : undefined} style={{ fontSize: 12, lineHeight: 1 }}>{hour.tempF == null ? '--' : `${hour.tempF}F`}</strong>
           </div>
         ))}
       </div>
     </section>
   )
 }
-

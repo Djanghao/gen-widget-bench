@@ -1,18 +1,20 @@
 import type { Page } from '@playwright/test'
 import type { ExistsRule, CountRule, HierarchyRule, RuleResult } from './types.js'
+import { resolveSelector } from './resolve-target.js'
 
 const STAGE = '.viewer-widget-stage'
 
 export async function evalExists(page: Page, rule: ExistsRule): Promise<RuleResult> {
-  const selector = `${STAGE} ${rule.target.selector}`
+  const resolved = resolveSelector(rule.target)
+  const selector = `${STAGE} ${resolved}`
   const count = await page.locator(selector).count()
   const pass = count > 0
   return {
     rule,
     pass,
     message: pass
-      ? `Found "${rule.target.description}" (${rule.target.selector})`
-      : `Missing "${rule.target.description}" (${rule.target.selector})`,
+      ? `Found "${rule.target.description}" (${resolved})`
+      : `Missing "${rule.target.description}" (${resolved})`,
   }
 }
 
@@ -43,7 +45,9 @@ export async function evalCount(page: Page, rule: CountRule): Promise<RuleResult
 }
 
 export async function evalHierarchy(page: Page, rule: HierarchyRule): Promise<RuleResult> {
-  const selector = `${STAGE} ${rule.parent.selector} ${rule.child.selector}`
+  const parentSelector = resolveSelector(rule.parent)
+  const childSelector = resolveSelector(rule.child)
+  const selector = `${STAGE} ${parentSelector} ${childSelector}`
   const count = await page.locator(selector).count()
   const pass = count > 0
   return {

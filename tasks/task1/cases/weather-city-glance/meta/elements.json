@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "elements": [
+    {
+      "eid": "root",
+      "tag": "section",
+      "description": "Root widget container with dark gradient background and rounded corners",
+      "parent": null
+    },
+    {
+      "eid": "alert-banner",
+      "tag": "div",
+      "description": "Alert banner at the top of the widget, amber/gold tinted",
+      "parent": "root"
+    },
+    {
+      "eid": "header",
+      "tag": "header",
+      "description": "Header row: left side has temperature info, right side has city info",
+      "parent": "root"
+    },
+    {
+      "eid": "current-temp",
+      "tag": "div",
+      "description": "Large current temperature value, top-left of header",
+      "parent": "header"
+    },
+    {
+      "eid": "high-low",
+      "tag": "div",
+      "description": "High/low temperature line below the current temperature",
+      "parent": "header"
+    },
+    {
+      "eid": "weather-icon",
+      "tag": "div",
+      "description": "Weather condition icon glyph, top-right of header above city name",
+      "parent": "header"
+    },
+    {
+      "eid": "city-name",
+      "tag": "div",
+      "description": "City name, right side of header",
+      "parent": "header"
+    },
+    {
+      "eid": "condition-text",
+      "tag": "div",
+      "description": "Weather condition label below city name",
+      "parent": "header"
+    },
+    {
+      "eid": "stats-row",
+      "tag": "div",
+      "description": "Horizontal row of quick stats below the header",
+      "parent": "root"
+    },
+    {
+      "eid": "stat-feels",
+      "tag": "span",
+      "description": "Feels-like temperature stat in the stats row",
+      "parent": "stats-row"
+    },
+    {
+      "eid": "stat-humidity",
+      "tag": "span",
+      "description": "Humidity percentage stat in the stats row",
+      "parent": "stats-row"
+    },
+    {
+      "eid": "stat-wind",
+      "tag": "span",
+      "description": "Wind speed stat in the stats row",
+      "parent": "stats-row"
+    },
+    {
+      "eid": "forecast-grid",
+      "tag": "div",
+      "description": "6-column grid of hourly forecast cards at the bottom",
+      "parent": "root"
+    },
+    {
+      "eid": "hour-0",
+      "tag": "div",
+      "description": "First hourly forecast card (leftmost)",
+      "parent": "forecast-grid"
+    },
+    {
+      "eid": "hour-1",
+      "tag": "div",
+      "description": "Second hourly forecast card",
+      "parent": "forecast-grid"
+    },
+    {
+      "eid": "hour-2",
+      "tag": "div",
+      "description": "Third hourly forecast card",
+      "parent": "forecast-grid"
+    },
+    {
+      "eid": "hour-3",
+      "tag": "div",
+      "description": "Fourth hourly forecast card",
+      "parent": "forecast-grid"
+    },
+    {
+      "eid": "hour-4",
+      "tag": "div",
+      "description": "Fifth hourly forecast card",
+      "parent": "forecast-grid"
+    },
+    {
+      "eid": "hour-5",
+      "tag": "div",
+      "description": "Sixth hourly forecast card (rightmost)",
+      "parent": "forecast-grid"
+    },
+    {
+      "eid": "hour-0-time",
+      "tag": "span",
+      "description": "Time label at top of first hourly card",
+      "parent": "hour-0"
+    },
+    {
+      "eid": "hour-0-icon",
+      "tag": "span",
+      "description": "Weather icon in middle of first hourly card",
+      "parent": "hour-0"
+    },
+    {
+      "eid": "hour-0-temp",
+      "tag": "strong",
+      "description": "Temperature at bottom of first hourly card",
+      "parent": "hour-0"
+    }
+  ]
+}

@@ -1,5 +1,18 @@
+export interface CatalogElement {
+  eid: string
+  tag: string
+  description: string
+  parent: string | null
+}
+
+export interface ElementCatalog {
+  version: number
+  elements: CatalogElement[]
+}
+
 export interface EvalTarget {
-  selector: string
+  selector?: string
+  eid?: string
   description: string
 }
 
