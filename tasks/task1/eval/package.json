@@ -1,0 +1,19 @@
+{
+  "name": "gen-widget-bench-task1-eval",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:install": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "pixelmatch": "^6.0.0",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.10.1",
+    "typescript": "~5.9.3"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "caseId": "weather-city-glance",
+  "name": "Weather City Glance Widget",
+  "subtask": "instruction-only",
+  "rules": [
+    {
+      "type": "exists",
+      "target": { "selector": "section", "description": "Root section element" }
+    },
+    {
+      "type": "exists",
+      "target": { "selector": "header", "description": "Header section" }
+    },
+    {
+      "type": "hierarchy",
+      "parent": { "selector": "section", "description": "Root section" },
+      "child": { "selector": "header", "description": "Header inside section" }
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "Tiburon"
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "65"
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "72"
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "55"
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "Clear"
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "Patchy fog near shoreline"
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "48"
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "9"
+    },
+    {
+      "type": "count",
+      "selector": "section *",
+      "description": "Hourly forecast items (at least 6 child containers for hours)",
+      "expected": 6,
+      "op": "gte"
+    },
+    {
+      "type": "text-contains",
+      "target": { "selector": "section", "description": "Root section" },
+      "expected": "9PM"
+    },
+    {
+      "type": "style",
+      "target": { "selector": "section", "description": "Root section" },
+      "property": "borderRadius",
+      "expected": "24px"
+    },
+    {
+      "type": "style",
+      "target": { "selector": "section", "description": "Root section" },
+      "property": "maxWidth",
+      "expected": "360px"
+    },
+    {
+      "type": "screenshot",
+      "maxPixelDiffPercent": 15,
+      "viewportWidth": 500,
+      "viewportHeight": 600
+    }
+  ]
+}

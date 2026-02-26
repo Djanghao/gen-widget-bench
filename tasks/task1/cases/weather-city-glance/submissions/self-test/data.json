@@ -1,0 +1,30 @@
+{
+  "city": "Tiburon",
+  "timezone": "America/Los_Angeles",
+  "theme": "dark",
+  "condition": "Clear",
+  "current": {
+    "tempF": 65,
+    "feelsF": 64,
+    "highF": 72,
+    "lowF": 55,
+    "humidityPct": 48,
+    "windMph": 9,
+    "icon": "moon.stars"
+  },
+  "hourly": [
+    { "time": "9PM", "tempF": 65, "precipPct": 6, "icon": "moon.stars" },
+    { "time": "10PM", "tempF": 63, "precipPct": 7, "icon": "moon.stars" },
+    { "time": "11PM", "tempF": 62, "precipPct": 8, "icon": "moon.stars" },
+    { "time": "12AM", "tempF": 60, "precipPct": 10, "icon": "moon.stars" },
+    { "time": "1AM", "tempF": 58, "precipPct": 12, "icon": "moon.stars" },
+    { "time": "2AM", "tempF": 56, "precipPct": 14, "icon": "moon.stars" }
+  ],
+  "alerts": [
+    {
+      "level": "advisory",
+      "title": "Patchy fog near shoreline",
+      "untilISO": "2026-02-21T03:00:00-08:00"
+    }
+  ]
+}
