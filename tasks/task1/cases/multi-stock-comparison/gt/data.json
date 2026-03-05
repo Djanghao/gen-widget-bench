@@ -1,0 +1,66 @@
+{
+  "portfolioName": "Tech Growth Portfolio",
+  "portfolioValue": "$82,456.20",
+  "portfolioChangePct": 0.87,
+  "activeRange": "1M",
+  "lastUpdated": "Mar 4, 2026 4:00 PM EST",
+  "stocks": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "color": "#3b82f6",
+      "currentPrice": 189.42,
+      "changePct": 1.24,
+      "open": 187.15,
+      "close": 189.42,
+      "high": 191.08,
+      "low": 186.90,
+      "volume": "58.3M",
+      "marketCap": "2.94T",
+      "peRatio": 31.2,
+      "perfPct": 6.29
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "color": "#10b981",
+      "currentPrice": 174.89,
+      "changePct": -0.68,
+      "open": 176.12,
+      "close": 174.89,
+      "high": 177.45,
+      "low": 173.20,
+      "volume": "24.1M",
+      "marketCap": "2.16T",
+      "peRatio": 25.8,
+      "perfPct": 3.79
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corp.",
+      "color": "#a855f7",
+      "currentPrice": 428.55,
+      "changePct": 0.91,
+      "open": 424.70,
+      "close": 428.55,
+      "high": 430.12,
+      "low": 423.88,
+      "volume": "19.7M",
+      "marketCap": "3.18T",
+      "peRatio": 36.4,
+      "perfPct": 4.45
+    }
+  ],
+  "chartData": [
+    { "date": "Feb 4", "aapl": 178.20, "googl": 168.50, "msft": 410.30 },
+    { "date": "Feb 7", "aapl": 180.15, "googl": 170.22, "msft": 413.80 },
+    { "date": "Feb 11", "aapl": 177.90, "googl": 169.10, "msft": 408.50 },
+    { "date": "Feb 14", "aapl": 182.40, "googl": 172.80, "msft": 418.20 },
+    { "date": "Feb 18", "aapl": 184.70, "googl": 171.30, "msft": 420.90 },
+    { "date": "Feb 21", "aapl": 183.10, "googl": 173.60, "msft": 416.70 },
+    { "date": "Feb 25", "aapl": 186.30, "googl": 175.90, "msft": 422.10 },
+    { "date": "Feb 28", "aapl": 185.50, "googl": 174.10, "msft": 425.40 },
+    { "date": "Mar 3", "aapl": 188.20, "googl": 176.30, "msft": 427.80 },
+    { "date": "Mar 4", "aapl": 189.42, "googl": 174.89, "msft": 428.55 }
+  ]
+}

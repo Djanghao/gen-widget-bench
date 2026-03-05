@@ -1,0 +1,31 @@
+{
+  "symbol": "AAPL",
+  "currentPrice": 189.84,
+  "expiration": "Mar 21, 2026",
+  "optionType": "Weekly",
+  "strikes": [180, 185, 190, 195, 200, 205],
+  "calls": [
+    { "strike": 180, "bid": 10.85, "ask": 11.10, "last": 10.92, "volume": "2,847", "oi": "15,230", "iv": "24.3%", "delta": 0.82, "itm": true },
+    { "strike": 185, "bid": 6.45, "ask": 6.70, "last": 6.52, "volume": "5,123", "oi": "22,410", "iv": "22.1%", "delta": 0.68, "itm": true },
+    { "strike": 190, "bid": 3.20, "ask": 3.45, "last": 3.30, "volume": "12,458", "oi": "45,890", "iv": "21.5%", "delta": 0.48, "itm": false },
+    { "strike": 195, "bid": 1.35, "ask": 1.52, "last": 1.40, "volume": "8,920", "oi": "31,200", "iv": "23.8%", "delta": 0.28, "itm": false },
+    { "strike": 200, "bid": 0.52, "ask": 0.65, "last": 0.58, "volume": "4,210", "oi": "18,750", "iv": "26.1%", "delta": 0.14, "itm": false },
+    { "strike": 205, "bid": 0.18, "ask": 0.25, "last": 0.20, "volume": "1,890", "oi": "9,340", "iv": "29.4%", "delta": 0.06, "itm": false }
+  ],
+  "puts": [
+    { "strike": 180, "bid": 0.72, "ask": 0.88, "last": 0.80, "volume": "3,120", "oi": "12,870", "iv": "25.0%", "delta": -0.18, "itm": false },
+    { "strike": 185, "bid": 1.58, "ask": 1.75, "last": 1.65, "volume": "6,450", "oi": "19,340", "iv": "22.8%", "delta": -0.32, "itm": false },
+    { "strike": 190, "bid": 3.35, "ask": 3.55, "last": 3.42, "volume": "11,230", "oi": "42,100", "iv": "21.5%", "delta": -0.52, "itm": false },
+    { "strike": 195, "bid": 6.10, "ask": 6.35, "last": 6.20, "volume": "4,890", "oi": "27,600", "iv": "23.2%", "delta": -0.72, "itm": true },
+    { "strike": 200, "bid": 10.60, "ask": 10.90, "last": 10.75, "volume": "2,340", "oi": "14,520", "iv": "25.7%", "delta": -0.86, "itm": true },
+    { "strike": 205, "bid": 15.40, "ask": 15.75, "last": 15.55, "volume": "980", "oi": "7,890", "iv": "28.3%", "delta": -0.94, "itm": true }
+  ],
+  "greeks": {
+    "avgIV": "24.5%",
+    "putCallRatio": 0.82
+  },
+  "totals": {
+    "volume": "66,451",
+    "oi": "267,140"
+  }
+}

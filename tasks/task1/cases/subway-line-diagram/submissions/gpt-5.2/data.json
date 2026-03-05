@@ -1,0 +1,93 @@
+{
+  "header": {
+    "lineLetter": "B",
+    "lineName": "Blue Line",
+    "direction": "Northbound to Lakefront",
+    "status": "On Time"
+  },
+  "trip": {
+    "origin": "Central Square",
+    "destination": "Harbor Point",
+    "time": "~18 min"
+  },
+  "stations": [
+    {
+      "name": "Riverside Terminal",
+      "zone": "Zone 3",
+      "type": "Local"
+    },
+    {
+      "name": "Oakwood Park",
+      "zone": "Zone 3",
+      "type": "Local"
+    },
+    {
+      "name": "University Heights",
+      "zone": "Zone 2",
+      "type": "Express",
+      "transfers": [
+        { "label": "R", "color": "#ef4444", "textColor": "#ffffff" },
+        { "label": "G", "color": "#22c55e", "textColor": "#0b1020" }
+      ]
+    },
+    {
+      "name": "Central Square",
+      "zone": "Zone 1",
+      "type": "Express",
+      "highlight": "origin",
+      "accessibility": true,
+      "timeNote": "Board here",
+      "transfers": [
+        { "label": "O", "color": "#f97316", "textColor": "#0b1020" },
+        { "label": "P", "color": "#a855f7", "textColor": "#ffffff" }
+      ]
+    },
+    {
+      "name": "Midtown Plaza",
+      "zone": "Zone 1",
+      "type": "Express",
+      "accessibility": true
+    },
+    {
+      "name": "Commerce District",
+      "zone": "Zone 1",
+      "type": "Local"
+    },
+    {
+      "name": "Waterfront",
+      "zone": "Zone 2",
+      "type": "Express",
+      "transfers": [
+        { "label": "Y", "color": "#fbbf24", "textColor": "#0b1020" }
+      ]
+    },
+    {
+      "name": "Harbor Point",
+      "zone": "Zone 2",
+      "type": "Express",
+      "highlight": "destination",
+      "accessibility": true,
+      "timeNote": "Arrive ~18 min"
+    },
+    {
+      "name": "Marina Bay",
+      "zone": "Zone 3",
+      "type": "Local"
+    },
+    {
+      "name": "Lakefront",
+      "zone": "Zone 3",
+      "type": "Local"
+    }
+  ],
+  "ridership": [
+    { "t": "6a", "v": 18 },
+    { "t": "8a", "v": 42 },
+    { "t": "10a", "v": 55 },
+    { "t": "12p", "v": 49 },
+    { "t": "2p", "v": 62 },
+    { "t": "4p", "v": 71 },
+    { "t": "6p", "v": 58 },
+    { "t": "8p", "v": 33 }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "festivalName": "Solstice Music Festival",
+  "date": "March 15, 2026",
+  "stages": [
+    {
+      "name": "Main Stage",
+      "color": "#f43f5e",
+      "slots": [
+        { "artist": "Arctic Waves", "genre": "Indie Rock", "time": "2:00 - 3:00 PM", "stars": 4, "favorite": true },
+        { "artist": "Neon Pulse", "genre": "Synth Pop", "time": "3:30 - 4:30 PM", "stars": 5, "favorite": true },
+        { "artist": "Luna Ray", "genre": "Dream Pop", "time": "5:00 - 6:00 PM", "stars": 3, "favorite": false },
+        { "artist": "The Echoes", "genre": "Alt Rock", "time": "6:30 - 7:30 PM", "stars": 4, "favorite": false },
+        { "artist": "Chromatic", "genre": "Art Rock", "time": "8:00 - 9:30 PM", "stars": 5, "favorite": true },
+        { "artist": "Midnight Sun", "genre": "Rock", "time": "10:00 - 11:30 PM", "stars": 5, "favorite": true }
+      ]
+    },
+    {
+      "name": "Sunset Stage",
+      "color": "#f97316",
+      "slots": [
+        { "artist": "Velvet Haze", "genre": "R&B", "time": "2:00 - 3:00 PM", "stars": 3, "favorite": false },
+        { "artist": "Solar Flare", "genre": "Funk", "time": "3:30 - 4:30 PM", "stars": 4, "favorite": false },
+        { "artist": "Deep Current", "genre": "Soul", "time": "5:00 - 6:00 PM", "stars": 4, "favorite": true },
+        { "artist": "Nova Drift", "genre": "Neo Soul", "time": "6:30 - 7:30 PM", "stars": 3, "favorite": false },
+        { "artist": "Glass Animals", "genre": "Psychedelic", "time": "8:00 - 9:30 PM", "stars": 5, "favorite": false },
+        { "artist": "Tame Impulse", "genre": "Psych Rock", "time": "10:00 - 11:30 PM", "stars": 4, "favorite": false }
+      ]
+    },
+    {
+      "name": "Forest Stage",
+      "color": "#22c55e",
+      "slots": [
+        { "artist": "Moss Garden", "genre": "Folk", "time": "2:00 - 3:00 PM", "stars": 3, "favorite": false },
+        { "artist": "Willow Creek", "genre": "Americana", "time": "3:30 - 4:30 PM", "stars": 3, "favorite": false },
+        { "artist": "Cedar Sky", "genre": "Folk Rock", "time": "5:00 - 6:00 PM", "stars": 4, "favorite": false },
+        { "artist": "River Stones", "genre": "Acoustic", "time": "6:30 - 7:30 PM", "stars": 3, "favorite": false },
+        { "artist": "Timber Wolf", "genre": "Bluegrass", "time": "8:00 - 9:30 PM", "stars": 4, "favorite": false },
+        { "artist": "Northern Lights", "genre": "Ambient Folk", "time": "10:00 - 11:30 PM", "stars": 5, "favorite": false }
+      ]
+    },
+    {
+      "name": "Electronic Tent",
+      "color": "#8b5cf6",
+      "slots": [
+        { "artist": "Byte Shift", "genre": "Techno", "time": "2:00 - 3:00 PM", "stars": 3, "favorite": false },
+        { "artist": "Pixel Storm", "genre": "House", "time": "3:30 - 4:30 PM", "stars": 4, "favorite": false },
+        { "artist": "Data Stream", "genre": "Drum & Bass", "time": "5:00 - 6:00 PM", "stars": 4, "favorite": false },
+        { "artist": "Quantum Beat", "genre": "Trance", "time": "6:30 - 7:30 PM", "stars": 3, "favorite": false },
+        { "artist": "Signal Path", "genre": "IDM", "time": "8:00 - 9:30 PM", "stars": 5, "favorite": false },
+        { "artist": "Zero Gravity", "genre": "Dubstep", "time": "10:00 - 11:30 PM", "stars": 4, "favorite": false }
+      ]
+    }
+  ],
+  "favorites": [
+    { "artist": "Arctic Waves", "stage": "Main Stage", "time": "2:00 PM" },
+    { "artist": "Neon Pulse", "stage": "Main Stage", "time": "3:30 PM" },
+    { "artist": "Deep Current", "stage": "Sunset Stage", "time": "5:00 PM" },
+    { "artist": "Chromatic", "stage": "Main Stage", "time": "8:00 PM" },
+    { "artist": "Midnight Sun", "stage": "Main Stage", "time": "10:00 PM" }
+  ],
+  "conflicts": [
+    { "artists": ["Chromatic", "Signal Path"], "time": "8:00 - 9:30 PM" },
+    { "artists": ["Midnight Sun", "Zero Gravity"], "time": "10:00 - 11:30 PM" }
+  ],
+  "crowdDensity": [
+    { "time": "2 PM", "main": 2000, "sunset": 1200, "forest": 800, "electronic": 600 },
+    { "time": "3 PM", "main": 3500, "sunset": 1800, "forest": 900, "electronic": 1000 },
+    { "time": "4 PM", "main": 3000, "sunset": 2200, "forest": 1100, "electronic": 1400 },
+    { "time": "5 PM", "main": 4200, "sunset": 2800, "forest": 1300, "electronic": 1800 },
+    { "time": "6 PM", "main": 5000, "sunset": 3200, "forest": 1500, "electronic": 2200 },
+    { "time": "7 PM", "main": 5500, "sunset": 3500, "forest": 1400, "electronic": 2600 },
+    { "time": "8 PM", "main": 7000, "sunset": 4000, "forest": 1800, "electronic": 3500 },
+    { "time": "9 PM", "main": 8500, "sunset": 4200, "forest": 2000, "electronic": 4000 },
+    { "time": "10 PM", "main": 9000, "sunset": 3800, "forest": 2200, "electronic": 4500 },
+    { "time": "11 PM", "main": 8000, "sunset": 3000, "forest": 1800, "electronic": 4200 }
+  ]
+}

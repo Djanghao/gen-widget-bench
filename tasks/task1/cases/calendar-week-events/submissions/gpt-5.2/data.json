@@ -1,0 +1,85 @@
+{
+  "monthTitle": "March 2026",
+  "weekBadge": "W10",
+  "days": [
+    { "dow": "Mon", "date": 2 },
+    { "dow": "Tue", "date": 3 },
+    { "dow": "Wed", "date": 4, "current": true },
+    { "dow": "Thu", "date": 5 },
+    { "dow": "Fri", "date": 6 }
+  ],
+  "events": [
+    {
+      "title": "Team Standup",
+      "dayIndex": 0,
+      "startHour": 9,
+      "startMinute": 0,
+      "endHour": 9,
+      "endMinute": 30,
+      "category": "Work"
+    },
+    {
+      "title": "Design Review",
+      "dayIndex": 0,
+      "startHour": 14,
+      "startMinute": 0,
+      "endHour": 15,
+      "endMinute": 30,
+      "category": "Meeting"
+    },
+    {
+      "title": "Sprint Planning",
+      "dayIndex": 1,
+      "startHour": 10,
+      "startMinute": 0,
+      "endHour": 11,
+      "endMinute": 30,
+      "category": "Meeting"
+    },
+    {
+      "title": "Dentist Appt",
+      "dayIndex": 1,
+      "startHour": 15,
+      "startMinute": 0,
+      "endHour": 16,
+      "endMinute": 0,
+      "category": "Personal"
+    },
+    {
+      "title": "API Integration",
+      "dayIndex": 2,
+      "startHour": 9,
+      "startMinute": 0,
+      "endHour": 12,
+      "endMinute": 0,
+      "category": "Work"
+    },
+    {
+      "title": "Lunch w/ Sarah",
+      "dayIndex": 2,
+      "startHour": 12,
+      "startMinute": 0,
+      "endHour": 13,
+      "endMinute": 0,
+      "category": "Personal"
+    },
+    {
+      "title": "Client Call",
+      "dayIndex": 3,
+      "startHour": 11,
+      "startMinute": 0,
+      "endHour": 12,
+      "endMinute": 0,
+      "category": "Meeting"
+    },
+    {
+      "title": "Code Deploy",
+      "dayIndex": 4,
+      "startHour": 14,
+      "startMinute": 0,
+      "endHour": 16,
+      "endMinute": 0,
+      "category": "Work"
+    }
+  ]
+}

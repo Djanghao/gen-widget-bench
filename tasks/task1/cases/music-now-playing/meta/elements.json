@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "elements": [
+    { "eid": "root", "tag": "section", "description": "Root widget container with dark gradient background and rounded corners", "parent": null },
+    { "eid": "album-art", "tag": "div", "description": "Square album art area with gradient placeholder", "parent": "root" },
+    { "eid": "track-info", "tag": "div", "description": "Track info section with song name, artist, and album", "parent": "root" },
+    { "eid": "track-name", "tag": "div", "description": "Song title, bold and prominent", "parent": "track-info" },
+    { "eid": "artist-name", "tag": "div", "description": "Artist name below track title", "parent": "track-info" },
+    { "eid": "album-name", "tag": "div", "description": "Album name below artist", "parent": "track-info" },
+    { "eid": "progress-section", "tag": "div", "description": "Progress bar and time display section", "parent": "root" },
+    { "eid": "progress-bar", "tag": "div", "description": "Progress bar track (background)", "parent": "progress-section" },
+    { "eid": "progress-fill", "tag": "div", "description": "Progress bar filled portion", "parent": "progress-bar" },
+    { "eid": "time-display", "tag": "div", "description": "Elapsed and total time display row", "parent": "progress-section" },
+    { "eid": "elapsed-time", "tag": "span", "description": "Current elapsed time (left side)", "parent": "time-display" },
+    { "eid": "total-time", "tag": "span", "description": "Total track duration (right side)", "parent": "time-display" },
+    { "eid": "controls", "tag": "div", "description": "Playback controls row: shuffle, prev, play/pause, next, repeat", "parent": "root" },
+    { "eid": "btn-shuffle", "tag": "span", "description": "Shuffle toggle button", "parent": "controls" },
+    { "eid": "btn-prev", "tag": "span", "description": "Previous track button", "parent": "controls" },
+    { "eid": "btn-play", "tag": "span", "description": "Play/pause button (large, circular)", "parent": "controls" },
+    { "eid": "btn-next", "tag": "span", "description": "Next track button", "parent": "controls" },
+    { "eid": "btn-repeat", "tag": "span", "description": "Repeat toggle button", "parent": "controls" },
+    { "eid": "queue-section", "tag": "div", "description": "Up next queue section", "parent": "root" },
+    { "eid": "queue-label", "tag": "div", "description": "Queue section heading ('Up Next')", "parent": "queue-section" },
+    { "eid": "queue-item-0", "tag": "div", "description": "First queue item", "parent": "queue-section" },
+    { "eid": "queue-item-1", "tag": "div", "description": "Second queue item", "parent": "queue-section" },
+    { "eid": "queue-item-2", "tag": "div", "description": "Third queue item", "parent": "queue-section" }
+  ]
+}

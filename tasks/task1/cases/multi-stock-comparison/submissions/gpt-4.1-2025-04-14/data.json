@@ -1,0 +1,69 @@
+{
+  "portfolio": {
+    "name": "Tech Growth Portfolio",
+    "value": "$82,456.20",
+    "change": "+0.87%"
+  },
+  "chart": [
+    { "date": "Feb 7", "aapl": 186.54, "googl": 172.14, "msft": 424.41 },
+    { "date": "Feb 11", "aapl": 187.12, "googl": 172.66, "msft": 425.01 },
+    { "date": "Feb 14", "aapl": 187.48, "googl": 172.64, "msft": 426.47 },
+    { "date": "Feb 18", "aapl": 188.02, "googl": 172.97, "msft": 427.02 },
+    { "date": "Feb 21", "aapl": 188.26, "googl": 173.31, "msft": 428.38 },
+    { "date": "Feb 25", "aapl": 188.85, "googl": 173.42, "msft": 428.92 },
+    { "date": "Feb 28", "aapl": 189.08, "googl": 174.07, "msft": 429.80 },
+    { "date": "Mar 3", "aapl": 189.27, "googl": 174.62, "msft": 430.06 },
+    { "date": "Mar 4", "aapl": 189.42, "googl": 174.89, "msft": 428.55 }
+  ],
+  "summary": {
+    "aapl": {
+      "price": "189.42",
+      "change": "+1.24%"
+    },
+    "googl": {
+      "price": "174.89",
+      "change": "-0.68%"
+    },
+    "msft": {
+      "price": "428.55",
+      "change": "+0.91%"
+    }
+  },
+  "metrics": {
+    "aapl": {
+      "open": "$187.15",
+      "close": "$189.42",
+      "high": "$191.08",
+      "low": "$186.31",
+      "volume": "62.17M",
+      "mktcap": "$2.94T",
+      "pe": "29.34"
+    },
+    "googl": {
+      "open": "$176.12",
+      "close": "$174.89",
+      "high": "$177.45",
+      "low": "$174.32",
+      "volume": "19.43M",
+      "mktcap": "$2.13T",
+      "pe": "26.11"
+    },
+    "msft": {
+      "open": "$424.70",
+      "close": "$428.55",
+      "high": "$430.12",
+      "low": "$423.01",
+      "volume": "19.14M",
+      "mktcap": "$3.18T",
+      "pe": "36.53"
+    }
+  },
+  "performance": {
+    "aapl": "14%",
+    "googl": "9%",
+    "msft": "12%"
+  },
+  "footer": {
+    "timestamp": "Mar 4, 2023 16:44"
+  }
+}

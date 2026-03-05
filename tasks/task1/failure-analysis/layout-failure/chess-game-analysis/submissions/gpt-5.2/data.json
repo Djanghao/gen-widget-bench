@@ -1,0 +1,41 @@
+{
+  "white": { "name": "Magnus C.", "rating": 2830, "clock": "14:32" },
+  "black": { "name": "Hikaru N.", "rating": 2794, "clock": "11:47" },
+  "evalScore": "+1.3",
+  "evalBarFillPct": 64,
+  "evalHistory": [
+    { "m": 1, "v": 0.2 },
+    { "m": 2, "v": 0.3 },
+    { "m": 3, "v": 0.25 },
+    { "m": 4, "v": 0.45 },
+    { "m": 5, "v": 0.4 },
+    { "m": 6, "v": 0.55 },
+    { "m": 7, "v": 0.52 },
+    { "m": 8, "v": 0.6 }
+  ],
+  "position": {
+    "c8": "wR",
+    "e8": "wR",
+    "f8": "wP",
+    "h8": "wK",
+    "a7": "wP",
+    "b7": "wP",
+    "d7": "wN",
+    "f7": "wP",
+    "g7": "wP",
+    "h7": "wP",
+    "c6": "wP",
+    "e5": "wP",
+    "c4": "wP",
+    "f3": "bN",
+    "a2": "wP",
+    "b2": "wP",
+    "d2": "wQ",
+    "f2": "wP",
+    "g2": "wP",
+    "h2": "wP",
+    "d1": "bR",
+    "f1": "bR",
+    "g1": "wK"
+  }
+}

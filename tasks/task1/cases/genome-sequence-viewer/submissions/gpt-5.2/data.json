@@ -1,0 +1,94 @@
+{
+  "gene": {
+    "name": "BRCA1",
+    "subtitle": "BRCA1 DNA Repair Associated",
+    "location": "chr17:43044295",
+    "strand": "- strand",
+    "length": "60 bp"
+  },
+  "ruler": ["10", "20", "30", "40", "50", "60"],
+  "tracks": [
+    {
+      "label": "Reference",
+      "coverage": "120x",
+      "sequence": ["A", "T", "C", "G", "A", "T", "G", "C", "T", "A", "G", "C", "T", "T", "A", "C", "G", "A", "T", "C", "G"]
+    },
+    {
+      "label": "Sample A",
+      "coverage": "85x",
+      "sequence": ["A", "T", "C", "G", "A", "T", "G", "C", "T", "A", "G", "C", "C", "T", "A", "C", "G", "A", "T", "C", "G"]
+    },
+    {
+      "label": "Sample B",
+      "coverage": "92x",
+      "sequence": ["A", "T", "C", "G", "A", "T", "C", "C", "T", "A", "G", "C", "T", "T", "A", "C", "T", "A", "T", "C", "G"]
+    },
+    {
+      "label": "Consensus",
+      "coverage": "99x",
+      "sequence": ["A", "T", "C", "G", "A", "T", "G", "C", "T", "A", "G", "C", "T", "T", "A", "C", "G", "A", "T", "C", "G"]
+    }
+  ],
+  "variants": {
+    "count": "3 variants",
+    "items": [
+      {
+        "pos": "pos 7",
+        "change": "A>G",
+        "type": "Missense",
+        "impact": "High",
+        "af": "AF: 0.032"
+      },
+      {
+        "pos": "pos 13",
+        "change": "T>C",
+        "type": "Synonymous",
+        "impact": "Low",
+        "af": "AF: 0.148"
+      },
+      {
+        "pos": "pos 18",
+        "change": "G>T",
+        "type": "Nonsense",
+        "impact": "Critical",
+        "af": "AF: 0.004"
+      }
+    ]
+  },
+  "quality": {
+    "avg": "Avg Q37.5",
+    "thresholdLabel": "Q30 threshold",
+    "bases": [
+      { "i": 1, "q": 37, "color": "rgba(34,197,94,0.75)" },
+      { "i": 2, "q": 38, "color": "rgba(34,197,94,0.75)" },
+      { "i": 3, "q": 37, "color": "rgba(34,197,94,0.75)" },
+      { "i": 4, "q": 38, "color": "rgba(34,197,94,0.75)" },
+      { "i": 5, "q": 36, "color": "rgba(34,197,94,0.75)" },
+      { "i": 6, "q": 37, "color": "rgba(34,197,94,0.75)" },
+      { "i": 7, "q": 34, "color": "rgba(34,197,94,0.75)" },
+      { "i": 8, "q": 32, "color": "rgba(234,179,8,0.75)" },
+      { "i": 9, "q": 36, "color": "rgba(34,197,94,0.75)" },
+      { "i": 10, "q": 37, "color": "rgba(34,197,94,0.75)" },
+      { "i": 11, "q": 36, "color": "rgba(34,197,94,0.75)" },
+      { "i": 12, "q": 37, "color": "rgba(34,197,94,0.75)" },
+      { "i": 13, "q": 36, "color": "rgba(34,197,94,0.75)" },
+      { "i": 14, "q": 35, "color": "rgba(34,197,94,0.75)" },
+      { "i": 15, "q": 33, "color": "rgba(234,179,8,0.75)" },
+      { "i": 16, "q": 36, "color": "rgba(34,197,94,0.75)" },
+      { "i": 17, "q": 37, "color": "rgba(34,197,94,0.75)" },
+      { "i": 18, "q": 37, "color": "rgba(34,197,94,0.75)" },
+      { "i": 19, "q": 31, "color": "rgba(239,68,68,0.75)" },
+      { "i": 20, "q": 38, "color": "rgba(134,239,172,0.85)" }
+    ]
+  },
+  "geneInfo": {
+    "name": "BRCA1",
+    "function": "DNA repair",
+    "pathway": "Homologous Recombination",
+    "disease": "Breast/Ovarian Cancer",
+    "expression": {
+      "value": "87% High",
+      "percent": "87%"
+    }
+  }
+}

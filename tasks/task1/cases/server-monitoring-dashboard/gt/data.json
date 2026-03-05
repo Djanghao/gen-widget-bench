@@ -1,0 +1,41 @@
+{
+  "clusterName": "Production Cluster",
+  "status": "Healthy",
+  "uptimePct": 99.97,
+  "cpu": {
+    "currentPct": 73,
+    "history": [62, 58, 71, 65, 78, 73, 80, 69, 74, 73]
+  },
+  "memory": {
+    "usedGB": 12.4,
+    "totalGB": 16
+  },
+  "disk": {
+    "usedGB": 234,
+    "totalGB": 500
+  },
+  "network": {
+    "currentMbps": 847,
+    "history": [620, 710, 580, 890, 760, 940, 830, 870, 910, 847]
+  },
+  "alerts": [
+    {
+      "severity": "critical",
+      "message": "Node us-east-2b CPU exceeded 95% threshold",
+      "timestamp": "2026-03-04T14:23:00Z",
+      "timeAgo": "12m ago"
+    },
+    {
+      "severity": "warning",
+      "message": "Disk I/O latency above 200ms on vol-0x7a3f",
+      "timestamp": "2026-03-04T13:47:00Z",
+      "timeAgo": "48m ago"
+    },
+    {
+      "severity": "info",
+      "message": "Auto-scaling group expanded to 8 instances",
+      "timestamp": "2026-03-04T12:15:00Z",
+      "timeAgo": "2h ago"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "monthTitle": "March 2026",
+  "weekBadge": "W10",
+  "timeLabels": ["8 AM", "9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM"],
+  "days": [
+    {
+      "dayName": "Mon",
+      "date": "16",
+      "isCurrent": false
+    },
+    {
+      "dayName": "Tue",
+      "date": "17",
+      "isCurrent": false
+    },
+    {
+      "dayName": "Wed",
+      "date": "18",
+      "isCurrent": true
+    },
+    {
+      "dayName": "Thu",
+      "date": "19",
+      "isCurrent": false
+    },
+    {
+      "dayName": "Fri",
+      "date": "20",
+      "isCurrent": false
+    }
+  ],
+  "events": [
+    {
+      "id": 0,
+      "title": "Team Standup",
+      "day": 0,
+      "startTime": "9:00 AM",
+      "endTime": "9:30 AM",
+      "category": "Work",
+      "color": "#3b82f6"
+    },
+    {
+      "id": 1,
+      "title": "Design Review",
+      "day": 0,
+      "startTime": "2:00 PM",
+      "endTime": "3:30 PM",
+      "category": "Meeting",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": 2,
+      "title": "Sprint Planning",
+      "day": 1,
+      "startTime": "10:00 AM",
+      "endTime": "11:30 AM",
+      "category": "Meeting",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": 3,
+      "title": "Dentist Appt",
+      "day": 1,
+      "startTime": "3:00 PM",
+      "endTime": "4:00 PM",
+      "category": "Personal",
+      "color": "#10b981"
+    },
+    {
+      "id": 4,
+      "title": "API Integration",
+      "day": 2,
+      "startTime": "9:00 AM",
+      "endTime": "12:00 PM",
+      "category": "Work",
+      "color": "#3b82f6"
+    },
+    {
+      "id": 5,
+      "title": "Lunch w/ Sarah",
+      "day": 2,
+      "startTime": "12:00 PM",
+      "endTime": "1:00 PM",
+      "category": "Personal",
+      "color": "#10b981"
+    },
+    {
+      "id": 6,
+      "title": "Client Call",
+      "day": 3,
+      "startTime": "11:00 AM",
+      "endTime": "12:00 PM",
+      "category": "Meeting",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": 7,
+      "title": "Code Deploy",
+      "day": 4,
+      "startTime": "2:00 PM",
+      "endTime": "4:00 PM",
+      "category": "Work",
+      "color": "#3b82f6"
+    }
+  ],
+  "legend": [
+    {
+      "category": "Work",
+      "label": "Work",
+      "color": "#3b82f6"
+    },
+    {
+      "category": "Personal",
+      "label": "Personal",
+      "color": "#10b981"
+    },
+    {
+      "category": "Meeting",
+      "label": "Meeting",
+      "color": "#8b5cf6"
+    }
+  ]
+}

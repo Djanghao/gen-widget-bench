@@ -1,0 +1,102 @@
+{
+  "gene": {
+    "name": "BRCA1",
+    "fullname": "Breast Cancer Type 1 Susceptibility Protein",
+    "chromosome": "chr17:43044295",
+    "strand": "- strand",
+    "length": "60 bp"
+  },
+  "rulerMarks": [10, 20, 30, 40, 50, 60],
+  "legend": [
+    {
+      "nucleotide": "A",
+      "label": "Adenine (A)",
+      "color": "#4ade80"
+    },
+    {
+      "nucleotide": "T",
+      "label": "Thymine (T)",
+      "color": "#f87171"
+    },
+    {
+      "nucleotide": "G",
+      "label": "Guanine (G)",
+      "color": "#f59e0b"
+    },
+    {
+      "nucleotide": "C",
+      "label": "Cytosine (C)",
+      "color": "#60a5fa"
+    }
+  ],
+  "tracks": {
+    "title": "Sequence Alignment",
+    "tracks": [
+      {
+        "label": "Reference",
+        "sequence": "ATGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC",
+        "coverage": "120x"
+      },
+      {
+        "label": "Sample A",
+        "sequence": "ATGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG",
+        "coverage": "85x"
+      },
+      {
+        "label": "Sample B",
+        "sequence": "ATGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG",
+        "coverage": "92x"
+      },
+      {
+        "label": "Consensus",
+        "sequence": "ATGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG",
+        "coverage": "99x"
+      }
+    ]
+  },
+  "variants": {
+    "title": "Variant Annotations",
+    "count": "3 variants",
+    "variants": [
+      {
+        "position": "pos 7",
+        "change": "A>G",
+        "type": "Missense",
+        "impact": "High",
+        "frequency": "0.032"
+      },
+      {
+        "position": "pos 13",
+        "change": "T>C",
+        "type": "Synonymous",
+        "impact": "Low",
+        "frequency": "0.148"
+      },
+      {
+        "position": "pos 18",
+        "change": "G>T",
+        "type": "Nonsense",
+        "impact": "Critical",
+        "frequency": "0.004"
+      }
+    ]
+  },
+  "quality": {
+    "title": "Quality Scores",
+    "average": "Avg Q37.5",
+    "scores": [38, 39, 37, 36, 38, 37, 39, 40, 38, 37, 36, 35, 37, 38, 39, 40, 38, 37, 36, 35]
+  },
+  "regions": {
+    "title": "Gene Regions"
+  },
+  "geneInfo": {
+    "name": "BRCA1",
+    "function": "DNA repair",
+    "pathway": "Homologous Recombination",
+    "disease": "Breast/Ovarian Cancer",
+    "expression": {
+      "value": "87% High",
+      "percent": 87
+    }
+  }
+}

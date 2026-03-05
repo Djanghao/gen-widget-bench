@@ -1,0 +1,107 @@
+{
+  "datacenter": "US-East-1",
+  "health_pct": "94.2%",
+  "tiers": {
+    "lb": [
+      {
+        "hostname": "lb-prod-01",
+        "ip": "10.0.1.10",
+        "cpu": "45%",
+        "mem": "62%",
+        "conn": "1,247",
+        "health_pct": "93%",
+        "status": "green"
+      },
+      {
+        "hostname": "lb-prod-02",
+        "ip": "10.0.1.11",
+        "cpu": "38%",
+        "mem": "55%",
+        "conn": "1,103",
+        "health_pct": "91%",
+        "status": "green"
+      }
+    ],
+    "app": [
+      {
+        "hostname": "app-prod-01",
+        "ip": "10.0.2.10",
+        "cpu": "72%",
+        "mem": "68%",
+        "conn": "834",
+        "health_pct": "85%",
+        "status": "green"
+      },
+      {
+        "hostname": "app-prod-02",
+        "ip": "10.0.2.11",
+        "cpu": "89%",
+        "mem": "82%",
+        "conn": "921",
+        "health_pct": "49%",
+        "status": "yellow"
+      },
+      {
+        "hostname": "app-prod-03",
+        "ip": "10.0.2.12",
+        "cpu": "61%",
+        "mem": "58%",
+        "conn": "756",
+        "health_pct": "80%",
+        "status": "green"
+      }
+    ],
+    "db": [
+      {
+        "hostname": "db-prod-primary",
+        "ip": "10.0.3.10",
+        "cpu": "55%",
+        "mem": "74%",
+        "conn": "412",
+        "health_pct": "90%",
+        "status": "green"
+      },
+      {
+        "hostname": "db-prod-replica",
+        "ip": "10.0.3.11",
+        "cpu": "32%",
+        "mem": "61%",
+        "conn": "287",
+        "health_pct": "93%",
+        "status": "green"
+      }
+    ]
+  },
+  "stats": {
+    "bandwidth": "4.7 Gbps",
+    "connections": "5,560",
+    "packet_loss": "0.02%"
+  },
+  "incidents": [
+    {
+      "severity": "critical",
+      "message": "Packet loss spiked for 8 min on app-prod-02.",
+      "time": "09:24"
+    },
+    {
+      "severity": "warning",
+      "message": "CPU usage high on app-prod-02.",
+      "time": "07:53"
+    },
+    {
+      "severity": "info",
+      "message": "Primary DB failover successful.",
+      "time": "05:42"
+    }
+  ],
+  "bandwidth_chart": [
+    { "time": "03:00", "value": 2.8 },
+    { "time": "06:00", "value": 3.1 },
+    { "time": "09:00", "value": 2.7 },
+    { "time": "12:00", "value": 4.1 },
+    { "time": "15:00", "value": 3.9 },
+    { "time": "18:00", "value": 4.6 },
+    { "time": "21:00", "value": 4.2 },
+    { "time": "00:00", "value": 4.7 }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "score": 82,
+  "scoreMax": 100,
+  "scoreLabel": "Sleep Score",
+  "dateRange": "Feb 23 - Feb 24",
+  "timeline": [
+    { "label": "11PM", "stage": "Light" },
+    { "label": "", "stage": "Deep" },
+    { "label": "", "stage": "Light" },
+    { "label": "1AM", "stage": "Deep" },
+    { "label": "", "stage": "REM" },
+    { "label": "", "stage": "Awake" },
+    { "label": "3AM", "stage": "REM" },
+    { "label": "", "stage": "Light" },
+    { "label": "", "stage": "Light" },
+    { "label": "5AM", "stage": "Deep" },
+    { "label": "", "stage": "REM" },
+    { "label": "", "stage": "Light" },
+    { "label": "", "stage": "Awake" }
+  ],
+  "legend": {
+    "Awake": "42m",
+    "Rem": "1h 38m",
+    "Light": "3h 27m",
+    "Deep": "1h 36m"
+  },
+  "bedtime": "10:47 PM",
+  "waketime": "6:52 AM",
+  "totalSleep": "7h 23m",
+  "timeInBed": "8h 05m",
+  "efficiency": "91%"
+}

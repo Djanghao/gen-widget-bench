@@ -1,0 +1,39 @@
+{
+  "sprintName": "Sprint 14",
+  "completionPct": 64,
+  "totalTasks": 9,
+  "columns": [
+    {
+      "name": "To Do",
+      "color": "#6366f1",
+      "tasks": [
+        { "id": 0, "title": "Setup CI pipeline", "priority": "High", "assignee": "AC", "assigneeColor": "#ef4444", "due": "Mar 8" },
+        { "id": 1, "title": "Write unit tests", "priority": "Med", "assignee": "JS", "assigneeColor": "#f59e0b", "due": "Mar 10" },
+        { "id": 2, "title": "Update API docs", "priority": "Low", "assignee": "PR", "assigneeColor": "#22c55e", "due": "Mar 12" },
+        { "id": 3, "title": "Refactor auth module", "priority": "High", "assignee": "KL", "assigneeColor": "#ec4899", "due": "Mar 7" }
+      ]
+    },
+    {
+      "name": "In Progress",
+      "color": "#f59e0b",
+      "tasks": [
+        { "id": 4, "title": "Dashboard redesign", "priority": "High", "assignee": "MS", "assigneeColor": "#8b5cf6", "due": "Mar 6" },
+        { "id": 5, "title": "Fix login bug", "priority": "Med", "assignee": "AC", "assigneeColor": "#ef4444", "due": "Mar 5" },
+        { "id": 6, "title": "Add search filter", "priority": "Low", "assignee": "TW", "assigneeColor": "#06b6d4", "due": "Mar 9" }
+      ]
+    },
+    {
+      "name": "Done",
+      "color": "#22c55e",
+      "tasks": [
+        { "id": 7, "title": "Database migration", "priority": "High", "assignee": "JS", "assigneeColor": "#f59e0b", "due": "Mar 3" },
+        { "id": 8, "title": "Setup monitoring", "priority": "Med", "assignee": "PR", "assigneeColor": "#22c55e", "due": "Mar 2" }
+      ]
+    }
+  ],
+  "priorityColors": {
+    "High": "#ef4444",
+    "Med": "#f59e0b",
+    "Low": "#22c55e"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "currentTrack": {
+    "name": "Midnight City",
+    "artist": "M83",
+    "album": "Hurry Up, We're Dreaming",
+    "elapsed": "1:37",
+    "duration": "4:03",
+    "elapsedSeconds": 97,
+    "totalSeconds": 243
+  },
+  "queue": [
+    { "name": "Outro", "artist": "M83" },
+    { "name": "Wait", "artist": "M83" },
+    { "name": "Steve McQueen", "artist": "M83" }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "avatarInitials": "TC",
+    "username": "techcreator",
+    "followers": "142.8K",
+    "following": "892",
+    "growth": "+2.4K this month"
+  },
+  "stats": {
+    "posts": { "value": "1,247", "label": "POSTS" },
+    "likes": { "value": "89.3K", "label": "LIKES" },
+    "comments": { "value": "12.4K", "label": "COMMENTS" },
+    "shares": { "value": "5.7K", "label": "SHARES" }
+  },
+  "chart": [
+    { "date": "Feb 19", "likes": 35000, "comments": 4600, "shares": 2100 },
+    { "date": "Feb 20", "likes": 39000, "comments": 4700, "shares": 2200 },
+    { "date": "Feb 21", "likes": 52000, "comments": 5100, "shares": 2500 },
+    { "date": "Feb 22", "likes": 71000, "comments": 6100, "shares": 2750 },
+    { "date": "Feb 23", "likes": 67000, "comments": 5650, "shares": 2560 },
+    { "date": "Feb 24", "likes": 83000, "comments": 7250, "shares": 3140 },
+    { "date": "Feb 25", "likes": 80000, "comments": 7000, "shares": 2900 },
+    { "date": "Feb 26", "likes": 92000, "comments": 7800, "shares": 3630 },
+    { "date": "Feb 27", "likes": 87000, "comments": 7300, "shares": 3210 },
+    { "date": "Feb 28", "likes": 96000, "comments": 7900, "shares": 3760 },
+    { "date": "Mar 1", "likes": 80000, "comments": 6100, "shares": 2800 },
+    { "date": "Mar 2", "likes": 95000, "comments": 8500, "shares": 3960 },
+    { "date": "Mar 3", "likes": 109000, "comments": 9400, "shares": 4300 }
+  ],
+  "recentPosts": [
+    {
+      "date": "Mar 4",
+      "preview": "Just shipped our new AI-powered code review tool. The results are incredible - 40% fewer bugs in production...",
+      "engagement": "2.4K"
+    },
+    {
+      "date": "Mar 2",
+      "preview": "Hot take: TypeScript's type system is becoming its own programming language. Here's why that matters...",
+      "engagement": "1.8K"
+    },
+    {
+      "date": "Feb 28",
+      "preview": "Had an exciting collaboration call with @openai and @vercel. Can't wait to share what we're working on!",
+      "engagement": "1.5K"
+    }
+  ]
+}

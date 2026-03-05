@@ -1,0 +1,75 @@
+{
+  "dbName": "ecommerce_prod",
+  "engine": "PostgreSQL",
+  "schemaVersion": "v3.14",
+  "tables": [
+    {
+      "name": "users",
+      "rows": 84230,
+      "indices": 4,
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK", "nullable": false },
+        { "name": "email", "type": "varchar", "key": null, "nullable": false },
+        { "name": "username", "type": "varchar", "key": null, "nullable": false },
+        { "name": "created_at", "type": "timestamp", "key": null, "nullable": true },
+        { "name": "is_active", "type": "bool", "key": null, "nullable": true }
+      ]
+    },
+    {
+      "name": "orders",
+      "rows": 312847,
+      "indices": 3,
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK", "nullable": false },
+        { "name": "user_id", "type": "int", "key": "FK", "nullable": false },
+        { "name": "total_amount", "type": "decimal", "key": null, "nullable": false },
+        { "name": "status", "type": "varchar", "key": null, "nullable": true },
+        { "name": "created_at", "type": "timestamp", "key": null, "nullable": true },
+        { "name": "shipped_at", "type": "timestamp", "key": null, "nullable": true }
+      ]
+    },
+    {
+      "name": "products",
+      "rows": 5621,
+      "indices": 3,
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK", "nullable": false },
+        { "name": "name", "type": "varchar", "key": null, "nullable": false },
+        { "name": "price", "type": "decimal", "key": null, "nullable": false },
+        { "name": "category_id", "type": "int", "key": "FK", "nullable": false },
+        { "name": "stock_qty", "type": "int", "key": null, "nullable": true }
+      ]
+    },
+    {
+      "name": "categories",
+      "rows": 147,
+      "indices": 2,
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK", "nullable": false },
+        { "name": "name", "type": "varchar", "key": null, "nullable": false },
+        { "name": "slug", "type": "varchar", "key": null, "nullable": true },
+        { "name": "parent_id", "type": "int", "key": "FK", "nullable": true }
+      ]
+    }
+  ],
+  "schemaStats": {
+    "totalTables": 4,
+    "totalColumns": 20,
+    "totalIndices": 12,
+    "totalSize": "2.4 GB"
+  },
+  "migrations": [
+    { "version": "3.14", "description": "Add shipped_at to orders", "time": "2h ago" },
+    { "version": "3.13", "description": "Create index on orders.user_id", "time": "3d ago" },
+    { "version": "3.12", "description": "Add is_active to users table", "time": "1w ago" }
+  ],
+  "queryVolume": [
+    { "day": "Mon", "queries": 142000 },
+    { "day": "Tue", "queries": 158000 },
+    { "day": "Wed", "queries": 171000 },
+    { "day": "Thu", "queries": 165000 },
+    { "day": "Fri", "queries": 189000 },
+    { "day": "Sat", "queries": 97000 },
+    { "day": "Sun", "queries": 83000 }
+  ]
+}

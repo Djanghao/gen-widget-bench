@@ -1,0 +1,44 @@
+{
+  "title": "Sleep Analysis",
+  "date": "Feb 23 - Feb 24",
+  "score": {
+    "value": "82",
+    "max": "/100",
+    "label": "Sleep Score"
+  },
+  "timeline": [
+    { "label": "11PM", "stage": "Light", "v": 1 },
+    { "label": "", "stage": "Light", "v": 1 },
+    { "label": "", "stage": "Deep", "v": 1 },
+    { "label": "1AM", "stage": "Deep", "v": 1 },
+    { "label": "", "stage": "Deep", "v": 1 },
+    { "label": "", "stage": "Deep", "v": 1 },
+    { "label": "", "stage": "REM", "v": 1 },
+    { "label": "", "stage": "REM", "v": 1 },
+    { "label": "3AM", "stage": "Awake", "v": 1 },
+    { "label": "", "stage": "Light", "v": 1 },
+    { "label": "", "stage": "Light", "v": 1 },
+    { "label": "", "stage": "Deep", "v": 1 },
+    { "label": "5AM", "stage": "Deep", "v": 1 },
+    { "label": "", "stage": "Deep", "v": 1 },
+    { "label": "", "stage": "REM", "v": 1 },
+    { "label": "", "stage": "REM", "v": 1 },
+    { "label": "", "stage": "Light", "v": 1 },
+    { "label": "", "stage": "Awake", "v": 1 }
+  ],
+  "legend": {
+    "awake": "Awake (42m)",
+    "rem": "Rem (1h 38m)",
+    "light": "Light (3h 27m)",
+    "deep": "Deep (1h 36m)"
+  },
+  "times": {
+    "bedtime": { "label": "BEDTIME", "value": "10:47 PM" },
+    "waketime": { "label": "WAKE TIME", "value": "6:52 AM" }
+  },
+  "stats": {
+    "totalSleep": { "value": "7h 23m", "label": "Total Sleep" },
+    "timeInBed": { "value": "8h 05m", "label": "Time in Bed" },
+    "efficiency": { "value": "91%", "label": "Efficiency" }
+  }
+}

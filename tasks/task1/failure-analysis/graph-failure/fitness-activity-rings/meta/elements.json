@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "elements": [
+    { "eid": "root", "tag": "section", "description": "Root widget container with dark background and rounded corners", "parent": null },
+    { "eid": "header", "tag": "div", "description": "Header row with Activity title and date", "parent": "root" },
+    { "eid": "header-icon", "tag": "span", "description": "Activity icon in header", "parent": "header" },
+    { "eid": "header-title", "tag": "span", "description": "Title text 'Activity'", "parent": "header" },
+    { "eid": "header-date", "tag": "span", "description": "Date display 'Mon, Feb 24'", "parent": "header" },
+    { "eid": "rings-container", "tag": "div", "description": "Container for the radial bar chart activity rings", "parent": "root" },
+    { "eid": "rings-chart", "tag": "div", "description": "RadialBarChart with three concentric rings", "parent": "rings-container" },
+    { "eid": "rings-center-label", "tag": "div", "description": "Center overlay showing total calories", "parent": "rings-container" },
+    { "eid": "rings-center-value", "tag": "div", "description": "Calorie value '623' in center", "parent": "rings-center-label" },
+    { "eid": "rings-center-unit", "tag": "div", "description": "Unit label 'CAL' in center", "parent": "rings-center-label" },
+    { "eid": "stats-row", "tag": "div", "description": "Row of three stat cards below rings", "parent": "root" },
+    { "eid": "stat-move", "tag": "div", "description": "Move stat card", "parent": "stats-row" },
+    { "eid": "stat-move-icon", "tag": "span", "description": "Red circle indicator for Move", "parent": "stat-move" },
+    { "eid": "stat-move-label", "tag": "div", "description": "Label 'Move'", "parent": "stat-move" },
+    { "eid": "stat-move-value", "tag": "div", "description": "Move current/goal '623/650 CAL'", "parent": "stat-move" },
+    { "eid": "stat-exercise", "tag": "div", "description": "Exercise stat card", "parent": "stats-row" },
+    { "eid": "stat-exercise-icon", "tag": "span", "description": "Green circle indicator for Exercise", "parent": "stat-exercise" },
+    { "eid": "stat-exercise-label", "tag": "div", "description": "Label 'Exercise'", "parent": "stat-exercise" },
+    { "eid": "stat-exercise-value", "tag": "div", "description": "Exercise current/goal '42/30 MIN'", "parent": "stat-exercise" },
+    { "eid": "stat-stand", "tag": "div", "description": "Stand stat card", "parent": "stats-row" },
+    { "eid": "stat-stand-icon", "tag": "span", "description": "Blue circle indicator for Stand", "parent": "stat-stand" },
+    { "eid": "stat-stand-label", "tag": "div", "description": "Label 'Stand'", "parent": "stat-stand" },
+    { "eid": "stat-stand-value", "tag": "div", "description": "Stand current/goal '9/12 HRS'", "parent": "stat-stand" },
+    { "eid": "summary-section", "tag": "div", "description": "Summary section with detailed metrics", "parent": "root" },
+    { "eid": "summary-title", "tag": "div", "description": "Summary section heading", "parent": "summary-section" },
+    { "eid": "summary-item-calories", "tag": "div", "description": "Total calories burned row", "parent": "summary-section" },
+    { "eid": "summary-item-active", "tag": "div", "description": "Active minutes row", "parent": "summary-section" },
+    { "eid": "summary-item-stand", "tag": "div", "description": "Stand hours row", "parent": "summary-section" }
+  ]
+}

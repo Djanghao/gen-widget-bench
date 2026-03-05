@@ -1,0 +1,72 @@
+{
+  "apiName": "Platform API v2",
+  "apiVersion": "v2.4.1",
+  "healthScore": 94,
+  "uptime": "99.98%",
+  "summaryStats": {
+    "avgLatency": "142ms",
+    "errorRate": 0.8,
+    "rpm": 1247
+  },
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/users",
+      "status": "healthy",
+      "avgLatency": "124ms",
+      "p99Latency": "328ms",
+      "sparkline": [30, 45, 60, 55, 70, 85, 75, 90, 80, 95],
+      "errorRate": 0.2,
+      "rpm": 328
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/auth/login",
+      "status": "healthy",
+      "avgLatency": "186ms",
+      "p99Latency": "412ms",
+      "sparkline": [40, 50, 65, 75, 80, 90, 85, 95, 90, 100],
+      "errorRate": 1.4,
+      "rpm": 284
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/:id",
+      "status": "warning",
+      "avgLatency": "218ms",
+      "p99Latency": "524ms",
+      "sparkline": [55, 65, 75, 85, 95, 80, 85, 90, 95, 100],
+      "errorRate": 3.2,
+      "rpm": 196
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/sessions/:id",
+      "status": "warning",
+      "avgLatency": "164ms",
+      "p99Latency": "386ms",
+      "sparkline": [35, 45, 55, 65, 75, 85, 70, 80, 85, 95],
+      "errorRate": 2.7,
+      "rpm": 152
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/products",
+      "status": "healthy",
+      "avgLatency": "132ms",
+      "p99Latency": "294ms",
+      "sparkline": [25, 35, 45, 55, 65, 75, 85, 80, 90, 95],
+      "errorRate": 0.5,
+      "rpm": 287
+    }
+  ],
+  "responseCodes": {
+    "2xx": 94.2,
+    "4xx": 4.8,
+    "5xx": 1.0
+  },
+  "footer": {
+    "totalRequests": "1,247,892",
+    "lastChecked": "2 minutes ago"
+  }
+}

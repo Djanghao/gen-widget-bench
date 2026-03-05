@@ -1,0 +1,58 @@
+{
+  "header": {
+    "workoutType": "Morning Run",
+    "date": "Feb 24, 2025",
+    "duration": "45:23"
+  },
+  "hrChart": [
+    { "time": "0m", "bpm": 78 },
+    { "time": "4m", "bpm": 113 },
+    { "time": "8m", "bpm": 121 },
+    { "time": "12m", "bpm": 134 },
+    { "time": "16m", "bpm": 148 },
+    { "time": "20m", "bpm": 156 },
+    { "time": "24m", "bpm": 144 },
+    { "time": "28m", "bpm": 159 },
+    { "time": "32m", "bpm": 169 },
+    { "time": "36m", "bpm": 177 },
+    { "time": "40m", "bpm": 162 },
+    { "time": "45m", "bpm": 153 }
+  ],
+  "stats": {
+    "avgHr": 142,
+    "maxHr": 178,
+    "calories": 487
+  },
+  "hrZones": [
+    {
+      "name": "Rest",
+      "range": "<100 bpm",
+      "percent": 11,
+      "time": "3:12"
+    },
+    {
+      "name": "Fat Burn",
+      "range": "100-130 bpm",
+      "percent": 18,
+      "time": "8:45"
+    },
+    {
+      "name": "Cardio",
+      "range": "130-155 bpm",
+      "percent": 52,
+      "time": "21:34"
+    },
+    {
+      "name": "Peak",
+      "range": "155-175 bpm",
+      "percent": 23,
+      "time": "9:47"
+    },
+    {
+      "name": "Max",
+      "range": "175+ bpm",
+      "percent": 5,
+      "time": "2:05"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "tabs": [
+    { "name": "Primary", "count": 12, "active": true },
+    { "name": "Social", "count": 5, "active": false },
+    { "name": "Updates", "count": 8, "active": false }
+  ],
+  "unreadCount": 3,
+  "emails": [
+    {
+      "sender": "Alex Chen",
+      "initial": "A",
+      "avatarColor": "#6366f1",
+      "subject": "Q1 Revenue Report - Final Numbers",
+      "preview": "Hi team, attached is the final Q1 revenue report. Total revenue came in at $4.2M which is 12% above...",
+      "time": "2m ago",
+      "unread": true,
+      "starred": true
+    },
+    {
+      "sender": "Maria Santos",
+      "initial": "M",
+      "avatarColor": "#ec4899",
+      "subject": "Re: Design System Updates v3.2",
+      "preview": "I've reviewed the new component library changes. The button variants look great but we need to revisit...",
+      "time": "18m ago",
+      "unread": true,
+      "starred": false
+    },
+    {
+      "sender": "DevOps Bot",
+      "initial": "D",
+      "avatarColor": "#f59e0b",
+      "subject": "ALERT: Deployment pipeline failed - prod-api",
+      "preview": "Build #4891 failed at stage 3/5. Error: Container health check timeout after 120s on service auth-svc...",
+      "time": "1h ago",
+      "unread": true,
+      "starred": false
+    },
+    {
+      "sender": "Jordan Park",
+      "initial": "J",
+      "avatarColor": "#22c55e",
+      "subject": "Meeting notes - Product roadmap sync",
+      "preview": "Here are the notes from today's roadmap sync. Key decisions: 1) Push mobile v2 launch to April 15...",
+      "time": "3h ago",
+      "unread": false,
+      "starred": true
+    },
+    {
+      "sender": "Priya Sharma",
+      "initial": "P",
+      "avatarColor": "#a855f7",
+      "subject": "Interview feedback - Senior Frontend",
+      "preview": "Completed the technical round with candidate #47. Strong React skills, good system design answers...",
+      "time": "Yesterday",
+      "unread": false,
+      "starred": false
+    },
+    {
+      "sender": "GitHub",
+      "initial": "G",
+      "avatarColor": "#64748b",
+      "subject": "[widget-bench] PR #238 merged to main",
+      "preview": "advey merged pull request #238: feat(eval): add DOM diff scoring for element matching with weighted...",
+      "time": "Yesterday",
+      "unread": false,
+      "starred": false
+    }
+  ]
+}

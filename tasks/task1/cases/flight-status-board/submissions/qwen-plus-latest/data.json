@@ -1,0 +1,62 @@
+{
+  "airportCode": "SFO",
+  "boardTitle": "Departures",
+  "currentTime": "2:45 PM",
+  "lastUpdated": "Last updated: 2:43 PM",
+  "flights": [
+    {
+      "flightNumber": "UA 1247",
+      "destination": "Chicago, IL",
+      "scheduled": "2:30 PM",
+      "actual": "2:30 PM",
+      "gate": "A9",
+      "status": "On Time",
+      "statusColor": "#2ecc71"
+    },
+    {
+      "flightNumber": "AA 2315",
+      "destination": "Dallas/Fort Worth, TX",
+      "scheduled": "2:45 PM",
+      "actual": "2:45 PM",
+      "gate": "A12",
+      "status": "On Time",
+      "statusColor": "#2ecc71"
+    },
+    {
+      "flightNumber": "DL 893",
+      "destination": "Atlanta, GA",
+      "scheduled": "3:00 PM",
+      "actual": "3:00 PM",
+      "gate": "A15",
+      "status": "On Time",
+      "statusColor": "#2ecc71"
+    },
+    {
+      "flightNumber": "WN 452",
+      "destination": "Las Vegas, NV",
+      "scheduled": "3:15 PM",
+      "actual": "3:15 PM",
+      "gate": "B3",
+      "status": "On Time",
+      "statusColor": "#2ecc71"
+    },
+    {
+      "flightNumber": "AS 112",
+      "destination": "Seattle, WA",
+      "scheduled": "3:30 PM",
+      "actual": "3:30 PM",
+      "gate": "B6",
+      "status": "On Time",
+      "statusColor": "#2ecc71"
+    },
+    {
+      "flightNumber": "B6 2217",
+      "destination": "New York (JFK), NY",
+      "scheduled": "3:45 PM",
+      "actual": "3:45 PM",
+      "gate": "B9",
+      "status": "On Time",
+      "statusColor": "#2ecc71"
+    }
+  ]
+}

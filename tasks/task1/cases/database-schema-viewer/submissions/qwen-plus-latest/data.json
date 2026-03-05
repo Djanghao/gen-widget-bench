@@ -1,0 +1,164 @@
+{
+  "database": {
+    "name": "ecommerce_prod",
+    "engine": "PostgreSQL",
+    "version": "v3.14"
+  },
+  "tables": [
+    {
+      "name": "users",
+      "rows": 12489,
+      "indices": 3,
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "key": "PK"
+        },
+        {
+          "name": "email",
+          "type": "varchar",
+          "nullable": "NOT NULL"
+        },
+        {
+          "name": "username",
+          "type": "varchar",
+          "nullable": "NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp"
+        },
+        {
+          "name": "is_active",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "orders",
+      "rows": 42156,
+      "indices": 4,
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "key": "PK"
+        },
+        {
+          "name": "user_id",
+          "type": "int",
+          "key": "FK"
+        },
+        {
+          "name": "total_amount",
+          "type": "decimal",
+          "nullable": "NOT NULL"
+        },
+        {
+          "name": "status",
+          "type": "varchar"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp"
+        },
+        {
+          "name": "shipped_at",
+          "type": "timestamp",
+          "nullable": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "rows": 8742,
+      "indices": 3,
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "key": "PK"
+        },
+        {
+          "name": "name",
+          "type": "varchar",
+          "nullable": "NOT NULL"
+        },
+        {
+          "name": "price",
+          "type": "decimal",
+          "nullable": "NOT NULL"
+        },
+        {
+          "name": "category_id",
+          "type": "int",
+          "key": "FK"
+        },
+        {
+          "name": "stock_qty",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "categories",
+      "rows": 124,
+      "indices": 2,
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "key": "PK"
+        },
+        {
+          "name": "name",
+          "type": "varchar",
+          "nullable": "NOT NULL"
+        },
+        {
+          "name": "slug",
+          "type": "varchar"
+        },
+        {
+          "name": "parent_id",
+          "type": "int",
+          "key": "FK",
+          "nullable": "NULLABLE"
+        }
+      ]
+    }
+  ],
+  "schemaStats": {
+    "tables": 4,
+    "columns": 20,
+    "indices": 12,
+    "size": "2.4 GB"
+  },
+  "migrations": [
+    {
+      "version": "20230514123456",
+      "description": "Add email verification to users",
+      "time": "2 days ago"
+    },
+    {
+      "version": "20230512092314",
+      "description": "Optimize order status transitions",
+      "time": "5 days ago"
+    },
+    {
+      "version": "20230508174522",
+      "description": "Introduce product categories",
+      "time": "1 week ago"
+    }
+  ],
+  "queryVolume": [
+    { "day": "Mon", "queries": 12450 },
+    { "day": "Tue", "queries": 14280 },
+    { "day": "Wed", "queries": 13890 },
+    { "day": "Thu", "queries": 15620 },
+    { "day": "Fri", "queries": 18430 },
+    { "day": "Sat", "queries": 9240 },
+    { "day": "Sun", "queries": 7890 }
+  ]
+}

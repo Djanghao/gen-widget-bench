@@ -1,0 +1,130 @@
+{
+  "players": {
+    "white": {
+      "name": "Magnus C.",
+      "rating": "2830",
+      "clock": "14:32"
+    },
+    "black": {
+      "name": "Hikaru N.",
+      "rating": "2794",
+      "clock": "11:47"
+    }
+  },
+  "board": [
+    { "id": "sq-a8", "piece": { "color": "black", "symbol": "♜" } },
+    { "id": "sq-b8", "piece": { "color": "black", "symbol": "♞" } },
+    { "id": "sq-c8", "piece": { "color": "black", "symbol": "♝" } },
+    { "id": "sq-d8", "piece": { "color": "black", "symbol": "♛" } },
+    { "id": "sq-e8", "piece": { "color": "black", "symbol": "♚" } },
+    { "id": "sq-f8", "piece": { "color": "black", "symbol": "♝" } },
+    { "id": "sq-g8", "piece": { "color": "black", "symbol": "♞" } },
+    { "id": "sq-h8", "piece": { "color": "black", "symbol": "♜" } },
+    { "id": "sq-a7", "piece": { "color": "black", "symbol": "♟" } },
+    { "id": "sq-b7", "piece": { "color": "black", "symbol": "♟" } },
+    { "id": "sq-c7", "piece": { "color": "black", "symbol": "♟" } },
+    { "id": "sq-d7", "piece": { "color": "black", "symbol": "♟" } },
+    { "id": "sq-e7", "piece": { "color": "black", "symbol": "♟" } },
+    { "id": "sq-f7", "piece": { "color": "black", "symbol": "♟" } },
+    { "id": "sq-g7", "piece": { "color": "black", "symbol": "♟" } },
+    { "id": "sq-h7", "piece": { "color": "black", "symbol": "♟" } },
+    { "id": "sq-a6", "piece": null },
+    { "id": "sq-b6", "piece": null },
+    { "id": "sq-c6", "piece": null },
+    { "id": "sq-d6", "piece": null },
+    { "id": "sq-e6", "piece": null },
+    { "id": "sq-f6", "piece": null },
+    { "id": "sq-g6", "piece": null },
+    { "id": "sq-h6", "piece": null },
+    { "id": "sq-a5", "piece": null },
+    { "id": "sq-b5", "piece": null },
+    { "id": "sq-c5", "piece": null },
+    { "id": "sq-d5", "piece": null },
+    { "id": "sq-e5", "piece": null },
+    { "id": "sq-f5", "piece": null },
+    { "id": "sq-g5", "piece": null },
+    { "id": "sq-h5", "piece": null },
+    { "id": "sq-a4", "piece": null },
+    { "id": "sq-b4", "piece": null },
+    { "id": "sq-c4", "piece": null },
+    { "id": "sq-d4", "piece": null },
+    { "id": "sq-e4", "piece": null },
+    { "id": "sq-f4", "piece": null },
+    { "id": "sq-g4", "piece": null },
+    { "id": "sq-h4", "piece": null },
+    { "id": "sq-a3", "piece": null },
+    { "id": "sq-b3", "piece": null },
+    { "id": "sq-c3", "piece": null },
+    { "id": "sq-d3", "piece": null },
+    { "id": "sq-e3", "piece": null },
+    { "id": "sq-f3", "piece": null },
+    { "id": "sq-g3", "piece": null },
+    { "id": "sq-h3", "piece": null },
+    { "id": "sq-a2", "piece": { "color": "white", "symbol": "♙" } },
+    { "id": "sq-b2", "piece": { "color": "white", "symbol": "♙" } },
+    { "id": "sq-c2", "piece": { "color": "white", "symbol": "♙" } },
+    { "id": "sq-d2", "piece": { "color": "white", "symbol": "♙" } },
+    { "id": "sq-e2", "piece": { "color": "white", "symbol": "♙" } },
+    { "id": "sq-f2", "piece": { "color": "white", "symbol": "♙" } },
+    { "id": "sq-g2", "piece": { "color": "white", "symbol": "♙" } },
+    { "id": "sq-h2", "piece": { "color": "white", "symbol": "♙" } },
+    { "id": "sq-a1", "piece": { "color": "white", "symbol": "♖" } },
+    { "id": "sq-b1", "piece": { "color": "white", "symbol": "♘" } },
+    { "id": "sq-c1", "piece": { "color": "white", "symbol": "♗" } },
+    { "id": "sq-d1", "piece": { "color": "white", "symbol": "♕" } },
+    { "id": "sq-e1", "piece": { "color": "white", "symbol": "♔" } },
+    { "id": "sq-f1", "piece": { "color": "white", "symbol": "♗" } },
+    { "id": "sq-g1", "piece": { "color": "white", "symbol": "♘" } },
+    { "id": "sq-h1", "piece": { "color": "white", "symbol": "♖" } }
+  ],
+  "evalBar": {
+    "width": 65,
+    "color": "#4ade80",
+    "score": "+1.3"
+  },
+  "evalChart": {
+    "data": [
+      { "move": "15", "value": -0.2 },
+      { "move": "16", "value": 0.1 },
+      { "move": "17", "value": 0.4 },
+      { "move": "18", "value": 0.8 },
+      { "move": "19", "value": 1.0 },
+      { "move": "20", "value": 1.2 },
+      { "move": "21", "value": 1.3 }
+    ]
+  },
+  "moves": [
+    {
+      "number": "18.",
+      "white": "Qd2",
+      "black": "Rfe8"
+    },
+    {
+      "number": "19.",
+      "white": "Rad1",
+      "black": "Bf8"
+    },
+    {
+      "number": "20.",
+      "white": "Ne5",
+      "black": "Nxe5"
+    },
+    {
+      "number": "21.",
+      "white": "dxe5",
+      "black": "Nd7"
+    }
+  ],
+  "engine": {
+    "label": "Stockfish 16",
+    "move": "22. f4",
+    "score": "+1.3"
+  },
+  "captured": {
+    "white": "♙♙",
+    "black": "♙"
+  },
+  "materialCount": {
+    "value": 1
+  }
+}

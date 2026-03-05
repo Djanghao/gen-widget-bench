@@ -1,0 +1,53 @@
+{
+  "white": {
+    "name": "Magnus C.",
+    "rating": 2830,
+    "clock": "14:32"
+  },
+  "black": {
+    "name": "Hikaru N.",
+    "rating": 2794,
+    "clock": "11:47"
+  },
+  "board": {
+    "a8": "", "b8": "", "c8": "bR", "d8": "", "e8": "bR", "f8": "bB", "g8": "", "h8": "bK",
+    "a7": "bP", "b7": "bP", "c7": "", "d7": "bN", "e7": "", "f7": "bP", "g7": "bP", "h7": "bP",
+    "a6": "", "b6": "", "c6": "bP", "d6": "", "e6": "", "f6": "", "g6": "", "h6": "",
+    "a5": "", "b5": "", "c5": "", "d5": "", "e5": "wP", "f5": "", "g5": "", "h5": "",
+    "a4": "", "b4": "", "c4": "wP", "d4": "", "e4": "", "f4": "", "g4": "", "h4": "",
+    "a3": "", "b3": "", "c3": "", "d3": "", "e3": "", "f3": "wN", "g3": "", "h3": "",
+    "a2": "wP", "b2": "wP", "c2": "", "d2": "wQ", "e2": "", "f2": "wP", "g2": "wP", "h2": "wP",
+    "a1": "", "b1": "", "c1": "", "d1": "wR", "e1": "", "f1": "wR", "g1": "wK", "h1": ""
+  },
+  "pieceSymbols": {
+    "wK": "\u2654", "wQ": "\u2655", "wR": "\u2656", "wB": "\u2657", "wN": "\u2658", "wP": "\u2659",
+    "bK": "\u265a", "bQ": "\u265b", "bR": "\u265c", "bB": "\u265d", "bN": "\u265e", "bP": "\u265f"
+  },
+  "evaluation": 1.3,
+  "moves": [
+    { "num": 18, "white": "Qd2", "black": "Rfe8" },
+    { "num": 19, "white": "Rad1", "black": "Bf8" },
+    { "num": 20, "white": "Ne5", "black": "Nxe5" },
+    { "num": 21, "white": "dxe5", "black": "Nd7" }
+  ],
+  "engine": {
+    "name": "Stockfish 16",
+    "bestMove": "22. f4",
+    "score": "+1.3"
+  },
+  "captured": {
+    "byWhite": ["bN", "bB"],
+    "byBlack": ["wB"]
+  },
+  "materialDiff": "+1",
+  "evalHistory": [
+    { "move": 14, "eval": 0.3 },
+    { "move": 15, "eval": 0.5 },
+    { "move": 16, "eval": 0.4 },
+    { "move": 17, "eval": 0.8 },
+    { "move": 18, "eval": 0.7 },
+    { "move": 19, "eval": 1.0 },
+    { "move": 20, "eval": 0.9 },
+    { "move": 21, "eval": 1.3 }
+  ]
+}

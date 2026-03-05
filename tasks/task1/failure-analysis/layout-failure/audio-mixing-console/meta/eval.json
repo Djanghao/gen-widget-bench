@@ -1,0 +1,7 @@
+{
+  "caseId": "audio-mixing-console",
+  "name": "Audio Mixing Console",
+  "subtask": "instruction-image-target",
+  "styleProperties": ["borderRadius", "maxWidth"],
+  "screenshot": { "weight": 10, "maxPixelDiffPercent": 15, "viewportWidth": 500, "viewportHeight": 950 }
+}

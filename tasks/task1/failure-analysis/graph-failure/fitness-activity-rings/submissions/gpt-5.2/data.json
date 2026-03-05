@@ -1,0 +1,23 @@
+{
+  "header": {
+    "title": "Activity",
+    "date": "Mon, Feb 24"
+  },
+  "center": {
+    "value": 623,
+    "unit": "CAL"
+  },
+  "stats": {
+    "move": { "label": "Move", "current": 623, "goal": 650, "unit": "CAL" },
+    "exercise": { "label": "Exercise", "current": 42, "goal": 30, "unit": "MIN" },
+    "stand": { "label": "Stand", "current": 9, "goal": 12, "unit": "HRS" }
+  },
+  "summary": {
+    "title": "TODAY'S SUMMARY",
+    "items": [
+      { "label": "Total Calories", "value": "623 kcal" },
+      { "label": "Active Minutes", "value": "42 min" },
+      { "label": "Stand Hours", "value": "9 of 12 hrs" }
+    ]
+  }
+}

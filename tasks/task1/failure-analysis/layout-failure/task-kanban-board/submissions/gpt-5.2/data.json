@@ -1,0 +1,84 @@
+{
+  "sprintName": "Sprint 14",
+  "progressPct": 64,
+  "totalTasks": 9,
+  "columns": {
+    "todo": { "count": 4 },
+    "inProgress": { "count": 3 },
+    "done": { "count": 2 }
+  },
+  "tasks": [
+    {
+      "id": "task-0",
+      "title": "Setup CI pipeline",
+      "priority": "High",
+      "date": "Mar 8",
+      "avatar": { "text": "AC", "bg": "#FF3B57" },
+      "status": "To Do"
+    },
+    {
+      "id": "task-1",
+      "title": "Write unit tests",
+      "priority": "Med",
+      "date": "Mar 10",
+      "avatar": { "text": "JS", "bg": "#FF9F0A" },
+      "status": "To Do"
+    },
+    {
+      "id": "task-2",
+      "title": "Update API docs",
+      "priority": "Low",
+      "date": "Mar 12",
+      "avatar": { "text": "PR", "bg": "#20C997" },
+      "status": "To Do"
+    },
+    {
+      "id": "task-3",
+      "title": "Refactor auth module",
+      "priority": "High",
+      "date": "Mar 7",
+      "avatar": { "text": "KL", "bg": "#A855F7" },
+      "status": "To Do"
+    },
+    {
+      "id": "task-4",
+      "title": "Dashboard redesign",
+      "priority": "High",
+      "date": "Mar 6",
+      "avatar": { "text": "MS", "bg": "#7C5CFF" },
+      "status": "In Progress"
+    },
+    {
+      "id": "task-5",
+      "title": "Fix login bug",
+      "priority": "Med",
+      "date": "Mar 5",
+      "avatar": { "text": "AC", "bg": "#FF3B57" },
+      "status": "In Progress"
+    },
+    {
+      "id": "task-6",
+      "title": "Add search filter",
+      "priority": "Low",
+      "date": "Mar 9",
+      "avatar": { "text": "TW", "bg": "#22D3EE" },
+      "status": "In Progress"
+    },
+    {
+      "id": "task-7",
+      "title": "Database migration",
+      "priority": "High",
+      "date": "Mar 3",
+      "avatar": { "text": "JS", "bg": "#FF9F0A" },
+      "status": "Done"
+    },
+    {
+      "id": "task-8",
+      "title": "Setup monitoring",
+      "priority": "Med",
+      "date": "Mar 2",
+      "avatar": { "text": "PR", "bg": "#20C997" },
+      "status": "Done"
+    }
+  ]
+}

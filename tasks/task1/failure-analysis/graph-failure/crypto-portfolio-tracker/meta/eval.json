@@ -1,0 +1,7 @@
+{
+  "caseId": "crypto-portfolio-tracker",
+  "name": "Crypto Portfolio Tracker",
+  "subtask": "instruction-image-target",
+  "styleProperties": ["borderRadius", "maxWidth"],
+  "screenshot": { "weight": 10, "maxPixelDiffPercent": 15, "viewportWidth": 500, "viewportHeight": 900 }
+}

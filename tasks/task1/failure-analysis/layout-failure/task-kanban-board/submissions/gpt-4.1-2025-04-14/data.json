@@ -1,0 +1,79 @@
+{
+  "sprintName": "Sprint 14",
+  "progressPct": "64%",
+  "totalTasks": "9 tasks",
+  "columns": [
+    {
+      "name": "To Do",
+      "count": 4,
+      "tasks": [
+        {
+          "title": "Setup CI pipeline",
+          "date": "Mar 8",
+          "priority": "High",
+          "assignee": "AC"
+        },
+        {
+          "title": "Write unit tests",
+          "date": "Mar 10",
+          "priority": "Med",
+          "assignee": "JS"
+        },
+        {
+          "title": "Update API docs",
+          "date": "Mar 12",
+          "priority": "Low",
+          "assignee": "PR"
+        },
+        {
+          "title": "Refactor auth module",
+          "date": "Mar 7",
+          "priority": "High",
+          "assignee": "KL"
+        }
+      ]
+    },
+    {
+      "name": "In Progress",
+      "count": 3,
+      "tasks": [
+        {
+          "title": "Dashboard redesign",
+          "date": "Mar 6",
+          "priority": "High",
+          "assignee": "MS"
+        },
+        {
+          "title": "Fix login bug",
+          "date": "Mar 5",
+          "priority": "Med",
+          "assignee": "AC"
+        },
+        {
+          "title": "Add search filter",
+          "date": "Mar 9",
+          "priority": "Low",
+          "assignee": "TW"
+        }
+      ]
+    },
+    {
+      "name": "Done",
+      "count": 2,
+      "tasks": [
+        {
+          "title": "Database migration",
+          "date": "Mar 3",
+          "priority": "High",
+          "assignee": "JS"
+        },
+        {
+          "title": "Setup monitoring",
+          "date": "Mar 2",
+          "priority": "Med",
+          "assignee": "PR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "garage": {
+    "name": "Central Garage",
+    "address": "200 Congress Ave, Austin, TX 78701",
+    "status": "Open"
+  },
+  "floors": {
+    "B1": { "label": "B1", "available": 8, "total": 120, "rate": 5.0 },
+    "B2": { "label": "B2", "available": 34, "total": 120, "rate": 4.5 },
+    "L1": { "label": "L1", "available": 52, "total": 110, "rate": 4.0 },
+    "L2": { "label": "L2", "available": 33, "total": 100, "rate": 3.5 }
+  },
+  "summary": { "total": 450, "available": 127, "rate": 4.5 },
+  "quickStats": { "avgStay": "2.3h", "busiest": "9 AM" },
+  "occupancy": [
+    { "time": "6AM", "value": 18, "color": "rgba(34,197,94,0.9)" },
+    { "time": "7AM", "value": 40, "color": "rgba(34,197,94,0.9)" },
+    { "time": "8AM", "value": 72, "color": "rgba(250,204,21,0.9)" },
+    { "time": "9AM", "value": 96, "color": "rgba(239,68,68,0.9)" },
+    { "time": "10AM", "value": 90, "color": "rgba(239,68,68,0.9)" },
+    { "time": "11AM", "value": 84, "color": "rgba(250,204,21,0.9)" },
+    { "time": "12PM", "value": 80, "color": "rgba(250,204,21,0.9)" },
+    { "time": "1PM", "value": 76, "color": "rgba(250,204,21,0.9)" },
+    { "time": "2PM", "value": 72, "color": "rgba(250,204,21,0.9)" },
+    { "time": "3PM", "value": 68, "color": "rgba(250,204,21,0.9)" },
+    { "time": "4PM", "value": 60, "color": "rgba(34,197,94,0.9)" },
+    { "time": "5PM", "value": 46, "color": "rgba(34,197,94,0.9)" }
+  ]
+}

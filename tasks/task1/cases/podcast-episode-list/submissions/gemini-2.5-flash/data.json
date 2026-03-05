@@ -1,0 +1,59 @@
+{
+  "podcastName": "THE DAILY BYTE",
+  "nowPlaying": {
+    "episodeTitle": "AI Revolution: Week 47",
+    "elapsedTime": "18:42",
+    "totalTime": "27:55",
+    "progressPercentage": 67
+  },
+  "episodeListTitle": "Recent Episodes",
+  "episodes": [
+    {
+      "eid": "ep-0",
+      "number": "156",
+      "title": "Quantum Computing Breakthrough",
+      "date": "Mar 1",
+      "duration": "34:12",
+      "status": "played"
+    },
+    {
+      "eid": "ep-1",
+      "number": "155",
+      "title": "The Rust Revolution",
+      "duration": "28:45",
+      "status": "in-progress"
+    },
+    {
+      "eid": "ep-2",
+      "title": "WebAssembly Deep Dive",
+      "duration": "41:30",
+      "status": "none"
+    },
+    {
+      "eid": "ep-3",
+      "title": "Edge Computing Trends",
+      "duration": "26:18",
+      "status": "none"
+    }
+  ],
+  "stats": [
+    {
+      "eid": "stat-episodes",
+      "value": "156",
+      "label": "EPISODES",
+      "color": "#9c40fa"
+    },
+    {
+      "eid": "stat-listen-time",
+      "value": "142h",
+      "label": "LISTEN TIME",
+      "color": "#6ed0f7"
+    },
+    {
+      "eid": "stat-subscribers",
+      "value": "24.8K",
+      "label": "SUBSCRIBERS",
+      "color": "#4caf50"
+    }
+  ]
+}

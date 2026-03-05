@@ -1,0 +1,53 @@
+{
+  "title": "Periodic Table",
+  "categories": {
+    "alkali": { "label": "Alkali Metal", "color": "#ef4444", "bg": "rgba(239,68,68,0.15)", "border": "rgba(239,68,68,0.3)" },
+    "alkaline": { "label": "Alkaline Earth", "color": "#f97316", "bg": "rgba(249,115,22,0.15)", "border": "rgba(249,115,22,0.3)" },
+    "transition": { "label": "Transition Metal", "color": "#eab308", "bg": "rgba(234,179,8,0.15)", "border": "rgba(234,179,8,0.3)" },
+    "post-transition": { "label": "Post-Transition", "color": "#14b8a6", "bg": "rgba(20,184,166,0.15)", "border": "rgba(20,184,166,0.3)" },
+    "metalloid": { "label": "Metalloid", "color": "#06b6d4", "bg": "rgba(6,182,212,0.15)", "border": "rgba(6,182,212,0.3)" }
+  },
+  "elements": [
+    { "number": 11, "symbol": "Na", "name": "Sodium", "mass": 22.99, "category": "alkali" },
+    { "number": 12, "symbol": "Mg", "name": "Magnesium", "mass": 24.305, "category": "alkaline" },
+    { "number": 13, "symbol": "Al", "name": "Aluminium", "mass": 26.982, "category": "post-transition" },
+    { "number": 14, "symbol": "Si", "name": "Silicon", "mass": 28.086, "category": "metalloid" },
+    { "number": 19, "symbol": "K", "name": "Potassium", "mass": 39.098, "category": "alkali" },
+    { "number": 20, "symbol": "Ca", "name": "Calcium", "mass": 40.078, "category": "alkaline" },
+    { "number": 21, "symbol": "Sc", "name": "Scandium", "mass": 44.956, "category": "transition" },
+    { "number": 22, "symbol": "Ti", "name": "Titanium", "mass": 47.867, "category": "transition" },
+    { "number": 23, "symbol": "V", "name": "Vanadium", "mass": 50.942, "category": "transition" },
+    { "number": 24, "symbol": "Cr", "name": "Chromium", "mass": 51.996, "category": "transition" },
+    { "number": 25, "symbol": "Mn", "name": "Manganese", "mass": 54.938, "category": "transition" },
+    { "number": 26, "symbol": "Fe", "name": "Iron", "mass": 55.845, "category": "transition" },
+    { "number": 27, "symbol": "Co", "name": "Cobalt", "mass": 58.933, "category": "transition" },
+    { "number": 28, "symbol": "Ni", "name": "Nickel", "mass": 58.693, "category": "transition" },
+    { "number": 29, "symbol": "Cu", "name": "Copper", "mass": 63.546, "category": "transition" },
+    { "number": 30, "symbol": "Zn", "name": "Zinc", "mass": 65.38, "category": "transition" },
+    { "number": 31, "symbol": "Ga", "name": "Gallium", "mass": 69.723, "category": "post-transition" },
+    { "number": 32, "symbol": "Ge", "name": "Germanium", "mass": 72.63, "category": "metalloid" },
+    { "number": 37, "symbol": "Rb", "name": "Rubidium", "mass": 85.468, "category": "alkali" },
+    { "number": 38, "symbol": "Sr", "name": "Strontium", "mass": 87.62, "category": "alkaline" }
+  ],
+  "propertyComparison": [
+    { "symbol": "Fe", "meltingPoint": 1538, "density": 7.874 },
+    { "symbol": "Co", "meltingPoint": 1495, "density": 8.9 },
+    { "symbol": "Ni", "meltingPoint": 1455, "density": 8.908 },
+    { "symbol": "Cu", "meltingPoint": 1085, "density": 8.96 },
+    { "symbol": "Zn", "meltingPoint": 420, "density": 7.14 }
+  ],
+  "selectedElement": {
+    "number": 26,
+    "symbol": "Fe",
+    "name": "Iron",
+    "mass": 55.845,
+    "category": "transition",
+    "electronConfig": "[Ar] 3d6 4s2",
+    "meltingPoint": "1538",
+    "boilingPoint": "2862",
+    "density": "7.874",
+    "electronegativity": "1.83",
+    "period": 4,
+    "group": 8
+  }
+}

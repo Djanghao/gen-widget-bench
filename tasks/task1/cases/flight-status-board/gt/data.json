@@ -1,0 +1,57 @@
+{
+  "airport": "SFO",
+  "airportName": "San Francisco International",
+  "terminal": "Terminal 3",
+  "currentTime": "2:45 PM",
+  "lastUpdated": "2:44 PM PST",
+  "flights": [
+    {
+      "flightNumber": "UA 1247",
+      "destination": "New York JFK",
+      "scheduled": "3:05 PM",
+      "actual": "3:05 PM",
+      "gate": "B42",
+      "status": "On Time"
+    },
+    {
+      "flightNumber": "DL 538",
+      "destination": "Atlanta ATL",
+      "scheduled": "3:15 PM",
+      "actual": "3:52 PM",
+      "gate": "A18",
+      "status": "Delayed"
+    },
+    {
+      "flightNumber": "AA 2091",
+      "destination": "Chicago ORD",
+      "scheduled": "3:30 PM",
+      "actual": "3:30 PM",
+      "gate": "C7",
+      "status": "Boarding"
+    },
+    {
+      "flightNumber": "UA 874",
+      "destination": "Denver DEN",
+      "scheduled": "2:10 PM",
+      "actual": "2:08 PM",
+      "gate": "B36",
+      "status": "Departed"
+    },
+    {
+      "flightNumber": "SW 1653",
+      "destination": "Los Angeles LAX",
+      "scheduled": "3:45 PM",
+      "actual": "3:45 PM",
+      "gate": "D22",
+      "status": "On Time"
+    },
+    {
+      "flightNumber": "AS 419",
+      "destination": "Seattle SEA",
+      "scheduled": "4:00 PM",
+      "actual": "4:37 PM",
+      "gate": "E11",
+      "status": "Delayed"
+    }
+  ]
+}

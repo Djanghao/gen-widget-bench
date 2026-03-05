@@ -1,0 +1,88 @@
+{
+  "header": {
+    "apiName": "Platform API",
+    "apiVersion": "v2.4.1",
+    "healthScore": 96.4,
+    "uptimeText": "99.97% uptime"
+  },
+  "summary": {
+    "avgLatency": { "label": "AVG LATENCY", "value": "127ms" },
+    "errorRate": { "label": "ERROR RATE", "value": "1.81%" },
+    "rpm": { "label": "REQUESTS/MIN", "value": "8,420" }
+  },
+  "endpoints": {
+    "title": "Endpoints",
+    "items": [
+      {
+        "method": "GET",
+        "path": "/api/v2/users",
+        "status": "good",
+        "avg": "42ms",
+        "p99": "128ms",
+        "errors": "0.12%",
+        "rpm": "3,200 rpm",
+        "spark": [34, 36, 35, 38, 33, 35, 34, 36, 35, 34, 35, 34],
+        "sparkColor": "#45f19a",
+        "sparkFill": "rgba(69,241,154,0.18)"
+      },
+      {
+        "method": "POST",
+        "path": "/api/v2/auth/login",
+        "status": "good",
+        "avg": "89ms",
+        "p99": "245ms",
+        "errors": "0.85%",
+        "rpm": "2,100 rpm",
+        "spark": [70, 78, 76, 82, 79, 81, 80, 83, 82, 81, 82, 81],
+        "sparkColor": "#60a5fa",
+        "sparkFill": "rgba(96,165,250,0.16)"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/v2/users/:id",
+        "status": "warn",
+        "avg": "156ms",
+        "p99": "420ms",
+        "errors": "2.34%",
+        "rpm": "890 rpm",
+        "spark": [120, 126, 130, 138, 142, 140, 139, 145, 150, 152, 148, 140],
+        "sparkColor": "#fbbf24",
+        "sparkFill": "rgba(251,191,36,0.16)"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v2/sessions/:id",
+        "status": "good",
+        "avg": "35ms",
+        "p99": "95ms",
+        "errors": "0.05%",
+        "rpm": "1,450 rpm",
+        "spark": [38, 40, 41, 42, 39, 40, 43, 44, 42, 41, 43, 42],
+        "sparkColor": "#f87171",
+        "sparkFill": "rgba(248,113,113,0.16)"
+      },
+      {
+        "method": "GET",
+        "path": "/api/v2/products",
+        "status": "bad",
+        "avg": "312ms",
+        "p99": "890ms",
+        "errors": "5.67%",
+        "rpm": "780 rpm",
+        "spark": [220, 240, 260, 310, 380, 460, 520, 500, 520, 510, 430, 390],
+        "sparkColor": "#45f19a",
+        "sparkFill": "rgba(69,241,154,0.18)"
+      }
+    ]
+  },
+  "responseCodes": {
+    "title": "Response codes",
+    "p2xx": 0,
+    "p4xx": 0,
+    "p5xx": 0
+  },
+  "footer": {
+    "totalRequests": "",
+    "lastChecked": ""
+  }
+}

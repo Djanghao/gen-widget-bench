@@ -1,0 +1,63 @@
+{
+  "airportCode": "SFO",
+  "title": "DEPARTURES",
+  "currentTime": "2:45 PM",
+  "flights": [
+    {
+      "number": "UA 1247",
+      "destination": "New York JFK",
+      "scheduled": "3:05 PM",
+      "actual": "3:05 PM",
+      "gate": "B42",
+      "status": "On Time",
+      "statusColor": "#3AA655"
+    },
+    {
+      "number": "DL 538",
+      "destination": "Atlanta ATL",
+      "scheduled": "3:15 PM",
+      "actual": "3:52 PM",
+      "gate": "A18",
+      "status": "Delayed",
+      "statusColor": "#9C7100"
+    },
+    {
+      "number": "AA 2091",
+      "destination": "Chicago ORD",
+      "scheduled": "3:30 PM",
+      "actual": "3:30 PM",
+      "gate": "C7",
+      "status": "Boarding",
+      "statusColor": "#314A85"
+    },
+    {
+      "number": "UA 874",
+      "destination": "Denver DEN",
+      "scheduled": "2:10 PM",
+      "actual": "2:08 PM",
+      "gate": "B36",
+      "status": "Departed",
+      "statusColor": "#4A4A4A"
+    },
+    {
+      "number": "SW 1653",
+      "destination": "Los Angeles LAX",
+      "scheduled": "3:45 PM",
+      "actual": "3:45 PM",
+      "gate": "D22",
+      "status": "On Time",
+      "statusColor": "#3AA655"
+    },
+    {
+      "number": "AS 419",
+      "destination": "Seattle SEA",
+      "scheduled": "4:00 PM",
+      "actual": "4:37 PM",
+      "gate": "E11",
+      "status": "Delayed",
+      "statusColor": "#9C7100"
+    }
+  ],
+  "lastUpdated": "Updated 2:44 PM PST",
+  "terminalInfo": "Terminal 3"
+}

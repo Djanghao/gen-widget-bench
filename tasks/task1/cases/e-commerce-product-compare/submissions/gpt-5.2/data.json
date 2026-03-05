@@ -1,0 +1,119 @@
+{
+  "title": "Product Comparison",
+  "category": "Wireless Headphones",
+  "performanceTitle": "Performance Comparison",
+  "specsTitle": "Specifications",
+  "prosConsTitle": "Pros & Cons",
+  "radar": {
+    "data": [
+      { "metric": "Sound", "SoundMaxPro": 9, "AudioEliteX1": 8, "BassKing700": 7, "ClearToneUltra": 9 },
+      { "metric": "ANC", "SoundMaxPro": 8, "AudioEliteX1": 7, "BassKing700": 6, "ClearToneUltra": 8 },
+      { "metric": "Battery", "SoundMaxPro": 7, "AudioEliteX1": 6, "BassKing700": 6, "ClearToneUltra": 9 },
+      { "metric": "Call", "SoundMaxPro": 7, "AudioEliteX1": 6, "BassKing700": 5, "ClearToneUltra": 7 },
+      { "metric": "Comfort", "SoundMaxPro": 8, "AudioEliteX1": 7, "BassKing700": 7, "ClearToneUltra": 8 },
+      { "metric": "Value", "SoundMaxPro": 6, "AudioEliteX1": 9, "BassKing700": 8, "ClearToneUltra": 6 },
+      { "metric": "Build", "SoundMaxPro": 9, "AudioEliteX1": 8, "BassKing700": 6, "ClearToneUltra": 8 }
+    ],
+    "series": [
+      { "key": "AudioEliteX1", "name": "AudioElite X1", "colorKey": "AudioEliteX1" },
+      { "key": "BassKing700", "name": "BassKing 700", "colorKey": "BassKing700" },
+      { "key": "ClearToneUltra", "name": "ClearTone Ultra", "colorKey": "ClearToneUltra" },
+      { "key": "SoundMaxPro", "name": "SoundMax Pro", "colorKey": "SoundMaxPro" }
+    ],
+    "legend": [
+      { "key": "AudioEliteX1", "label": "AudioElite X1", "colorKey": "AudioEliteX1" },
+      { "key": "BassKing700", "label": "BassKing 700", "colorKey": "BassKing700" },
+      { "key": "ClearToneUltra", "label": "ClearTone Ultra", "colorKey": "ClearToneUltra" },
+      { "key": "SoundMaxPro", "label": "SoundMax Pro", "colorKey": "SoundMaxPro" }
+    ]
+  },
+  "products": [
+    {
+      "name": "SoundMax Pro",
+      "price": "$349",
+      "rating": 4.5,
+      "ratingCount": "2,847",
+      "availability": "In Stock",
+      "availabilityTone": "ok",
+      "shipping": "Free 2-day",
+      "seller": "Seller: 4.9",
+      "imageBg": "#EAF2FF"
+    },
+    {
+      "name": "AudioElite X1",
+      "price": "$279",
+      "rating": 4.5,
+      "ratingCount": "5,124",
+      "availability": "In Stock",
+      "availabilityTone": "ok",
+      "shipping": "Free 2-day",
+      "seller": "Seller: 4.8",
+      "imageBg": "#F2ECFF"
+    },
+    {
+      "name": "BassKing 700",
+      "price": "$199",
+      "rating": 4.5,
+      "ratingCount": "8,932",
+      "availability": "Low Stock",
+      "availabilityTone": "warn",
+      "shipping": "Free 5-day",
+      "seller": "Seller: 4.6",
+      "imageBg": "#FFECEE"
+    },
+    {
+      "name": "ClearTone Ultra",
+      "price": "$429",
+      "rating": 4.5,
+      "ratingCount": "1,256",
+      "availability": "In Stock",
+      "availabilityTone": "ok",
+      "shipping": "Free next-day",
+      "seller": "Seller: 5",
+      "imageBg": "#E8FBF2"
+    }
+  ],
+  "specs": [
+    { "label": "Driver Size", "values": ["40mm", "40mm", "50mm", "50mm"] },
+    { "label": "Frequency Response", "values": ["4Hz-40kHz", "20Hz-20kHz", "20Hz-40kHz", "4Hz-80kHz"] },
+    { "label": "Battery Life", "values": ["30 hrs", "24 hrs", "20 hrs", "40 hrs"] },
+    { "label": "Noise Cancellation", "values": ["Adaptive ANC", "ANC", "Basic ANC", "Adaptive ANC+"] },
+    { "label": "Bluetooth", "values": ["5.3", "5.2", "5.1", "5.3"] },
+    { "label": "Weight", "values": ["260g", "240g", "220g", "280g"] },
+    { "label": "Impedance", "values": ["32 ohm", "32 ohm", "24 ohm", "40 ohm"] },
+    { "label": "Codec Support", "values": ["LDAC, aptX", "AAC, SBC", "SBC, AAC", "LDAC, aptX HD"] },
+    { "label": "Microphone", "values": ["4-mic array", "2-mic array", "2-mic", "6-mic array"] },
+    { "label": "Foldable", "values": ["Yes", "Yes", "Yes", "No"] },
+    { "label": "Water Resistance", "values": ["IPX4", "IPX4", "IPX2", "IPX5"] },
+    { "label": "Charging Port", "values": ["USB-C", "USB-C", "USB-C", "USB-C"] },
+    { "label": "Multipoint", "values": ["Yes (3)", "Yes (2)", "No", "Yes (3)"] },
+    { "label": "Quick Charge", "values": ["5min=3hr", "10min=2hr", "10min=1hr", "3min=3hr"] },
+    { "label": "Warranty", "values": ["2 years", "1 year", "1 year", "3 years"] }
+  ],
+  "prosCons": [
+    {
+      "product": "SoundMax Pro",
+      "accent": "#2F73FF",
+      "pros": ["Best-in-class ANC", "Premium build quality", "30hr battery"],
+      "cons": ["Expensive", "Heavy at 260g"]
+    },
+    {
+      "product": "AudioElite X1",
+      "accent": "#8B5CF6",
+      "pros": ["Great value", "Comfortable fit", "Good call quality"],
+      "cons": ["ANC not as strong", "No aptX"]
+    },
+    {
+      "product": "BassKing 700",
+      "accent": "#FF4D5E",
+      "pros": ["Deep bass", "Budget friendly", "Foldable design"],
+      "cons": ["Shorter battery", "Plastic build"]
+    },
+    {
+      "product": "ClearTone Ultra",
+      "accent": "#10B981",
+      "pros": ["Audiophile sound", "Hi-Res certified", "40hr battery"],
+      "cons": ["Most expensive", "No foldable", "Bulky case"]
+    }
+  ]
+}

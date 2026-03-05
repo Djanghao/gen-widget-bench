@@ -1,0 +1,66 @@
+{
+  "homeScore": 2,
+  "awayScore": 1,
+  "homeFormation": [
+    { "number": 1, "top": 5, "left": 48 },
+    { "number": 2, "top": 30, "left": 12 },
+    { "number": 3, "top": 30, "left": 38 },
+    { "number": 4, "top": 30, "left": 68 },
+    { "number": 5, "top": 30, "left": 88 },
+    { "number": 6, "top": 50, "left": 28 },
+    { "number": 7, "top": 50, "left": 48 },
+    { "number": 8, "top": 50, "left": 68 },
+    { "number": 9, "top": 70, "left": 22 },
+    { "number": 10, "top": 70, "left": 48 },
+    { "number": 11, "top": 70, "left": 78 }
+  ],
+  "awayFormation": [
+    { "number": 1, "top": 90, "right": 48 },
+    { "number": 2, "top": 70, "right": 12 },
+    { "number": 3, "top": 70, "right": 38 },
+    { "number": 4, "top": 70, "right": 68 },
+    { "number": 5, "top": 70, "right": 88 },
+    { "number": 6, "top": 50, "right": 28 },
+    { "number": 7, "top": 50, "right": 48 },
+    { "number": 8, "top": 50, "right": 68 },
+    { "number": 9, "top": 30, "right": 22 },
+    { "number": 10, "top": 30, "right": 48 },
+    { "number": 11, "top": 30, "right": 78 }
+  ],
+  "stats": [
+    { "type": "possession", "home": 58, "away": 42 },
+    { "type": "shots", "home": 14, "away": 9 },
+    { "type": "ontarget", "home": 7, "away": 4 },
+    { "type": "passes", "home": 487, "away": 352 },
+    { "type": "corners", "home": 6, "away": 3 },
+    { "type": "fouls", "home": 8, "away": 12 }
+  ],
+  "events": [
+    { "time": "12'", "icon": "⚽", "detail": "Bellingham - Assisted by Vinicius Jr."},
+    { "time": "28'", "icon": "🟨", "detail": "Goretzka - Reckless challenge"},
+    { "time": "35'", "icon": "⚽", "detail": "Kane - Penalty kick"},
+    { "time": "58'", "icon": "🔄", "detail": "Camavinga - Valverde on"},
+    { "time": "64'", "icon": "🔴", "detail": "Upamecano - Second yellow"},
+    { "time": "71'", "icon": "⚽", "detail": "Vinicius Jr. - Assisted by Modric"}
+  ],
+  "ratings": [
+    { "name": "Vinicius Jr.", "score": 8.9 },
+    { "name": "Bellingham", "score": 8.5 },
+    { "name": "Kane", "score": 7.8 },
+    { "name": "Modric", "score": 7.6 },
+    { "name": "Musiala", "score": 7.4 },
+    { "name": "Courtois", "score": 7.2 }
+  ],
+  "heatmap": [
+    [2, 8, 6, 3, 1, 8, 7],
+    [6, 2, 10, 9, 10, 10, 7],
+    [3, 11, 8, 14, 12, 8, 6],
+    [2, 3, 8, 12, 8, 10, 7],
+    [1, 2, 0, 3, 1, 2, 3]
+  ],
+  "footer": {
+    "venue": "Santiago Bernabeu, Madrid",
+    "referee": "Ref: Daniele Orsato (ITA)",
+    "attendance": "78,342"
+  }
+}

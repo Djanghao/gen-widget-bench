@@ -1,0 +1,146 @@
+{
+  "header": {
+    "alertCount": 3,
+    "shift": "Day Shift"
+  },
+  "patients": [
+    {
+      "name": "Margaret Chen",
+      "bed": "Bed 1",
+      "alertLevel": "Critical",
+      "age": "72",
+      "diagnosis": "Acute Respiratory Failure",
+      "admitted": "May 12, 2024",
+      "nurse": "J. Smith",
+      "hr": {
+        "value": "112",
+        "unit": "bpm",
+        "chartData": [98, 102, 105, 108, 110, 112, 110]
+      },
+      "bp": {
+        "value": "158/92",
+        "chartData": [142, 145, 148, 150, 152, 155, 158]
+      },
+      "spo2": {
+        "value": 89
+      },
+      "temp": {
+        "value": "101.4",
+        "unit": "°F"
+      },
+      "resp": {
+        "value": "28",
+        "unit": "/min"
+      },
+      "meds": ["Furosemide 40mg IV", "Morphine 2mg IV", "Albuterol nebulizer"],
+      "ivStatus": "Running"
+    },
+    {
+      "name": "Robert Williams",
+      "bed": "Bed 2",
+      "alertLevel": "Warning",
+      "age": "65",
+      "diagnosis": "Septic Shock",
+      "admitted": "May 13, 2024",
+      "nurse": "A. Johnson",
+      "hr": {
+        "value": "104",
+        "unit": "bpm",
+        "chartData": [95, 98, 100, 102, 103, 104, 103]
+      },
+      "bp": {
+        "value": "102/64",
+        "chartData": [98, 99, 100, 101, 101, 102, 101]
+      },
+      "spo2": {
+        "value": 94
+      },
+      "temp": {
+        "value": "100.2",
+        "unit": "°F"
+      },
+      "resp": {
+        "value": "22",
+        "unit": "/min"
+      },
+      "meds": ["Vancomycin 1.5g IV", "Norepinephrine infusion", "Cefepime 2g IV"],
+      "ivStatus": "Running"
+    },
+    {
+      "name": "Sarah Johnson",
+      "bed": "Bed 3",
+      "alertLevel": "Stable",
+      "age": "58",
+      "diagnosis": "Post-op CABG",
+      "admitted": "May 10, 2024",
+      "nurse": "M. Davis",
+      "hr": {
+        "value": "82",
+        "unit": "bpm",
+        "chartData": [78, 79, 80, 81, 81, 82, 82]
+      },
+      "bp": {
+        "value": "128/76",
+        "chartData": [124, 125, 126, 127, 127, 128, 128]
+      },
+      "spo2": {
+        "value": 98
+      },
+      "temp": {
+        "value": "98.6",
+        "unit": "°F"
+      },
+      "resp": {
+        "value": "16",
+        "unit": "/min"
+      },
+      "meds": ["Atenolol 25mg PO", "Aspirin 81mg PO", "Simvastatin 20mg PO"],
+      "ivStatus": "Complete"
+    },
+    {
+      "name": "James Martinez",
+      "bed": "Bed 4",
+      "alertLevel": "Stable",
+      "age": "47",
+      "diagnosis": "Pneumonia",
+      "admitted": "May 14, 2024",
+      "nurse": "T. Wilson",
+      "hr": {
+        "value": "94",
+        "unit": "bpm",
+        "chartData": [88, 90, 91, 92, 93, 94, 94]
+      },
+      "bp": {
+        "value": "136/84",
+        "chartData": [132, 133, 134, 135, 135, 136, 136]
+      },
+      "spo2": {
+        "value": 96
+      },
+      "temp": {
+        "value": "99.1",
+        "unit": "°F"
+      },
+      "resp": {
+        "value": "20",
+        "unit": "/min"
+      },
+      "meds": ["Levofloxacin 750mg IV", "Acetaminophen 650mg PO", "Prednisone 40mg PO"],
+      "ivStatus": "Running"
+    }
+  ],
+  "summary": {
+    "totalPatients": 4,
+    "critical": 1,
+    "warning": 1,
+    "stable": 2,
+    "avgHR": "98",
+    "avgSpO2": 94,
+    "nursesOnDuty": 4,
+    "avgTemp": "99.6"
+  },
+  "footer": {
+    "timestamp": "Last updated: May 15, 2024 at 10:24 AM",
+    "shiftEndIn": "2 hours 36 minutes"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "month": "February 2025",
+  "budgetTotal": "$5,400.00",
+  "spentAmount": "$4,698.00",
+  "remainingAmount": "$702.00",
+  "overallSpendingPercentage": 87,
+  "categories": [
+    {
+      "name": "Housing",
+      "amount": "$1,890.00",
+      "percentage": 35,
+      "color": "#8068F4"
+    },
+    {
+      "name": "Food & Dining",
+      "amount": "$1,080.00",
+      "percentage": 20,
+      "color": "#FCB939"
+    },
+    {
+      "name": "Transportation",
+      "amount": "$810.00",
+      "percentage": 15,
+      "color": "#2FD466"
+    },
+    {
+      "name": "Savings",
+      "amount": "$648.00",
+      "percentage": 12,
+      "color": "#5D50EB"
+    },
+    {
+      "name": "Entertainment",
+      "amount": "$162.00",
+      "percentage": 3,
+      "color": "#EE5D8E"
+    },
+    {
+      "name": "Healthcare",
+      "amount": "$108.00",
+      "percentage": 2,
+      "color": "#46B9D0"
+    }
+  ]
+}

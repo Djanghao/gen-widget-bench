@@ -1,0 +1,57 @@
+{
+  "white": {
+    "name": "Magnus C.",
+    "rating": 2830,
+    "clock": "14:32"
+  },
+  "black": {
+    "name": "Hikaru N.",
+    "rating": 2794,
+    "clock": "11:47"
+  },
+  "fen": "2R1R1K1/PP1N1P1P/8/4P3/2P5/6P1/PP2Q1PP/3rr1k1",
+  "evalScore": "+1.3",
+  "evalBarFill": 72,
+  "evalHistory": [
+    { "moveNum": 1, "eval": 0 },
+    { "moveNum": 2, "eval": 0.2 },
+    { "moveNum": 3, "eval": 0.3 },
+    { "moveNum": 4, "eval": 0.45 },
+    { "moveNum": 5, "eval": 0.6 },
+    { "moveNum": 6, "eval": 0.75 },
+    { "moveNum": 7, "eval": 1.2 },
+    { "moveNum": 8, "eval": 1.3 }
+  ],
+  "moves": [
+    {
+      "num": 18,
+      "white": "Qd2",
+      "black": "Rfe8"
+    },
+    {
+      "num": 19,
+      "white": "Rad1",
+      "black": "Bf8"
+    },
+    {
+      "num": 20,
+      "white": "Ne5",
+      "black": "Nxe5"
+    },
+    {
+      "num": 21,
+      "white": "dxe5",
+      "black": "Nd7"
+    }
+  ],
+  "engine": {
+    "label": "Stockfish 16",
+    "move": "22. f4",
+    "score": "+1.3"
+  },
+  "captured": {
+    "byWhite": ["q", "n", "p", "p"],
+    "byBlack": ["N", "B", "P"]
+  },
+  "materialCount": "+1"
+}

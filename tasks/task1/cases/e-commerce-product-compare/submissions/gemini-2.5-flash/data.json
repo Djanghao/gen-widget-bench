@@ -1,0 +1,86 @@
+{
+  "header": {
+    "title": "Product Comparison",
+    "category": "Wireless Headphones"
+  },
+  "radarChart": {
+    "title": "Performance Comparison",
+    "categories": [
+      { "name": "Sound", "key": "sound" },
+      { "name": "ANC", "key": "anc" },
+      { "name": "Battery", "key": "battery" },
+      { "name": "Comfort", "key": "comfort" },
+      { "name": "Value", "key": "value" },
+      { "name": "Build", "key": "build" }
+    ]
+  },
+  "products": [
+    {
+      "name": "SoundMax Pro",
+      "price": "$349",
+      "rating": { "value": 4.5, "count": "(2,847)" },
+      "availability": "In Stock",
+      "shipping": "Free 2-day",
+      "seller": "Seller: 4.9",
+      "performance": { "sound": 80, "anc": 70, "battery": 90, "comfort": 85, "value": 75, "build": 80 },
+      "pros": ["Great Sound Quality", "Comfortable Fit", "Long Battery Life"],
+      "cons": ["A bit bulky", "Average ANC"]
+    },
+    {
+      "name": "AudioElite X1",
+      "price": "$279",
+      "rating": { "value": 4.5, "count": "(5,124)" },
+      "availability": "In Stock",
+      "shipping": "Free 2-day",
+      "seller": "Seller: 4.8",
+      "performance": { "sound": 90, "anc": 85, "battery": 80, "comfort": 90, "value": 80, "build": 85 },
+      "pros": ["Excellent ANC", "Lightweight", "Stylish Design"],
+      "cons": ["Shorter battery", "Mid-range bass"]
+    },
+    {
+      "name": "BassKing 700",
+      "price": "$199",
+      "rating": { "value": 3.5, "count": "(8,932)" },
+      "availability": "Low Stock",
+      "shipping": "Free 5-day",
+      "seller": "Seller: 4.6",
+      "performance": { "sound": 70, "anc": 60, "battery": 70, "comfort": 75, "value": 90, "build": 70 },
+      "pros": ["Deep Bass", "Affordable", "Durable Build"],
+      "cons": ["No ANC", "Less comfortable for long use"]
+    },
+    {
+      "name": "ClearTone Ultra",
+      "price": "$429",
+      "rating": { "value": 5.0, "count": "(1,256)" },
+      "availability": "In Stock",
+      "shipping": "Free next-day",
+      "seller": "Seller: 5",
+      "performance": { "sound": 85, "anc": 95, "battery": 75, "comfort": 80, "value": 85, "build": 90 },
+      "pros": ["Superb Clarity", "Premium Build", "Advanced ANC"],
+      "cons": ["High Price", "Shorter battery life"]
+    }
+  ],
+  "specsTable": {
+    "title": "Specifications",
+    "rows": [
+      { "label": "Driver Size", "values": ["40mm", "40mm", "50mm", "50mm"] },
+      { "label": "Frequency Response", "values": ["4Hz-40kHz", "20Hz-20kHz", "20Hz-40kHz", "4Hz-80kHz"] },
+      { "label": "Battery Life", "values": ["30 hours", "28 hours", "35 hours", "25 hours"] },
+      { "label": "Noise Cancellation", "values": ["Active ANC", "Hybrid ANC", "Passive", "Hybrid ANC"] },
+      { "label": "Bluetooth Version", "values": ["5.2", "5.0", "5.1", "5.3"] },
+      { "label": "Weight", "values": ["280g", "260g", "320g", "240g"] },
+      { "label": "Impedance", "values": ["32 Ohm", "16 Ohm", "48 Ohm", "24 Ohm"] },
+      { "label": "Codec Support", "values": ["LDAC", "aptX HD", "SBC", "aptX Adaptive"] },
+      { "label": "Microphone", "values": ["Dual-mic", "Single-mic", "Boom mic", "Quad-mic"] },
+      { "label": "Foldable", "values": ["Yes", "No", "Yes", "Yes"] },
+      { "label": "Water Resistance", "values": ["IPX4", "IPX2", "None", "IPX5"] },
+      { "label": "Charging Port", "values": ["USB-C", "USB-C", "Micro-USB", "USB-C"] },
+      { "label": "Multipoint", "values": ["Yes", "No", "No", "Yes"] },
+      { "label": "Quick Charge", "values": ["Yes", "Yes", "No", "Yes"] },
+      { "label": "Warranty", "values": ["2 years", "1 year", "1 year", "3 years"] }
+    ]
+  },
+  "prosCons": {
+    "title": "Pros & Cons"
+  }
+}

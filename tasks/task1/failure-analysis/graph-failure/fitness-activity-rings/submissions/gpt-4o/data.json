@@ -1,0 +1,17 @@
+{
+  "rings": [
+    { "id": "move", "value": 623, "fill": "#ff0000" },
+    { "id": "exercise", "value": 42, "fill": "#00ff00" },
+    { "id": "stand", "value": 9, "fill": "#0000ff" }
+  ],
+  "stats": [
+    { "id": "move", "label": "Move", "current": 623, "goal": 650, "unit": "CAL", "color": "#ff0000" },
+    { "id": "exercise", "label": "Exercise", "current": 42, "goal": 30, "unit": "MIN", "color": "#00ff00" },
+    { "id": "stand", "label": "Stand", "current": 9, "goal": 12, "unit": "HRS", "color": "#0000ff" }
+  ],
+  "summary": [
+    { "id": "calories", "label": "Total Calories", "value": "623 kcal", "color": "#ff0000" },
+    { "id": "active", "label": "Active Minutes", "value": "42 min", "color": "#00ff00" },
+    { "id": "stand", "label": "Stand Hours", "value": "9 of 12 hrs", "color": "#0000ff" }
+  ]
+}

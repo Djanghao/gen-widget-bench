@@ -1,0 +1,34 @@
+{
+  "garageName": "Central Garage",
+  "address": "200 Congress Ave, Austin, TX 78701",
+  "status": "Open",
+  "floors": [
+    { "id": "B1", "label": "B1", "total": 120, "available": 8, "ratePerHour": 5.00 },
+    { "id": "B2", "label": "B2", "total": 120, "available": 34, "ratePerHour": 4.50 },
+    { "id": "L1", "label": "L1", "total": 110, "available": 52, "ratePerHour": 4.00 },
+    { "id": "L2", "label": "L2", "total": 100, "available": 33, "ratePerHour": 3.50 }
+  ],
+  "summary": {
+    "totalSpots": 450,
+    "availableSpots": 127,
+    "hourlyRate": 4.50
+  },
+  "quickStats": {
+    "avgStayHours": 2.3,
+    "busiestHour": "9 AM"
+  },
+  "hourlyOccupancy": [
+    { "hour": "6AM", "pct": 15 },
+    { "hour": "7AM", "pct": 38 },
+    { "hour": "8AM", "pct": 72 },
+    { "hour": "9AM", "pct": 94 },
+    { "hour": "10AM", "pct": 88 },
+    { "hour": "11AM", "pct": 82 },
+    { "hour": "12PM", "pct": 78 },
+    { "hour": "1PM", "pct": 75 },
+    { "hour": "2PM", "pct": 70 },
+    { "hour": "3PM", "pct": 65 },
+    { "hour": "4PM", "pct": 58 },
+    { "hour": "5PM", "pct": 45 }
+  ]
+}

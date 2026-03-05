@@ -1,0 +1,111 @@
+{
+  "title": "Network Topology",
+  "datacenter": "US-East-1",
+  "healthPct": 94.2,
+  "tiers": [
+    {
+      "name": "Load Balancers",
+      "icon": "shield",
+      "nodes": [
+        {
+          "hostname": "lb-prod-01",
+          "ip": "10.0.1.10",
+          "status": "healthy",
+          "cpu": 45,
+          "memory": 62,
+          "connections": 1247,
+          "healthPct": 98
+        },
+        {
+          "hostname": "lb-prod-02",
+          "ip": "10.0.1.11",
+          "status": "healthy",
+          "cpu": 38,
+          "memory": 55,
+          "connections": 1103,
+          "healthPct": 99
+        }
+      ]
+    },
+    {
+      "name": "App Servers",
+      "icon": "server",
+      "nodes": [
+        {
+          "hostname": "app-prod-01",
+          "ip": "10.0.2.10",
+          "status": "healthy",
+          "cpu": 72,
+          "memory": 68,
+          "connections": 834,
+          "healthPct": 92
+        },
+        {
+          "hostname": "app-prod-02",
+          "ip": "10.0.2.11",
+          "status": "warning",
+          "cpu": 89,
+          "memory": 82,
+          "connections": 921,
+          "healthPct": 78
+        },
+        {
+          "hostname": "app-prod-03",
+          "ip": "10.0.2.12",
+          "status": "healthy",
+          "cpu": 61,
+          "memory": 58,
+          "connections": 756,
+          "healthPct": 95
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "icon": "database",
+      "nodes": [
+        {
+          "hostname": "db-prod-primary",
+          "ip": "10.0.3.10",
+          "status": "healthy",
+          "cpu": 55,
+          "memory": 74,
+          "connections": 412,
+          "healthPct": 96
+        },
+        {
+          "hostname": "db-prod-replica",
+          "ip": "10.0.3.11",
+          "status": "healthy",
+          "cpu": 32,
+          "memory": 61,
+          "connections": 287,
+          "healthPct": 99
+        }
+      ]
+    }
+  ],
+  "networkStats": {
+    "bandwidth": "4.7 Gbps",
+    "activeConnections": "5,560",
+    "packetLoss": "0.02%"
+  },
+  "incidents": [
+    {
+      "severity": "critical",
+      "message": "app-prod-02 CPU spike to 95% caused request queuing",
+      "time": "23m ago"
+    },
+    {
+      "severity": "warning",
+      "message": "lb-prod-01 SSL cert expires in 7 days",
+      "time": "2h ago"
+    },
+    {
+      "severity": "info",
+      "message": "db-prod-replica replication lag resolved",
+      "time": "5h ago"
+    }
+  ],
+  "bandwidthHistory": [3.2, 3.5, 3.1, 4.0, 4.3, 4.8, 4.5, 4.2, 4.7, 4.9, 4.6, 4.7]
+}

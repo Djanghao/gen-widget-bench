@@ -1,0 +1,122 @@
+{
+  "repoName": "acme/web-platform",
+  "branch": "main",
+  "commitHash": "a3f8c2d",
+  "pipelineStatus": "passing",
+  "buildStage": {
+    "name": "Build",
+    "status": "passing",
+    "duration": "2m 14s",
+    "jobs": [
+      {
+        "name": "Compile",
+        "status": "success"
+      },
+      {
+        "name": "Lint",
+        "status": "success"
+      },
+      {
+        "name": "Type Check",
+        "status": "success"
+      }
+    ]
+  },
+  "testStage": {
+    "name": "Test",
+    "status": "passing",
+    "duration": "4m 32s",
+    "jobs": [
+      {
+        "name": "Unit Tests",
+        "status": "success"
+      },
+      {
+        "name": "Integration Tests",
+        "status": "success"
+      },
+      {
+        "name": "E2E Tests",
+        "status": "success"
+      }
+    ]
+  },
+  "stagingStage": {
+    "name": "Deploy Staging",
+    "status": "passing",
+    "duration": "1m 08s",
+    "jobs": [
+      {
+        "name": "Docker Build",
+        "status": "success"
+      },
+      {
+        "name": "Deploy",
+        "status": "success"
+      }
+    ]
+  },
+  "prodStage": {
+    "name": "Deploy Prod",
+    "status": "passing",
+    "duration": "2m 45s",
+    "jobs": [
+      {
+        "name": "Canary Deploy",
+        "status": "success"
+      },
+      {
+        "name": "Full Rollout",
+        "status": "success"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "name": "acme/web-platform:latest",
+      "size": "427 MB"
+    },
+    {
+      "name": "test-report.html",
+      "size": "1.2 MB"
+    }
+  ],
+  "deploys": [
+    {
+      "env": "staging",
+      "version": "v2.4.1",
+      "time": "2h ago",
+      "status": "success"
+    },
+    {
+      "env": "production",
+      "version": "v2.4.0",
+      "time": "1d ago",
+      "status": "success"
+    },
+    {
+      "env": "staging",
+      "version": "v2.3.9",
+      "time": "3d ago",
+      "status": "success"
+    }
+  ],
+  "stageDurations": [
+    {
+      "name": "Build",
+      "duration": 134
+    },
+    {
+      "name": "Test",
+      "duration": 272
+    },
+    {
+      "name": "Deploy Staging",
+      "duration": 68
+    },
+    {
+      "name": "Deploy Prod",
+      "duration": 165
+    }
+  ]
+}

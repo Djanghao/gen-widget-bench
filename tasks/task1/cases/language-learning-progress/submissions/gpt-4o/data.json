@@ -1,0 +1,21 @@
+{
+  "progressPercent": 47,
+  "skills": [
+    { "name": "Reading", "level": "B1", "color": "#4A8DF8", "levelPercent": 70 },
+    { "name": "Writing", "level": "A2", "color": "#E74C89", "levelPercent": 45 },
+    { "name": "Listening", "level": "B2", "color": "#28B78D", "levelPercent": 80 },
+    { "name": "Speaking", "level": "A2", "color": "#F0A500", "levelPercent": 50 },
+    { "name": "Grammar", "level": "B1", "color": "#9A6AFF", "levelPercent": 60 }
+  ],
+  "stats": [
+    { "key": "xp", "label": "XP", "value": "340", "color": "#FF9C00" },
+    { "key": "streak", "label": "DAYS", "value": "23", "color": "#FF3B30" },
+    { "key": "words", "label": "WORDS", "value": "67", "color": "#5AC8FA" },
+    { "key": "accuracy", "label": "ACCURACY", "value": "89%", "color": "#32D74B" }
+  ],
+  "lessons": [
+    { "title": "Kanji Radicals - Set 12", "time": "15 min", "color": "#9A6AFF" },
+    { "title": "Verb Conjugation Practice", "time": "20 min", "color": "#9A6AFF" },
+    { "title": "Listening Comprehension N3", "time": "25 min", "color": "#9A6AFF" }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "mission": {
+    "name": "ARTEMIS-III",
+    "id": "M-2024-001",
+    "status": "ACTIVE",
+    "phase": "TRANSIT"
+  },
+  "countdown": {
+    "title": "NEXT MAJOR EVENT",
+    "days": "03",
+    "hours": "14",
+    "minutes": "22",
+    "seconds": "57",
+    "target": "Lunar Orbit Insertion Burn"
+  },
+  "telemetry": {
+    "title": "REAL-TIME TELEMETRY",
+    "altitude": {
+      "value": "384200",
+      "unit": "km",
+      "bar": 75
+    },
+    "velocity": {
+      "value": "0.98",
+      "unit": "km/s",
+      "bar": 42
+    },
+    "fuel": {
+      "value": "68",
+      "unit": "%",
+      "bar": 68
+    },
+    "gforce": {
+      "value": "0.02",
+      "unit": "G",
+      "bar": 2
+    },
+    "temperature": {
+      "value": "22.4",
+      "unit": "°C",
+      "bar": 45
+    },
+    "pressure": {
+      "value": "101.3",
+      "unit": "kPa",
+      "bar": 100
+    }
+  },
+  "trajectory": {
+    "title": "TRAJECTORY PROFILE",
+    "data": [
+      { "time": "0", "altitude": 0 },
+      { "time": "1", "altitude": 200 },
+      { "time": "2", "altitude": 1200 },
+      { "time": "3", "altitude": 5000 },
+      { "time": "4", "altitude": 20000 },
+      { "time": "5", "altitude": 100000 },
+      { "time": "6", "altitude": 250000 },
+      { "time": "7", "altitude": 384200 }
+    ]
+  },
+  "crew": {
+    "title": "CREW ROSTER",
+    "members": [
+      { "name": "ELENA RODRIGUEZ", "role": "Commander", "status": "OK" },
+      { "name": "JAMES CHEN", "role": "Pilot", "status": "OK" },
+      { "name": "AMARA PATEL", "role": "Mission Specialist 1", "status": "OK" },
+      { "name": "DANTE MORALES", "role": "Mission Specialist 2", "status": "OK" },
+      { "name": "SOPHIE LEE", "role": "Flight Engineer", "status": "OK" }
+    ]
+  },
+  "systems": {
+    "title": "SYSTEMS CHECKLIST",
+    "items": [
+      { "name": "Life Support", "status": "OK" },
+      { "name": "Navigation", "status": "OK" },
+      { "name": "Communications", "status": "OK" },
+      { "name": "Propulsion", "status": "OK" },
+      { "name": "Thermal Control", "status": "OK" },
+      { "name": "Power Systems", "status": "OK" },
+      { "name": "Guidance Computer", "status": "OK" },
+      { "name": "Docking Mechanism", "status": "OK" },
+      { "name": "Solar Arrays", "status": "OK" },
+      { "name": "Radiation Shield", "status": "OK" }
+    ]
+  },
+  "comms": {
+    "title": "COMMUNICATIONS LOG",
+    "entries": [
+      { "time": "12:45:22", "source": "CAPCOM", "message": "Artemis-III, Houston confirms nominal trajectory. Proceed with scheduled systems check." },
+      { "time": "12:48:05", "source": "COMMANDER", "message": "Houston, Artemis-III copies. All systems nominal. Crew status green." },
+      { "time": "12:52:17", "source": "FLIGHT ENGINEER", "message": "Solar array deployment confirmed. Power generation at 102% capacity." },
+      { "time": "12:55:43", "source": "CAPCOM", "message": "Copy that. Preparing for next comms pass in 12 minutes." },
+      { "time": "12:58:11", "source": "MISSION SPECIALIST 1", "message": "Science payload checkout complete. All instruments reporting nominal." }
+    ]
+  },
+  "timeline": {
+    "title": "MISSION PHASE TIMELINE",
+    "phases": [
+      { "name": "LAUNCH", "status": "completed" },
+      { "name": "ASCENT", "status": "completed" },
+      { "name": "ORBIT INSERTION", "status": "completed" },
+      { "name": "TRANSIT", "status": "current" },
+      { "name": "APPROACH", "status": "upcoming" },
+      { "name": "DOCKING", "status": "upcoming" }
+    ]
+  },
+  "footer": {
+    "met": "T+03:14:22:57",
+    "signal": "STRONG"
+  }
+}

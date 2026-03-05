@@ -1,0 +1,129 @@
+{
+  "projectName": "Phoenix Redesign",
+  "subtitle": "Q1 2026 Sprint Plan",
+  "dateRange": "Jan 6 - Apr 18",
+  "progressPct": 62,
+  "months": ["Jan", "Feb", "Mar", "Apr"],
+  "tasks": [
+    {
+      "name": "User Research",
+      "assignee": "AK",
+      "assigneeColor": "#a78bfa",
+      "category": "design",
+      "startWeek": 0,
+      "durationWeeks": 3,
+      "progressPct": 100,
+      "status": "Complete",
+      "indent": 0
+    },
+    {
+      "name": "Wireframes",
+      "assignee": "LM",
+      "assigneeColor": "#a78bfa",
+      "category": "design",
+      "startWeek": 2,
+      "durationWeeks": 3,
+      "progressPct": 100,
+      "status": "Complete",
+      "indent": 1
+    },
+    {
+      "name": "Visual Design",
+      "assignee": "LM",
+      "assigneeColor": "#a78bfa",
+      "category": "design",
+      "startWeek": 4,
+      "durationWeeks": 4,
+      "progressPct": 70,
+      "status": "In Progress",
+      "indent": 1
+    },
+    {
+      "name": "Frontend Dev",
+      "assignee": "RJ",
+      "assigneeColor": "#60a5fa",
+      "category": "dev",
+      "startWeek": 5,
+      "durationWeeks": 6,
+      "progressPct": 45,
+      "status": "In Progress",
+      "indent": 0
+    },
+    {
+      "name": "Backend API",
+      "assignee": "TS",
+      "assigneeColor": "#60a5fa",
+      "category": "dev",
+      "startWeek": 4,
+      "durationWeeks": 7,
+      "progressPct": 55,
+      "status": "In Progress",
+      "indent": 1
+    },
+    {
+      "name": "Integration Testing",
+      "assignee": "PN",
+      "assigneeColor": "#34d399",
+      "category": "qa",
+      "startWeek": 10,
+      "durationWeeks": 3,
+      "progressPct": 0,
+      "status": "Not Started",
+      "indent": 0
+    },
+    {
+      "name": "UAT Testing",
+      "assignee": "PN",
+      "assigneeColor": "#34d399",
+      "category": "qa",
+      "startWeek": 12,
+      "durationWeeks": 2,
+      "progressPct": 0,
+      "status": "Not Started",
+      "indent": 1
+    },
+    {
+      "name": "Launch Prep",
+      "assignee": "AK",
+      "assigneeColor": "#fb923c",
+      "category": "launch",
+      "startWeek": 13,
+      "durationWeeks": 2,
+      "progressPct": 0,
+      "status": "Not Started",
+      "indent": 0
+    }
+  ],
+  "milestones": [
+    { "name": "Design Approval", "week": 5, "date": "Feb 7" },
+    { "name": "Beta Release", "week": 12, "date": "Mar 28" },
+    { "name": "Go Live", "week": 15, "date": "Apr 18" }
+  ],
+  "summary": {
+    "totalTasks": 8,
+    "completed": 2,
+    "inProgress": 3,
+    "onTrackPct": 87
+  },
+  "categoryColors": {
+    "design": "#a78bfa",
+    "dev": "#60a5fa",
+    "qa": "#34d399",
+    "launch": "#fb923c"
+  },
+  "todayWeek": 8,
+  "taskDateRanges": [
+    "Jan 6 - Jan 24",
+    "Jan 20 - Feb 7",
+    "Feb 3 - Feb 28",
+    "Feb 10 - Mar 21",
+    "Feb 3 - Mar 21",
+    "Mar 16 - Apr 4",
+    "Mar 28 - Apr 11",
+    "Mar 31 - Apr 18"
+  ],
+  "team": [
+    { "initials": "AK", "name": "Anna Kim", "role": "Product Lead", "color": "#a78bfa" },
+    { "initials": "LM", "name": "Leo Martinez", "role": "Designer", "color": "#a78bfa" }
+  ]
+}

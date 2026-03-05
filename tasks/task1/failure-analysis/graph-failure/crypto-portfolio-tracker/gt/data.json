@@ -1,0 +1,62 @@
+{
+  "portfolioName": "My Crypto Portfolio",
+  "totalValue": 47832.61,
+  "totalChange24h": 2.37,
+  "totalChangeAmount": 1108.43,
+  "chartData": [
+    { "day": "Mon", "value": 45210.33 },
+    { "day": "Tue", "value": 44892.17 },
+    { "day": "Wed", "value": 46105.82 },
+    { "day": "Thu", "value": 45738.91 },
+    { "day": "Fri", "value": 46924.05 },
+    { "day": "Sat", "value": 46724.18 },
+    { "day": "Sun", "value": 47832.61 }
+  ],
+  "coins": [
+    {
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "color": "#F7931A",
+      "price": 67234.18,
+      "change24h": 3.14,
+      "holdingsAmount": 0.4821,
+      "holdingsValue": 32410.72
+    },
+    {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "color": "#627EEA",
+      "price": 3521.47,
+      "change24h": 1.89,
+      "holdingsAmount": 2.7340,
+      "holdingsValue": 9629.70
+    },
+    {
+      "name": "Solana",
+      "symbol": "SOL",
+      "color": "#9945FF",
+      "price": 148.63,
+      "change24h": -2.41,
+      "holdingsAmount": 18.5000,
+      "holdingsValue": 2749.66
+    },
+    {
+      "name": "Cardano",
+      "symbol": "ADA",
+      "color": "#0033AD",
+      "price": 0.6218,
+      "change24h": 4.72,
+      "holdingsAmount": 3250.0000,
+      "holdingsValue": 2020.85
+    },
+    {
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "color": "#2A5ADA",
+      "price": 17.83,
+      "change24h": -1.06,
+      "holdingsAmount": 57.2500,
+      "holdingsValue": 1020.67
+    }
+  ]
+}

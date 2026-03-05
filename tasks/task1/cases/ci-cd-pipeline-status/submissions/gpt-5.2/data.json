@@ -1,0 +1,52 @@
+{
+  "repo": "acme/web-platform",
+  "branch": "main",
+  "commit": "a3f8c2d",
+  "status": "Passing",
+  "stages": {
+    "build": {
+      "name": "Build",
+      "duration": "2m 14s",
+      "jobs": ["Compile", "Lint", "Type Check"]
+    },
+    "test": {
+      "name": "Test",
+      "duration": "5m 38s",
+      "jobs": ["Unit Tests", "Integration Tests", "E2E Tests"]
+    },
+    "staging": {
+      "name": "Deploy\nStaging",
+      "duration": "3m 22s",
+      "jobs": ["Docker Build", "Deploy"]
+    },
+    "prod": {
+      "name": "Deploy\nProd",
+      "duration": "1m 45s",
+      "jobs": ["Canary\nDeploy", "Full Rollout"]
+    }
+  },
+  "chart": {
+    "title": "Stage Durations (seconds)",
+    "bars": [
+      { "label": "Build", "seconds": 134, "color": "#6b7cff" },
+      { "label": "Test", "seconds": 338, "color": "#2dd4a1" },
+      { "label": "Deploy Staging", "seconds": 202, "color": "#c7922b" },
+      { "label": "Deploy Prod", "seconds": 105, "color": "#c05a92" }
+    ]
+  },
+  "artifacts": {
+    "title": "Build Artifacts",
+    "items": [
+      { "name": "web-platform:v2.14.3", "size": "342 MB" },
+      { "name": "test-report.html", "size": "1.2 MB" }
+    ]
+  },
+  "deploys": {
+    "title": "Recent Deploys",
+    "items": [
+      { "env": "Production", "version": "v2.14.2", "time": "2h ago", "status": "ok" },
+      { "env": "Staging", "version": "v2.14.3", "time": "45m ago", "status": "ok" },
+      { "env": "Dev", "version": "v2.14.3", "time": "10m ago", "status": "ok" }
+    ]
+  }
+}

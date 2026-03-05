@@ -1,0 +1,8 @@
+{
+  "timeline": [
+    { "time": "11PM", "awake": 0, "rem": 0.5, "light": 1, "deep": 0.5 },
+    { "time": "1AM", "awake": 0, "rem": 0.5, "light": 1, "deep": 0.5 },
+    { "time": "3AM", "awake": 0.1, "rem": 0.7, "light": 1.2, "deep": 0 },
+    { "time": "5AM", "awake": 0, "rem": 0.5, "light": 1, "deep": 0.5 }
+  ]
+}

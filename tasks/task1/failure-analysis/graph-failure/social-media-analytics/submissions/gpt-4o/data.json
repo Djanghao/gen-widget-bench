@@ -1,0 +1,13 @@
+{
+  "chartData": [
+    { "date": "Feb 19", "likes": 200, "comments": 20, "shares": 4 },
+    { "date": "Feb 22", "likes": 240, "comments": 25, "shares": 5 },
+    { "date": "Feb 25", "likes": 280, "comments": 26, "shares": 6 },
+    { "date": "Feb 28", "likes": 300, "comments": 28, "shares": 7 },
+    { "date": "Mar 3", "likes": 350, "comments": 30, "shares": 8 }
+  ],
+  "recentPosts": [
+    { "date": "Mar 4", "preview": "Just shipped our new AI-powered code review tool. The results are incredible - 40% fewer bugs in production...", "engagement": "2.4K" },
+    { "date": "Mar 2", "preview": "Hot take: TypeScript's type system is becoming its own programming language. Here's why that matters...", "engagement": "1.8K" }
+  ]
+}

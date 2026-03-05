@@ -1,0 +1,55 @@
+{
+  "portfolioValue": 124850.75,
+  "portfolioChange": 1.24,
+  "lastUpdated": "Today at 4:32 PM",
+  "chartData": [
+    { "date": "May 1", "aapl": 182.45, "googl": 138.22, "msft": 372.15 },
+    { "date": "May 2", "aapl": 183.12, "googl": 139.45, "msft": 374.88 },
+    { "date": "May 3", "aapl": 184.67, "googl": 140.12, "msft": 376.42 },
+    { "date": "May 4", "aapl": 185.23, "googl": 141.33, "msft": 378.65 },
+    { "date": "May 5", "aapl": 186.89, "googl": 142.56, "msft": 379.21 },
+    { "date": "May 6", "aapl": 187.45, "googl": 143.22, "msft": 381.44 },
+    { "date": "May 7", "aapl": 188.76, "googl": 144.89, "msft": 382.78 },
+    { "date": "May 8", "aapl": 189.32, "googl": 145.67, "msft": 384.12 },
+    { "date": "May 9", "aapl": 190.55, "googl": 146.34, "msft": 385.67 },
+    { "date": "May 10", "aapl": 191.22, "googl": 147.89, "msft": 386.91 }
+  ],
+  "stocks": {
+    "aapl": {
+      "currentPrice": 191.22,
+      "change": 0.87,
+      "open": 190.45,
+      "close": 191.22,
+      "high": 192.33,
+      "low": 189.78,
+      "volume": 52340000,
+      "marketCap": 2835000000000,
+      "peRatio": 30.2,
+      "performance1M": 5.42
+    },
+    "googl": {
+      "currentPrice": 147.89,
+      "change": 1.23,
+      "open": 146.56,
+      "close": 147.89,
+      "high": 148.92,
+      "low": 145.34,
+      "volume": 18450000,
+      "marketCap": 1987000000000,
+      "peRatio": 25.8,
+      "performance1M": 3.67
+    },
+    "msft": {
+      "currentPrice": 386.91,
+      "change": 0.56,
+      "open": 385.23,
+      "close": 386.91,
+      "high": 388.45,
+      "low": 384.12,
+      "volume": 22180000,
+      "marketCap": 2892000000000,
+      "peRatio": 34.5,
+      "performance1M": 7.21
+    }
+  }
+}

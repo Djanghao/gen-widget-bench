@@ -1,0 +1,53 @@
+{
+  "origin": "Downtown",
+  "destination": "Airport",
+  "totalMinutes": 47,
+  "departureTime": "8:15 AM",
+  "arrivalTime": "9:02 AM",
+  "segments": [
+    {
+      "mode": "walk",
+      "duration": 5,
+      "from": "123 Main St",
+      "to": "Central Ave & 3rd St",
+      "details": null
+    },
+    {
+      "mode": "bus",
+      "duration": 28,
+      "from": "Central Ave & 3rd St",
+      "to": "Airport Terminal Dr",
+      "details": {
+        "routeName": "Route 45",
+        "routeColor": "#2E86DE",
+        "stops": 12,
+        "departTime": "8:20 AM",
+        "arriveTime": "8:48 AM",
+        "frequency": "Every 10 min"
+      }
+    },
+    {
+      "mode": "walk",
+      "duration": 4,
+      "from": "Airport Terminal Dr",
+      "to": "Terminal 2 Departures",
+      "details": null
+    }
+  ],
+  "alternatives": [
+    {
+      "label": "Express Train + Walk",
+      "totalMinutes": 38,
+      "departureTime": "8:25 AM",
+      "modes": ["walk", "train", "walk"],
+      "cost": "$3.50"
+    },
+    {
+      "label": "Bus 12 + Bus 45",
+      "totalMinutes": 55,
+      "departureTime": "8:10 AM",
+      "modes": ["walk", "bus", "bus", "walk"],
+      "cost": "$2.75"
+    }
+  ]
+}

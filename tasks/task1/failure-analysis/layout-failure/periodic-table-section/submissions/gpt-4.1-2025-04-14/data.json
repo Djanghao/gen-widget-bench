@@ -1,0 +1,186 @@
+{
+  "title": "Periodic Table",
+  "filters": [
+    {"key": "alkali", "label": "Alkali Metal"},
+    {"key": "alkaline", "label": "Alkaline Earth"},
+    {"key": "transition", "label": "Transition Metal"},
+    {"key": "post-transition", "label": "Post-Transition"}
+  ],
+  "elements": [
+    {
+      "number": 11,
+      "symbol": "Na",
+      "name": "Sodium",
+      "mass": "22.99",
+      "category": "alkali"
+    },
+    {
+      "number": 12,
+      "symbol": "Mg",
+      "name": "Magnesium",
+      "mass": "24.305",
+      "category": "alkaline"
+    },
+    {
+      "number": 13,
+      "symbol": "Al",
+      "name": "Aluminium",
+      "mass": "26.982",
+      "category": "post-transition"
+    },
+    {
+      "number": 14,
+      "symbol": "Si",
+      "name": "Silicon",
+      "mass": "28.086",
+      "category": "metalloid"
+    },
+    {
+      "number": 19,
+      "symbol": "K",
+      "name": "Potassium",
+      "mass": "39.098",
+      "category": "alkali"
+    },
+    {
+      "number": 20,
+      "symbol": "Ca",
+      "name": "Calcium",
+      "mass": "40.078",
+      "category": "alkaline"
+    },
+    {
+      "number": 21,
+      "symbol": "Sc",
+      "name": "Scandium",
+      "mass": "44.956",
+      "category": "transition"
+    },
+    {
+      "number": 22,
+      "symbol": "Ti",
+      "name": "Titanium",
+      "mass": "47.867",
+      "category": "transition"
+    },
+    {
+      "number": 23,
+      "symbol": "V",
+      "name": "Vanadium",
+      "mass": "50.942",
+      "category": "transition"
+    },
+    {
+      "number": 24,
+      "symbol": "Cr",
+      "name": "Chromium",
+      "mass": "51.996",
+      "category": "transition"
+    },
+    {
+      "number": 25,
+      "symbol": "Mn",
+      "name": "Manganese",
+      "mass": "54.938",
+      "category": "transition"
+    },
+    {
+      "number": 26,
+      "symbol": "Fe",
+      "name": "Iron",
+      "mass": "55.845",
+      "category": "transition"
+    },
+    {
+      "number": 27,
+      "symbol": "Co",
+      "name": "Cobalt",
+      "mass": "58.933",
+      "category": "transition"
+    },
+    {
+      "number": 28,
+      "symbol": "Ni",
+      "name": "Nickel",
+      "mass": "58.693",
+      "category": "transition"
+    },
+    {
+      "number": 29,
+      "symbol": "Cu",
+      "name": "Copper",
+      "mass": "63.546",
+      "category": "transition"
+    },
+    {
+      "number": 30,
+      "symbol": "Zn",
+      "name": "Zinc",
+      "mass": "65.38",
+      "category": "post-transition"
+    },
+    {
+      "number": 31,
+      "symbol": "Ga",
+      "name": "Gallium",
+      "mass": "69.723",
+      "category": "post-transition"
+    },
+    {
+      "number": 32,
+      "symbol": "Ge",
+      "name": "Germanium",
+      "mass": "72.63",
+      "category": "metalloid"
+    },
+    {
+      "number": 37,
+      "symbol": "Rb",
+      "name": "Rubidium",
+      "mass": "85.468",
+      "category": "alkali"
+    },
+    {
+      "number": 38,
+      "symbol": "Sr",
+      "name": "Strontium",
+      "mass": "87.62",
+      "category": "alkaline"
+    }
+  ],
+  "selected": {
+    "symbol": "Fe",
+    "name": "Iron",
+    "number": 26,
+    "mass": "55.845",
+    "electronConfig": "[Ar] 3d6 4s2",
+    "category": "Transition Metal",
+    "period": 4,
+    "group": 8,
+    "melting": "1538 C",
+    "boiling": "2862 C",
+    "density": "7.874 g/cm3",
+    "electronegativity": "1.83"
+  },
+  "comparisonChart": {
+    "title": "Melting Point Comparison",
+    "bars": [
+      {"symbol": "Sc", "melting": 1541},
+      {"symbol": "Ti", "melting": 1668},
+      {"symbol": "V", "melting": 1910},
+      {"symbol": "Cr", "melting": 1907},
+      {"symbol": "Mn", "melting": 1246},
+      {"symbol": "Fe", "melting": 1538},
+      {"symbol": "Co", "melting": 1495},
+      {"symbol": "Ni", "melting": 1455},
+      {"symbol": "Cu", "melting": 1085}
+    ]
+  },
+  "legend": [
+    {"key": "alkali", "label": "Alkali Metal", "color": "#c74444"},
+    {"key": "alkaline", "label": "Alkaline Earth", "color": "#e0a949"},
+    {"key": "transition", "label": "Transition Metal", "color": "#e3bc32"},
+    {"key": "post-transition", "label": "Post-Transition", "color": "#22c0a8"},
+    {"key": "metalloid", "label": "Metalloid", "color": "#35b9c9"}
+  ]
+}

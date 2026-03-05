@@ -1,0 +1,14 @@
+{
+  "budgetTotal": 5400.00,
+  "spentAmount": 4698.00,
+  "remainingAmount": 702.00,
+  "spentPercentage": 87,
+  "categories": [
+    { "name": "Housing", "amount": 1890.00, "percentage": 35, "value": 35 },
+    { "name": "Food & Dining", "amount": 1080.00, "percentage": 20, "value": 20 },
+    { "name": "Transportation", "amount": 810.00, "percentage": 15, "value": 15 },
+    { "name": "Savings", "amount": 648.00, "percentage": 12, "value": 12 },
+    { "name": "Entertainment", "amount": 486.00, "percentage": 9, "value": 9 },
+    { "name": "Healthcare", "amount": 486.00, "percentage": 9, "value": 9 }
+  ]
+}

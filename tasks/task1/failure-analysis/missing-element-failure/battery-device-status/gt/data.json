@@ -1,0 +1,52 @@
+{
+  "title": "My Devices",
+  "lastSynced": "2 min ago",
+  "devices": [
+    {
+      "name": "iPhone 15 Pro",
+      "model": "A2848 - iOS 19.3",
+      "icon": "Smartphone",
+      "batteryPct": 87,
+      "charging": false
+    },
+    {
+      "name": "MacBook Pro 14\"",
+      "model": "M3 Pro - macOS 16.2",
+      "icon": "Laptop",
+      "batteryPct": 45,
+      "charging": true
+    },
+    {
+      "name": "iPad Air",
+      "model": "M2 - iPadOS 19.3",
+      "icon": "Tablet",
+      "batteryPct": 12,
+      "charging": false
+    },
+    {
+      "name": "Apple Watch Ultra",
+      "model": "Series 3 - watchOS 12",
+      "icon": "Watch",
+      "batteryPct": 93,
+      "charging": true
+    },
+    {
+      "name": "AirPods Pro",
+      "model": "2nd Gen - FW 7A305",
+      "icon": "Headphones",
+      "batteryPct": 34,
+      "charging": false
+    },
+    {
+      "name": "HomePod Mini",
+      "model": "2nd Gen - audioOS 19",
+      "icon": "Speaker",
+      "batteryPct": 100,
+      "charging": false
+    }
+  ],
+  "chargingCount": 2,
+  "totalDevices": 6,
+  "lowestDevice": "iPad Air",
+  "lowestPct": 12
+}

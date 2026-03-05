@@ -1,0 +1,161 @@
+{
+  "header": {
+    "clock": "10:42 AM",
+    "activeCount": 8
+  },
+  "orders": [
+    {
+      "number": 104,
+      "time": "08:24",
+      "type": "DINE-IN",
+      "table": "Table 12",
+      "status": "PREPARING",
+      "priority": true,
+      "items": [
+        {
+          "name": "Classic Burger",
+          "modifications": "No onions, extra pickles"
+        },
+        {
+          "name": "Sweet Potato Fries",
+          "modifications": "Extra salt"
+        }
+      ],
+      "progress": 75,
+      "allergy": "NUT ALLERGY"
+    },
+    {
+      "number": 105,
+      "time": "08:27",
+      "type": "DELIVERY",
+      "table": "Uber Eats",
+      "status": "READY",
+      "priority": false,
+      "items": [
+        {
+          "name": "Caesar Salad",
+          "modifications": "No croutons"
+        },
+        {
+          "name": "Grilled Chicken Breast"
+        }
+      ],
+      "progress": 100,
+      "allergy": null
+    },
+    {
+      "number": 106,
+      "time": "08:31",
+      "type": "TAKEOUT",
+      "table": "Pickup Counter",
+      "status": "PREPARING",
+      "priority": false,
+      "items": [
+        {
+          "name": "Veggie Pizza",
+          "modifications": "No cheese"
+        },
+        {
+          "name": "Garlic Bread"
+        }
+      ],
+      "progress": 45,
+      "allergy": "DAIRY FREE"
+    },
+    {
+      "number": 107,
+      "time": "08:33",
+      "type": "DINE-IN",
+      "table": "Table 8",
+      "status": "PREPARING",
+      "priority": false,
+      "items": [
+        {
+          "name": "Shrimp Pasta",
+          "modifications": "Light sauce"
+        },
+        {
+          "name": "Side Caesar Salad"
+        }
+      ],
+      "progress": 30,
+      "allergy": null
+    },
+    {
+      "number": 108,
+      "time": "08:36",
+      "type": "DELIVERY",
+      "table": "DoorDash",
+      "status": "PREPARING",
+      "priority": true,
+      "items": [
+        {
+          "name": "Philly Cheesesteak",
+          "modifications": "Extra onions"
+        },
+        {
+          "name": "Onion Rings"
+        }
+      ],
+      "progress": 60,
+      "allergy": "GLUTEN FREE BUN"
+    },
+    {
+      "number": 109,
+      "time": "08:39",
+      "type": "TAKEOUT",
+      "table": "Pickup Counter",
+      "status": "PREPARING",
+      "priority": false,
+      "items": [
+        {
+          "name": "Chicken Tacos",
+          "modifications": "No cilantro"
+        },
+        {
+          "name": "Black Beans"
+        }
+      ],
+      "progress": 20,
+      "allergy": null
+    },
+    {
+      "number": 110,
+      "time": "08:41",
+      "type": "DINE-IN",
+      "table": "Table 4",
+      "status": "READY",
+      "priority": false,
+      "items": [
+        {
+          "name": "Chocolate Cake",
+          "modifications": "Extra frosting"
+        }
+      ],
+      "progress": 100,
+      "allergy": "EGG ALLERGY"
+    },
+    {
+      "number": 111,
+      "time": "08:43",
+      "type": "DELIVERY",
+      "table": "Grubhub",
+      "status": "PREPARING",
+      "priority": false,
+      "items": [
+        {
+          "name": "Mushroom Risotto",
+          "modifications": "Vegan"
+        }
+      ],
+      "progress": 15,
+      "allergy": null
+    }
+  ],
+  "summary": {
+    "avgWait": "12 min",
+    "ordersPerHour": "24",
+    "completedToday": "142",
+    "overdue": "3"
+  }
+}

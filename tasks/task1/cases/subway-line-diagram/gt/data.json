@@ -1,0 +1,165 @@
+{
+  "lineName": "Blue Line",
+  "lineColor": "#3b82f6",
+  "lineLetter": "B",
+  "direction": "Northbound to Lakefront",
+  "status": "On Time",
+  "tripOrigin": "Central Square",
+  "tripDestination": "Harbor Point",
+  "tripTime": "~18 min",
+  "stations": [
+    {
+      "name": "Riverside Terminal",
+      "zone": 3,
+      "type": "Local",
+      "transfers": [],
+      "accessible": false,
+      "isOrigin": false,
+      "isDestination": false,
+      "isTerminus": true,
+      "timing": null
+    },
+    {
+      "name": "Oakwood Park",
+      "zone": 3,
+      "type": "Local",
+      "transfers": [],
+      "accessible": false,
+      "isOrigin": false,
+      "isDestination": false,
+      "isTerminus": false,
+      "timing": null
+    },
+    {
+      "name": "University Heights",
+      "zone": 2,
+      "type": "Express",
+      "transfers": [
+        { "line": "Red", "color": "#ef4444" },
+        { "line": "Green", "color": "#22c55e" }
+      ],
+      "accessible": false,
+      "isOrigin": false,
+      "isDestination": false,
+      "isTerminus": false,
+      "timing": null
+    },
+    {
+      "name": "Central Square",
+      "zone": 1,
+      "type": "Express",
+      "transfers": [
+        { "line": "Orange", "color": "#f97316" },
+        { "line": "Purple", "color": "#a855f7" }
+      ],
+      "accessible": true,
+      "isOrigin": true,
+      "isDestination": false,
+      "isTerminus": false,
+      "timing": "Board here"
+    },
+    {
+      "name": "Midtown Plaza",
+      "zone": 1,
+      "type": "Express",
+      "transfers": [],
+      "accessible": true,
+      "isOrigin": false,
+      "isDestination": false,
+      "isTerminus": false,
+      "timing": null
+    },
+    {
+      "name": "Commerce District",
+      "zone": 1,
+      "type": "Local",
+      "transfers": [],
+      "accessible": false,
+      "isOrigin": false,
+      "isDestination": false,
+      "isTerminus": false,
+      "timing": null
+    },
+    {
+      "name": "Waterfront",
+      "zone": 2,
+      "type": "Express",
+      "transfers": [
+        { "line": "Yellow", "color": "#eab308" }
+      ],
+      "accessible": false,
+      "isOrigin": false,
+      "isDestination": false,
+      "isTerminus": false,
+      "timing": null
+    },
+    {
+      "name": "Harbor Point",
+      "zone": 2,
+      "type": "Express",
+      "transfers": [],
+      "accessible": true,
+      "isOrigin": false,
+      "isDestination": true,
+      "isTerminus": false,
+      "timing": "Arrive ~18 min"
+    },
+    {
+      "name": "Marina Bay",
+      "zone": 3,
+      "type": "Local",
+      "transfers": [],
+      "accessible": false,
+      "isOrigin": false,
+      "isDestination": false,
+      "isTerminus": false,
+      "timing": null
+    },
+    {
+      "name": "Lakefront",
+      "zone": 3,
+      "type": "Local",
+      "transfers": [],
+      "accessible": false,
+      "isOrigin": false,
+      "isDestination": false,
+      "isTerminus": true,
+      "timing": null
+    }
+  ],
+  "alerts": [
+    {
+      "severity": "Warning",
+      "message": "Delays of 3-5 min between Midtown Plaza and Commerce District due to signal work"
+    },
+    {
+      "severity": "Info",
+      "message": "Elevator at University Heights station out of service until Mar 10"
+    }
+  ],
+  "ridership": [
+    { "hour": "6am", "riders": 120 },
+    { "hour": "7am", "riders": 450 },
+    { "hour": "8am", "riders": 820 },
+    { "hour": "9am", "riders": 640 },
+    { "hour": "10am", "riders": 380 },
+    { "hour": "11am", "riders": 290 },
+    { "hour": "12pm", "riders": 340 },
+    { "hour": "1pm", "riders": 310 },
+    { "hour": "2pm", "riders": 280 },
+    { "hour": "3pm", "riders": 420 },
+    { "hour": "4pm", "riders": 580 },
+    { "hour": "5pm", "riders": 790 },
+    { "hour": "6pm", "riders": 680 },
+    { "hour": "7pm", "riders": 390 }
+  ],
+  "travelSegments": [
+    { "from": "Central Square", "to": "Midtown Plaza", "minutes": 3 },
+    { "from": "Midtown Plaza", "to": "Commerce District", "minutes": 4 },
+    { "from": "Commerce District", "to": "Waterfront", "minutes": 5 },
+    { "from": "Waterfront", "to": "Harbor Point", "minutes": 6 }
+  ],
+  "nextTrainMin": 3,
+  "frequencyMin": 6,
+  "lastUpdated": "2 min ago"
+}

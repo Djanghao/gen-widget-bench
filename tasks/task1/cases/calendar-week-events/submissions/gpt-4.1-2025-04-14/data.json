@@ -1,0 +1,95 @@
+{
+  "month": "March 2026",
+  "week": "10",
+  "days": [
+    { "abbr": "Mon", "date": 2, "eid": "day-col-0" },
+    { "abbr": "Tue", "date": 3, "eid": "day-col-1" },
+    { "abbr": "Wed", "date": 4, "eid": "day-col-2", "current": true },
+    { "abbr": "Thu", "date": 5, "eid": "day-col-3" },
+    { "abbr": "Fri", "date": 6, "eid": "day-col-4" }
+  ],
+  "timeLabels": [
+    { "label": "8 AM", "eid": "time-8am" },
+    { "label": "9 AM", "eid": "time-9am" },
+    { "label": "10 AM", "eid": "time-10am" },
+    { "label": "11 AM", "eid": "time-11am" },
+    { "label": "12 PM", "eid": "time-12pm" },
+    { "label": "1 PM", "eid": "time-1pm" },
+    { "label": "2 PM", "eid": "time-2pm" },
+    { "label": "3 PM", "eid": "time-3pm" },
+    { "label": "4 PM", "eid": "time-4pm" },
+    { "label": "5 PM", "eid": "time-5pm" },
+    { "label": "6 PM", "eid": "time-6pm" }
+  ],
+  "events": [
+    {
+      "eid": "event-0",
+      "title": "Team Standup",
+      "category": "Work",
+      "start": "9:00",
+      "end": "9:30",
+      "col": 0
+    },
+    {
+      "eid": "event-1",
+      "title": "Design Review",
+      "category": "Meeting",
+      "start": "2:00",
+      "end": "3:30",
+      "col": 0
+    },
+    {
+      "eid": "event-2",
+      "title": "Sprint Planning",
+      "category": "Meeting",
+      "start": "10:00",
+      "end": "11:30",
+      "col": 1
+    },
+    {
+      "eid": "event-3",
+      "title": "Dentist Appt",
+      "category": "Personal",
+      "start": "3:00",
+      "end": "4:00",
+      "col": 1
+    },
+    {
+      "eid": "event-4",
+      "title": "API Integration",
+      "category": "Work",
+      "start": "9:00",
+      "end": "12:00",
+      "col": 2
+    },
+    {
+      "eid": "event-5",
+      "title": "Lunch w/ Sarah",
+      "category": "Personal",
+      "start": "12:00",
+      "end": "1:00",
+      "col": 2
+    },
+    {
+      "eid": "event-6",
+      "title": "Client Call",
+      "category": "Meeting",
+      "start": "11:00",
+      "end": "12:00",
+      "col": 3
+    },
+    {
+      "eid": "event-7",
+      "title": "Code Deploy",
+      "category": "Work",
+      "start": "2:00",
+      "end": "4:00",
+      "col": 4
+    }
+  ],
+  "legend": [
+    { "eid": "legend-work", "label": "Work", "color": "#2873d7" },
+    { "eid": "legend-personal", "label": "Personal", "color": "#18b585" },
+    { "eid": "legend-meeting", "label": "Meeting", "color": "#7a4fff" }
+  ]
+}

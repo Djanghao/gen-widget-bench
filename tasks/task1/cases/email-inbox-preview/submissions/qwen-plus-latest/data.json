@@ -1,0 +1,68 @@
+{
+  "inboxTitle": "Inbox",
+  "unreadCount": 3,
+  "tabs": {
+    "primary": {
+      "label": "Primary",
+      "count": 12
+    },
+    "social": {
+      "label": "Social",
+      "count": 4
+    },
+    "updates": {
+      "label": "Updates",
+      "count": 7
+    }
+  },
+  "emails": [
+    {
+      "status": "unread",
+      "senderInitial": "A",
+      "sender": "Alex Chen",
+      "subject": "Q1 Revenue Report - Final Numbers",
+      "time": "2m ago",
+      "starred": true
+    },
+    {
+      "status": "unread",
+      "senderInitial": "M",
+      "sender": "Maria Santos",
+      "subject": "Re: Design System Updates v3.2",
+      "time": "18m ago",
+      "starred": false
+    },
+    {
+      "status": "unread",
+      "senderInitial": "D",
+      "sender": "DevOps Bot",
+      "subject": "ALERT: Deployment pipeline failed",
+      "time": "1h ago",
+      "starred": false
+    },
+    {
+      "status": "read",
+      "senderInitial": "J",
+      "sender": "Jordan Park",
+      "subject": "Meeting notes - Product roadmap sync",
+      "time": "3h ago",
+      "starred": false
+    },
+    {
+      "status": "read",
+      "senderInitial": "P",
+      "sender": "Priya Sharma",
+      "subject": "Interview feedback - Senior Frontend",
+      "time": "Yesterday",
+      "starred": false
+    },
+    {
+      "status": "read",
+      "senderInitial": "G",
+      "sender": "GitHub",
+      "subject": "[widget-bench] PR #238 merged to main",
+      "time": "Yesterday",
+      "starred": false
+    }
+  ]
+}

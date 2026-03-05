@@ -1,0 +1,46 @@
+{
+  "month": "February 2025",
+  "total": "$5,400.00",
+  "spent": "$4,698.00",
+  "left": "$702.00",
+  "progress": "87%",
+  "progressBarFill": "87%",
+  "categories": [
+    {
+      "name": "Housing",
+      "amount": "$1,890.00",
+      "percent": "35%",
+      "value": 1890
+    },
+    {
+      "name": "Food & Dining",
+      "amount": "$1,080.00",
+      "percent": "20%",
+      "value": 1080
+    },
+    {
+      "name": "Transportation",
+      "amount": "$810.00",
+      "percent": "15%",
+      "value": 810
+    },
+    {
+      "name": "Savings",
+      "amount": "$648.00",
+      "percent": "12%",
+      "value": 648
+    },
+    {
+      "name": "Entertainment",
+      "amount": "$540.00",
+      "percent": "10%",
+      "value": 540
+    },
+    {
+      "name": "Healthcare",
+      "amount": "$430.00",
+      "percent": "8%",
+      "value": 430
+    }
+  ]
+}

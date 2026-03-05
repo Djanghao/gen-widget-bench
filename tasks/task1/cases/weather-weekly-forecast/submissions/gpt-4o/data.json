@@ -1,0 +1,24 @@
+{
+  "weeklyTemps": [
+    { "day": "Mon", "high": 62, "low": 45 },
+    { "day": "Tue", "high": 58, "low": 43 },
+    { "day": "Wed", "high": 55, "low": 41 },
+    { "day": "Thu", "high": 60, "low": 44 },
+    { "day": "Fri", "high": 64, "low": 47 },
+    { "day": "Sat", "high": 67, "low": 49 },
+    { "day": "Sun", "high": 63, "low": 46 }
+  ],
+  "dailyForecast": [
+    { "name": "Mon", "high": 62, "low": 45, "precip": 10 },
+    { "name": "Tue", "high": 58, "low": 43, "precip": 65 },
+    { "name": "Wed", "high": 55, "low": 41 },
+    { "name": "Thu", "high": 60, "low": 44 },
+    { "name": "Fri", "high": 64, "low": 47 },
+    { "name": "Sat", "high": 67, "low": 49 },
+    { "name": "Sun", "high": 63, "low": 46 }
+  ],
+  "sunrise": "6:47 AM",
+  "sunset": "5:58 PM",
+  "humidity": "72%",
+  "uvIndex": 3
+}

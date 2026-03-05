@@ -1,0 +1,64 @@
+{
+  "stations": [
+    {
+      "name": "Riverside Terminal",
+      "zone": "Zone 3",
+      "type": "Local"
+    },
+    {
+      "name": "Oakwood Park",
+      "zone": "Zone 3",
+      "type": "Local"
+    },
+    {
+      "name": "University Heights",
+      "zone": "Zone 2",
+      "type": "Express",
+      "transfers": ["R", "G"]
+    },
+    {
+      "name": "Central Square",
+      "zone": "Zone 1",
+      "type": "Express",
+      "transfers": ["P"],
+      "highlighted": true,
+      "accessible": true,
+      "time": "Board here"
+    },
+    {
+      "name": "Midtown Plaza",
+      "zone": "Zone 1",
+      "type": "Express",
+      "accessible": true
+    },
+    {
+      "name": "Commerce District",
+      "zone": "Zone 1",
+      "type": "Local"
+    },
+    {
+      "name": "Waterfront",
+      "zone": "Zone 2",
+      "type": "Express",
+      "transfers": ["Y"]
+    },
+    {
+      "name": "Harbor Point",
+      "zone": "Zone 2",
+      "type": "Express",
+      "highlighted": true,
+      "accessible": true,
+      "time": "Arrive ~18 min"
+    },
+    {
+      "name": "Marina Bay",
+      "zone": "Zone 3",
+      "type": "Local"
+    },
+    {
+      "name": "Lakefront",
+      "zone": "Zone 3",
+      "type": "Local"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "base": {
+    "currency": "USD",
+    "amount": "1.00 USD"
+  },
+  "updated": "Updated: Mar 4, 2025 3:47 PM UTC",
+  "currencies": [
+    { "flag": "🇪🇺", "code": "EUR", "name": "Euro", "rate": "0.9247", "change": -0.32 },
+    { "flag": "🇬🇧", "code": "GBP", "name": "British Pound", "rate": "0.7918", "change": 0.18 },
+    { "flag": "🇯🇵", "code": "JPY", "name": "Japanese Yen", "rate": "150.4320", "change": -0.74 },
+    { "flag": "🇦🇺", "code": "AUD", "name": "Australian Dollar", "rate": "1.5382", "change": 0.41 },
+    { "flag": "🇨🇦", "code": "CAD", "name": "Canadian Dollar", "rate": "1.3571", "change": -0.15 },
+    { "flag": "🇨🇭", "code": "CHF", "name": "Swiss Franc", "rate": "0.8834", "change": 0.27 },
+    { "flag": "🇨🇳", "code": "CNY", "name": "Chinese Yuan", "rate": "7.2341", "change": -0.08 },
+    { "flag": "🇮🇳", "code": "INR", "name": "Indian Rupee", "rate": "83.1247", "change": -0.53 }
+  ],
+  "strength": [
+    { "code": "EUR", "value": -0.32 },
+    { "code": "GBP", "value": 0.18 },
+    { "code": "JPY", "value": -0.74 },
+    { "code": "AUD", "value": 0.41 },
+    { "code": "CAD", "value": -0.15 },
+    { "code": "CHF", "value": 0.27 },
+    { "code": "CNY", "value": -0.08 },
+    { "code": "INR", "value": -0.53 }
+  ]
+}

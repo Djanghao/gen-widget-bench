@@ -1,0 +1,39 @@
+{
+  "header": {
+    "date": "Mon, Feb 24"
+  },
+  "rings": {
+    "move": {
+      "current": 623,
+      "goal": 650
+    },
+    "exercise": {
+      "current": 42,
+      "goal": 30
+    },
+    "stand": {
+      "current": 9,
+      "goal": 12
+    },
+    "totalCalories": 623
+  },
+  "stats": {
+    "move": {
+      "current": 623,
+      "goal": 650
+    },
+    "exercise": {
+      "current": 42,
+      "goal": 30
+    },
+    "stand": {
+      "current": 9,
+      "goal": 12
+    }
+  },
+  "summary": {
+    "caloriesBurned": "623 CAL",
+    "activeMinutes": "42 MIN",
+    "standHours": "9 HRS"
+  }
+}

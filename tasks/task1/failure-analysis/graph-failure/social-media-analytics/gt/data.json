@@ -1,0 +1,48 @@
+{
+  "profile": {
+    "handle": "@techcreator",
+    "initials": "TC",
+    "followers": "142.8K",
+    "following": "892",
+    "growth": "+2.4K this month"
+  },
+  "stats": {
+    "posts": "1,247",
+    "likes": "89.3K",
+    "comments": "12.4K",
+    "shares": "5.7K"
+  },
+  "engagementData": [
+    { "day": "Feb 19", "likes": 3200, "comments": 480, "shares": 210 },
+    { "day": "Feb 20", "likes": 2800, "comments": 520, "shares": 180 },
+    { "day": "Feb 21", "likes": 4100, "comments": 610, "shares": 340 },
+    { "day": "Feb 22", "likes": 3600, "comments": 430, "shares": 290 },
+    { "day": "Feb 23", "likes": 5200, "comments": 780, "shares": 420 },
+    { "day": "Feb 24", "likes": 4800, "comments": 690, "shares": 380 },
+    { "day": "Feb 25", "likes": 3900, "comments": 550, "shares": 310 },
+    { "day": "Feb 26", "likes": 6100, "comments": 920, "shares": 510 },
+    { "day": "Feb 27", "likes": 5500, "comments": 840, "shares": 460 },
+    { "day": "Feb 28", "likes": 4700, "comments": 710, "shares": 350 },
+    { "day": "Mar 1", "likes": 7200, "comments": 1050, "shares": 580 },
+    { "day": "Mar 2", "likes": 6800, "comments": 980, "shares": 540 },
+    { "day": "Mar 3", "likes": 5900, "comments": 870, "shares": 470 },
+    { "day": "Mar 4", "likes": 6400, "comments": 940, "shares": 520 }
+  ],
+  "recentPosts": [
+    {
+      "date": "Mar 4",
+      "preview": "Just shipped our new AI-powered code review tool. The results are incredible - 40% fewer bugs in production...",
+      "engagement": "2.4K"
+    },
+    {
+      "date": "Mar 2",
+      "preview": "Hot take: TypeScript's type system is becoming its own programming language. Here's why that matters...",
+      "engagement": "1.8K"
+    },
+    {
+      "date": "Feb 28",
+      "preview": "Building a real-time dashboard with WebSockets and React Server Components. Thread below...",
+      "engagement": "3.1K"
+    }
+  ]
+}

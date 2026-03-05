@@ -1,0 +1,22 @@
+{
+  "timelineData": [
+    { "time": "10PM", "awake": 0, "rem": 0, "light": 15, "deep": 25 },
+    { "time": "11PM", "awake": 0, "rem": 10, "light": 25, "deep": 15 },
+    { "time": "12AM", "awake": 5, "rem": 15, "light": 20, "deep": 10 },
+    { "time": "1AM", "awake": 0, "rem": 20, "light": 25, "deep": 5 },
+    { "time": "2AM", "awake": 0, "rem": 25, "light": 20, "deep": 5 },
+    { "time": "3AM", "awake": 0, "rem": 20, "light": 25, "deep": 5 },
+    { "time": "4AM", "awake": 0, "rem": 15, "light": 25, "deep": 10 },
+    { "time": "5AM", "awake": 0, "rem": 10, "light": 25, "deep": 15 },
+    { "time": "6AM", "awake": 5, "rem": 5, "light": 25, "deep": 15 },
+    { "time": "7AM", "awake": 20, "rem": 0, "light": 20, "deep": 10 }
+  ],
+  "stats": {
+    "score": 82,
+    "totalSleep": "7h 23m",
+    "timeInBed": "8h 05m",
+    "efficiency": "91%"
+  },
+  "bedtime": "10:47 PM",
+  "waketime": "6:52 AM"
+}

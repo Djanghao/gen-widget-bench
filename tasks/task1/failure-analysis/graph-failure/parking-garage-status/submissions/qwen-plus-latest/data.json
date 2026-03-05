@@ -1,0 +1,61 @@
+{
+  "garage": {
+    "name": "Central Garage",
+    "address": "123 Main Street, Downtown",
+    "status": "Open"
+  },
+  "floors": [
+    {
+      "level": "B1",
+      "available": 32,
+      "total": 85,
+      "rate": 4.5
+    },
+    {
+      "level": "B2",
+      "available": 18,
+      "total": 85,
+      "rate": 4.5
+    },
+    {
+      "level": "L1",
+      "available": 45,
+      "total": 140,
+      "rate": 5.0
+    },
+    {
+      "level": "L2",
+      "available": 32,
+      "total": 140,
+      "rate": 5.0
+    }
+  ],
+  "summary": {
+    "totalSpots": 450,
+    "availableSpots": 127,
+    "hourlyRate": 4.5
+  },
+  "quickStats": {
+    "avgStay": "2.3h",
+    "busiestHour": "9 AM"
+  },
+  "occupancyData": [
+    { "hour": "6 AM", "occupancy": 25 },
+    { "hour": "7 AM", "occupancy": 35 },
+    { "hour": "8 AM", "occupancy": 65 },
+    { "hour": "9 AM", "occupancy": 92 },
+    { "hour": "10 AM", "occupancy": 88 },
+    { "hour": "11 AM", "occupancy": 82 },
+    { "hour": "12 PM", "occupancy": 78 },
+    { "hour": "1 PM", "occupancy": 75 },
+    { "hour": "2 PM", "occupancy": 72 },
+    { "hour": "3 PM", "occupancy": 68 },
+    { "hour": "4 PM", "occupancy": 70 },
+    { "hour": "5 PM", "occupancy": 76 },
+    { "hour": "6 PM", "occupancy": 80 },
+    { "hour": "7 PM", "occupancy": 65 },
+    { "hour": "8 PM", "occupancy": 50 },
+    { "hour": "9 PM", "occupancy": 35 },
+    { "hour": "10 PM", "occupancy": 25 }
+  ]
+}

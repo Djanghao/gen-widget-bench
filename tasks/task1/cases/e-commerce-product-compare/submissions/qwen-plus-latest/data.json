@@ -1,0 +1,165 @@
+{
+  "products": [
+    {
+      "name": "SoundMax Pro",
+      "price": 199.99,
+      "rating": 4.7,
+      "reviewCount": 248,
+      "availability": "In Stock",
+      "shipping": "Free shipping",
+      "sellerRating": "4.9 (12,450)",
+      "color": "#3498db"
+    },
+    {
+      "name": "AudioElite X1",
+      "price": 249.99,
+      "rating": 4.8,
+      "reviewCount": 182,
+      "availability": "In Stock",
+      "shipping": "Free shipping",
+      "sellerRating": "4.8 (8,230)",
+      "color": "#2ecc71"
+    },
+    {
+      "name": "BassKing 700",
+      "price": 179.99,
+      "rating": 4.5,
+      "reviewCount": 312,
+      "availability": "Limited stock",
+      "shipping": "Free shipping",
+      "sellerRating": "4.7 (15,670)",
+      "color": "#e74c3c"
+    },
+    {
+      "name": "ClearTone Ultra",
+      "price": 299.99,
+      "rating": 4.9,
+      "reviewCount": 94,
+      "availability": "In Stock",
+      "shipping": "Free shipping",
+      "sellerRating": "4.9 (5,120)",
+      "color": "#9b59b6"
+    }
+  ],
+  "radarData": [
+    { "subject": "Sound Quality", "value0": 85, "value1": 92, "value2": 78, "value3": 95 },
+    { "subject": "Battery Life", "value0": 30, "value1": 35, "value2": 40, "value3": 32 },
+    { "subject": "Noise Cancellation", "value0": 88, "value1": 95, "value2": 75, "value3": 98 },
+    { "subject": "Comfort", "value0": 82, "value1": 78, "value2": 85, "value3": 80 },
+    { "subject": "Build Quality", "value0": 75, "value1": 88, "value2": 70, "value3": 92 },
+    { "subject": "Value", "value0": 90, "value1": 72, "value2": 95, "value3": 65 }
+  ],
+  "specs": [
+    {
+      "label": "Driver Size",
+      "values": ["40mm", "45mm", "50mm", "40mm"]
+    },
+    {
+      "label": "Frequency Response",
+      "values": ["20Hz-20kHz", "10Hz-40kHz", "5Hz-45kHz", "20Hz-22kHz"]
+    },
+    {
+      "label": "Battery Life",
+      "values": ["30h", "35h", "40h", "32h"]
+    },
+    {
+      "label": "Noise Cancellation",
+      "values": ["Active", "Adaptive", "Hybrid", "Pro Adaptive"]
+    },
+    {
+      "label": "Bluetooth Version",
+      "values": ["5.2", "5.3", "5.2", "5.3"]
+    },
+    {
+      "label": "Weight",
+      "values": ["250g", "280g", "310g", "265g"]
+    },
+    {
+      "label": "Impedance",
+      "values": ["32Ω", "32Ω", "32Ω", "32Ω"]
+    },
+    {
+      "label": "Codec Support",
+      "values": ["SBC, AAC", "SBC, AAC, LDAC", "SBC, AAC, aptX", "SBC, AAC, LDAC, aptX Adaptive"]
+    },
+    {
+      "label": "Microphone",
+      "values": ["4-mic array", "6-mic array", "8-mic array", "6-mic array"]
+    },
+    {
+      "label": "Foldable",
+      "values": ["Yes", "Yes", "No", "Yes"]
+    },
+    {
+      "label": "Water Resistance",
+      "values": ["IPX4", "IPX5", "None", "IPX4"]
+    },
+    {
+      "label": "Charging Port",
+      "values": ["USB-C", "USB-C", "USB-C", "USB-C"]
+    },
+    {
+      "label": "Multipoint",
+      "values": ["Yes", "Yes", "No", "Yes"]
+    },
+    {
+      "label": "Quick Charge",
+      "values": ["10min = 5h", "15min = 6h", "10min = 4h", "10min = 5h"]
+    },
+    {
+      "label": "Warranty",
+      "values": ["2 years", "3 years", "1 year", "3 years"]
+    }
+  ],
+  "prosCons": [
+    {
+      "pros": [
+        "Excellent sound quality for the price",
+        "Superb noise cancellation",
+        "Comfortable for long listening sessions",
+        "Great battery life"
+      ],
+      "cons": [
+        "Plastic build feels less premium",
+        "No multipoint Bluetooth"
+      ]
+    },
+    {
+      "pros": [
+        "Best-in-class adaptive noise cancellation",
+        "Premium materials and build quality",
+        "Excellent call quality with AI mic processing",
+        "High-res audio support"
+      ],
+      "cons": [
+        "Most expensive option",
+        "Heavier than competitors"
+      ]
+    },
+    {
+      "pros": [
+        "Best value for money",
+        "Longest battery life",
+        "Powerful bass response",
+        "Durable construction"
+      ],
+      "cons": [
+        "Basic noise cancellation",
+        "No water resistance rating",
+        "Bulkier design"
+      ]
+    },
+    {
+      "pros": [
+        "Industry-leading noise cancellation",
+        "Exceptional sound clarity and detail",
+        "Advanced multipoint connectivity",
+        "Premium comfort and materials"
+      ],
+      "cons": [
+        "Highest price point",
+        "Slightly shorter battery life than BassKing"
+      ]
+    }
+  ]
+}

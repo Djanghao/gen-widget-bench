@@ -1,0 +1,69 @@
+{
+  "title": "Audio Spectrum",
+  "bitrate": "320kbps",
+  "format": "FLAC",
+  "bands": [
+    { "freq": "31Hz", "db": 3.2 },
+    { "freq": "44Hz", "db": 5.1 },
+    { "freq": "62Hz", "db": 7.8 },
+    { "freq": "88Hz", "db": 6.4 },
+    { "freq": "125Hz", "db": 8.2 },
+    { "freq": "175Hz", "db": 5.9 },
+    { "freq": "250Hz", "db": 4.3 },
+    { "freq": "350Hz", "db": 2.1 },
+    { "freq": "500Hz", "db": 1.5 },
+    { "freq": "700Hz", "db": 3.7 },
+    { "freq": "1kHz", "db": 6.2 },
+    { "freq": "1.4kHz", "db": 8.5 },
+    { "freq": "2kHz", "db": 10.1 },
+    { "freq": "2.8kHz", "db": 9.3 },
+    { "freq": "4kHz", "db": 11.2 },
+    { "freq": "5.6kHz", "db": 9.8 },
+    { "freq": "8kHz", "db": 7.4 },
+    { "freq": "9kHz", "db": 6.1 },
+    { "freq": "10kHz", "db": 5.5 },
+    { "freq": "11.2kHz", "db": 4.8 },
+    { "freq": "12.5kHz", "db": 3.9 },
+    { "freq": "14kHz", "db": 2.7 },
+    { "freq": "16kHz", "db": 1.4 },
+    { "freq": "20kHz", "db": 0.6 }
+  ],
+  "freqLabels": ["31Hz", "62Hz", "125Hz", "250Hz", "500Hz", "1kHz", "2kHz", "4kHz", "8kHz", "16kHz"],
+  "dbScale": ["+12", "+6", "0", "-6", "-12"],
+  "waveform": [0.2, 0.5, 0.8, 0.6, 0.3, -0.1, -0.4, -0.7, -0.5, -0.2, 0.1, 0.4, 0.7, 0.9, 0.6, 0.3, 0.0, -0.3, -0.6, -0.8, -0.5, -0.2, 0.1, 0.3, 0.6, 0.8, 0.5, 0.2, -0.1, -0.4, -0.7, -0.9],
+  "channelLevels": {
+    "left": { "db": -3.2, "pct": 74 },
+    "right": { "db": -2.8, "pct": 78 }
+  },
+  "nowPlaying": {
+    "songTitle": "Midnight Reverie",
+    "artist": "Aurora Synth",
+    "album": "Neon Dreams",
+    "currentTime": "2:34",
+    "totalTime": "4:52",
+    "progressPct": 52.7
+  },
+  "volume": 72,
+  "audioStats": {
+    "sampleRate": "96 kHz",
+    "bitDepth": "24-bit",
+    "channels": "Stereo",
+    "dynamicRange": "14.2 dB",
+    "codec": "FLAC",
+    "fileSize": "42.3 MB"
+  },
+  "presets": [
+    { "name": "Flat", "active": false },
+    { "name": "Rock", "active": false },
+    { "name": "Jazz", "active": false },
+    { "name": "Classical", "active": true },
+    { "name": "Vocal", "active": false },
+    { "name": "Bass", "active": false }
+  ],
+  "activePreset": "Classical",
+  "queue": [
+    { "title": "Solar Winds", "artist": "Neon Pulse", "duration": "3:45" },
+    { "title": "Crystal Rain", "artist": "Echo Wave", "duration": "5:12" },
+    { "title": "Deep Blue", "artist": "Synth Ocean", "duration": "4:08" }
+  ]
+}

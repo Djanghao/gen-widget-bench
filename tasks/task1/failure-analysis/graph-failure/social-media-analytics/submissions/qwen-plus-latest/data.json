@@ -1,0 +1,46 @@
+{
+  "profile": {
+    "followers": "142.8K",
+    "following": "892",
+    "growth": "2.4K this month"
+  },
+  "stats": {
+    "posts": "1,247",
+    "likes": "89.3K",
+    "comments": "12.4K",
+    "shares": "5.7K"
+  },
+  "chartData": [
+    { "date": "May 1", "likes": 1240, "comments": 234, "shares": 156 },
+    { "date": "May 2", "likes": 1320, "comments": 256, "shares": 178 },
+    { "date": "May 3", "likes": 1450, "comments": 289, "shares": 192 },
+    { "date": "May 4", "likes": 1580, "comments": 312, "shares": 205 },
+    { "date": "May 5", "likes": 1720, "comments": 345, "shares": 228 },
+    { "date": "May 6", "likes": 1840, "comments": 367, "shares": 242 },
+    { "date": "May 7", "likes": 1960, "comments": 389, "shares": 256 },
+    { "date": "May 8", "likes": 2080, "comments": 412, "shares": 269 },
+    { "date": "May 9", "likes": 2210, "comments": 435, "shares": 282 },
+    { "date": "May 10", "likes": 2340, "comments": 458, "shares": 295 },
+    { "date": "May 11", "likes": 2470, "comments": 481, "shares": 308 },
+    { "date": "May 12", "likes": 2590, "comments": 504, "shares": 321 },
+    { "date": "May 13", "likes": 2720, "comments": 527, "shares": 334 },
+    { "date": "May 14", "likes": 2850, "comments": 550, "shares": 347 }
+  ],
+  "recentPosts": [
+    {
+      "date": "2 hours ago",
+      "preview": "Just launched our new AI analytics dashboard! Check out the real-time insights and predictive features...",
+      "engagement": "2.4K"
+    },
+    {
+      "date": "1 day ago",
+      "preview": "Breaking down the latest social media algorithm changes and how they impact content reach in 2024.",
+      "engagement": "1.8K"
+    },
+    {
+      "date": "3 days ago",
+      "preview": "A deep dive into engagement metrics that actually matter for B2B tech companies. Spoiler: it's not just likes!",
+      "engagement": "3.2K"
+    }
+  ]
+}

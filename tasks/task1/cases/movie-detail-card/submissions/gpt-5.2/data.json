@@ -1,0 +1,33 @@
+{
+  "title": "Interstellar",
+  "year": "2014",
+  "runtime": "2h 49m",
+  "pg": "PG-13",
+  "score": "8.7/10",
+  "genres": ["Sci-Fi", "Adventure", "Drama"],
+  "plot": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot is tasked with piloting a spacecraft to find a new home for humanity. The mission takes them through a wormhole near Saturn in search of habitable planets in another galaxy.",
+  "castTitle": "Cast",
+  "cast": [
+    { "initials": "MM", "first": "Matthew", "last": "McConaughey" },
+    { "initials": "AH", "first": "Anne", "last": "Hathaway" },
+    { "initials": "JC", "first": "Jessica", "last": "Chastain" },
+    { "initials": "MC", "first": "Michael Caine", "last": "" }
+  ],
+  "directorLabel": "Director:",
+  "director": "Christopher Nolan",
+  "boxOfficeLabel": "Box Office:",
+  "boxOffice": "$677.5M",
+  "chartTitle": "Rating Distribution",
+  "distribution": [
+    { "label": "1", "value": 1, "highlight": 0 },
+    { "label": "2", "value": 1, "highlight": 0 },
+    { "label": "3", "value": 2, "highlight": 0 },
+    { "label": "4", "value": 3, "highlight": 0 },
+    { "label": "5", "value": 6, "highlight": 0 },
+    { "label": "6", "value": 9, "highlight": 0 },
+    { "label": "7", "value": 14, "highlight": 0 },
+    { "label": "8", "value": 0, "highlight": 20 },
+    { "label": "9", "value": 0, "highlight": 24 },
+    { "label": "10", "value": 0, "highlight": 18 }
+  ]
+}

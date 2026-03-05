@@ -1,0 +1,66 @@
+{
+  "repoName": "acme/web-platform",
+  "branch": "main",
+  "commit": "a3f8c2d",
+  "status": "Passing",
+  "stages": [
+    {
+      "name": "Build",
+      "duration": "2m 14s",
+      "jobs": [
+        { "name": "Compile", "status": "success" },
+        { "name": "Lint", "status": "success" },
+        { "name": "Type Check", "status": "success" }
+      ]
+    },
+    {
+      "name": "Test",
+      "duration": "5m 38s",
+      "jobs": [
+        { "name": "Unit Tests", "status": "success" },
+        { "name": "Integration Tests", "status": "success" },
+        { "name": "E2E Tests", "status": "success" }
+      ]
+    },
+    {
+      "name": "Deploy Staging",
+      "duration": "3m 22s",
+      "jobs": [
+        { "name": "Docker Build", "status": "success" },
+        { "name": "Deploy", "status": "success" }
+      ]
+    },
+    {
+      "name": "Deploy Prod",
+      "duration": "1m 45s",
+      "jobs": [
+        { "name": "Canary Deploy", "status": "success" },
+        { "name": "Full Rollout", "status": "success" }
+      ]
+    }
+  ],
+  "chartData": [
+    { "name": "Build", "duration": 134 },
+    { "name": "Test", "duration": 338 },
+    { "name": "Deploy Staging", "duration": 202 },
+    { "name": "Deploy Prod", "duration": 105 }
+  ],
+  "artifacts": [
+    { "name": "web-platform:v2.14.3", "size": "342 MB" },
+    { "name": "test-report.html", "size": "1.2 MB" }
+  ],
+  "deploys": [
+    {
+      "env": "Production",
+      "version": "v2.14.2",
+      "time": "2h ago",
+      "status": "success"
+    },
+    {
+      "env": "Staging",
+      "version": "v2.14.3",
+      "time": "45m ago",
+      "status": "success"
+    }
+  ]
+}

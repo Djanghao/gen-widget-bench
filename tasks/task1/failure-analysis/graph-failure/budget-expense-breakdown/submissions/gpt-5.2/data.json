@@ -1,0 +1,53 @@
+{
+  "month": "February 2025",
+  "totalBudget": 5400,
+  "totalBudgetFormatted": "$5,400.00",
+  "spent": 4698,
+  "spentFormatted": "$4,698.00",
+  "remaining": 702,
+  "remainingFormatted": "$702.00",
+  "categories": [
+    {
+      "name": "Housing",
+      "amount": 1890,
+      "amountFormatted": "$1,890.00",
+      "percent": 35,
+      "color": "#6C74FF"
+    },
+    {
+      "name": "Food & Dining",
+      "amount": 1080,
+      "amountFormatted": "$1,080.00",
+      "percent": 20,
+      "color": "#FFA400"
+    },
+    {
+      "name": "Transportation",
+      "amount": 810,
+      "amountFormatted": "$810.00",
+      "percent": 15,
+      "color": "#18C78B"
+    },
+    {
+      "name": "Savings",
+      "amount": 648,
+      "amountFormatted": "$648.00",
+      "percent": 12,
+      "color": "#2E7DFF"
+    },
+    {
+      "name": "Entertainment",
+      "amount": 432,
+      "amountFormatted": "$432.00",
+      "percent": 8,
+      "color": "#FF4FA3"
+    },
+    {
+      "name": "Healthcare",
+      "amount": 378,
+      "amountFormatted": "$378.00",
+      "percent": 7,
+      "color": "#8B5CFF"
+    }
+  ]
+}

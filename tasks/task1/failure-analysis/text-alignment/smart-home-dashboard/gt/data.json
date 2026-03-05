@@ -1,0 +1,81 @@
+{
+  "title": "Smart Home",
+  "homeName": "Maple St.",
+  "wifiStrength": 3,
+  "deviceCount": 24,
+  "rooms": [
+    {
+      "name": "Living Room",
+      "icon": "sofa",
+      "tempCurrent": 72,
+      "tempTarget": 70,
+      "devices": {
+        "light": { "status": "On 80%" },
+        "thermostat": { "status": "Cooling" },
+        "sensor": { "status": "Motion" }
+      },
+      "energyPct": 68
+    },
+    {
+      "name": "Kitchen",
+      "icon": "chefHat",
+      "tempCurrent": 74,
+      "tempTarget": 72,
+      "devices": {
+        "light": { "status": "On 100%" },
+        "thermostat": { "status": "Cooling" },
+        "sensor": { "status": "Smoke OK" }
+      },
+      "energyPct": 82
+    },
+    {
+      "name": "Bedroom",
+      "icon": "bed",
+      "tempCurrent": 68,
+      "tempTarget": 67,
+      "devices": {
+        "light": { "status": "Off" },
+        "thermostat": { "status": "Idle" },
+        "sensor": { "status": "No Motion" }
+      },
+      "energyPct": 25
+    },
+    {
+      "name": "Garage",
+      "icon": "car",
+      "tempCurrent": 81,
+      "tempTarget": null,
+      "devices": {
+        "light": { "status": "On 40%" },
+        "thermostat": { "status": "N/A" },
+        "sensor": { "status": "Door Closed" }
+      },
+      "energyPct": 35
+    }
+  ],
+  "energyUsage": [
+    { "day": "Mon", "kwh": 32.4 },
+    { "day": "Tue", "kwh": 28.7 },
+    { "day": "Wed", "kwh": 35.1 },
+    { "day": "Thu", "kwh": 31.9 },
+    { "day": "Fri", "kwh": 29.8 },
+    { "day": "Sat", "kwh": 38.2 },
+    { "day": "Sun", "kwh": 34.6 }
+  ],
+  "weeklyCost": "$47.32",
+  "security": {
+    "alarmStatus": "Armed - Away",
+    "cameras": [
+      { "name": "Front Door", "status": "Online" },
+      { "name": "Backyard", "status": "Online" },
+      { "name": "Garage", "status": "Offline" }
+    ]
+  },
+  "environment": {
+    "indoorTemp": 71,
+    "outdoorTemp": 89,
+    "aqi": 42,
+    "aqiLabel": "Good",
+    "humidity": 52
+  }
+}

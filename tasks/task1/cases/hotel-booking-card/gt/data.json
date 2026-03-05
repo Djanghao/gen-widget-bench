@@ -1,0 +1,31 @@
+{
+  "hotelName": "The Meridian Grand",
+  "hotelTag": "Boutique Hotel",
+  "starRating": 4.5,
+  "address": "742 Oceanview Boulevard, Santa Monica, CA 90401",
+  "imageGradient": ["#1a1a3e", "#2d1b69", "#0f4c75"],
+  "booking": {
+    "checkIn": "Mar 14, 2026",
+    "checkOut": "Mar 17, 2026",
+    "nights": 3,
+    "guests": 2,
+    "roomType": "Deluxe King"
+  },
+  "pricing": {
+    "ratePerNight": 189.00,
+    "nights": 3,
+    "roomSubtotal": 567.00,
+    "taxesAndFees": 68.40,
+    "resortFee": 45.00,
+    "total": 680.40
+  },
+  "amenities": [
+    { "name": "WiFi", "icon": "wifi" },
+    { "name": "Pool", "icon": "waves" },
+    { "name": "Gym", "icon": "dumbbell" },
+    { "name": "Spa", "icon": "sparkles" },
+    { "name": "Dining", "icon": "utensils" },
+    { "name": "Parking", "icon": "car" }
+  ],
+  "confirmationNumber": "MG-2026-84729-XR"
+}

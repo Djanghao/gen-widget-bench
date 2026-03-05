@@ -1,0 +1,68 @@
+{
+  "apiName": "Platform API",
+  "apiVersion": "v2.4.1",
+  "healthScore": 96.4,
+  "uptimePct": 99.97,
+  "totalRequests": "1.24M",
+  "lastChecked": "Mar 4, 2026 3:58 PM",
+  "overallAvgLatency": 127,
+  "overallErrorRate": 1.81,
+  "overallRpm": 8420,
+  "responseCodes": {
+    "2xx": 94.2,
+    "4xx": 4.6,
+    "5xx": 1.2
+  },
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/users",
+      "status": "healthy",
+      "avgLatency": 42,
+      "p99Latency": 128,
+      "errorRate": 0.12,
+      "rpm": 3200,
+      "latencyHistory": [38, 41, 45, 39, 43, 40, 44, 42, 38, 41]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/auth/login",
+      "status": "healthy",
+      "avgLatency": 89,
+      "p99Latency": 245,
+      "errorRate": 0.85,
+      "rpm": 2100,
+      "latencyHistory": [82, 91, 87, 95, 88, 92, 84, 90, 86, 89]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/:id",
+      "status": "degraded",
+      "avgLatency": 156,
+      "p99Latency": 420,
+      "errorRate": 2.34,
+      "rpm": 890,
+      "latencyHistory": [120, 135, 148, 162, 155, 178, 190, 165, 150, 156]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/sessions/:id",
+      "status": "healthy",
+      "avgLatency": 35,
+      "p99Latency": 95,
+      "errorRate": 0.05,
+      "rpm": 1450,
+      "latencyHistory": [32, 34, 36, 33, 35, 37, 34, 36, 35, 35]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/products",
+      "status": "critical",
+      "avgLatency": 312,
+      "p99Latency": 890,
+      "errorRate": 5.67,
+      "rpm": 780,
+      "latencyHistory": [180, 220, 280, 350, 310, 400, 380, 290, 340, 312]
+    }
+  ]
+}

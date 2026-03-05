@@ -1,0 +1,39 @@
+{
+  "movie": {
+    "title": "Interstellar",
+    "year": "2014",
+    "runtime": "2h 49m",
+    "rating": "PG-13",
+    "score": "8.7/10",
+    "genres": ["Sci-Fi", "Adventure", "Drama"]
+  },
+  "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival. As they journey beyond known space, they must confront the vastness of the universe and their own human limitations.",
+  "cast": [
+    {
+      "name": "Matthew McConaughey"
+    },
+    {
+      "name": "Anne Hathaway"
+    },
+    {
+      "name": "Jessica Chastain"
+    },
+    {
+      "name": "Michael Caine"
+    }
+  ],
+  "director": "Christopher Nolan",
+  "boxOffice": "$677.5M",
+  "ratings": [
+    { "rating": "10", "count": 1250 },
+    { "rating": "9", "count": 2850 },
+    { "rating": "8", "count": 4200 },
+    { "rating": "7", "count": 3100 },
+    { "rating": "6", "count": 1800 },
+    { "rating": "5", "count": 950 },
+    { "rating": "4", "count": 420 },
+    { "rating": "3", "count": 180 },
+    { "rating": "2", "count": 75 },
+    { "rating": "1", "count": 35 }
+  ]
+}

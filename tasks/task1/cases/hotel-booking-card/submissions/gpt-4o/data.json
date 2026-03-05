@@ -1,0 +1,17 @@
+{
+  "hotelTag": "BOUTIQUE HOTEL",
+  "hotelName": "The Meridian Grand",
+  "ratingValue": "4.5",
+  "hotelAddress": "742 Oceandrive Boulevard, Santa Monica, CA 90401",
+  "checkinDate": "Mar 14, 2026",
+  "checkoutDate": "Mar 17, 2026",
+  "nightsCount": "3 nights",
+  "guestsCount": "2 guests",
+  "roomType": "Deluxe King",
+  "roomRateDetails": "$189.00/night x 3",
+  "roomRateAmount": "$567.00",
+  "taxesAmount": "$68.40",
+  "resortFeeAmount": "$45.00",
+  "totalAmount": "$680.40",
+  "confirmationNumber": "MG-2026-84729-XR"
+}

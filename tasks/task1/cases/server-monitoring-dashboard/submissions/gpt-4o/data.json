@@ -1,0 +1,43 @@
+{
+  "clusterName": "Production Cluster",
+  "status": "Healthy",
+  "uptime": "99.97% uptime",
+  "cpu": {
+    "label": "CPU Usage",
+    "value": "73%",
+    "history": [
+      { "time": 0, "value": 65 },
+      { "time": 1, "value": 70 },
+      { "time": 2, "value": 75 },
+      { "time": 3, "value": 71 },
+      { "time": 4, "value": 73 }
+    ]
+  },
+  "memory": {
+    "label": "Memory",
+    "value": "12.4",
+    "total": "16 GB"
+  },
+  "disk": {
+    "label": "Disk",
+    "value": "234 / 500 GB",
+    "used": "234",
+    "total": "500"
+  },
+  "network": {
+    "label": "Network",
+    "value": "847 Mbps",
+    "history": [
+      { "time": 0, "value": 800 },
+      { "time": 1, "value": 820 },
+      { "time": 2, "value": 850 },
+      { "time": 3, "value": 830 },
+      { "time": 4, "value": 847 }
+    ]
+  },
+  "alerts": [
+    { "severity": "Critical", "severityColor": "#dc3545", "message": "Node us-east-2b CPU exceeded 95% threshold", "time": "12m ago" },
+    { "severity": "Warning", "severityColor": "#ffc107", "message": "Disk I/O latency above 200ms on vol-0x7a3f", "time": "48m ago" },
+    { "severity": "Info", "severityColor": "#17a2b8", "message": "Auto-scaling group expanded to 8 instances", "time": "2h ago" }
+  ]
+}

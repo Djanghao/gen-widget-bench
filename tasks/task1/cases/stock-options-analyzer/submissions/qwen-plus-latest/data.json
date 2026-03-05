@@ -1,0 +1,163 @@
+{
+  "ticker": "NVDA",
+  "price": 942.78,
+  "priceChange": 12.45,
+  "expiryDate": "2024-06-21",
+  "ivRank": 68,
+  "ivPercentile": 72,
+  "hv30": 42.3,
+  "optionsChain": [
+    {
+      "call": {
+        "bid": 125.50,
+        "ask": 126.80,
+        "volume": 1245,
+        "openInterest": 8762,
+        "iv": 48.2
+      },
+      "strike": 820.00,
+      "put": {
+        "bid": 1.25,
+        "ask": 1.35,
+        "volume": 3241,
+        "openInterest": 14253,
+        "iv": 42.7
+      }
+    },
+    {
+      "call": {
+        "bid": 98.30,
+        "ask": 99.60,
+        "volume": 2156,
+        "openInterest": 10234,
+        "iv": 47.5
+      },
+      "strike": 840.00,
+      "put": {
+        "bid": 2.10,
+        "ask": 2.25,
+        "volume": 5672,
+        "openInterest": 18764,
+        "iv": 41.9
+      }
+    },
+    {
+      "call": {
+        "bid": 72.45,
+        "ask": 73.75,
+        "volume": 4521,
+        "openInterest": 22105,
+        "iv": 46.1
+      },
+      "strike": 860.00,
+      "put": {
+        "bid": 4.85,
+        "ask": 5.05,
+        "volume": 8923,
+        "openInterest": 25671,
+        "iv": 40.3
+      }
+    },
+    {
+      "call": {
+        "bid": 48.20,
+        "ask": 49.50,
+        "volume": 6782,
+        "openInterest": 28432,
+        "iv": 44.7
+      },
+      "strike": 880.00,
+      "put": {
+        "bid": 9.25,
+        "ask": 9.55,
+        "volume": 12456,
+        "openInterest": 31205,
+        "iv": 38.9
+      }
+    },
+    {
+      "call": {
+        "bid": 26.85,
+        "ask": 28.15,
+        "volume": 8943,
+        "openInterest": 33762,
+        "iv": 43.2
+      },
+      "strike": 900.00,
+      "put": {
+        "bid": 16.45,
+        "ask": 16.85,
+        "volume": 15672,
+        "openInterest": 36841,
+        "iv": 37.4
+      }
+    }
+  ],
+  "payoff": {
+    "strategy": "Long Call",
+    "maxProfit": 1000.00,
+    "maxLoss": 72.45,
+    "breakeven": 932.45,
+    "chartData": [
+      { "price": 700, "profit": -72.45 },
+      { "price": 750, "profit": -72.45 },
+      { "price": 800, "profit": -72.45 },
+      { "price": 850, "profit": -22.45 },
+      { "price": 900, "profit": 27.55 },
+      { "price": 950, "profit": 77.55 },
+      { "price": 1000, "profit": 127.55 },
+      { "price": 1050, "profit": 177.55 }
+    ]
+  },
+  "greeks": {
+    "delta": 0.624,
+    "gamma": 0.0012,
+    "theta": -0.124,
+    "vega": 0.187,
+    "rho": 0.215
+  },
+  "riskMetrics": {
+    "pop": 64.3,
+    "expected": 24.78,
+    "riskRewardRatio": 13.85
+  },
+  "volSurface": [
+    [
+      { "color": "#EF4444" },
+      { "color": "#F59E0B" },
+      { "color": "#F59E0B" },
+      { "color": "#10B981" },
+      { "color": "#10B981" }
+    ],
+    [
+      { "color": "#EF4444" },
+      { "color": "#F59E0B" },
+      { "color": "#10B981" },
+      { "color": "#10B981" },
+      { "color": "#10B981" }
+    ],
+    [
+      { "color": "#F59E0B" },
+      { "color": "#F59E0B" },
+      { "color": "#10B981" },
+      { "color": "#10B981" },
+      { "color": "#10B981" }
+    ],
+    [
+      { "color": "#F59E0B" },
+      { "color": "#10B981" },
+      { "color": "#10B981" },
+      { "color": "#10B981" },
+      { "color": "#10B981" }
+    ],
+    [
+      { "color": "#10B981" },
+      { "color": "#10B981" },
+      { "color": "#10B981" },
+      { "color": "#10B981" },
+      { "color": "#10B981" }
+    ]
+  ],
+  "lastUpdated": "Jun 15, 2024 • 3:42 PM ET",
+  "dataSource": "OptionMetrics"
+}

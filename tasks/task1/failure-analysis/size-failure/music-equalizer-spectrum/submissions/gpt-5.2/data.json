@@ -1,0 +1,48 @@
+{
+  "title": "Audio Spectrum",
+  "bitrate": "320kbps",
+  "format": "FLAC",
+  "dbScale": ["+12", "+6", "0", "-6", "-12"],
+  "frequencyLabels": ["31Hz", "62Hz", "125Hz", "250Hz", "500Hz", "1kHz", "2kHz", "4kHz", "8kHz", "16kHz"],
+  "spectrumBands": [
+    { "band": 1, "value": 4.0, "group": "low" },
+    { "band": 2, "value": 5.6, "group": "low" },
+    { "band": 3, "value": 8.0, "group": "low" },
+    { "band": 4, "value": 9.2, "group": "low" },
+    { "band": 5, "value": 7.4, "group": "low" },
+    { "band": 6, "value": 9.6, "group": "low" },
+    { "band": 7, "value": 7.0, "group": "low" },
+    { "band": 8, "value": 4.6, "group": "low" },
+    { "band": 9, "value": 2.8, "group": "low" },
+    { "band": 10, "value": 1.6, "group": "mid" },
+    { "band": 11, "value": 3.2, "group": "mid" },
+    { "band": 12, "value": 6.8, "group": "mid" },
+    { "band": 13, "value": 9.4, "group": "mid" },
+    { "band": 14, "value": 11.0, "group": "mid" },
+    { "band": 15, "value": 10.2, "group": "mid" },
+    { "band": 16, "value": 12.0, "group": "mid" },
+    { "band": 17, "value": 10.6, "group": "mid" },
+    { "band": 18, "value": 8.4, "group": "high" },
+    { "band": 19, "value": 6.8, "group": "high" },
+    { "band": 20, "value": 6.4, "group": "high" },
+    { "band": 21, "value": 5.8, "group": "high" },
+    { "band": 22, "value": 5.0, "group": "high" },
+    { "band": 23, "value": 3.0, "group": "high" },
+    { "band": 24, "value": 1.0, "group": "high" }
+  ],
+  "waveformTitle": "Waveform",
+  "meters": {
+    "left": { "label": "L", "value": "-3.2 dB", "percent": 74 },
+    "right": { "label": "R", "value": "-2.8 dB", "percent": 78 }
+  },
+  "nowPlaying": {
+    "label": "NOW PLAYING",
+    "songTitle": "Midnight Reverie",
+    "artist": "Aurora Synth",
+    "album": "Neon Dreams",
+    "currentTime": "2:34",
+    "totalTime": "4:52",
+    "progressPercent": 56
+  },
+  "volume": { "percent": 72, "label": "72%" }
+}

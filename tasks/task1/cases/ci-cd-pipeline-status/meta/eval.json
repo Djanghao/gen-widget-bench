@@ -1,0 +1,12 @@
+{
+  "caseId": "ci-cd-pipeline-status",
+  "name": "CI/CD Pipeline Status Widget",
+  "subtask": "instruction-image-target",
+  "styleProperties": ["borderRadius", "maxWidth"],
+  "screenshot": {
+    "weight": 10,
+    "maxPixelDiffPercent": 15,
+    "viewportWidth": 500,
+    "viewportHeight": 1000
+  }
+}

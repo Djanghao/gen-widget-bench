@@ -1,0 +1,21 @@
+{
+  "title": "Mix Console",
+  "projectName": "Midnight Sessions",
+  "bpm": 128,
+  "channels": [
+    { "name": "Kick", "number": 1, "levelPct": 78, "pan": "C", "panValue": 0, "muted": false, "solo": false, "db": -3.2, "color": "#f87171" },
+    { "name": "Snare", "number": 2, "levelPct": 65, "pan": "L15", "panValue": -15, "muted": false, "solo": false, "db": -5.1, "color": "#fbbf24" },
+    { "name": "Hi-Hat", "number": 3, "levelPct": 45, "pan": "R30", "panValue": 30, "muted": false, "solo": false, "db": -8.4, "color": "#34d399" },
+    { "name": "Bass", "number": 4, "levelPct": 85, "pan": "C", "panValue": 0, "muted": false, "solo": false, "db": -1.8, "color": "#818cf8" },
+    { "name": "Synth", "number": 5, "levelPct": 52, "pan": "L45", "panValue": -45, "muted": false, "solo": false, "db": -6.7, "color": "#f472b6" },
+    { "name": "Vocals", "number": 6, "levelPct": 90, "pan": "C", "panValue": 0, "muted": false, "solo": true, "db": -0.5, "color": "#a78bfa" }
+  ],
+  "master": {
+    "levelPct": 82,
+    "db": 0.0
+  },
+  "output": {
+    "left": { "levelPct": 76, "db": -2.4 },
+    "right": { "levelPct": 78, "db": -2.1 }
+  }
+}

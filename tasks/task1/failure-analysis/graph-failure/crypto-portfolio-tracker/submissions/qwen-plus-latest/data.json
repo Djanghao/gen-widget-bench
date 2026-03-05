@@ -1,0 +1,66 @@
+{
+  "totalValue": 124789.56,
+  "totalChange": 2.34,
+  "totalChangeAmount": 2847.23,
+  "chartData": [
+    { "date": "Mon", "value": 121942.33 },
+    { "date": "Tue", "value": 122567.89 },
+    { "date": "Wed", "value": 123145.67 },
+    { "date": "Thu", "value": 123892.45 },
+    { "date": "Fri", "value": 124231.78 },
+    { "date": "Sat", "value": 124567.23 },
+    { "date": "Sun", "value": 124789.56 }
+  ],
+  "coins": [
+    {
+      "id": 0,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "color": "#f7931a",
+      "price": 62345.78,
+      "change24h": 1.24,
+      "amount": 1.25,
+      "value": 77932.23
+    },
+    {
+      "id": 1,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "color": "#627eea",
+      "price": 3456.23,
+      "change24h": -0.87,
+      "amount": 5.5,
+      "value": 19009.27
+    },
+    {
+      "id": 2,
+      "name": "Solana",
+      "symbol": "SOL",
+      "color": "#9945ff",
+      "price": 142.56,
+      "change24h": 4.56,
+      "amount": 42.3,
+      "value": 6030.29
+    },
+    {
+      "id": 3,
+      "name": "Cardano",
+      "symbol": "ADA",
+      "color": "#0033ad",
+      "price": 0.5423,
+      "change24h": -2.34,
+      "amount": 12500,
+      "value": 6778.75
+    },
+    {
+      "id": 4,
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "color": "#375bd2",
+      "price": 14.78,
+      "change24h": 3.21,
+      "amount": 215,
+      "value": 3177.70
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "clusterName": "Production Cluster",
+  "status": "Healthy",
+  "uptime": "99.97%",
+  "cpu": {
+    "label": "CPU Usage",
+    "current": 73,
+    "history": [
+      { "t": 0, "v": 62 },
+      { "t": 1, "v": 61 },
+      { "t": 2, "v": 63 },
+      { "t": 3, "v": 66 },
+      { "t": 4, "v": 65 },
+      { "t": 5, "v": 64 },
+      { "t": 6, "v": 66 },
+      { "t": 7, "v": 68 },
+      { "t": 8, "v": 67 },
+      { "t": 9, "v": 67 },
+      { "t": 10, "v": 68 },
+      { "t": 11, "v": 69 },
+      { "t": 12, "v": 68 },
+      { "t": 13, "v": 66 },
+      { "t": 14, "v": 67 },
+      { "t": 15, "v": 67 }
+    ]
+  },
+  "memory": {
+    "label": "Memory",
+    "used": 12.4,
+    "total": 16
+  },
+  "disk": {
+    "label": "Disk",
+    "used": 234,
+    "total": 500
+  },
+  "network": {
+    "label": "Network",
+    "current": 847,
+    "history": [
+      { "t": 0, "v": 690 },
+      { "t": 1, "v": 705 },
+      { "t": 2, "v": 680 },
+      { "t": 3, "v": 745 },
+      { "t": 4, "v": 760 },
+      { "t": 5, "v": 730 },
+      { "t": 6, "v": 770 },
+      { "t": 7, "v": 790 },
+      { "t": 8, "v": 770 },
+      { "t": 9, "v": 785 },
+      { "t": 10, "v": 800 },
+      { "t": 11, "v": 795 },
+      { "t": 12, "v": 805 },
+      { "t": 13, "v": 815 },
+      { "t": 14, "v": 820 },
+      { "t": 15, "v": 800 }
+    ]
+  },
+  "alertsTitle": "Recent Alerts",
+  "alerts": [
+    {
+      "severity": "Critical",
+      "message": "Node us-east-2b CPU exceeded 95% threshold",
+      "time": "12m ago"
+    },
+    {
+      "severity": "Warning",
+      "message": "Disk I/O latency above 200ms on vol-0x7a3f",
+      "time": "48m ago"
+    },
+    {
+      "severity": "Info",
+      "message": "Auto-scaling group expanded to 8 instances",
+      "time": "2h ago"
+    }
+  ]
+}

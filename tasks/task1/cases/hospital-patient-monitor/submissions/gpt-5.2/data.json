@@ -1,0 +1,117 @@
+{
+  "header": {
+    "title": "ICU Patient Monitor",
+    "unit": "Unit 4B",
+    "shift": "Day Shift",
+    "alerts": "3 Alerts"
+  },
+  "patients": [
+    {
+      "name": "Margaret Chen",
+      "bed": "Bed 1",
+      "status": "CRITICAL",
+      "age": 72,
+      "diagnosis": "Septic Shock",
+      "diagnosisColor": "#d25541",
+      "admitted": "Mar 1",
+      "nurse": "Sarah K.",
+      "ivStatus": "IV: Running",
+      "hr": 112,
+      "hrSeries": [86, 88, 91, 89, 92, 95, 94, 93, 97, 99, 96, 101, 98, 97, 103, 104, 99, 96],
+      "bp": "168/95",
+      "bpSeries": [64, 64, 65, 66, 67, 68, 69, 70, 69, 68, 67, 68, 69, 70, 69, 68],
+      "spo2": 91,
+      "temp": "101.2F",
+      "resp": 24,
+      "meds": [
+        "Norepinephrine 0.1mcg/kg/min",
+        "Vancomycin 1g IV q12h",
+        "Heparin 800u/hr"
+      ]
+    },
+    {
+      "name": "Robert Williams",
+      "bed": "Bed 2",
+      "status": "WARNING",
+      "age": 58,
+      "diagnosis": "Acute MI",
+      "diagnosisColor": "#df7a16",
+      "admitted": "Mar 2",
+      "nurse": "Michael D.",
+      "ivStatus": "IV: Running",
+      "hr": 88,
+      "hrSeries": [76, 78, 77, 79, 78, 77, 80, 83, 82, 81, 79, 78, 80, 81, 79, 78],
+      "bp": "145/88",
+      "bpSeries": [58, 58, 59, 59, 60, 60, 61, 61, 60, 60, 59, 59, 59, 60, 60, 60],
+      "spo2": 94,
+      "temp": "99.8F",
+      "resp": 20,
+      "meds": [
+        "Metoprolol 5mg IV q6h",
+        "Insulin drip 4u/hr",
+        "Ceftriaxone 2g IV daily"
+      ]
+    },
+    {
+      "name": "Sarah Johnson",
+      "bed": "Bed 3",
+      "status": "STABLE",
+      "age": 45,
+      "diagnosis": "Post-Op Hip Replacement",
+      "diagnosisColor": "#1f8b45",
+      "admitted": "Mar 3",
+      "nurse": "Lisa T.",
+      "ivStatus": "IV: Running",
+      "hr": 72,
+      "hrSeries": [68, 69, 70, 71, 70, 71, 72, 73, 72, 71, 72, 70, 71, 72, 73, 72],
+      "bp": "122/78",
+      "bpSeries": [52, 52, 51, 51, 51, 52, 52, 52, 52, 51, 51, 51, 51, 52, 52, 52],
+      "spo2": 98,
+      "temp": "98.6F",
+      "resp": 16,
+      "meds": [
+        "Morphine PCA 1mg q10min",
+        "Ondansetron 4mg IV q8h",
+        "Lactated Ringers 125ml/hr"
+      ]
+    },
+    {
+      "name": "James Martinez",
+      "bed": "Bed 4",
+      "status": "WARNING",
+      "age": 65,
+      "diagnosis": "CHF Exacerbation",
+      "diagnosisColor": "#df7a16",
+      "admitted": "Mar 1",
+      "nurse": "Sarah K.",
+      "ivStatus": "IV: Paused",
+      "hr": 95,
+      "hrSeries": [84, 86, 88, 90, 89, 87, 91, 94, 92, 91, 90, 92, 93, 90, 89, 91],
+      "bp": "152/90",
+      "bpSeries": [56, 56, 57, 57, 58, 58, 59, 59, 58, 58, 57, 57, 57, 58, 58, 58],
+      "spo2": 93,
+      "temp": "100.4F",
+      "resp": 22,
+      "meds": [
+        "Amiodarone 1mg/min",
+        "Furosemide 40mg IV q12h",
+        "Potassium 20mEq IV"
+      ]
+    }
+  ],
+  "summary": {
+    "title": "Unit Summary",
+    "patients": 4,
+    "critical": 1,
+    "warning": 2,
+    "stable": 1,
+    "avgHr": "92",
+    "avgSpo2": "94%",
+    "avgTemp": "100F",
+    "nurses": 3
+  },
+  "footer": {
+    "timestamp": "Monitoring as of 2:32:00 PM",
+    "shiftEnds": "Shift ends: 7:00 PM"
+  }
+}

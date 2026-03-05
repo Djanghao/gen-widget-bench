@@ -1,0 +1,46 @@
+{
+  "portfolio": {
+    "name": "Tech Growth Portfolio",
+    "valueText": "$82,456.20",
+    "changeText": "+0.87%"
+  },
+  "chart": [
+    { "date": "Feb 7", "aapl": 187.15, "googl": 176.12, "msft": 421.2 },
+    { "date": "Feb 11", "aapl": 188.1, "googl": 176.05, "msft": 422.4 },
+    { "date": "Feb 14", "aapl": 187.6, "googl": 175.2, "msft": 420.7 },
+    { "date": "Feb 18", "aapl": 188.9, "googl": 175.9, "msft": 423.1 },
+    { "date": "Feb 21", "aapl": 189.2, "googl": 175.1, "msft": 422.6 },
+    { "date": "Feb 25", "aapl": 188.7, "googl": 175.3, "msft": 424.0 },
+    { "date": "Feb 28", "aapl": 189.42, "googl": 174.89, "msft": 428.55 },
+    { "date": "Mar 3", "aapl": 189.1, "googl": 174.7, "msft": 427.9 },
+    { "date": "Mar 4", "aapl": 189.2, "googl": 174.8, "msft": 428.2 }
+  ],
+  "summaries": {
+    "aapl": { "symbol": "AAPL", "name": "Apple Inc.", "priceText": "$189.42", "changeText": "+1.24%" },
+    "googl": { "symbol": "GOOGL", "name": "Alphabet Inc.", "priceText": "$174.89", "changeText": "-0.68%" },
+    "msft": { "symbol": "MSFT", "name": "Microsoft Corp.", "priceText": "$428.55", "changeText": "+0.91%" }
+  },
+  "table": {
+    "title": "Key Metrics",
+    "rows": {
+      "open": { "label": "Open", "aapl": "$187.15", "googl": "$176.12", "msft": "$424.70" },
+      "close": { "label": "Close", "aapl": "$189.42", "googl": "$174.89", "msft": "$428.55" },
+      "high": { "label": "High", "aapl": "$191.08", "googl": "$177.45", "msft": "$430.12" },
+      "low": { "label": "Low", "aapl": "$186.90", "googl": "$174.20", "msft": "$422.80" },
+      "volume": { "label": "Volume", "aapl": "58.2M", "googl": "31.7M", "msft": "26.4M" },
+      "marketCap": { "label": "Market Cap", "aapl": "$2.94T", "googl": "$2.15T", "msft": "$3.18T" },
+      "peRatio": { "label": "P/E Ratio", "aapl": "28.7", "googl": "24.3", "msft": "35.9" }
+    }
+  },
+  "performance": {
+    "title": "Performance (1M)",
+    "bars": {
+      "aapl": { "valueText": "+3.2%", "fillPct": 58 },
+      "googl": { "valueText": "+2.4%", "fillPct": 50 },
+      "msft": { "valueText": "+4.1%", "fillPct": 66 }
+    }
+  },
+  "footer": {
+    "timestamp": "Last updated: 2 mins ago"
+  }
+}

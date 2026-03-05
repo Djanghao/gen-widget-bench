@@ -1,0 +1,155 @@
+{
+  "header": {
+    "regionLabel": "chr17:7,571,720-7,590,868",
+    "genomeBuild": "GRCh38/hg38",
+    "regionSize": "19.1 kb"
+  },
+  "ruler": {
+    "title": "Coordinate Ruler",
+    "ticks": ["7,571,720", "7,576,282", "7,580,844", "7,585,406", "7,590,868"]
+  },
+  "genes": {
+    "title": "Genes",
+    "genes": [
+      {
+        "label": "TP53",
+        "strand": "+",
+        "exons": [
+          { "start": 0, "width": 5 },
+          { "start": 15, "width": 8 },
+          { "start": 30, "width": 12 },
+          { "start": 50, "width": 10 },
+          { "start": 70, "width": 15 }
+        ]
+      },
+      {
+        "label": "WRAP53",
+        "strand": "-",
+        "exons": [
+          { "start": 5, "width": 10 },
+          { "start": 25, "width": 15 },
+          { "start": 45, "width": 8 },
+          { "start": 65, "width": 12 }
+        ]
+      },
+      {
+        "label": "EFNB3",
+        "strand": "+",
+        "exons": [
+          { "start": 10, "width": 8 },
+          { "start": 30, "width": 12 },
+          { "start": 55, "width": 10 }
+        ]
+      },
+      {
+        "label": "DLGAP1-AS1",
+        "strand": "-",
+        "exons": [
+          { "start": 0, "width": 5 },
+          { "start": 20, "width": 10 },
+          { "start": 40, "width": 15 },
+          { "start": 65, "width": 8 }
+        ]
+      },
+      {
+        "label": "ATP1B2",
+        "strand": "+",
+        "exons": [
+          { "start": 15, "width": 12 },
+          { "start": 40, "width": 8 }
+        ]
+      },
+      {
+        "label": "SHBG",
+        "strand": "-",
+        "exons": [
+          { "start": 5, "width": 10 },
+          { "start": 30, "width": 12 }
+        ]
+      }
+    ]
+  },
+  "variants": {
+    "title": "Variants",
+    "variants": [
+      { "position": 8, "color": "#2196f3", "tooltip": "rs121913377 (SNP)" },
+      { "position": 18, "color": "#2196f3", "tooltip": "rs121913378 (SNP)" },
+      { "position": 28, "color": "#ff9800", "tooltip": "rs121913379 (indel)" },
+      { "position": 38, "color": "#2196f3", "tooltip": "rs121913380 (SNP)" },
+      { "position": 48, "color": "#f44336", "tooltip": "rs121913381 (pathogenic SNP)" },
+      { "position": 58, "color": "#ff9800", "tooltip": "rs121913382 (indel)" },
+      { "position": 68, "color": "#2196f3", "tooltip": "rs121913383 (SNP)" },
+      { "position": 78, "color": "#2196f3", "tooltip": "rs121913384 (SNP)" },
+      { "position": 88, "color": "#ff9800", "tooltip": "rs121913385 (indel)" },
+      { "position": 95, "color": "#2196f3", "tooltip": "rs121913386 (SNP)" }
+    ]
+  },
+  "coverage": {
+    "title": "Coverage Depth",
+    "avgLabel": "Avg: 42.7x",
+    "data": [
+      { "x": 0, "y": 35 },
+      { "x": 1, "y": 38 },
+      { "x": 2, "y": 42 },
+      { "x": 3, "y": 45 },
+      { "x": 4, "y": 40 },
+      { "x": 5, "y": 37 },
+      { "x": 6, "y": 43 },
+      { "x": 7, "y": 46 },
+      { "x": 8, "y": 48 },
+      { "x": 9, "y": 42 },
+      { "x": 10, "y": 39 },
+      { "x": 11, "y": 41 },
+      { "x": 12, "y": 44 },
+      { "x": 13, "y": 47 },
+      { "x": 14, "y": 43 }
+    ]
+  },
+  "gc": {
+    "title": "GC Content",
+    "data": [
+      { "x": 0, "y": 42 },
+      { "x": 1, "y": 45 },
+      { "x": 2, "y": 48 },
+      { "x": 3, "y": 52 },
+      { "x": 4, "y": 55 },
+      { "x": 5, "y": 50 },
+      { "x": 6, "y": 47 },
+      { "x": 7, "y": 44 },
+      { "x": 8, "y": 46 },
+      { "x": 9, "y": 49 },
+      { "x": 10, "y": 51 },
+      { "x": 11, "y": 53 },
+      { "x": 12, "y": 50 },
+      { "x": 13, "y": 48 },
+      { "x": 14, "y": 45 }
+    ]
+  },
+  "detail": {
+    "title": "Variant Details",
+    "rsid": "rs121913381",
+    "position": "chr17:7,577,282",
+    "refAlt": "C>T",
+    "type": "SNP",
+    "typeColor": "#f44336",
+    "consequence": "missense_variant",
+    "gene": "TP53",
+    "protein": "p.R248Q",
+    "clinvar": "Pathogenic",
+    "clinvarColor": "#f44336",
+    "gnomadAf": "0.000002",
+    "sift": "Deleterious (0.00)",
+    "siftColor": "#f44336",
+    "polyphen": "Probably damaging (1.00)",
+    "polyphenColor": "#f44336",
+    "cadd": "35.4",
+    "zygosity": "het",
+    "zygosityColor": "#81c784",
+    "quality": "99.8",
+    "depth": "124"
+  },
+  "footer": {
+    "sample": "SAMPLE-2023-7890",
+    "pipeline": "GATK4.2.6.1 / v1.2.4"
+  }
+}

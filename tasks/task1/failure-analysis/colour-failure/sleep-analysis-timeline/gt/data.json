@@ -1,0 +1,33 @@
+{
+  "date": "Feb 23 - Feb 24",
+  "sleepScore": 82,
+  "bedtime": "10:47 PM",
+  "wakeTime": "6:52 AM",
+  "totalSleep": "7h 23m",
+  "timeInBed": "8h 05m",
+  "efficiency": "91%",
+  "stages": {
+    "awake": { "duration": "42m", "color": "#FF6B6B" },
+    "rem": { "duration": "1h 38m", "color": "#A78BFA" },
+    "light": { "duration": "3h 27m", "color": "#60A5FA" },
+    "deep": { "duration": "1h 36m", "color": "#1E40AF" }
+  },
+  "timeline": [
+    { "time": "11PM", "awake": 0, "rem": 0, "light": 1, "deep": 0 },
+    { "time": "11:30", "awake": 0, "rem": 0, "light": 1, "deep": 0 },
+    { "time": "12AM", "awake": 0, "rem": 0, "light": 0, "deep": 1 },
+    { "time": "12:30", "awake": 0, "rem": 0, "light": 0, "deep": 1 },
+    { "time": "1AM", "awake": 0, "rem": 0, "light": 0, "deep": 1 },
+    { "time": "1:30", "awake": 0, "rem": 1, "light": 0, "deep": 0 },
+    { "time": "2AM", "awake": 0, "rem": 1, "light": 0, "deep": 0 },
+    { "time": "2:30", "awake": 1, "rem": 0, "light": 0, "deep": 0 },
+    { "time": "3AM", "awake": 0, "rem": 0, "light": 1, "deep": 0 },
+    { "time": "3:30", "awake": 0, "rem": 0, "light": 1, "deep": 0 },
+    { "time": "4AM", "awake": 0, "rem": 0, "light": 0, "deep": 1 },
+    { "time": "4:30", "awake": 0, "rem": 0, "light": 0, "deep": 1 },
+    { "time": "5AM", "awake": 0, "rem": 1, "light": 0, "deep": 0 },
+    { "time": "5:30", "awake": 0, "rem": 1, "light": 0, "deep": 0 },
+    { "time": "6AM", "awake": 0, "rem": 0, "light": 1, "deep": 0 },
+    { "time": "6:30", "awake": 1, "rem": 0, "light": 0, "deep": 0 }
+  ]
+}

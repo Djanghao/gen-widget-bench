@@ -1,0 +1,60 @@
+{
+  "macros": [
+    {
+      "name": "Protein",
+      "percentage": 83,
+      "consumed": 124,
+      "goal": 150,
+      "color": "#9b51e0"
+    },
+    {
+      "name": "Carbs",
+      "percentage": 74,
+      "consumed": 203,
+      "goal": 275,
+      "color": "#f2994a"
+    },
+    {
+      "name": "Fat",
+      "percentage": 93,
+      "consumed": 68,
+      "goal": 73,
+      "color": "#f64f64"
+    }
+  ],
+  "meals": [
+    {
+      "name": "Breakfast",
+      "icon": "🍳",
+      "protein": 28,
+      "carbs": 48,
+      "fat": 14,
+      "calories": 412
+    },
+    {
+      "name": "Lunch",
+      "icon": "🍽️",
+      "protein": 42,
+      "carbs": 71,
+      "fat": 22,
+      "calories": 623
+    },
+    {
+      "name": "Dinner",
+      "icon": "🍲",
+      "protein": 38,
+      "carbs": 62,
+      "fat": 21,
+      "calories": 584
+    },
+    {
+      "name": "Snacks",
+      "icon": "🍎",
+      "protein": 16,
+      "carbs": 22,
+      "fat": 11,
+      "calories": 228
+    }
+  ],
+  "water": [true, true, true, true, true, false, false, false]
+}

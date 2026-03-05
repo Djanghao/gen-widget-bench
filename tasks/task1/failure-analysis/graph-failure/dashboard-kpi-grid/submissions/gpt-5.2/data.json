@@ -1,0 +1,176 @@
+{
+  "company": {
+    "name": "Acme Corp",
+    "subtitle": "Engineering Dashboard",
+    "department": "Engineering",
+    "period": "Q1 2026",
+    "refreshed": "Mar 4, 2026 2:35 PM"
+  },
+  "kpis": [
+    {
+      "id": "revenue",
+      "label": "Monthly Revenue",
+      "value": "$2.4M",
+      "change": "+12.5%",
+      "good": true,
+      "target": "Target: $2.6M",
+      "progress": 92,
+      "colors": { "stroke": "#7A86FF", "fill": "#7A86FF" },
+      "spark": [
+        { "x": 1, "y": 2.05 },
+        { "x": 2, "y": 2.08 },
+        { "x": 3, "y": 2.1 },
+        { "x": 4, "y": 2.12 },
+        { "x": 5, "y": 2.14 },
+        { "x": 6, "y": 2.13 },
+        { "x": 7, "y": 2.18 },
+        { "x": 8, "y": 2.22 }
+      ]
+    },
+    {
+      "id": "users",
+      "label": "Active Users",
+      "value": "84.2K",
+      "change": "+8.3%",
+      "good": true,
+      "target": "Target: 90K",
+      "progress": 94,
+      "colors": { "stroke": "#22D79B", "fill": "#22D79B" },
+      "spark": [
+        { "x": 1, "y": 78 },
+        { "x": 2, "y": 79 },
+        { "x": 3, "y": 79.5 },
+        { "x": 4, "y": 80 },
+        { "x": 5, "y": 81.2 },
+        { "x": 6, "y": 82.4 },
+        { "x": 7, "y": 83.1 },
+        { "x": 8, "y": 84.2 }
+      ]
+    },
+    {
+      "id": "conversion",
+      "label": "Conversion Rate",
+      "value": "3.42%",
+      "change": "-0.8%",
+      "good": false,
+      "target": "Target: 4.0%",
+      "progress": 86,
+      "colors": { "stroke": "#FF5BAE", "fill": "#FF5BAE" },
+      "spark": [
+        { "x": 1, "y": 3.55 },
+        { "x": 2, "y": 3.52 },
+        { "x": 3, "y": 3.5 },
+        { "x": 4, "y": 3.48 },
+        { "x": 5, "y": 3.46 },
+        { "x": 6, "y": 3.45 },
+        { "x": 7, "y": 3.44 },
+        { "x": 8, "y": 3.42 }
+      ]
+    },
+    {
+      "id": "response",
+      "label": "Avg Response Time",
+      "value": "142ms",
+      "change": "-18.2%",
+      "good": true,
+      "target": "Target: 150ms",
+      "progress": 95,
+      "colors": { "stroke": "#FFB000", "fill": "#FFB000" },
+      "spark": [
+        { "x": 1, "y": 170 },
+        { "x": 2, "y": 165 },
+        { "x": 3, "y": 160 },
+        { "x": 4, "y": 155 },
+        { "x": 5, "y": 151 },
+        { "x": 6, "y": 148 },
+        { "x": 7, "y": 145 },
+        { "x": 8, "y": 142 }
+      ]
+    },
+    {
+      "id": "tickets",
+      "label": "Support Tickets",
+      "value": "247",
+      "change": "-23.1%",
+      "good": true,
+      "target": "Target: <200",
+      "progress": 81,
+      "colors": { "stroke": "#FF6278", "fill": "#FF6278" },
+      "spark": [
+        { "x": 1, "y": 320 },
+        { "x": 2, "y": 310 },
+        { "x": 3, "y": 300 },
+        { "x": 4, "y": 290 },
+        { "x": 5, "y": 275 },
+        { "x": 6, "y": 265 },
+        { "x": 7, "y": 255 },
+        { "x": 8, "y": 247 }
+      ]
+    },
+    {
+      "id": "csat",
+      "label": "Customer Satisfaction",
+      "value": "94.7%",
+      "change": "+2.1%",
+      "good": true,
+      "target": "Target: 95%",
+      "progress": 99.7,
+      "colors": { "stroke": "#9E8BFF", "fill": "#9E8BFF" },
+      "spark": [
+        { "x": 1, "y": 92.2 },
+        { "x": 2, "y": 92.6 },
+        { "x": 3, "y": 93.1 },
+        { "x": 4, "y": 93.7 },
+        { "x": 5, "y": 94.0 },
+        { "x": 6, "y": 94.3 },
+        { "x": 7, "y": 94.5 },
+        { "x": 8, "y": 94.7 }
+      ]
+    },
+    {
+      "id": "deploy",
+      "label": "Deployments",
+      "value": "38",
+      "change": "+15.2%",
+      "good": true,
+      "target": "Target: 40",
+      "progress": 95,
+      "colors": { "stroke": "#3CB0FF", "fill": "#3CB0FF" },
+      "spark": [
+        { "x": 1, "y": 26 },
+        { "x": 2, "y": 28 },
+        { "x": 3, "y": 29 },
+        { "x": 4, "y": 31 },
+        { "x": 5, "y": 33 },
+        { "x": 6, "y": 35 },
+        { "x": 7, "y": 36 },
+        { "x": 8, "y": 38 }
+      ]
+    },
+    {
+      "id": "error",
+      "label": "Error Rate",
+      "value": "0.12%",
+      "change": "-45.3%",
+      "good": true,
+      "target": "Target: <0.5%",
+      "progress": 76,
+      "colors": { "stroke": "#FFD659", "fill": "#FFD659" },
+      "spark": [
+        { "x": 1, "y": 0.28 },
+        { "x": 2, "y": 0.24 },
+        { "x": 3, "y": 0.22 },
+        { "x": 4, "y": 0.19 },
+        { "x": 5, "y": 0.17 },
+        { "x": 6, "y": 0.15 },
+        { "x": 7, "y": 0.13 },
+        { "x": 8, "y": 0.12 }
+      ]
+    }
+  ],
+  "summary": {
+    "revenue": { "label": "Total Revenue", "value": "$28.8M YTD" },
+    "growth": { "label": "Growth Rate", "value": "14.2% YoY" },
+    "team": { "label": "Team Size", "value": "142 members" }
+  }
+}

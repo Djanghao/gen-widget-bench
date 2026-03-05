@@ -1,0 +1,43 @@
+{
+  "title": "Thai Basil Chicken Stir-Fry",
+  "rating": {
+    "value": 4.7,
+    "reviewsText": "238 reviews"
+  },
+  "meta": {
+    "cookTime": "25 min",
+    "servings": "4 servings"
+  },
+  "nutrition": {
+    "calories": { "value": 384, "label": "Calories" },
+    "protein": { "value": "32g", "label": "Protein" },
+    "carbs": { "value": "28g", "label": "Carbs" },
+    "fat": { "value": "16g", "label": "Fat" }
+  },
+  "ingredients": {
+    "title": "Ingredients",
+    "items": [
+      { "amount": "2 tbsp", "name": "vegetable oil" },
+      { "amount": "1 lb", "name": "chicken thighs, diced" },
+      { "amount": "3 cloves", "name": "garlic, minced" },
+      { "amount": "2", "name": "Thai chilies, sliced" },
+      { "amount": "1 cup", "name": "Thai basil leaves" },
+      { "amount": "2 tbsp", "name": "oyster sauce" },
+      { "amount": "1 tbsp", "name": "fish sauce" },
+      { "amount": "1 tbsp", "name": "soy sauce" }
+    ]
+  },
+  "macroChart": {
+    "segments": [
+      { "label": "Protein", "value": 40, "color": "#5aa7ff" },
+      { "label": "Carbs", "value": 35, "color": "#31d7a2" },
+      { "label": "Fat", "value": 25, "color": "#ff5fae" }
+    ],
+    "legend": [
+      { "label": "Protein", "color": "#5aa7ff" },
+      { "label": "Carbs", "color": "#31d7a2" },
+      { "label": "Fat", "color": "#ff5fae" }
+    ]
+  },
+  "tags": ["Asian", "Quick", "High Protein"]
+}

@@ -1,0 +1,130 @@
+{
+  "unit": "Unit 4B",
+  "shift": "Day Shift",
+  "shiftEnd": "7:00 PM",
+  "timestamp": "2026-03-04T14:32:00Z",
+  "patients": [
+    {
+      "name": "Margaret Chen",
+      "bed": "Bed 1",
+      "age": 72,
+      "diagnosis": "Septic Shock",
+      "admitted": "Mar 1",
+      "alertLevel": "critical",
+      "nurse": "RN Sarah K.",
+      "ivStatus": "Running",
+      "vitals": {
+        "heartRate": 112,
+        "bloodPressure": "168/95",
+        "spO2": 91,
+        "temperature": 101.2,
+        "respiratoryRate": 24
+      },
+      "heartRateHistory": [
+        { "t": 0, "v": 98 }, { "t": 1, "v": 102 }, { "t": 2, "v": 108 },
+        { "t": 3, "v": 105 }, { "t": 4, "v": 110 }, { "t": 5, "v": 115 },
+        { "t": 6, "v": 112 }, { "t": 7, "v": 118 }, { "t": 8, "v": 108 },
+        { "t": 9, "v": 112 }
+      ],
+      "bpHistory": [
+        { "t": 0, "v": 160 }, { "t": 1, "v": 165 }, { "t": 2, "v": 170 },
+        { "t": 3, "v": 168 }, { "t": 4, "v": 172 }, { "t": 5, "v": 168 }
+      ],
+      "medications": ["Norepinephrine 0.1mcg/kg/min", "Vancomycin 1g IV q12h", "Heparin 800u/hr"]
+    },
+    {
+      "name": "Robert Williams",
+      "bed": "Bed 2",
+      "age": 58,
+      "diagnosis": "Acute MI",
+      "admitted": "Mar 2",
+      "alertLevel": "warning",
+      "nurse": "RN Michael D.",
+      "ivStatus": "Running",
+      "vitals": {
+        "heartRate": 88,
+        "bloodPressure": "145/88",
+        "spO2": 94,
+        "temperature": 99.8,
+        "respiratoryRate": 20
+      },
+      "heartRateHistory": [
+        { "t": 0, "v": 82 }, { "t": 1, "v": 85 }, { "t": 2, "v": 90 },
+        { "t": 3, "v": 88 }, { "t": 4, "v": 86 }, { "t": 5, "v": 92 },
+        { "t": 6, "v": 89 }, { "t": 7, "v": 87 }, { "t": 8, "v": 90 },
+        { "t": 9, "v": 88 }
+      ],
+      "bpHistory": [
+        { "t": 0, "v": 140 }, { "t": 1, "v": 142 }, { "t": 2, "v": 148 },
+        { "t": 3, "v": 145 }, { "t": 4, "v": 143 }, { "t": 5, "v": 145 }
+      ],
+      "medications": ["Metoprolol 5mg IV q6h", "Insulin drip 4u/hr", "Ceftriaxone 2g IV daily"]
+    },
+    {
+      "name": "Sarah Johnson",
+      "bed": "Bed 3",
+      "age": 45,
+      "diagnosis": "Post-Op Hip Replacement",
+      "admitted": "Mar 3",
+      "alertLevel": "normal",
+      "nurse": "RN Lisa T.",
+      "ivStatus": "Running",
+      "vitals": {
+        "heartRate": 72,
+        "bloodPressure": "122/78",
+        "spO2": 98,
+        "temperature": 98.6,
+        "respiratoryRate": 16
+      },
+      "heartRateHistory": [
+        { "t": 0, "v": 70 }, { "t": 1, "v": 72 }, { "t": 2, "v": 71 },
+        { "t": 3, "v": 73 }, { "t": 4, "v": 72 }, { "t": 5, "v": 74 },
+        { "t": 6, "v": 71 }, { "t": 7, "v": 72 }, { "t": 8, "v": 73 },
+        { "t": 9, "v": 72 }
+      ],
+      "bpHistory": [
+        { "t": 0, "v": 120 }, { "t": 1, "v": 118 }, { "t": 2, "v": 122 },
+        { "t": 3, "v": 121 }, { "t": 4, "v": 120 }, { "t": 5, "v": 122 }
+      ],
+      "medications": ["Morphine PCA 1mg q10min", "Ondansetron 4mg IV q8h", "Lactated Ringers 125ml/hr"]
+    },
+    {
+      "name": "James Martinez",
+      "bed": "Bed 4",
+      "age": 65,
+      "diagnosis": "CHF Exacerbation",
+      "admitted": "Mar 1",
+      "alertLevel": "warning",
+      "nurse": "RN Sarah K.",
+      "ivStatus": "Paused",
+      "vitals": {
+        "heartRate": 95,
+        "bloodPressure": "152/90",
+        "spO2": 93,
+        "temperature": 100.4,
+        "respiratoryRate": 22
+      },
+      "heartRateHistory": [
+        { "t": 0, "v": 90 }, { "t": 1, "v": 93 }, { "t": 2, "v": 96 },
+        { "t": 3, "v": 92 }, { "t": 4, "v": 98 }, { "t": 5, "v": 95 },
+        { "t": 6, "v": 94 }, { "t": 7, "v": 97 }, { "t": 8, "v": 93 },
+        { "t": 9, "v": 95 }
+      ],
+      "bpHistory": [
+        { "t": 0, "v": 148 }, { "t": 1, "v": 150 }, { "t": 2, "v": 155 },
+        { "t": 3, "v": 152 }, { "t": 4, "v": 150 }, { "t": 5, "v": 152 }
+      ],
+      "medications": ["Amiodarone 1mg/min", "Furosemide 40mg IV q12h", "Potassium 20mEq IV"]
+    }
+  ],
+  "summary": {
+    "totalPatients": 4,
+    "critical": 1,
+    "warning": 2,
+    "stable": 1,
+    "avgHeartRate": 92,
+    "avgSpO2": 94,
+    "nursesOnDuty": 3,
+    "avgTemp": 100.0
+  }
+}

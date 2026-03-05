@@ -1,0 +1,178 @@
+{
+  "project": {
+    "name": "Phoenix Redesign",
+    "subtitle": "Q1 2026 Sprint Plan",
+    "progress": 62,
+    "dateRange": "Jan 6 - Apr 18"
+  },
+  "timeline": {
+    "tasks": [
+      {
+        "id": 0,
+        "name": "User Research",
+        "assignee": {
+          "initials": "AK"
+        },
+        "color": "#818cf8",
+        "dates": "Jan 6 - Jan 24",
+        "progress": 100,
+        "status": "Complete",
+        "statusColor": "#22c55e",
+        "statusTextColor": "#0f172a"
+      },
+      {
+        "id": 1,
+        "name": "Wireframes",
+        "assignee": {
+          "initials": "LM"
+        },
+        "color": "#818cf8",
+        "dates": "Jan 20 - Feb 7",
+        "progress": 100,
+        "status": "Complete",
+        "statusColor": "#22c55e",
+        "statusTextColor": "#0f172a"
+      },
+      {
+        "id": 2,
+        "name": "Visual Design",
+        "assignee": {
+          "initials": "LM"
+        },
+        "color": "#818cf8",
+        "dates": "Feb 3 - Feb 28",
+        "progress": 75,
+        "status": "In Progress",
+        "statusColor": "#3b82f6",
+        "statusTextColor": "#0f172a"
+      },
+      {
+        "id": 3,
+        "name": "Frontend Dev",
+        "assignee": {
+          "initials": "JS"
+        },
+        "color": "#3b82f6",
+        "dates": "Feb 10 - Mar 21",
+        "progress": 50,
+        "status": "In Progress",
+        "statusColor": "#3b82f6",
+        "statusTextColor": "#0f172a"
+      },
+      {
+        "id": 4,
+        "name": "Backend API",
+        "assignee": {
+          "initials": "RK"
+        },
+        "color": "#3b82f6",
+        "dates": "Feb 3 - Mar 21",
+        "progress": 40,
+        "status": "In Progress",
+        "statusColor": "#3b82f6",
+        "statusTextColor": "#0f172a"
+      },
+      {
+        "id": 5,
+        "name": "Integration Testing",
+        "assignee": {
+          "initials": "TS"
+        },
+        "color": "#22c55e",
+        "dates": "Mar 16 - Apr 4",
+        "progress": 0,
+        "status": "Not Started",
+        "statusColor": "#94a3b8",
+        "statusTextColor": "#e2e8f0"
+      },
+      {
+        "id": 6,
+        "name": "UAT Testing",
+        "assignee": {
+          "initials": "TS"
+        },
+        "color": "#22c55e",
+        "dates": "Mar 28 - Apr 11",
+        "progress": 0,
+        "status": "Not Started",
+        "statusColor": "#94a3b8",
+        "statusTextColor": "#e2e8f0"
+      },
+      {
+        "id": 7,
+        "name": "Launch Prep",
+        "assignee": {
+          "initials": "AK"
+        },
+        "color": "#f97316",
+        "dates": "Mar 31 - Apr 18",
+        "progress": 0,
+        "status": "Not Started",
+        "statusColor": "#94a3b8",
+        "statusTextColor": "#e2e8f0"
+      }
+    ]
+  },
+  "milestones": [
+    {
+      "id": 0,
+      "label": "Design Approval",
+      "position": 35
+    },
+    {
+      "id": 1,
+      "label": "Beta Release",
+      "position": 75
+    },
+    {
+      "id": 2,
+      "label": "Go Live",
+      "position": 100
+    }
+  ],
+  "team": {
+    "members": [
+      {
+        "id": 0,
+        "name": "Anna Kim",
+        "role": "Product Lead",
+        "initials": "AK",
+        "color": "#818cf8"
+      },
+      {
+        "id": 1,
+        "name": "Leo Martinez",
+        "role": "Designer",
+        "initials": "LM",
+        "color": "#818cf8"
+      },
+      {
+        "id": 2,
+        "name": "James Smith",
+        "role": "Frontend Developer",
+        "initials": "JS",
+        "color": "#3b82f6"
+      },
+      {
+        "id": 3,
+        "name": "Rajiv Kumar",
+        "role": "Backend Developer",
+        "initials": "RK",
+        "color": "#3b82f6"
+      },
+      {
+        "id": 4,
+        "name": "Tina Singh",
+        "role": "QA Engineer",
+        "initials": "TS",
+        "color": "#22c55e"
+      }
+    ]
+  },
+  "summary": {
+    "total": "8 Tasks",
+    "completed": "2 Done",
+    "inProgress": "3 Active",
+    "onTrack": "87% On Track"
+  }
+}

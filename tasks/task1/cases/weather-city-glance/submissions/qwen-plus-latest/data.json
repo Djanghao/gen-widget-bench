@@ -1,0 +1,44 @@
+{
+  "alertBanner": "Air quality alert: Moderate pollution",
+  "currentTemp": "72°",
+  "highTemp": "78°",
+  "lowTemp": "64°",
+  "weatherIcon": "⛅",
+  "cityName": "San Francisco",
+  "conditionText": "Partly Cloudy",
+  "feelsLike": "74°",
+  "humidity": "62",
+  "windSpeed": "8",
+  "hourlyForecasts": [
+    {
+      "time": "12 PM",
+      "icon": "⛅",
+      "temp": "72°"
+    },
+    {
+      "time": "1 PM",
+      "icon": "⛅",
+      "temp": "74°"
+    },
+    {
+      "time": "2 PM",
+      "icon": "🌤️",
+      "temp": "75°"
+    },
+    {
+      "time": "3 PM",
+      "icon": "🌤️",
+      "temp": "76°"
+    },
+    {
+      "time": "4 PM",
+      "icon": "🌤️",
+      "temp": "75°"
+    },
+    {
+      "time": "5 PM",
+      "icon": "⛅",
+      "temp": "74°"
+    }
+  ]
+}

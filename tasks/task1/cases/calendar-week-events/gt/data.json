@@ -1,0 +1,28 @@
+{
+  "month": "March 2026",
+  "weekNumber": 10,
+  "currentDayIndex": 2,
+  "days": [
+    { "name": "Mon", "date": 2 },
+    { "name": "Tue", "date": 3 },
+    { "name": "Wed", "date": 4 },
+    { "name": "Thu", "date": 5 },
+    { "name": "Fri", "date": 6 }
+  ],
+  "timeSlots": ["8 AM", "9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM"],
+  "events": [
+    { "id": 0, "title": "Team Standup", "dayIndex": 0, "startHour": 9, "startMin": 0, "endHour": 9, "endMin": 30, "category": "Work" },
+    { "id": 1, "title": "Design Review", "dayIndex": 0, "startHour": 14, "startMin": 0, "endHour": 15, "endMin": 30, "category": "Meeting" },
+    { "id": 2, "title": "Sprint Planning", "dayIndex": 1, "startHour": 10, "startMin": 0, "endHour": 11, "endMin": 30, "category": "Meeting" },
+    { "id": 3, "title": "Dentist Appt", "dayIndex": 1, "startHour": 15, "startMin": 0, "endHour": 16, "endMin": 0, "category": "Personal" },
+    { "id": 4, "title": "API Integration", "dayIndex": 2, "startHour": 9, "startMin": 0, "endHour": 12, "endMin": 0, "category": "Work" },
+    { "id": 5, "title": "Lunch w/ Sarah", "dayIndex": 2, "startHour": 12, "startMin": 0, "endHour": 13, "endMin": 0, "category": "Personal" },
+    { "id": 6, "title": "Client Call", "dayIndex": 3, "startHour": 11, "startMin": 0, "endHour": 12, "endMin": 0, "category": "Meeting" },
+    { "id": 7, "title": "Code Deploy", "dayIndex": 4, "startHour": 14, "startMin": 0, "endHour": 16, "endMin": 0, "category": "Work" }
+  ],
+  "categories": {
+    "Work": "#3b82f6",
+    "Personal": "#22c55e",
+    "Meeting": "#a855f7"
+  }
+}

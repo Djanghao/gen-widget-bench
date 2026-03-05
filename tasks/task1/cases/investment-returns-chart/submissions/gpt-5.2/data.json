@@ -1,0 +1,24 @@
+{
+  "chart": [
+    { "month": "Jan", "portfolio": 100, "sp500": 100, "bonds": 100 },
+    { "month": "Feb", "portfolio": 104, "sp500": 103, "bonds": 100.2 },
+    { "month": "Mar", "portfolio": 107, "sp500": 105, "bonds": 100.4 },
+    { "month": "Apr", "portfolio": 104.5, "sp500": 104.2, "bonds": 100.7 },
+    { "month": "May", "portfolio": 109, "sp500": 106.5, "bonds": 101.0 },
+    { "month": "Jun", "portfolio": 112, "sp500": 108.5, "bonds": 101.3 },
+    { "month": "Jul", "portfolio": 116, "sp500": 110.5, "bonds": 101.6 },
+    { "month": "Aug", "portfolio": 114, "sp500": 110.2, "bonds": 101.9 },
+    { "month": "Sep", "portfolio": 111, "sp500": 108.2, "bonds": 102.2 },
+    { "month": "Oct", "portfolio": 118, "sp500": 112.5, "bonds": 102.6 },
+    { "month": "Nov", "portfolio": 122, "sp500": 114.5, "bonds": 102.9 },
+    { "month": "Dec", "portfolio": 125.5, "sp500": 116.5, "bonds": 103.2 }
+  ],
+  "summary": [
+    { "label": "Total Return", "value": "+24.67%", "tone": "pos" },
+    { "label": "Annualized Return", "value": "+24.67%", "tone": "pos" },
+    { "label": "Sharpe Ratio", "value": "1.847", "tone": "neu" },
+    { "label": "Max Drawdown", "value": "-4.50%", "tone": "neg" },
+    { "label": "Volatility", "value": "14.23%", "tone": "neu" },
+    { "label": "Beta", "value": "1.182", "tone": "neu" }
+  ]
+}

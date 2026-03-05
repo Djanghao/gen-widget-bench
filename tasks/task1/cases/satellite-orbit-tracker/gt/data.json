@@ -1,0 +1,36 @@
+{
+  "missionName": "SENTINEL-6A",
+  "orbitType": "LEO",
+  "elapsedTime": "847d 14h 32m",
+  "orbitalParams": {
+    "altitude": { "value": 1336, "unit": "km" },
+    "velocity": { "value": 7.45, "unit": "km/s" },
+    "inclination": { "value": 66.04, "unit": "deg" },
+    "period": { "value": 112.4, "unit": "min" },
+    "eccentricity": { "value": 0.000095, "unit": "" }
+  },
+  "groundTrack": {
+    "currentLat": 34.2,
+    "currentLon": -42.7,
+    "positionPct": 38
+  },
+  "passes": [
+    { "time": "14:23 UTC", "duration": "8m 42s", "maxElevation": "72 deg", "direction": "NW-SE" },
+    { "time": "16:01 UTC", "duration": "6m 18s", "maxElevation": "45 deg", "direction": "N-S" },
+    { "time": "17:44 UTC", "duration": "4m 51s", "maxElevation": "28 deg", "direction": "NE-SW" },
+    { "time": "19:22 UTC", "duration": "7m 33s", "maxElevation": "61 deg", "direction": "NW-SE" },
+    { "time": "21:05 UTC", "duration": "5m 12s", "maxElevation": "34 deg", "direction": "N-S" }
+  ],
+  "subsystems": [
+    { "name": "Power", "key": "power", "value": "842W", "status": "nominal" },
+    { "name": "Comms", "key": "comms", "value": "256 kbps", "status": "nominal" },
+    { "name": "Thermal", "key": "thermal", "value": "22.4 C", "status": "nominal" },
+    { "name": "ADCS", "key": "adcs", "value": "0.003 deg/s", "status": "nominal" }
+  ],
+  "signal": {
+    "dBm": -68.2,
+    "quality": "Good",
+    "strengthPct": 72
+  },
+  "altitudeHistory": [1334, 1335, 1337, 1336, 1338, 1335, 1336, 1334, 1337, 1336, 1335, 1336]
+}

@@ -1,0 +1,78 @@
+{
+  "category": "Wireless Headphones",
+  "products": [
+    {
+      "name": "SoundMax Pro",
+      "price": "$349",
+      "stars": 4.7,
+      "reviewCount": 2847,
+      "availability": "In Stock",
+      "shipping": "Free 2-day",
+      "sellerRating": 4.9,
+      "color": "#3b82f6",
+      "pros": ["Best-in-class ANC", "Premium build quality", "30hr battery"],
+      "cons": ["Expensive", "Heavy at 260g"]
+    },
+    {
+      "name": "AudioElite X1",
+      "price": "$279",
+      "stars": 4.5,
+      "reviewCount": 5124,
+      "availability": "In Stock",
+      "shipping": "Free 2-day",
+      "sellerRating": 4.8,
+      "color": "#8b5cf6",
+      "pros": ["Great value", "Comfortable fit", "Good call quality"],
+      "cons": ["ANC not as strong", "No aptX"]
+    },
+    {
+      "name": "BassKing 700",
+      "price": "$199",
+      "stars": 4.2,
+      "reviewCount": 8932,
+      "availability": "Low Stock",
+      "shipping": "Free 5-day",
+      "sellerRating": 4.6,
+      "color": "#f43f5e",
+      "pros": ["Deep bass", "Budget friendly", "Foldable design"],
+      "cons": ["Shorter battery", "Plastic build"]
+    },
+    {
+      "name": "ClearTone Ultra",
+      "price": "$429",
+      "stars": 4.8,
+      "reviewCount": 1256,
+      "availability": "In Stock",
+      "shipping": "Free next-day",
+      "sellerRating": 5.0,
+      "color": "#10b981",
+      "pros": ["Audiophile sound", "Hi-Res certified", "40hr battery"],
+      "cons": ["Most expensive", "No foldable", "Bulky case"]
+    }
+  ],
+  "specs": [
+    { "label": "Driver Size", "values": ["40mm", "40mm", "50mm", "50mm"] },
+    { "label": "Frequency Response", "values": ["4Hz-40kHz", "20Hz-20kHz", "20Hz-40kHz", "4Hz-80kHz"] },
+    { "label": "Battery Life", "values": ["30 hrs", "24 hrs", "20 hrs", "40 hrs"] },
+    { "label": "Noise Cancellation", "values": ["Adaptive ANC", "ANC", "Basic ANC", "Adaptive ANC+"] },
+    { "label": "Bluetooth", "values": ["5.3", "5.2", "5.1", "5.3"] },
+    { "label": "Weight", "values": ["260g", "240g", "220g", "280g"] },
+    { "label": "Impedance", "values": ["32 ohm", "32 ohm", "24 ohm", "40 ohm"] },
+    { "label": "Codec Support", "values": ["LDAC, aptX", "AAC, SBC", "SBC, AAC", "LDAC, aptX HD"] },
+    { "label": "Microphone", "values": ["4-mic array", "2-mic array", "2-mic", "6-mic array"] },
+    { "label": "Foldable", "values": ["Yes", "Yes", "Yes", "No"] },
+    { "label": "Water Resistance", "values": ["IPX4", "IPX4", "IPX2", "IPX5"] },
+    { "label": "Charging Port", "values": ["USB-C", "USB-C", "USB-C", "USB-C"] },
+    { "label": "Multipoint", "values": ["Yes (3)", "Yes (2)", "No", "Yes (3)"] },
+    { "label": "Quick Charge", "values": ["5min=3hr", "10min=2hr", "10min=1hr", "3min=3hr"] },
+    { "label": "Warranty", "values": ["2 years", "1 year", "1 year", "3 years"] }
+  ],
+  "radarData": [
+    { "subject": "Sound", "p0": 90, "p1": 82, "p2": 75, "p3": 95 },
+    { "subject": "ANC", "p0": 95, "p1": 78, "p2": 60, "p3": 92 },
+    { "subject": "Battery", "p0": 85, "p1": 72, "p2": 60, "p3": 95 },
+    { "subject": "Comfort", "p0": 80, "p1": 90, "p2": 85, "p3": 70 },
+    { "subject": "Value", "p0": 70, "p1": 88, "p2": 95, "p3": 55 },
+    { "subject": "Build", "p0": 92, "p1": 80, "p2": 65, "p3": 90 }
+  ]
+}

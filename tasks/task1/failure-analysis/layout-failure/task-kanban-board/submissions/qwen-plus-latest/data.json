@@ -1,0 +1,63 @@
+{
+  "sprint": {
+    "name": "Sprint 14",
+    "progress": "64%",
+    "progressValue": 64
+  },
+  "summary": {
+    "totalTasks": "9 tasks"
+  },
+  "columns": {
+    "todo": {
+      "count": 4,
+      "tasks": [
+        {
+          "title": "Setup CI pipeline",
+          "priority": "High"
+        },
+        {
+          "title": "Write unit tests",
+          "priority": "Med"
+        },
+        {
+          "title": "Update API docs",
+          "priority": "Low"
+        },
+        {
+          "title": "Refactor auth module",
+          "priority": "High"
+        }
+      ]
+    },
+    "inProgress": {
+      "count": 3,
+      "tasks": [
+        {
+          "title": "Dashboard redesign",
+          "priority": "High"
+        },
+        {
+          "title": "Fix login bug",
+          "priority": "Med"
+        },
+        {
+          "title": "Add search filter",
+          "priority": "Low"
+        }
+      ]
+    },
+    "done": {
+      "count": 2,
+      "tasks": [
+        {
+          "title": "Database migration",
+          "priority": "High"
+        },
+        {
+          "title": "Setup monitoring",
+          "priority": "Med"
+        }
+      ]
+    }
+  }
+}

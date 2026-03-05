@@ -1,0 +1,42 @@
+{
+  "city": "Houston, TX",
+  "updateTime": "Updated 2m ago",
+  "alert": "Thunderstorm Warning",
+  "radarGrid": [
+    0, 0, 0, 1, 1, 0, 0, 0,
+    0, 0, 1, 2, 2, 1, 0, 0,
+    0, 1, 2, 3, 3, 2, 1, 0,
+    0, 1, 3, 4, 4, 3, 1, 0,
+    0, 1, 2, 4, 3, 2, 1, 0,
+    0, 0, 2, 3, 3, 2, 0, 0,
+    0, 0, 1, 2, 2, 1, 0, 0,
+    0, 0, 0, 1, 1, 0, 0, 0
+  ],
+  "conditions": {
+    "temperature": { "value": 84, "unit": "F" },
+    "humidity": { "value": 78, "unit": "%" },
+    "pressure": { "value": 29.82, "unit": "inHg" },
+    "wind": { "value": "18 mph", "direction": "SW" },
+    "visibility": { "value": 6.2, "unit": "mi" },
+    "dewPoint": { "value": 76, "unit": "F" }
+  },
+  "hourlyForecast": [
+    { "hour": "12p", "temp": 84, "precip": 20 },
+    { "hour": "1p", "temp": 85, "precip": 25 },
+    { "hour": "2p", "temp": 86, "precip": 35 },
+    { "hour": "3p", "temp": 84, "precip": 60 },
+    { "hour": "4p", "temp": 82, "precip": 80 },
+    { "hour": "5p", "temp": 79, "precip": 90 },
+    { "hour": "6p", "temp": 77, "precip": 85 },
+    { "hour": "7p", "temp": 76, "precip": 70 },
+    { "hour": "8p", "temp": 75, "precip": 50 },
+    { "hour": "9p", "temp": 74, "precip": 35 },
+    { "hour": "10p", "temp": 73, "precip": 20 },
+    { "hour": "11p", "temp": 72, "precip": 10 }
+  ],
+  "outlook": [
+    { "day": "Tomorrow", "high": 88, "low": 72, "condition": "Partly Cloudy", "precip": 30 },
+    { "day": "Thursday", "high": 91, "low": 74, "condition": "Sunny", "precip": 10 },
+    { "day": "Friday", "high": 87, "low": 71, "condition": "Scattered Storms", "precip": 65 }
+  ]
+}

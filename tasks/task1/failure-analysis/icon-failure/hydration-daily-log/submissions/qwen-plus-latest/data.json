@@ -1,0 +1,17 @@
+{
+  "header": {
+    "date": "Monday, Feb 24"
+  },
+  "progress": {
+    "current": "1.8L",
+    "goal": "/ 2.5L",
+    "percent": 72
+  },
+  "hourly": [0, 0, 0, 0, 0, 250, 0, 150, 0, 0, 250, 0, 0, 0, 0, 0],
+  "quickAdd": [150, 250, 500],
+  "history": [1800, 2100, 1900, 2300, 2500, 2000, 2200],
+  "stats": {
+    "dailyAvg": "2.1L",
+    "streak": "5 days"
+  }
+}

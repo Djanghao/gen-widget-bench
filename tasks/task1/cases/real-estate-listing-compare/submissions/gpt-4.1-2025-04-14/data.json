@@ -1,0 +1,70 @@
+{
+  "cards": [
+    {
+      "status": "Active",
+      "address": "742 Evergreen Terrace",
+      "neighborhood": "Sunset District",
+      "price": "$1,285,000",
+      "ppsqft": "$642/sqft",
+      "beds": "4 bd",
+      "baths": "3 ba",
+      "sqft": "2,002",
+      "yearBuilt": "2018",
+      "lotSize": "5,200 sqft",
+      "hoa": "$450/mo",
+      "taxes": "$15,420/yr",
+      "daysOnMarket": "12",
+      "walkScore": "92",
+      "score": 88,
+      "sparkline": [
+        { "x": 0, "y": 1250 },
+        { "x": 1, "y": 1265 },
+        { "x": 2, "y": 1285 }
+      ]
+    },
+    {
+      "status": "Hot",
+      "address": "1401 Mission St",
+      "neighborhood": "SoMa",
+      "price": "$1,450,000",
+      "ppsqft": "$725/sqft",
+      "beds": "3 bd",
+      "baths": "2 ba",
+      "sqft": "2,000",
+      "yearBuilt": "2021",
+      "lotSize": "4,800 sqft",
+      "hoa": "$380/mo",
+      "taxes": "$17,400/yr",
+      "daysOnMarket": "5",
+      "walkScore": "96",
+      "score": 91,
+      "sparkline": [
+        { "x": 0, "y": 1479 },
+        { "x": 1, "y": 1450 },
+        { "x": 2, "y": 1450 }
+      ]
+    },
+    {
+      "status": "Price Cut",
+      "address": "88 Pacific Heights Blvd",
+      "neighborhood": "Pacific Heights",
+      "price": "$1,125,000",
+      "ppsqft": "$580/sqft",
+      "beds": "3 bd",
+      "baths": "2.5 ba",
+      "sqft": "1,940",
+      "yearBuilt": "2015",
+      "lotSize": "6,100 sqft",
+      "hoa": "$0/mo",
+      "taxes": "$13,500/yr",
+      "daysOnMarket": "28",
+      "walkScore": "78",
+      "score": 74,
+      "sparkline": [
+        { "x": 0, "y": 1205 },
+        { "x": 1, "y": 1190 },
+        { "x": 2, "y": 1125 }
+      ]
+    }
+  ]
+}

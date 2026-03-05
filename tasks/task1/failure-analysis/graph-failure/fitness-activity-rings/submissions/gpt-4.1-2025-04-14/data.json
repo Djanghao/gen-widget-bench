@@ -1,0 +1,14 @@
+{
+  "move": {
+    "current": 623,
+    "goal": 650
+  },
+  "exercise": {
+    "current": 42,
+    "goal": 30
+  },
+  "stand": {
+    "current": 9,
+    "goal": 12
+  }
+}

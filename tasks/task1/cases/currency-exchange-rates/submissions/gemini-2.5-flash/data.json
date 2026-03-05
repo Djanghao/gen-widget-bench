@@ -1,0 +1,65 @@
+{
+  "baseCurrencySymbol": "USD",
+  "baseAmount": "1.00",
+  "lastUpdated": "Mar 4, 2025 3:47 PM UTC",
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "flag": "🇪🇺",
+      "rate": "0.9247",
+      "change": "-0.32%"
+    },
+    {
+      "code": "GBP",
+      "name": "British Pound",
+      "flag": "🇬🇧",
+      "rate": "0.7918",
+      "change": "+0.18%"
+    },
+    {
+      "code": "JPY",
+      "name": "Japanese Yen",
+      "flag": "🇯🇵",
+      "rate": "150.4320",
+      "change": "-0.74%"
+    },
+    {
+      "code": "AUD",
+      "name": "Australian Dollar",
+      "flag": "🇦🇺",
+      "rate": "1.5382",
+      "change": "+0.41%"
+    },
+    {
+      "code": "CAD",
+      "name": "Canadian Dollar",
+      "flag": "🇨🇦",
+      "rate": "1.3571",
+      "change": "-0.15%"
+    },
+    {
+      "code": "CHF",
+      "name": "Swiss Franc",
+      "flag": "🇨🇭",
+      "rate": "0.8834",
+      "change": "+0.27%"
+    },
+    {
+      "code": "CNY",
+      "name": "Chinese Yuan",
+      "flag": "🇨🇳",
+      "rate": "7.2341",
+      "change": "-0.08%"
+    },
+    {
+      "code": "INR",
+      "name": "Indian Rupee",
+      "flag": "🇮🇳",
+      "rate": "83.1247",
+      "change": "-0.53%"
+    }
+  ],
+  "chartTitle": "RELATIVE STRENGTH (24H)",
+  "chartData": []
+}

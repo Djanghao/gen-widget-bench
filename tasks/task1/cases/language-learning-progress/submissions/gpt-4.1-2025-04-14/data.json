@@ -1,0 +1,38 @@
+{
+  "flag": "🇯🇵",
+  "language": "Japanese",
+  "level": "N3 Intermediate",
+  "progress": 47,
+  "skills": [
+    { "key": "reading", "name": "Reading", "percent": 68, "level": "B1" },
+    { "key": "writing", "name": "Writing", "percent": 35, "level": "A2" },
+    { "key": "listening", "name": "Listening", "percent": 67, "level": "B2" },
+    { "key": "speaking", "name": "Speaking", "percent": 27, "level": "A2" },
+    { "key": "grammar", "name": "Grammar", "percent": 55, "level": "B1" }
+  ],
+  "stats": {
+    "xp": 340,
+    "streak": 23,
+    "words": 67,
+    "accuracy": 89
+  },
+  "lessons": [
+    {
+      "title": "Kanji Radicals - Set 12",
+      "icon": "文",
+      "iconColor": "#a383ff",
+      "time": "15 min"
+    },
+    {
+      "title": "Verb Conjugation Practice",
+      "icon": "詞",
+      "iconColor": "#26d9a9",
+      "time": "20 min"
+    },
+    {
+      "title": "Listening Comprehension N3",
+      "icon": "🎧",
+      "iconColor": "#62aeff"
+    }
+  ]
+}

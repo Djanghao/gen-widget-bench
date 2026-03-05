@@ -1,0 +1,19 @@
+{
+  "league": "Premier League",
+  "season": "2025-26",
+  "matchday": 28,
+  "teams": [
+    { "rank": 1, "name": "Arsenal", "mp": 28, "w": 20, "d": 5, "l": 3, "gf": 58, "ga": 22, "gd": 36, "pts": 65, "form": ["W","W","D","W","W"], "zone": "cl" },
+    { "rank": 2, "name": "Liverpool", "mp": 28, "w": 19, "d": 6, "l": 3, "gf": 61, "ga": 26, "gd": 35, "pts": 63, "form": ["W","D","W","W","L"], "zone": "cl" },
+    { "rank": 3, "name": "Man City", "mp": 28, "w": 18, "d": 5, "l": 5, "gf": 55, "ga": 28, "gd": 27, "pts": 59, "form": ["L","W","W","D","W"], "zone": "cl" },
+    { "rank": 4, "name": "Chelsea", "mp": 28, "w": 16, "d": 7, "l": 5, "gf": 52, "ga": 30, "gd": 22, "pts": 55, "form": ["W","W","D","D","W"], "zone": "cl" },
+    { "rank": 5, "name": "Aston Villa", "mp": 28, "w": 15, "d": 6, "l": 7, "gf": 48, "ga": 33, "gd": 15, "pts": 51, "form": ["D","W","L","W","W"], "zone": null },
+    { "rank": 6, "name": "Newcastle", "mp": 28, "w": 14, "d": 7, "l": 7, "gf": 46, "ga": 31, "gd": 15, "pts": 49, "form": ["W","L","W","D","W"], "zone": null },
+    { "rank": 7, "name": "Tottenham", "mp": 28, "w": 13, "d": 6, "l": 9, "gf": 50, "ga": 40, "gd": 10, "pts": 45, "form": ["L","W","W","L","D"], "zone": null },
+    { "rank": 8, "name": "Brighton", "mp": 28, "w": 12, "d": 7, "l": 9, "gf": 45, "ga": 38, "gd": 7, "pts": 43, "form": ["D","D","W","L","W"], "zone": null },
+    { "rank": 9, "name": "West Ham", "mp": 28, "w": 11, "d": 5, "l": 12, "gf": 38, "ga": 42, "gd": -4, "pts": 38, "form": ["L","L","W","D","L"], "zone": null },
+    { "rank": 10, "name": "Wolves", "mp": 28, "w": 6, "d": 8, "l": 14, "gf": 28, "ga": 48, "gd": -20, "pts": 26, "form": ["L","D","L","L","D"], "zone": "relegation" },
+    { "rank": 11, "name": "Ipswich Town", "mp": 28, "w": 5, "d": 9, "l": 14, "gf": 24, "ga": 46, "gd": -22, "pts": 24, "form": ["D","L","L","D","L"], "zone": "relegation" },
+    { "rank": 12, "name": "Southampton", "mp": 28, "w": 4, "d": 6, "l": 18, "gf": 20, "ga": 55, "gd": -35, "pts": 18, "form": ["L","L","L","D","L"], "zone": "relegation" }
+  ]
+}

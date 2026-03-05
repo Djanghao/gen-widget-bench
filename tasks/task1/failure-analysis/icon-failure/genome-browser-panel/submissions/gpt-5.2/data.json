@@ -1,0 +1,149 @@
+{
+  "regionLabel": "chr17:7,571,720-7,590,868",
+  "genomeBuild": "GRCh38/hg38",
+  "regionSize": "19.1 kb region",
+  "rulerTicks": ["7,572,000", "7,576,000", "7,580,000", "7,584,000", "7,588,000"],
+  "genesTitle": "GENE ANNOTATIONS (REFSEQ)",
+  "genes": [
+    {
+      "name": "TP53",
+      "strand": "← antisense",
+      "exons": [
+        { "x": 2, "w": 6 },
+        { "x": 10, "w": 4 },
+        { "x": 16, "w": 5 },
+        { "x": 24, "w": 4 },
+        { "x": 30, "w": 3 },
+        { "x": 36, "w": 5 },
+        { "x": 44, "w": 4 },
+        { "x": 50, "w": 3 },
+        { "x": 56, "w": 4 },
+        { "x": 64, "w": 3 },
+        { "x": 70, "w": 4 },
+        { "x": 78, "w": 5 }
+      ]
+    },
+    {
+      "name": "WRAP53",
+      "strand": "← sense",
+      "exons": [
+        { "x": 2, "w": 6 },
+        { "x": 11, "w": 5 },
+        { "x": 20, "w": 6 },
+        { "x": 30, "w": 5 },
+        { "x": 38, "w": 6 }
+      ]
+    },
+    {
+      "name": "EFNB3",
+      "strand": "→ sense",
+      "exons": [
+        { "x": 0, "w": 7 },
+        { "x": 9, "w": 6 },
+        { "x": 18, "w": 7 },
+        { "x": 29, "w": 6 },
+        { "x": 38, "w": 7 },
+        { "x": 49, "w": 6 },
+        { "x": 58, "w": 7 }
+      ]
+    },
+    {
+      "name": "DLGAP1-AS1",
+      "strand": "← antisense",
+      "exons": [
+        { "x": 4, "w": 7 },
+        { "x": 14, "w": 6 },
+        { "x": 23, "w": 7 },
+        { "x": 34, "w": 6 },
+        { "x": 44, "w": 7 },
+        { "x": 55, "w": 6 },
+        { "x": 64, "w": 7 }
+      ]
+    },
+    {
+      "name": "ATP1B2",
+      "strand": "→ sense",
+      "exons": [
+        { "x": 2, "w": 7 },
+        { "x": 11, "w": 6 },
+        { "x": 20, "w": 7 },
+        { "x": 31, "w": 6 },
+        { "x": 41, "w": 7 },
+        { "x": 52, "w": 6 },
+        { "x": 61, "w": 7 }
+      ]
+    },
+    {
+      "name": "SHBG",
+      "strand": "→ sense",
+      "exons": [
+        { "x": 7, "w": 6 },
+        { "x": 16, "w": 6 },
+        { "x": 25, "w": 6 },
+        { "x": 34, "w": 6 }
+      ]
+    }
+  ],
+  "variantsTitle": "VARIANT CALLS",
+  "variants": [
+    { "posPct": 9, "type": "Benign" },
+    { "posPct": 16, "type": "VUS" },
+    { "posPct": 24, "type": "Indel" },
+    { "posPct": 36, "type": "Benign" },
+    { "posPct": 44, "type": "Pathogenic" },
+    { "posPct": 57, "type": "Indel" },
+    { "posPct": 67, "type": "Benign" },
+    { "posPct": 75, "type": "Benign" },
+    { "posPct": 83, "type": "Indel" },
+    { "posPct": 92, "type": "Benign" }
+  ],
+  "coverageTitle": "COVERAGE DEPTH",
+  "coverageAvg": "97.5x",
+  "coverageData": [
+    { "x": "7572k", "y": 45 },
+    { "x": "7574k", "y": 78 },
+    { "x": "7576k", "y": 120 },
+    { "x": "7578k", "y": 95 },
+    { "x": "7580k", "y": 150 },
+    { "x": "7582k", "y": 90 },
+    { "x": "7584k", "y": 145 },
+    { "x": "7586k", "y": 70 },
+    { "x": "7588k", "y": 115 },
+    { "x": "7590k", "y": 85 }
+  ],
+  "gcTitle": "GC CONTENT (%)",
+  "gcData": [
+    { "x": "7572k", "y": 42 },
+    { "x": "7574k", "y": 40 },
+    { "x": "7576k", "y": 56 },
+    { "x": "7578k", "y": 50 },
+    { "x": "7580k", "y": 62 },
+    { "x": "7582k", "y": 47 },
+    { "x": "7584k", "y": 52 },
+    { "x": "7586k", "y": 41 },
+    { "x": "7588k", "y": 58 },
+    { "x": "7590k", "y": 49 }
+  ],
+  "detail": {
+    "title": "Selected Variant Detail",
+    "rsid": "rs28934578",
+    "position": "chr17:7,578,406",
+    "alleles": "G > T",
+    "type": "SNP",
+    "consequence": "Missense variant",
+    "gene": "TP53",
+    "protein": "p.Arg248Trp",
+    "clinvar": "Pathogenic",
+    "gnomadAF": "0.0000082",
+    "sift": "Deleterious (0.00)",
+    "polyphen": "Probably Damaging (1.00)",
+    "cadd": "35",
+    "zygosity": "Heterozygous",
+    "qual": "2847",
+    "depth": "142x"
+  },
+  "footer": {
+    "sample": "SAMPLE-2026-0312",
+    "pipeline": "GATK 4.5.0 / VEP 112"
+  }
+}

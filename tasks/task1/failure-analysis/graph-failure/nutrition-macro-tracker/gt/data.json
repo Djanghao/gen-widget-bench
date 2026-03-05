@@ -1,0 +1,48 @@
+{
+  "date": "Monday, Feb 24",
+  "calories": { "consumed": 1847, "goal": 2200 },
+  "macros": [
+    { "name": "Protein", "current": 124, "goal": 150, "unit": "g", "color": "#8B5CF6", "percentage": 82.7 },
+    { "name": "Carbs", "current": 203, "goal": 275, "unit": "g", "color": "#F59E0B", "percentage": 73.8 },
+    { "name": "Fat", "current": 68, "goal": 73, "unit": "g", "color": "#EC4899", "percentage": 93.2 }
+  ],
+  "meals": [
+    {
+      "name": "Breakfast",
+      "calories": 412,
+      "protein": 28,
+      "carbs": 48,
+      "fat": 14,
+      "time": "7:30 AM"
+    },
+    {
+      "name": "Lunch",
+      "calories": 623,
+      "protein": 42,
+      "carbs": 71,
+      "fat": 22,
+      "time": "12:15 PM"
+    },
+    {
+      "name": "Dinner",
+      "calories": 584,
+      "protein": 38,
+      "carbs": 62,
+      "fat": 21,
+      "time": "6:45 PM"
+    },
+    {
+      "name": "Snacks",
+      "calories": 228,
+      "protein": 16,
+      "carbs": 22,
+      "fat": 11,
+      "time": "Various"
+    }
+  ],
+  "water": {
+    "cupsGoal": 8,
+    "cupsFilled": 5,
+    "mlPerCup": 250
+  }
+}

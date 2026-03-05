@@ -1,0 +1,130 @@
+{
+  "competition": "UEFA Champions League - Quarter Final",
+  "teams": {
+    "home": { "name": "Real Madrid", "badge": "RMA" },
+    "away": { "name": "Bayern Munich", "badge": "BAY" }
+  },
+  "score": { "home": 2, "away": 1 },
+  "time": "73'",
+  "status": "2nd Half",
+  "titles": {
+    "formations": "FORMATIONS",
+    "stats": "MATCH STATISTICS",
+    "events": "MATCH EVENTS",
+    "ratings": "TOP PLAYER RATINGS",
+    "heatmap": "TOUCH HEATMAP (HOME)"
+  },
+  "formations": {
+    "home": "4-3-3",
+    "away": "4-2-3-1",
+    "homeDots": [
+      { "num": 1, "x": 58, "y": 18 },
+      { "num": 19, "x": 13, "y": 33 },
+      { "num": 21, "x": 38, "y": 30 },
+      { "num": 2, "x": 56, "y": 30 },
+      { "num": 5, "x": 86, "y": 33 },
+      { "num": 7, "x": 16, "y": 45 },
+      { "num": 6, "x": 40, "y": 45 },
+      { "num": 8, "x": 56, "y": 45 },
+      { "num": 11, "x": 83, "y": 50 },
+      { "num": 42, "x": 52, "y": 57 },
+      { "num": 9, "x": 52, "y": 63 }
+    ],
+    "awayDots": [
+      { "num": 1, "x": 50, "y": 86 },
+      { "num": 23, "x": 16, "y": 70 },
+      { "num": 5, "x": 36, "y": 74 },
+      { "num": 4, "x": 60, "y": 74 },
+      { "num": 2, "x": 85, "y": 70 },
+      { "num": 10, "x": 24, "y": 58 },
+      { "num": 8, "x": 38, "y": 56 },
+      { "num": 12, "x": 66, "y": 58 },
+      { "num": 11, "x": 76, "y": 44 },
+      { "num": 9, "x": 52, "y": 60 },
+      { "num": 7, "x": 16, "y": 43 }
+    ]
+  },
+  "stats": {
+    "possession": { "home": "58%", "away": "42%" },
+    "shots": { "home": 14, "away": 9 },
+    "onTarget": { "home": 7, "away": 4 },
+    "passes": { "home": 487, "away": 352 },
+    "corners": { "home": 6, "away": 3 },
+    "fouls": { "home": 8, "away": 12 }
+  },
+  "events": [
+    { "time": "12'", "type": "goal", "player": "Bellingham", "detail": "Assisted by Vinicius Jr." },
+    { "time": "28'", "type": "yellow", "player": "Goretzka", "detail": "Reckless challenge" },
+    { "time": "35'", "type": "goal", "player": "Kane", "detail": "Penalty kick" },
+    { "time": "58'", "type": "sub", "player": "Camavinga", "detail": "Valverde on" },
+    { "time": "64'", "type": "red", "player": "Upamecano", "detail": "Second yellow" },
+    { "time": "71'", "type": "goal", "player": "Vinicius Jr.", "detail": "Assisted by Modric" }
+  ],
+  "ratings": [
+    { "name": "Vinicius Jr.", "rating": 8.9 },
+    { "name": "Bellingham", "rating": 8.5 },
+    { "name": "Kane", "rating": 7.8 },
+    { "name": "Modric", "rating": 7.6 },
+    { "name": "Musiala", "rating": 7.4 },
+    { "name": "Courtois", "rating": 7.2 }
+  ],
+  "heatmap": {
+    "rows": [
+      [
+        { "value": 2, "level": "low" },
+        { "value": 5, "level": "low" },
+        { "value": 8, "level": "medium" },
+        { "value": 6, "level": "low" },
+        { "value": 3, "level": "low" },
+        { "value": 1, "level": "low" },
+        { "value": 4, "level": "low" },
+        { "value": 7, "level": "medium" }
+      ],
+      [
+        { "value": 4, "level": "low" },
+        { "value": 8, "level": "medium" },
+        { "value": 12, "level": "high" },
+        { "value": 10, "level": "medium" },
+        { "value": 7, "level": "medium" },
+        { "value": 5, "level": "low" },
+        { "value": 6, "level": "low" },
+        { "value": 9, "level": "medium" }
+      ],
+      [
+        { "value": 3, "level": "low" },
+        { "value": 6, "level": "low" },
+        { "value": 15, "level": "high" },
+        { "value": 18, "level": "high" },
+        { "value": 14, "level": "high" },
+        { "value": 8, "level": "medium" },
+        { "value": 7, "level": "medium" },
+        { "value": 5, "level": "low" }
+      ],
+      [
+        { "value": 5, "level": "low" },
+        { "value": 9, "level": "medium" },
+        { "value": 11, "level": "medium" },
+        { "value": 14, "level": "high" },
+        { "value": 12, "level": "high" },
+        { "value": 10, "level": "medium" },
+        { "value": 8, "level": "medium" },
+        { "value": 6, "level": "low" }
+      ],
+      [
+        { "value": 1, "level": "low" },
+        { "value": 3, "level": "low" },
+        { "value": 6, "level": "low" },
+        { "value": 8, "level": "medium" },
+        { "value": 5, "level": "low" },
+        { "value": 4, "level": "low" },
+        { "value": 2, "level": "low" },
+        { "value": 3, "level": "low" }
+      ]
+    ]
+  },
+  "footer": {
+    "venue": "Santiago Bernabeu, Madrid",
+    "referee": "Ref: Daniele Orsato (ITA)",
+    "attendance": "78,342 fans"
+  }
+}

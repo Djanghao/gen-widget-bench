@@ -1,0 +1,40 @@
+{
+  "workoutType": "Morning Run",
+  "date": "Feb 24, 2025",
+  "duration": "45:23",
+  "avgHR": 142,
+  "maxHR": 178,
+  "calories": 487,
+  "zones": [
+    { "name": "Rest", "range": "<100", "time": "3:12", "percentage": 7, "color": "#6B7280" },
+    { "name": "Fat Burn", "range": "100-130", "time": "8:45", "percentage": 19, "color": "#3B82F6" },
+    { "name": "Cardio", "range": "130-155", "time": "21:34", "percentage": 48, "color": "#22C55E" },
+    { "name": "Peak", "range": "155-175", "time": "9:47", "percentage": 22, "color": "#F59E0B" },
+    { "name": "Max", "range": "175+", "time": "2:05", "percentage": 4, "color": "#EF4444" }
+  ],
+  "heartRateData": [
+    { "min": 0, "hr": 82 },
+    { "min": 2, "hr": 96 },
+    { "min": 4, "hr": 112 },
+    { "min": 6, "hr": 128 },
+    { "min": 8, "hr": 135 },
+    { "min": 10, "hr": 141 },
+    { "min": 12, "hr": 138 },
+    { "min": 14, "hr": 145 },
+    { "min": 16, "hr": 152 },
+    { "min": 18, "hr": 158 },
+    { "min": 20, "hr": 163 },
+    { "min": 22, "hr": 155 },
+    { "min": 24, "hr": 148 },
+    { "min": 26, "hr": 142 },
+    { "min": 28, "hr": 150 },
+    { "min": 30, "hr": 157 },
+    { "min": 32, "hr": 165 },
+    { "min": 34, "hr": 172 },
+    { "min": 36, "hr": 178 },
+    { "min": 38, "hr": 168 },
+    { "min": 40, "hr": 155 },
+    { "min": 42, "hr": 143 },
+    { "min": 45, "hr": 118 }
+  ]
+}

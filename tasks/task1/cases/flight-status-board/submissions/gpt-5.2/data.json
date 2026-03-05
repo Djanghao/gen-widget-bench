@@ -1,0 +1,75 @@
+{
+  "airportCode": "SFO",
+  "title": "Departures",
+  "currentTime": "2:45 PM",
+  "flights": [
+    {
+      "flight": "UA 1247",
+      "city": "New York",
+      "code": "JFK",
+      "scheduled": "3:05 PM",
+      "actual": "3:05 PM",
+      "actualHighlight": false,
+      "gate": "B42",
+      "status": "On Time",
+      "statusVariant": "onTime"
+    },
+    {
+      "flight": "DL 538",
+      "city": "Atlanta",
+      "code": "ATL",
+      "scheduled": "3:15 PM",
+      "actual": "3:52 PM",
+      "actualHighlight": true,
+      "gate": "A18",
+      "status": "Delayed",
+      "statusVariant": "delayed"
+    },
+    {
+      "flight": "AA 2091",
+      "city": "Chicago",
+      "code": "ORD",
+      "scheduled": "3:30 PM",
+      "actual": "3:30 PM",
+      "actualHighlight": false,
+      "gate": "C7",
+      "status": "Boarding",
+      "statusVariant": "boarding"
+    },
+    {
+      "flight": "UA 874",
+      "city": "Denver",
+      "code": "DEN",
+      "scheduled": "2:10 PM",
+      "actual": "2:08 PM",
+      "actualHighlight": false,
+      "gate": "B36",
+      "status": "Departed",
+      "statusVariant": "departed"
+    },
+    {
+      "flight": "SW 1653",
+      "city": "Los Angeles",
+      "code": "LAX",
+      "scheduled": "3:45 PM",
+      "actual": "3:45 PM",
+      "actualHighlight": false,
+      "gate": "D22",
+      "status": "On Time",
+      "statusVariant": "onTime"
+    },
+    {
+      "flight": "AS 419",
+      "city": "Seattle",
+      "code": "SEA",
+      "scheduled": "4:00 PM",
+      "actual": "4:37 PM",
+      "actualHighlight": true,
+      "gate": "E11",
+      "status": "Delayed",
+      "statusVariant": "delayed"
+    }
+  ],
+  "lastUpdated": "Updated 2:44 PM PST",
+  "terminal": "Terminal 3"
+}

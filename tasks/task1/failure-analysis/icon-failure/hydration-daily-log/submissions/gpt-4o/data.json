@@ -1,0 +1,23 @@
+{
+  "hourly": [
+    { "time": "10AM", "value": 0.8 },
+    { "time": "1PM", "value": 1.4 },
+    { "time": "4PM", "value": 1.0 },
+    { "time": "7PM", "value": 0.6 },
+    { "time": "10PM", "value": 0.5 }
+  ],
+  "quickAdd": [
+    { "value": 150, "label": "150ml" },
+    { "value": 250, "label": "250ml" },
+    { "value": 500, "label": "500ml" }
+  ],
+  "history": [
+    { "label": "Mon", "value": "2.3L", "active": true },
+    { "label": "Tue", "value": "2.6L", "active": true },
+    { "label": "Wed", "value": "1.9L", "active": false },
+    { "label": "Thu", "value": "2.5L", "active": true },
+    { "label": "Fri", "value": "2.1L", "active": false },
+    { "label": "Sat", "value": "2.7L", "active": true },
+    { "label": "Sun", "value": "1.8L", "active": false }
+  ]
+}

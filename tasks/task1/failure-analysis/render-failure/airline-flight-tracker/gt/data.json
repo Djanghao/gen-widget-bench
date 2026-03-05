@@ -1,0 +1,102 @@
+{
+  "lastUpdated": "2026-03-04T14:32:00Z",
+  "flights": [
+    {
+      "flightNumber": "AA 1024",
+      "departure": { "airport": "JFK", "city": "New York", "time": "08:15", "gate": "B22", "lat": 40.64, "lng": -73.78 },
+      "arrival": { "airport": "LAX", "city": "Los Angeles", "time": "11:42", "gate": "T4-12", "lat": 33.94, "lng": -118.41 },
+      "status": "On Time",
+      "progress": 72,
+      "weatherDep": "Cloudy 38F",
+      "weatherArr": "Sunny 68F",
+      "timelineStart": 8.25,
+      "timelineEnd": 11.7
+    },
+    {
+      "flightNumber": "UA 587",
+      "departure": { "airport": "SFO", "city": "San Francisco", "time": "09:30", "gate": "G14", "lat": 37.62, "lng": -122.38 },
+      "arrival": { "airport": "ORD", "city": "Chicago", "time": "15:48", "gate": "C9", "lat": 41.98, "lng": -87.90 },
+      "status": "Delayed",
+      "progress": 45,
+      "weatherDep": "Fog 52F",
+      "weatherArr": "Snow 28F",
+      "timelineStart": 9.5,
+      "timelineEnd": 15.8
+    },
+    {
+      "flightNumber": "DL 302",
+      "departure": { "airport": "ATL", "city": "Atlanta", "time": "07:00", "gate": "A5", "lat": 33.64, "lng": -84.43 },
+      "arrival": { "airport": "MIA", "city": "Miami", "time": "09:15", "gate": "D18", "lat": 25.80, "lng": -80.29 },
+      "status": "Landed",
+      "progress": 100,
+      "weatherDep": "Rain 55F",
+      "weatherArr": "Partly Cloudy 78F",
+      "timelineStart": 7.0,
+      "timelineEnd": 9.25
+    },
+    {
+      "flightNumber": "SW 1455",
+      "departure": { "airport": "DEN", "city": "Denver", "time": "11:20", "gate": "B34", "lat": 39.86, "lng": -104.67 },
+      "arrival": { "airport": "SEA", "city": "Seattle", "time": "13:45", "gate": "N8", "lat": 47.45, "lng": -122.31 },
+      "status": "Boarding",
+      "progress": 0,
+      "weatherDep": "Clear 42F",
+      "weatherArr": "Rain 48F",
+      "timelineStart": 11.33,
+      "timelineEnd": 13.75
+    },
+    {
+      "flightNumber": "B6 822",
+      "departure": { "airport": "BOS", "city": "Boston", "time": "13:00", "gate": "C20", "lat": 42.36, "lng": -71.01 },
+      "arrival": { "airport": "DCA", "city": "Washington DC", "time": "14:35", "gate": "35A", "lat": 38.85, "lng": -77.04 },
+      "status": "On Time",
+      "progress": 15,
+      "weatherDep": "Windy 35F",
+      "weatherArr": "Overcast 42F",
+      "timelineStart": 13.0,
+      "timelineEnd": 14.58
+    },
+    {
+      "flightNumber": "AS 204",
+      "departure": { "airport": "SEA", "city": "Seattle", "time": "14:30", "gate": "S4", "lat": 47.45, "lng": -122.31 },
+      "arrival": { "airport": "PHX", "city": "Phoenix", "time": "17:50", "gate": "A2", "lat": 33.44, "lng": -112.01 },
+      "status": "On Time",
+      "progress": 0,
+      "weatherDep": "Rain 48F",
+      "weatherArr": "Sunny 85F",
+      "timelineStart": 14.5,
+      "timelineEnd": 17.83
+    },
+    {
+      "flightNumber": "NK 610",
+      "departure": { "airport": "FLL", "city": "Fort Lauderdale", "time": "06:45", "gate": "H1", "lat": 26.07, "lng": -80.15 },
+      "arrival": { "airport": "DTW", "city": "Detroit", "time": "10:20", "gate": "A44", "lat": 42.21, "lng": -83.35 },
+      "status": "Landed",
+      "progress": 100,
+      "weatherDep": "Sunny 75F",
+      "weatherArr": "Cloudy 32F",
+      "timelineStart": 6.75,
+      "timelineEnd": 10.33
+    },
+    {
+      "flightNumber": "HA 51",
+      "departure": { "airport": "HNL", "city": "Honolulu", "time": "10:00", "gate": "G3", "lat": 21.32, "lng": -157.92 },
+      "arrival": { "airport": "LAX", "city": "Los Angeles", "time": "18:15", "gate": "T5-6", "lat": 33.94, "lng": -118.41 },
+      "status": "Delayed",
+      "progress": 30,
+      "weatherDep": "Sunny 82F",
+      "weatherArr": "Sunny 68F",
+      "timelineStart": 10.0,
+      "timelineEnd": 18.25
+    }
+  ],
+  "airports": [
+    { "code": "JFK", "temp": "38F", "condition": "Cloudy", "lat": 40.64, "lng": -73.78 },
+    { "code": "LAX", "temp": "68F", "condition": "Sunny", "lat": 33.94, "lng": -118.41 },
+    { "code": "ORD", "temp": "28F", "condition": "Snow", "lat": 41.98, "lng": -87.90 },
+    { "code": "ATL", "temp": "55F", "condition": "Rain", "lat": 33.64, "lng": -84.43 },
+    { "code": "SFO", "temp": "52F", "condition": "Fog", "lat": 37.62, "lng": -122.38 },
+    { "code": "SEA", "temp": "48F", "condition": "Rain", "lat": 47.45, "lng": -122.31 }
+  ],
+  "timelineHours": ["6AM", "9AM", "12PM", "3PM", "6PM", "9PM"]
+}

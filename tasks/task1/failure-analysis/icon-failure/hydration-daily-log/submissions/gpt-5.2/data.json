@@ -1,0 +1,58 @@
+{
+  "header": {
+    "title": "Hydration",
+    "date": "Monday, Feb 24"
+  },
+  "progress": {
+    "current": "1.8L",
+    "goal": "/ 2.5L",
+    "percent": 72,
+    "percentText": "72%"
+  },
+  "hourly": {
+    "title": "HOURLY INTAKE",
+    "max": 10,
+    "bars": [
+      { "label": "", "v": 0 },
+      { "label": "", "v": 6 },
+      { "label": "", "v": 5 },
+      { "label": "10AM", "v": 0 },
+      { "label": "", "v": 8 },
+      { "label": "", "v": 6 },
+      { "label": "1PM", "v": 0 },
+      { "label": "", "v": 0 },
+      { "label": "", "v": 5 },
+      { "label": "", "v": 7 },
+      { "label": "4PM", "v": 0 },
+      { "label": "", "v": 4 },
+      { "label": "", "v": 6 },
+      { "label": "7PM", "v": 0 },
+      { "label": "", "v": 0 },
+      { "label": "10PM", "v": 0 }
+    ]
+  },
+  "quickAdd": {
+    "title": "QUICK ADD",
+    "buttons": [
+      { "eid": "quick-add-150", "label": "150ml" },
+      { "eid": "quick-add-250", "label": "250ml" },
+      { "eid": "quick-add-500", "label": "500ml" }
+    ]
+  },
+  "history": {
+    "title": "LAST 7 DAYS",
+    "days": [
+      { "day": "Mon", "value": "2.3L", "active": true },
+      { "day": "Tue", "value": "2.6L", "active": true },
+      { "day": "Wed", "value": "1.9L", "active": false },
+      { "day": "Thu", "value": "2.5L", "active": true },
+      { "day": "Fri", "value": "2.1L", "active": false },
+      { "day": "Sat", "value": "2.7L", "active": true },
+      { "day": "Sun", "value": "1.8L", "active": false }
+    ]
+  },
+  "stats": {
+    "dailyAvg": { "value": "2.1L", "label": "Daily Avg" },
+    "streak": { "value": "5 days", "label": "Streak" }
+  }
+}

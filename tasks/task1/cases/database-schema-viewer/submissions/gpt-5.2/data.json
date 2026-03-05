@@ -1,0 +1,73 @@
+{
+  "header": {
+    "dbName": "ecommerce_prod",
+    "engine": "PostgreSQL",
+    "version": "v3.14"
+  },
+  "tables": {
+    "users": {
+      "title": "users",
+      "meta": "84,230 rows  4 indices",
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK" },
+        { "name": "email", "type": "varchar", "nn": true },
+        { "name": "username", "type": "varchar", "nn": true },
+        { "name": "created_at", "type": "timestamp" },
+        { "name": "is_active", "type": "bool" }
+      ]
+    },
+    "orders": {
+      "title": "orders",
+      "meta": "312,847 rows  3 indices",
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK" },
+        { "name": "user_id", "type": "int", "key": "FK" },
+        { "name": "total_amount", "type": "decimal", "nn": true },
+        { "name": "status", "type": "varchar" },
+        { "name": "created_at", "type": "timestamp" },
+        { "name": "shipped_at", "type": "timestamp", "nullable": true }
+      ]
+    },
+    "products": {
+      "title": "products",
+      "meta": "5,621 rows  3 indices",
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK" },
+        { "name": "name", "type": "varchar", "nn": true },
+        { "name": "price", "type": "decimal", "nn": true },
+        { "name": "category_id", "type": "int", "key": "FK" },
+        { "name": "stock_qty", "type": "int" }
+      ]
+    },
+    "categories": {
+      "title": "categories",
+      "meta": "147 rows  2 indices",
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK" },
+        { "name": "name", "type": "varchar", "nn": true },
+        { "name": "slug", "type": "varchar" },
+        { "name": "parent_id", "type": "int", "key": "FK", "nullable": true }
+      ]
+    }
+  },
+  "stats": {
+    "tables": { "label": "Tables", "value": "4" },
+    "columns": { "label": "Columns", "value": "20" },
+    "indices": { "label": "Indices", "value": "12" },
+    "size": { "label": "Size", "value": "2.4 GB" }
+  },
+  "migrations": [
+    { "version": "v3.14", "desc": "Add order status enum", "time": "2024-06-18 10:22" },
+    { "version": "v3.13", "desc": "Backfill product stock_qty", "time": "2024-06-11 15:04" },
+    { "version": "v3.12", "desc": "Create categories table", "time": "2024-06-02 09:30" }
+  ],
+  "queryVolume": [
+    { "day": "Mon", "queries": 120 },
+    { "day": "Tue", "queries": 155 },
+    { "day": "Wed", "queries": 132 },
+    { "day": "Thu", "queries": 178 },
+    { "day": "Fri", "queries": 166 },
+    { "day": "Sat", "queries": 98 },
+    { "day": "Sun", "queries": 110 }
+  ]
+}

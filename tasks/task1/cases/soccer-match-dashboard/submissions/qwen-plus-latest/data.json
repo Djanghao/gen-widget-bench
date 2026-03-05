@@ -1,0 +1,149 @@
+{
+  "scoreboard": {
+    "home": {
+      "name": "Manchester City"
+    },
+    "away": {
+      "name": "Real Madrid"
+    },
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "time": "73'",
+    "status": "LIVE",
+    "competition": "Champions League"
+  },
+  "formation": {
+    "home": {
+      "label": "4-3-3",
+      "players": [
+        { "x": 50, "y": 90 },
+        { "x": 25, "y": 70 },
+        { "x": 40, "y": 70 },
+        { "x": 60, "y": 70 },
+        { "x": 75, "y": 70 },
+        { "x": 30, "y": 50 },
+        { "x": 50, "y": 50 },
+        { "x": 70, "y": 50 },
+        { "x": 20, "y": 30 },
+        { "x": 50, "y": 30 },
+        { "x": 80, "y": 30 }
+      ]
+    },
+    "away": {
+      "label": "4-2-3-1",
+      "players": [
+        { "x": 50, "y": 10 },
+        { "x": 25, "y": 30 },
+        { "x": 40, "y": 30 },
+        { "x": 60, "y": 30 },
+        { "x": 75, "y": 30 },
+        { "x": 35, "y": 50 },
+        { "x": 65, "y": 50 },
+        { "x": 25, "y": 50 },
+        { "x": 50, "y": 50 },
+        { "x": 75, "y": 50 },
+        { "x": 50, "y": 15 }
+      ]
+    }
+  },
+  "stats": {
+    "possession": {
+      "home": 58,
+      "away": 42
+    },
+    "shots": {
+      "home": 14,
+      "away": 9
+    },
+    "ontarget": {
+      "home": 6,
+      "away": 4
+    },
+    "passes": {
+      "home": 428,
+      "away": 372
+    },
+    "corners": {
+      "home": 7,
+      "away": 4
+    },
+    "fouls": {
+      "home": 12,
+      "away": 15
+    }
+  },
+  "events": [
+    {
+      "time": "12'",
+      "type": "goal",
+      "detail": "E. Haaland (Man City)"
+    },
+    {
+      "time": "28'",
+      "type": "yellow",
+      "detail": "A. Kroos (Real Madrid)"
+    },
+    {
+      "time": "45+2'",
+      "type": "goal",
+      "detail": "V. Jović (Real Madrid)"
+    },
+    {
+      "time": "62'",
+      "type": "substitution",
+      "detail": "B. Silva → P. Foden (Man City)"
+    },
+    {
+      "time": "71'",
+      "type": "red",
+      "detail": "T. Kroos (Real Madrid)"
+    },
+    {
+      "time": "84'",
+      "type": "goal",
+      "detail": "K. De Bruyne (Man City)"
+    }
+  ],
+  "ratings": [
+    {
+      "name": "E. Haaland",
+      "rating": 8.2
+    },
+    {
+      "name": "K. De Bruyne",
+      "rating": 8.0
+    },
+    {
+      "name": "R. Dias",
+      "rating": 7.6
+    },
+    {
+      "name": "V. Jović",
+      "rating": 7.4
+    },
+    {
+      "name": "T. Kroos",
+      "rating": 7.1
+    },
+    {
+      "name": "A. Courtois",
+      "rating": 7.0
+    }
+  ],
+  "heatmap": {
+    "grid": [
+      [10, 25, 45, 30, 15],
+      [20, 40, 65, 50, 25],
+      [35, 60, 85, 70, 40],
+      [25, 55, 75, 60, 30],
+      [15, 30, 45, 35, 20]
+    ]
+  },
+  "footer": {
+    "venue": "Etihad Stadium",
+    "referee": "M. Oliver",
+    "attendance": "53,241"
+  }
+}

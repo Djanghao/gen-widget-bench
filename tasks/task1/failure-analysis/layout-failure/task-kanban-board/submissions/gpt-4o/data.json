@@ -1,0 +1,88 @@
+{
+  "sprintName": "Sprint 14",
+  "progressPct": 64,
+  "totalTasks": 9,
+  "columns": [
+    {
+      "id": "todo",
+      "name": "To Do",
+      "count": 4,
+      "borderColor": "#3b82f6",
+      "countBadgeColor": "#3b82f6",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "Setup CI pipeline",
+          "priority": { "label": "High", "color": "#e11d48" },
+          "date": "Mar 8"
+        },
+        {
+          "id": 1,
+          "title": "Write unit tests",
+          "priority": { "label": "Med", "color": "#f59e0b" },
+          "date": "Mar 10"
+        },
+        {
+          "id": 2,
+          "title": "Update API docs",
+          "priority": { "label": "Low", "color": "#10b981" },
+          "date": "Mar 12"
+        },
+        {
+          "id": 3,
+          "title": "Refactor auth module",
+          "priority": { "label": "High", "color": "#e11d48" },
+          "date": "Mar 7"
+        }
+      ]
+    },
+    {
+      "id": "inprogress",
+      "name": "In Progress",
+      "count": 3,
+      "borderColor": "#f59e0b",
+      "countBadgeColor": "#f59e0b",
+      "tasks": [
+        {
+          "id": 4,
+          "title": "Dashboard redesign",
+          "priority": { "label": "High", "color": "#e11d48" },
+          "date": "Mar 6"
+        },
+        {
+          "id": 5,
+          "title": "Fix login bug",
+          "priority": { "label": "Med", "color": "#f59e0b" },
+          "date": "Mar 5"
+        },
+        {
+          "id": 6,
+          "title": "Add search filter",
+          "priority": { "label": "Low", "color": "#10b981" },
+          "date": "Mar 9"
+        }
+      ]
+    },
+    {
+      "id": "done",
+      "name": "Done",
+      "count": 2,
+      "borderColor": "#10b981",
+      "countBadgeColor": "#10b981",
+      "tasks": [
+        {
+          "id": 7,
+          "title": "Database migration",
+          "priority": { "label": "High", "color": "#e11d48" },
+          "date": "Mar 3"
+        },
+        {
+          "id": 8,
+          "title": "Setup monitoring",
+          "priority": { "label": "Med", "color": "#f59e0b" },
+          "date": "Mar 2"
+        }
+      ]
+    }
+  ]
+}

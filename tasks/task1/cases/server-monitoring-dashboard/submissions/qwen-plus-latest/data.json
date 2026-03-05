@@ -1,0 +1,27 @@
+{
+  "clusterName": "Production Cluster",
+  "status": "Healthy",
+  "uptime": "99.97%",
+  "cpuUsage": 73,
+  "cpuHistory": [65, 68, 70, 72, 73, 71, 69],
+  "memoryUsed": 12.4,
+  "memoryTotal": 16,
+  "diskUsed": 234,
+  "diskTotal": 500,
+  "networkThroughput": 847,
+  "networkHistory": [780, 802, 815, 822, 847, 835, 828],
+  "alerts": [
+    {
+      "severity": "Critical",
+      "message": "High CPU usage detected on server node-03 (92%)"
+    },
+    {
+      "severity": "Warning",
+      "message": "Memory usage approaching threshold on database server"
+    },
+    {
+      "severity": "Info",
+      "message": "Scheduled maintenance window starting in 2 hours"
+    }
+  ]
+}

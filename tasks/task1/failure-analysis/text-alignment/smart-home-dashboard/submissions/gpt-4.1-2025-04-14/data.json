@@ -1,0 +1,82 @@
+{
+  "rooms": [
+    {
+      "name": "Living Room",
+      "tempCurrent": "72°F",
+      "tempTarget": "70°F",
+      "lightStatus": "On 80%",
+      "thermoStatus": "Cooling",
+      "sensorStatus": "Motion",
+      "energyBarFill": "62%"
+    },
+    {
+      "name": "Kitchen",
+      "tempCurrent": "74°F",
+      "tempTarget": "72°F",
+      "lightStatus": "On 100%",
+      "thermoStatus": "Cooling",
+      "sensorStatus": "Smoke OK",
+      "energyBarFill": "82%"
+    },
+    {
+      "name": "Bedroom",
+      "tempCurrent": "68°F",
+      "tempTarget": "67°F",
+      "lightStatus": "Off",
+      "thermoStatus": "Idle",
+      "sensorStatus": "No Motion",
+      "energyBarFill": "23%"
+    },
+    {
+      "name": "Garage",
+      "tempCurrent": "81°F",
+      "tempTarget": "--",
+      "lightStatus": "On 40%",
+      "thermoStatus": "N/A",
+      "sensorStatus": "Door Closed",
+      "energyBarFill": "29%"
+    }
+  ],
+  "energyChart": [
+    {"day":"Mon","value":25},
+    {"day":"Tue","value":23},
+    {"day":"Wed","value":28},
+    {"day":"Thu","value":20},
+    {"day":"Fri","value":19},
+    {"day":"Sat","value":33},
+    {"day":"Sun","value":28}
+  ],
+  "energyCost": "$47.32",
+  "cameras": [
+    {
+      "name": "Front Door",
+      "status": "Online"
+    },
+    {
+      "name": "Backyard",
+      "status": "Online"
+    },
+    {
+      "name": "Garage",
+      "status": "Offline"
+    }
+  ],
+  "environment": {
+    "indoor": {
+      "label": "Indoor",
+      "value": "71 F"
+    },
+    "outdoor": {
+      "label": "Outdoor",
+      "value": "89 F"
+    },
+    "aqi": {
+      "label": "AQI",
+      "value": "42 (Good)"
+    },
+    "humidity": {
+      "label": "Humidity",
+      "value": "52%"
+    }
+  }
+}

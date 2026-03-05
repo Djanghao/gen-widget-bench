@@ -1,0 +1,72 @@
+{
+  "header": {
+    "workoutType": "Morning Run",
+    "date": "Feb 24, 2025",
+    "duration": "45:23"
+  },
+  "chart": {
+    "title": "HEART RATE"
+  },
+  "stats": {
+    "avgHr": 142,
+    "maxHr": 178,
+    "calories": 487
+  },
+  "zonesTitle": "HR ZONES",
+  "zones": [
+    {
+      "name": "Rest",
+      "range": "<100 bpm",
+      "time": "3:12",
+      "percent": 8,
+      "nameColor": "rgba(255,255,255,0.40)",
+      "barColor": "rgba(180,180,190,0.65)"
+    },
+    {
+      "name": "Fat Burn",
+      "range": "100-130\nbpm",
+      "time": "8:45",
+      "percent": 18,
+      "nameColor": "#3b82f6",
+      "barColor": "#3b82f6"
+    },
+    {
+      "name": "Cardio",
+      "range": "130-155\nbpm",
+      "time": "21:34",
+      "percent": 48,
+      "nameColor": "#22c55e",
+      "barColor": "#22c55e"
+    },
+    {
+      "name": "Peak",
+      "range": "155-175\nbpm",
+      "time": "9:47",
+      "percent": 24,
+      "nameColor": "#ffb000",
+      "barColor": "#ffb000"
+    },
+    {
+      "name": "Max",
+      "range": "175+\nbpm",
+      "time": "2:05",
+      "percent": 4,
+      "nameColor": "#ff4b4b",
+      "barColor": "#ff4b4b"
+    }
+  ],
+  "heartRateSeries": [
+    { "min": 0, "hr": 78 },
+    { "min": 4, "hr": 101 },
+    { "min": 8, "hr": 125 },
+    { "min": 12, "hr": 134 },
+    { "min": 16, "hr": 132 },
+    { "min": 20, "hr": 144 },
+    { "min": 24, "hr": 154 },
+    { "min": 28, "hr": 140 },
+    { "min": 32, "hr": 150 },
+    { "min": 36, "hr": 165 },
+    { "min": 40, "hr": 175 },
+    { "min": 45, "hr": 122 }
+  ]
+}

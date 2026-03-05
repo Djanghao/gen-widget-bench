@@ -1,0 +1,107 @@
+{
+  "header": {
+    "pair": "BTC/USDT",
+    "price": 62458.32,
+    "change24h": 2.45,
+    "usdEquivalent": 62458.32
+  },
+  "spread": {
+    "value": 12.45,
+    "pct": 0.02
+  },
+  "asksData": [
+    {
+      "price": 62470.77,
+      "amount": 0.4258,
+      "total": 26598.12
+    },
+    {
+      "price": 62475.23,
+      "amount": 0.3872,
+      "total": 24191.41
+    },
+    {
+      "price": 62479.89,
+      "amount": 0.3521,
+      "total": 22001.89
+    },
+    {
+      "price": 62484.55,
+      "amount": 0.3215,
+      "total": 20092.73
+    },
+    {
+      "price": 62489.21,
+      "amount": 0.2943,
+      "total": 18389.52
+    },
+    {
+      "price": 62493.87,
+      "amount": 0.2698,
+      "total": 16862.76
+    },
+    {
+      "price": 62498.53,
+      "amount": 0.2479,
+      "total": 15492.14
+    },
+    {
+      "price": 62503.19,
+      "amount": 0.2284,
+      "total": 14276.75
+    }
+  ],
+  "bidsData": [
+    {
+      "price": 62458.32,
+      "amount": 0.5123,
+      "total": 31997.52
+    },
+    {
+      "price": 62453.66,
+      "amount": 0.4689,
+      "total": 29284.23
+    },
+    {
+      "price": 62449.00,
+      "amount": 0.4291,
+      "total": 26796.82
+    },
+    {
+      "price": 62444.34,
+      "amount": 0.3927,
+      "total": 24521.75
+    },
+    {
+      "price": 62439.68,
+      "amount": 0.3598,
+      "total": 22465.78
+    },
+    {
+      "price": 62435.02,
+      "amount": 0.3302,
+      "total": 20616.05
+    },
+    {
+      "price": 62430.36,
+      "amount": 0.3037,
+      "total": 18960.22
+    },
+    {
+      "price": 62425.70,
+      "amount": 0.2795,
+      "total": 17447.99
+    }
+  ],
+  "asks": {
+    "maxTotal": 31997.52
+  },
+  "bids": {
+    "maxTotal": 31997.52
+  },
+  "footer": {
+    "volume": 2458973214,
+    "high": 63245.89,
+    "low": 60123.45
+  }
+}

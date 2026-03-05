@@ -1,0 +1,39 @@
+{
+  "date": "Monday, Feb 24",
+  "currentIntake": 1.8,
+  "goalIntake": 2.5,
+  "percentage": 72,
+  "dailyAvg": 2.1,
+  "streak": 5,
+  "hourlyIntake": [
+    { "hour": "7AM", "ml": 250 },
+    { "hour": "8AM", "ml": 200 },
+    { "hour": "9AM", "ml": 150 },
+    { "hour": "10AM", "ml": 0 },
+    { "hour": "11AM", "ml": 300 },
+    { "hour": "12PM", "ml": 200 },
+    { "hour": "1PM", "ml": 0 },
+    { "hour": "2PM", "ml": 150 },
+    { "hour": "3PM", "ml": 250 },
+    { "hour": "4PM", "ml": 0 },
+    { "hour": "5PM", "ml": 100 },
+    { "hour": "6PM", "ml": 200 },
+    { "hour": "7PM", "ml": 0 },
+    { "hour": "8PM", "ml": 0 },
+    { "hour": "9PM", "ml": 0 },
+    { "hour": "10PM", "ml": 0 }
+  ],
+  "quickAdd": [150, 250, 500],
+  "history": [
+    { "day": "Mon", "intake": 2.3, "goalMet": true },
+    { "day": "Tue", "intake": 2.6, "goalMet": true },
+    { "day": "Wed", "intake": 1.9, "goalMet": false },
+    { "day": "Thu", "intake": 2.5, "goalMet": true },
+    { "day": "Fri", "intake": 2.1, "goalMet": false },
+    { "day": "Sat", "intake": 2.7, "goalMet": true },
+    { "day": "Sun", "intake": 1.8, "goalMet": false }
+  ],
+  "progressChartData": [
+    { "name": "Intake", "value": 72, "fill": "#2DD4BF" }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "wallet": "0x1a2B...9cD4",
+  "totalValue": 127842.56,
+  "change24h": 3.42,
+  "network": "Ethereum Mainnet",
+  "blockNumber": 19847231,
+  "gas": { "low": 12, "avg": 18, "high": 32, "trend": "falling" },
+  "holdings": [
+    { "symbol": "ETH", "amount": "15.04", "value": "$52,400", "change": "+4.2%", "color": "#627eea" },
+    { "symbol": "USDC", "amount": "31,200", "value": "$31,200", "change": "0.0%", "color": "#2775ca" },
+    { "symbol": "WBTC", "amount": "0.38", "value": "$24,800", "change": "+2.8%", "color": "#f7931a" },
+    { "symbol": "AAVE", "amount": "82.5", "value": "$12,200", "change": "+5.1%", "color": "#b6509e" },
+    { "symbol": "UNI", "amount": "645", "value": "$7,242", "change": "-1.2%", "color": "#ff007a" }
+  ],
+  "portfolio": [
+    { "token": "ETH", "value": 52400, "color": "#627eea", "percentage": 41 },
+    { "token": "USDC", "value": 31200, "color": "#2775ca", "percentage": 24 },
+    { "token": "WBTC", "value": 24800, "color": "#f7931a", "percentage": 19 },
+    { "token": "AAVE", "value": 12200, "color": "#b6509e", "percentage": 10 },
+    { "token": "UNI", "value": 7242, "color": "#ff007a", "percentage": 6 }
+  ],
+  "priceHistory": [
+    { "day": "Feb 25", "price": 3180 },
+    { "day": "Feb 26", "price": 3220 },
+    { "day": "Feb 27", "price": 3150 },
+    { "day": "Feb 28", "price": 3280 },
+    { "day": "Mar 1", "price": 3350 },
+    { "day": "Mar 2", "price": 3310 },
+    { "day": "Mar 3", "price": 3420 },
+    { "day": "Mar 4", "price": 3485 }
+  ],
+  "priceStats": { "current": "$3,485", "high7d": "$3,485", "low7d": "$3,150" },
+  "poolsTotalTvl": "$2.8B",
+  "pools": [
+    { "name": "ETH/USDC", "tvl": "$842M", "apy": 12.4, "il": 2.1, "position": "$18,240", "fees": "$342" },
+    { "name": "WBTC/ETH", "tvl": "$534M", "apy": 8.7, "il": 1.8, "position": "$12,500", "fees": "$218" },
+    { "name": "USDC/DAI", "tvl": "$1.2B", "apy": 4.2, "il": 0.02, "position": "$25,000", "fees": "$105" },
+    { "name": "AAVE/ETH", "tvl": "$128M", "apy": 18.6, "il": 5.3, "position": "$8,400", "fees": "$486" },
+    { "name": "UNI/ETH", "tvl": "$96M", "apy": 22.1, "il": 6.8, "position": "$5,200", "fees": "$390" }
+  ],
+  "swap": {
+    "fromToken": "ETH",
+    "fromAmount": "1.5",
+    "fromUsd": "$5,227.50",
+    "fromBalance": "15.04 ETH",
+    "toToken": "USDC",
+    "toAmount": "5,215.42",
+    "toUsd": "$5,215.42",
+    "rate": "1 ETH = 3,476.95 USDC",
+    "slippage": "0.5%",
+    "fee": "$2.61",
+    "route": "ETH > WETH > USDC"
+  },
+  "farmingTotalEarned": "$4,308.80",
+  "farms": [
+    { "name": "Aave ETH Lending", "deposited": "$15,200", "earned": "$842.30", "apy": 5.54, "protocol": "Aave v3" },
+    { "name": "Compound USDC", "deposited": "$22,000", "earned": "$1,126.50", "apy": 5.12, "protocol": "Compound v3" },
+    { "name": "Lido stETH Staking", "deposited": "$30,000", "earned": "$2,340.00", "apy": 3.9, "protocol": "Lido" }
+  ]
+}

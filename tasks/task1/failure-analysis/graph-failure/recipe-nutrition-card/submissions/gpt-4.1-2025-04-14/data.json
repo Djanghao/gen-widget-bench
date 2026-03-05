@@ -1,0 +1,24 @@
+{
+  "title": "Thai Basil Chicken Stir-Fry",
+  "rating": {
+    "value": "4.7",
+    "reviews": 238
+  },
+  "cookTime": "25 min",
+  "servings": "4 servings",
+  "nutrition": {
+    "calories": { "value": 384, "label": "Calories" },
+    "protein": { "value": 32, "label": "Protein" },
+    "carbs": { "value": 28, "label": "Carbs" },
+    "fat": { "value": 16, "label": "Fat" }
+  },
+  "ingredients": [
+    { "left": "2 tbsp", "right": "vegetable oil" },
+    { "left": "1 lb", "right": "chicken thighs, diced" },
+    { "left": "3 cloves", "right": "garlic, minced" },
+    { "left": "2", "right": "Thai chilies, sliced" },
+    { "left": "1 cup", "right": "Thai basil leaves" },
+    { "left": "2 tbsp", "right": "oyster sauce" },
+    { "left": "1 tbsp", "right": "fish sauce" }
+  ]
+}

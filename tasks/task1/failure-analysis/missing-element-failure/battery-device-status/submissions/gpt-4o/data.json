@@ -1,0 +1,54 @@
+{
+  "syncTime": "2 min ago",
+  "devices": [
+    {
+      "name": "iPhone 15 Pro",
+      "model": "A2484 - iOS 19.3",
+      "battery": 87,
+      "icon": "Smartphone",
+      "barColor": "#00ce8e"
+    },
+    {
+      "name": "MacBook Pro 14\"",
+      "model": "M3 Pro - macOS 16.2",
+      "battery": 45,
+      "icon": "Laptop",
+      "charging": true,
+      "barColor": "#e3a008"
+    },
+    {
+      "name": "iPad Air",
+      "model": "M2 - iPadOS 19.3",
+      "battery": 12,
+      "icon": "Tablet",
+      "barColor": "#e23028"
+    },
+    {
+      "name": "Apple Watch Ultra",
+      "model": "Series 3 - watchOS 12",
+      "battery": 93,
+      "icon": "Watch",
+      "charging": true,
+      "barColor": "#00ce8e"
+    },
+    {
+      "name": "AirPods Pro",
+      "model": "2nd Gen - FW 7A305",
+      "battery": 34,
+      "icon": "Headphones",
+      "barColor": "#e3a008"
+    },
+    {
+      "name": "HomePod Mini",
+      "model": "2nd Gen - audioOS 19",
+      "battery": 100,
+      "icon": "Speaker",
+      "barColor": "#00ce8e"
+    }
+  ],
+  "chargingCount": "2/6",
+  "lowBatteryAlert": {
+    "device": "iPad Air",
+    "battery": 12
+  }
+}

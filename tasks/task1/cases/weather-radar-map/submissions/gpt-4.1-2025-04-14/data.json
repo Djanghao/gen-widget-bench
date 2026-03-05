@@ -1,0 +1,15 @@
+{
+  "city": "Houston,\nTX",
+  "updateTime": "Updated 2m ago",
+  "alert": "Thunderstorm Warning",
+  "radarGrid": [
+    ["none","none","none","light","light","none","none","none"],
+    ["none","light","moderate","moderate","moderate","moderate","light","none"],
+    ["light","moderate","heavy","heavy","heavy","heavy","moderate","light"],
+    ["light","moderate","heavy","severe","severe","heavy","moderate","light"],
+    ["light","moderate","heavy","severe","severe","heavy","moderate","light"],
+    ["light","moderate","heavy","heavy","heavy","heavy","moderate","light"],
+    ["none","light","moderate","moderate","moderate","moderate","light","none"],
+    ["none","none","none","light","light","none","none","none"]
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "festivalName": "Solstice Music Festival",
+  "date": "March 15, 2026",
+  "favoritesCount": "5 Favorites",
+  "crowd": {
+    "title": "Crowd Density Predictions",
+    "points": [
+      { "time": "2 PM", "main": 6000, "sunset": 4500, "overall": 3000 },
+      { "time": "3 PM", "main": 7200, "sunset": 5200, "overall": 3600 },
+      { "time": "4 PM", "main": 7600, "sunset": 5600, "overall": 4100 },
+      { "time": "5 PM", "main": 9800, "sunset": 7600, "overall": 5200 },
+      { "time": "6 PM", "main": 11200, "sunset": 9100, "overall": 6200 },
+      { "time": "7 PM", "main": 12500, "sunset": 10200, "overall": 7000 },
+      { "time": "8 PM", "main": 16500, "sunset": 12000, "overall": 8400 },
+      { "time": "9 PM", "main": 18500, "sunset": 15000, "overall": 9800 },
+      { "time": "10 PM", "main": 20000, "sunset": 15500, "overall": 10200 },
+      { "time": "11 PM", "main": 16000, "sunset": 13500, "overall": 9000 }
+    ]
+  },
+  "schedule": {
+    "main": [
+      { "artist": "Arctic Waves", "genre": "Indie Rock", "time": "2:00 - 3:00 PM", "rating": 4 },
+      { "artist": "Neon Pulse", "genre": "Synth Pop", "time": "3:30 - 4:30 PM", "rating": 5 },
+      { "artist": "Luna Ray", "genre": "Dream Pop", "time": "5:00 - 6:00 PM", "rating": 3 },
+      { "artist": "The Echoes", "genre": "Alt Rock", "time": "6:30 - 7:30 PM", "rating": 4 },
+      { "artist": "Chromatic", "genre": "Art Rock", "time": "8:00 - 9:30 PM", "rating": 5 },
+      { "artist": "Midnight Sun", "genre": "Rock", "time": "10:00 - 11:30 PM", "rating": 5 }
+    ],
+    "sunset": [
+      { "artist": "Velvet Haze", "genre": "R&B", "time": "2:00 - 3:00 PM", "rating": 3 },
+      { "artist": "Solar Flare", "genre": "Funk", "time": "3:30 - 4:30 PM", "rating": 4 },
+      { "artist": "Deep Current", "genre": "Soul", "time": "5:00 - 6:00 PM", "rating": 4 },
+      { "artist": "Nova Drift", "genre": "Neo Soul", "time": "6:30 - 7:30 PM", "rating": 3 },
+      { "artist": "Glass Animals", "genre": "Psychedelic", "time": "8:00 - 9:30 PM", "rating": 4 },
+      { "artist": "Tame Impulse", "genre": "Psych Rock", "time": "10:00 - 11:30 PM", "rating": 4 }
+    ],
+    "forest": [
+      { "artist": "Moss Garden", "time": "2:00 - 3:00 PM", "rating": 3 },
+      { "artist": "Willow Creek", "time": "3:30 - 4:30 PM", "rating": 4 },
+      { "artist": "Cedar Sky", "time": "5:00 - 6:00 PM", "rating": 3 },
+      { "artist": "River Stones", "time": "6:30 - 7:30 PM", "rating": 3 },
+      { "artist": "Timber Wolf", "time": "8:00 - 9:30 PM", "rating": 4 },
+      { "artist": "Northern Lights", "time": "10:00 - 11:30 PM", "rating": 4 }
+    ],
+    "electronic": [
+      { "artist": "Byte Shift", "time": "2:00 - 3:00 PM", "rating": 3 },
+      { "artist": "Pixel Storm", "time": "3:30 - 4:30 PM", "rating": 4 },
+      { "artist": "Data Stream", "time": "5:00 - 6:00 PM", "rating": 3 },
+      { "artist": "Quantum Beat", "time": "6:30 - 7:30 PM", "rating": 3 },
+      { "artist": "Signal Path", "time": "8:00 - 9:30 PM", "rating": 4 },
+      { "artist": "Zero Gravity", "time": "10:00 - 11:30 PM", "rating": 4 }
+    ]
+  },
+  "conflicts": [
+    "Chromatic vs Signal Path @ 8:00 - 9:30 PM",
+    "Midnight Sun vs Zero Gravity @ 10:00 - 11:30 PM"
+  ],
+  "favorites": {
+    "title": "My Lineup",
+    "items": [
+      { "artist": "Arctic Waves", "stage": "Main Stage", "time": "2:00 PM" },
+      { "artist": "Neon Pulse", "stage": "Main Stage", "time": "3:30 PM" },
+      { "artist": "Deep Current", "stage": "Sunset Stage", "time": "5:00 PM" },
+      { "artist": "Chromatic", "stage": "Main Stage", "time": "8:00 PM" },
+      { "artist": "Midnight Sun", "stage": "Main Stage", "time": "10:00 PM" }
+    ]
+  }
+}

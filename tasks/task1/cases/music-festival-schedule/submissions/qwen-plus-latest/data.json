@@ -1,0 +1,197 @@
+{
+  "festivalName": "Solstice Music Festival",
+  "festivalDate": "March 15, 2026",
+  "favoritesCount": 5,
+  "crowdChartData": [
+    { "time": "12pm", "density": 20 },
+    { "time": "2pm", "density": 35 },
+    { "time": "4pm", "density": 55 },
+    { "time": "6pm", "density": 75 },
+    { "time": "8pm", "density": 90 },
+    { "time": "10pm", "density": 85 }
+  ],
+  "stages": ["Main Stage", "Sunset Stage", "Forest Stage", "Electronic Tent"],
+  "schedule": [
+    [
+      {
+        "artist": "Arctic Waves",
+        "genre": "Indie Folk",
+        "time": "12:00 PM - 1:30 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Neon Pulse",
+        "genre": "Synthwave",
+        "time": "2:00 PM - 3:30 PM",
+        "rating": 5
+      },
+      {
+        "artist": "Luna Ray",
+        "genre": "Dream Pop",
+        "time": "4:00 PM - 5:30 PM",
+        "rating": 4
+      },
+      {
+        "artist": "The Echoes",
+        "genre": "Alternative Rock",
+        "time": "6:00 PM - 7:30 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Chromatic",
+        "genre": "Progressive Rock",
+        "time": "8:00 PM - 9:30 PM",
+        "rating": 5
+      },
+      {
+        "artist": "Midnight Sun",
+        "genre": "Psychedelic Rock",
+        "time": "10:00 PM - 11:30 PM",
+        "rating": 4
+      }
+    ],
+    [
+      {
+        "artist": "Coral Reef",
+        "genre": "Tropical House",
+        "time": "12:30 PM - 2:00 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Golden Hour",
+        "genre": "Chillwave",
+        "time": "2:30 PM - 4:00 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Azure Sky",
+        "genre": "Ambient",
+        "time": "4:30 PM - 6:00 PM",
+        "rating": 5
+      },
+      {
+        "artist": "Sunset Collective",
+        "genre": "Lo-fi Hip Hop",
+        "time": "6:30 PM - 8:00 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Twilight Drift",
+        "genre": "Downtempo",
+        "time": "8:30 PM - 10:00 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Horizon Line",
+        "genre": "Electronic",
+        "time": "10:30 PM - Midnight",
+        "rating": 5
+      }
+    ],
+    [
+      {
+        "artist": "Wildwood",
+        "time": "1:00 PM - 2:30 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Moss & Stone",
+        "time": "3:00 PM - 4:30 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Pine Needle",
+        "time": "5:00 PM - 6:30 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Forest Echo",
+        "time": "7:00 PM - 8:30 PM",
+        "rating": 5
+      },
+      {
+        "artist": "Riversong",
+        "time": "9:00 PM - 10:30 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Moonlit Grove",
+        "time": "11:00 PM - 12:30 AM",
+        "rating": 5
+      }
+    ],
+    [
+      {
+        "artist": "Neuroflux",
+        "time": "1:30 PM - 3:00 PM",
+        "rating": 5
+      },
+      {
+        "artist": "Digital Mirage",
+        "time": "3:30 PM - 5:00 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Cybernetic Dreams",
+        "time": "5:30 PM - 7:00 PM",
+        "rating": 5
+      },
+      {
+        "artist": "Quantum Pulse",
+        "time": "7:30 PM - 9:00 PM",
+        "rating": 5
+      },
+      {
+        "artist": "Synth Nexus",
+        "time": "9:30 PM - 11:00 PM",
+        "rating": 4
+      },
+      {
+        "artist": "Electric Horizon",
+        "time": "11:30 PM - 1:00 AM",
+        "rating": 5
+      }
+    ]
+  ],
+  "favorites": [
+    {
+      "name": "Arctic Waves",
+      "initial": "A",
+      "stage": "Main Stage",
+      "time": "12:00 PM",
+      "rating": 4
+    },
+    {
+      "name": "Neon Pulse",
+      "initial": "N",
+      "stage": "Main Stage",
+      "time": "2:00 PM",
+      "rating": 5
+    },
+    {
+      "name": "Azure Sky",
+      "initial": "A",
+      "stage": "Sunset Stage",
+      "time": "4:30 PM",
+      "rating": 5
+    },
+    {
+      "name": "Forest Echo",
+      "initial": "F",
+      "stage": "Forest Stage",
+      "time": "7:00 PM",
+      "rating": 5
+    },
+    {
+      "name": "Quantum Pulse",
+      "initial": "Q",
+      "stage": "Electronic Tent",
+      "time": "7:30 PM",
+      "rating": 5
+    }
+  ],
+  "conflicts": [
+    "You have overlapping favorites: Arctic Waves (12pm) and Coral Reef (12:30pm)",
+    "Neon Pulse (2pm) and Golden Hour (2:30pm) are back-to-back at different stages"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "healthScore": 96.4,
+  "uptime": "99.97%",
+  "summary": {
+    "avgLatency": "127ms",
+    "errorRate": "1.81%",
+    "rpm": "8,420"
+  },
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/users",
+      "avgLatency": "42ms",
+      "p99Latency": "128ms",
+      "sparkline": [
+        { "val": 45 },
+        { "val": 40 },
+        { "val": 44 },
+        { "val": 40 },
+        { "val": 42 },
+        { "val": 41 },
+        { "val": 43 }
+      ],
+      "errorRate": "0.12%",
+      "rpm": "3,200"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/auth/login",
+      "avgLatency": "89ms",
+      "p99Latency": "245ms",
+      "sparkline": [
+        { "val": 80 },
+        { "val": 85 },
+        { "val": 89 },
+        { "val": 94 },
+        { "val": 90 },
+        { "val": 87 },
+        { "val": 95 }
+      ],
+      "errorRate": "0.85%",
+      "rpm": "2,100"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/:id",
+      "avgLatency": "156ms",
+      "p99Latency": "420ms",
+      "sparkline": [
+        { "val": 150 },
+        { "val": 190 },
+        { "val": 175 },
+        { "val": 160 },
+        { "val": 180 },
+        { "val": 200 },
+        { "val": 170 }
+      ],
+      "errorRate": "2.34%",
+      "rpm": "890"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/sessions/:id",
+      "avgLatency": "35ms",
+      "p99Latency": "95ms",
+      "sparkline": [
+        { "val": 44 },
+        { "val": 48 },
+        { "val": 37 },
+        { "val": 40 },
+        { "val": 46 },
+        { "val": 38 },
+        { "val": 42 }
+      ],
+      "errorRate": "0.05%",
+      "rpm": "1,450"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/products",
+      "avgLatency": "312ms",
+      "p99Latency": "890ms",
+      "sparkline": [
+        { "val": 282 },
+        { "val": 318 },
+        { "val": 295 },
+        { "val": 310 },
+        { "val": 345 },
+        { "val": 322 },
+        { "val": 308 }
+      ],
+      "errorRate": "5.67%",
+      "rpm": "780"
+    }
+  ],
+  "responseCodes": {
+    "2xx": { "pct": 94.1 },
+    "4xx": { "pct": 4.2 },
+    "5xx": { "pct": 1.7 }
+  },
+  "footer": {
+    "totalRequests": "108,716",
+    "lastChecked": "4 min ago"
+  }
+}

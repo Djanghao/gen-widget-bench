@@ -1,0 +1,25 @@
+{
+  "trackName": "Midnight City",
+  "artistName": "M83",
+  "albumName": "Hurry Up, We're Dreaming",
+  "elapsedTime": "1:24",
+  "totalTime": "4:03",
+  "progressPercent": 35,
+  "queue": [
+    {
+      "title": "Starlight",
+      "artist": "Muse",
+      "duration": "3:57"
+    },
+    {
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "duration": "3:22"
+    },
+    {
+      "title": "Electric Feel",
+      "artist": "MGMT",
+      "duration": "3:48"
+    }
+  ]
+}

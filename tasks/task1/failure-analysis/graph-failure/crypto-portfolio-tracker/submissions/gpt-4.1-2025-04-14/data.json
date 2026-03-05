@@ -1,0 +1,60 @@
+{
+  "title": "MY CRYPTO PORTFOLIO",
+  "totalValue": "$47,832.61",
+  "totalChange": {
+    "percent": "+2.37%",
+    "value": "($1,108.43)",
+    "positive": true
+  },
+  "chartLabel": "7-Day Performance",
+  "chartData": [
+    {"day": "Tue", "value": 45500},
+    {"day": "Wed", "value": 46200},
+    {"day": "Thu", "value": 45700},
+    {"day": "Fri", "value": 47800},
+    {"day": "Sat", "value": 48700},
+    {"day": "Sun", "value": 48300}
+  ],
+  "holdings": [
+    {
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "price": "$67,234.18",
+      "change": "+3.14%",
+      "holdingValue": "$32,410.72",
+      "holdingAmount": "0.4821 BTC"
+    },
+    {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "price": "$3,521.47",
+      "change": "+1.89%",
+      "holdingValue": "$9,629.70",
+      "holdingAmount": "2.7340 ETH"
+    },
+    {
+      "name": "Solana",
+      "symbol": "SOL",
+      "price": "$148.63",
+      "change": "-2.41%",
+      "holdingValue": "$2,749.66",
+      "holdingAmount": "18.5000 SOL"
+    },
+    {
+      "name": "Cardano",
+      "symbol": "ADA",
+      "price": "$0.5703",
+      "change": "+0.92%",
+      "holdingValue": "$1,020.08",
+      "holdingAmount": "1,789.40 ADA"
+    },
+    {
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "price": "$18.53",
+      "change": "+2.16%",
+      "holdingValue": "$835.89",
+      "holdingAmount": "45.12 LINK"
+    }
+  ]
+}

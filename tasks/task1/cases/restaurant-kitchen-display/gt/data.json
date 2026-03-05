@@ -1,0 +1,123 @@
+{
+  "clock": "18:42",
+  "summary": {
+    "avgWaitMin": 12.4,
+    "ordersPerHour": 28,
+    "completedToday": 187,
+    "overdue": 2
+  },
+  "orders": [
+    {
+      "number": "#1042",
+      "elapsedMin": 3,
+      "type": "dine-in",
+      "table": "Table 7",
+      "status": "new",
+      "priority": "rush",
+      "progress": 10,
+      "allergy": "Nut allergy",
+      "items": [
+        { "name": "Wagyu Burger", "qty": 2, "mods": ["No onion", "Extra cheese"] },
+        { "name": "Truffle Fries", "qty": 1, "mods": ["Light salt"] }
+      ]
+    },
+    {
+      "number": "#1041",
+      "elapsedMin": 7,
+      "type": "dine-in",
+      "table": "Table 3",
+      "status": "cooking",
+      "priority": "normal",
+      "progress": 55,
+      "allergy": null,
+      "items": [
+        { "name": "Grilled Salmon", "qty": 1, "mods": ["Med-rare", "Sub asparagus"] },
+        { "name": "Caesar Salad", "qty": 2, "mods": ["No croutons"] }
+      ]
+    },
+    {
+      "number": "#1040",
+      "elapsedMin": 11,
+      "type": "delivery",
+      "table": "DoorDash #8821",
+      "status": "cooking",
+      "priority": "normal",
+      "progress": 72,
+      "allergy": "Gluten-free",
+      "items": [
+        { "name": "GF Margherita Pizza", "qty": 1, "mods": ["GF crust"] },
+        { "name": "Tiramisu", "qty": 2, "mods": [] }
+      ]
+    },
+    {
+      "number": "#1039",
+      "elapsedMin": 14,
+      "type": "dine-in",
+      "table": "Table 12",
+      "status": "cooking",
+      "priority": "rush",
+      "progress": 85,
+      "allergy": null,
+      "items": [
+        { "name": "Ribeye Steak 16oz", "qty": 1, "mods": ["Med-well", "Peppercorn sauce"] },
+        { "name": "Lobster Mac & Cheese", "qty": 1, "mods": ["Extra lobster"] }
+      ]
+    },
+    {
+      "number": "#1038",
+      "elapsedMin": 16,
+      "type": "takeout",
+      "table": "Pickup: Smith",
+      "status": "ready",
+      "priority": "normal",
+      "progress": 100,
+      "allergy": "Dairy-free",
+      "items": [
+        { "name": "Pad Thai (DF)", "qty": 2, "mods": ["Shrimp", "Spice level 3"] },
+        { "name": "Spring Rolls", "qty": 4, "mods": [] }
+      ]
+    },
+    {
+      "number": "#1037",
+      "elapsedMin": 18,
+      "type": "dine-in",
+      "table": "Table 5",
+      "status": "ready",
+      "priority": "normal",
+      "progress": 100,
+      "allergy": null,
+      "items": [
+        { "name": "Duck Confit", "qty": 1, "mods": ["Crispy skin"] },
+        { "name": "Roasted Vegetables", "qty": 1, "mods": ["No bell pepper"] }
+      ]
+    },
+    {
+      "number": "#1036",
+      "elapsedMin": 22,
+      "type": "delivery",
+      "table": "UberEats #3347",
+      "status": "cooking",
+      "priority": "normal",
+      "progress": 40,
+      "allergy": "Shellfish allergy",
+      "items": [
+        { "name": "Chicken Alfredo", "qty": 3, "mods": ["No shellfish in kitchen"] },
+        { "name": "Garlic Bread", "qty": 2, "mods": ["Extra butter"] }
+      ]
+    },
+    {
+      "number": "#1035",
+      "elapsedMin": 25,
+      "type": "dine-in",
+      "table": "Table 1 (VIP)",
+      "status": "cooking",
+      "priority": "rush",
+      "progress": 60,
+      "allergy": "Vegan",
+      "items": [
+        { "name": "Vegan Tasting Menu", "qty": 2, "mods": ["Course 3 of 5"] },
+        { "name": "Sommelier Pairing", "qty": 2, "mods": ["Non-alcoholic option"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "kpis": [
+    {
+      "label": "Monthly Revenue",
+      "value": "$2.4M",
+      "change": "+12.5%",
+      "improvement": "",
+      "sparkline": [
+        { "x": 0, "y": 1.7 },
+        { "x": 1, "y": 1.8 },
+        { "x": 2, "y": 2.0 },
+        { "x": 3, "y": 1.8 },
+        { "x": 4, "y": 2.2 },
+        { "x": 5, "y": 2.35 },
+        { "x": 6, "y": 2.4 }
+      ],
+      "target": "Target: $2.6M",
+      "progress": 92
+    },
+    {
+      "label": "Active Users",
+      "value": "84.2K",
+      "change": "+8.3%",
+      "improvement": "",
+      "sparkline": [
+        { "x": 0, "y": 76 },
+        { "x": 1, "y": 81 },
+        { "x": 2, "y": 78 },
+        { "x": 3, "y": 83 },
+        { "x": 4, "y": 79 },
+        { "x": 5, "y": 84 },
+        { "x": 6, "y": 84.2 }
+      ],
+      "target": "Target: 90K",
+      "progress": 94
+    },
+    {
+      "label": "Conversion Rate",
+      "value": "3.42%",
+      "change": "-0.8%",
+      "improvement": "",
+      "sparkline": [
+        { "x": 0, "y": 3.98 },
+        { "x": 1, "y": 3.85 },
+        { "x": 2, "y": 3.75 },
+        { "x": 3, "y": 3.7 },
+        { "x": 4, "y": 3.35 },
+        { "x": 5, "y": 3.5 },
+        { "x": 6, "y": 3.42 }
+      ],
+      "target": "Target: 4.0%",
+      "progress": 86
+    },
+    {
+      "label": "Avg Response Time",
+      "value": "142ms",
+      "change": "-18.2%",
+      "improvement": "improvement",
+      "sparkline": [
+        { "x": 0, "y": 183 },
+        { "x": 1, "y": 179 },
+        { "x": 2, "y": 170 },
+        { "x": 3, "y": 162 },
+        { "x": 4, "y": 156 },
+        { "x": 5, "y": 149 },
+        { "x": 6, "y": 142 }
+      ],
+      "target": "Target: 150ms",
+      "progress": 95
+    },
+    {
+      "label": "Support Tickets",
+      "value": "247",
+      "change": "-23.1%",
+      "improvement": "",
+      "sparkline": [
+        { "x": 0, "y": 322 },
+        { "x": 1, "y": 300 },
+        { "x": 2, "y": 278 },
+        { "x": 3, "y": 254 },
+        { "x": 4, "y": 247 },
+        { "x": 5, "y": 246 },
+        { "x": 6, "y": 247 }
+      ],
+      "target": "Target: <200",
+      "progress": 81
+    },
+    {
+      "label": "Customer Satisfaction",
+      "value": "94.7%",
+      "change": "+2.1%",
+      "improvement": "",
+      "sparkline": [
+        { "x": 0, "y": 87 },
+        { "x": 1, "y": 90 },
+        { "x": 2, "y": 87 },
+        { "x": 3, "y": 91.5 },
+        { "x": 4, "y": 94.7 },
+        { "x": 5, "y": 94.6 },
+        { "x": 6, "y": 94.7 }
+      ],
+      "target": "Target: 95%",
+      "progress": 99.7
+    },
+    {
+      "label": "Deployments",
+      "value": "38",
+      "change": "+15.2%",
+      "improvement": "",
+      "sparkline": [
+        { "x": 0, "y": 22 },
+        { "x": 1, "y": 29 },
+        { "x": 2, "y": 30 },
+        { "x": 3, "y": 34 },
+        { "x": 4, "y": 35 },
+        { "x": 5, "y": 36 },
+        { "x": 6, "y": 38 }
+      ],
+      "target": "Target: 40",
+      "progress": 95
+    },
+    {
+      "label": "Error Rate",
+      "value": "0.12%",
+      "change": "-45.3%",
+      "improvement": "improvement",
+      "sparkline": [
+        { "x": 0, "y": 0.37 },
+        { "x": 1, "y": 0.31 },
+        { "x": 2, "y": 0.24 },
+        { "x": 3, "y": 0.16 },
+        { "x": 4, "y": 0.16 },
+        { "x": 5, "y": 0.15 },
+        { "x": 6, "y": 0.12 }
+      ],
+      "target": "Target: <0.5%",
+      "progress": 76
+    }
+  ],
+  "summary": {
+    "revenue": "$28.8M YTD",
+    "growth": "14.2% YoY",
+    "team": "142 members"
+  }
+}

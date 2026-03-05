@@ -1,0 +1,68 @@
+{
+  "rooms": [
+    {
+      "name": "Living Room",
+      "currentTemp": "72° F",
+      "targetTemp": "70° F",
+      "lightStatus": "On 80%",
+      "thermostatStatus": "Cooling",
+      "sensorStatus": "Motion",
+      "energyUsage": 75
+    },
+    {
+      "name": "Kitchen",
+      "currentTemp": "74° F",
+      "targetTemp": "72° F",
+      "lightStatus": "On 100%",
+      "thermostatStatus": "Cooling",
+      "sensorStatus": "Smoke OK",
+      "energyUsage": 90
+    },
+    {
+      "name": "Bedroom",
+      "currentTemp": "68° F",
+      "targetTemp": "67° F",
+      "lightStatus": "Off",
+      "thermostatStatus": "Idle",
+      "sensorStatus": "No Motion",
+      "energyUsage": 45
+    },
+    {
+      "name": "Garage",
+      "currentTemp": "81° F",
+      "targetTemp": "--° F",
+      "lightStatus": "On 40%",
+      "thermostatStatus": "N/A",
+      "sensorStatus": "Door Closed",
+      "energyUsage": 65
+    }
+  ],
+  "energy": {
+    "weeklyCost": "$47.32",
+    "chartData": [
+      { "hour": "6AM", "usage": 1.2 },
+      { "hour": "8AM", "usage": 2.4 },
+      { "hour": "10AM", "usage": 3.1 },
+      { "hour": "12PM", "usage": 4.5 },
+      { "hour": "2PM", "usage": 5.2 },
+      { "hour": "4PM", "usage": 4.8 },
+      { "hour": "6PM", "usage": 5.6 },
+      { "hour": "8PM", "usage": 6.3 },
+      { "hour": "10PM", "usage": 4.1 }
+    ]
+  },
+  "security": {
+    "alarmStatus": "Armed - Away",
+    "cameras": [
+      { "name": "Front Door", "status": "Online" },
+      { "name": "Backyard", "status": "Online" },
+      { "name": "Garage", "status": "Offline" }
+    ]
+  },
+  "environment": {
+    "indoorTemp": "71° F",
+    "outdoorTemp": "89° F",
+    "aqi": "42 (Good)",
+    "humidity": "52%"
+  }
+}

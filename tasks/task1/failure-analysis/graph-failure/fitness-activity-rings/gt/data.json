@@ -1,0 +1,20 @@
+{
+  "date": "Mon, Feb 24",
+  "rings": [
+    { "name": "Move", "current": 623, "goal": 650, "unit": "CAL", "color": "#FF3B30", "percentage": 95.8 },
+    { "name": "Exercise", "current": 42, "goal": 30, "unit": "MIN", "color": "#30D158", "percentage": 100 },
+    { "name": "Stand", "current": 9, "goal": 12, "unit": "HRS", "color": "#0A84FF", "percentage": 75 }
+  ],
+  "summary": {
+    "totalCalories": 623,
+    "activeMinutes": 42,
+    "standHours": 9,
+    "totalSteps": 8347,
+    "distance": 5.2
+  },
+  "chartData": [
+    { "name": "Stand", "value": 75, "fill": "#0A84FF" },
+    { "name": "Exercise", "value": 100, "fill": "#30D158" },
+    { "name": "Move", "value": 95.8, "fill": "#FF3B30" }
+  ]
+}

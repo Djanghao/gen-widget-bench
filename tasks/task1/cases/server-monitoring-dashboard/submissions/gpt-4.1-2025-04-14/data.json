@@ -1,0 +1,45 @@
+{
+  "cpu": {
+    "label": "CPU Usage",
+    "value": "73%",
+    "history": [
+      { "v": 0.71 }, { "v": 0.74 }, { "v": 0.68 }, { "v": 0.75 },
+      { "v": 0.73 }, { "v": 0.69 }, { "v": 0.70 }, { "v": 0.72 }
+    ]
+  },
+  "memory": {
+    "label": "Memory",
+    "used": 12.4,
+    "total": 16
+  },
+  "disk": {
+    "label": "Disk",
+    "used": 234,
+    "total": 500
+  },
+  "network": {
+    "label": "Network",
+    "value": 847,
+    "history": [
+      { "v": 780 }, { "v": 940 }, { "v": 810 }, { "v": 850 },
+      { "v": 883 }, { "v": 802 }, { "v": 825 }, { "v": 847 }
+    ]
+  },
+  "alerts": [
+    {
+      "severity": "Critical",
+      "message": "Node us-east-2b CPU exceeded 95% threshold",
+      "time": "12m ago"
+    },
+    {
+      "severity": "Warning",
+      "message": "Disk I/O latency above 200ms on vol-0x7a3f",
+      "time": "48m ago"
+    },
+    {
+      "severity": "Info",
+      "message": "Auto-scaling group expanded to 8 instances",
+      "time": "2h ago"
+    }
+  ]
+}

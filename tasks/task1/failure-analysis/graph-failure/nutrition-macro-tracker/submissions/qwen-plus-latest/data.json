@@ -1,0 +1,33 @@
+{
+  "header": {
+    "date": "Monday, Feb 24"
+  },
+  "calories": {
+    "consumed": 1847,
+    "goal": 2200
+  },
+  "macros": {
+    "protein": {
+      "consumed": 124,
+      "goal": 150
+    },
+    "carbs": {
+      "consumed": 203,
+      "goal": 275
+    },
+    "fat": {
+      "consumed": 68,
+      "goal": 73
+    }
+  },
+  "meals": {
+    "breakfast": "412",
+    "lunch": "623",
+    "dinner": "584",
+    "snacks": "228"
+  },
+  "water": {
+    "cupsFilled": 5,
+    "totalCups": 8
+  }
+}

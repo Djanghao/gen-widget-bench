@@ -1,0 +1,27 @@
+{
+  "floors": [
+    { "id": "b1", "label": "B1", "available": 8, "total": 120, "rate": 5.0, "color": "#f05252" },
+    { "id": "b2", "label": "B2", "available": 34, "total": 120, "rate": 4.5, "color": "#ffc107" },
+    { "id": "l1", "label": "L1", "available": 52, "total": 110, "rate": 4.0, "color": "#ffc107" },
+    { "id": "l2", "label": "L2", "available": 33, "total": 100, "rate": 3.5, "color": "#ffc107" }
+  ],
+  "total": 450,
+  "available": 127,
+  "rate": 4.50,
+  "avgStay": "2.3h",
+  "busiestHour": "9 AM",
+  "hourlyOccupancy": [
+    { "time": "6AM", "occupancy": 30 },
+    { "time": "7AM", "occupancy": 45 },
+    { "time": "8AM", "occupancy": 90 },
+    { "time": "9AM", "occupancy": 100 },
+    { "time": "10AM", "occupancy": 80 },
+    { "time": "11AM", "occupancy": 75 },
+    { "time": "12PM", "occupancy": 65 },
+    { "time": "1PM", "occupancy": 60 },
+    { "time": "2PM", "occupancy": 70 },
+    { "time": "3PM", "occupancy": 55 },
+    { "time": "4PM", "occupancy": 40 },
+    { "time": "5PM", "occupancy": 35 }
+  ]
+}

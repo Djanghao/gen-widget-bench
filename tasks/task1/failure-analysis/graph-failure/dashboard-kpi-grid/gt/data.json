@@ -1,0 +1,93 @@
+{
+  "companyName": "Acme Corp",
+  "department": "Engineering",
+  "period": "Q1 2026",
+  "refreshedAt": "Mar 4, 2026 2:35 PM",
+  "kpis": [
+    {
+      "label": "Monthly Revenue",
+      "value": "$2.4M",
+      "change": 12.5,
+      "direction": "up",
+      "target": "$2.6M",
+      "targetPct": 92,
+      "color": "#818cf8",
+      "sparkline": [1.8, 1.9, 2.0, 2.1, 2.0, 2.2, 2.3, 2.4]
+    },
+    {
+      "label": "Active Users",
+      "value": "84.2K",
+      "change": 8.3,
+      "direction": "up",
+      "target": "90K",
+      "targetPct": 94,
+      "color": "#34d399",
+      "sparkline": [68, 71, 74, 76, 78, 80, 82, 84.2]
+    },
+    {
+      "label": "Conversion Rate",
+      "value": "3.42%",
+      "change": -0.8,
+      "direction": "down",
+      "target": "4.0%",
+      "targetPct": 86,
+      "color": "#f472b6",
+      "sparkline": [3.9, 3.8, 3.7, 3.6, 3.5, 3.5, 3.4, 3.42]
+    },
+    {
+      "label": "Avg Response Time",
+      "value": "142ms",
+      "change": -18.2,
+      "direction": "down",
+      "target": "150ms",
+      "targetPct": 95,
+      "color": "#fbbf24",
+      "sparkline": [210, 195, 182, 175, 168, 160, 150, 142]
+    },
+    {
+      "label": "Support Tickets",
+      "value": "247",
+      "change": -23.1,
+      "direction": "down",
+      "target": "<200",
+      "targetPct": 81,
+      "color": "#f87171",
+      "sparkline": [380, 350, 330, 310, 290, 275, 260, 247]
+    },
+    {
+      "label": "Customer Satisfaction",
+      "value": "94.7%",
+      "change": 2.1,
+      "direction": "up",
+      "target": "95%",
+      "targetPct": 99.7,
+      "color": "#a78bfa",
+      "sparkline": [89, 90, 91, 92, 93, 93.5, 94, 94.7]
+    },
+    {
+      "label": "Deployments",
+      "value": "38",
+      "change": 15.2,
+      "direction": "up",
+      "target": "40",
+      "targetPct": 95,
+      "color": "#2dd4bf",
+      "sparkline": [22, 25, 28, 30, 32, 34, 36, 38]
+    },
+    {
+      "label": "Error Rate",
+      "value": "0.12%",
+      "change": -45.3,
+      "direction": "down",
+      "target": "<0.5%",
+      "targetPct": 76,
+      "color": "#fb923c",
+      "sparkline": [0.8, 0.65, 0.5, 0.4, 0.3, 0.22, 0.18, 0.12]
+    }
+  ],
+  "summary": {
+    "totalRevenue": "$28.8M YTD",
+    "growthRate": "14.2% YoY",
+    "teamSize": "142 members"
+  }
+}

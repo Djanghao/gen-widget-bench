@@ -1,0 +1,110 @@
+{
+  "title": "Network Topology",
+  "datacenter": "US-East-1",
+  "healthPct": "94.2% Health",
+  "tiers": {
+    "lb": {
+      "label": "Load Balancers",
+      "nodes": [
+        {
+          "hostname": "lb-prod-01",
+          "ip": "10.0.1.10",
+          "status": "green",
+          "cpu": "45%",
+          "mem": "62%",
+          "conn": "1,247",
+          "healthPct": 94
+        },
+        {
+          "hostname": "lb-prod-02",
+          "ip": "10.0.1.11",
+          "status": "green",
+          "cpu": "38%",
+          "mem": "55%",
+          "conn": "1,103",
+          "healthPct": 92
+        }
+      ]
+    },
+    "app": {
+      "label": "App Servers",
+      "nodes": [
+        {
+          "hostname": "app-prod-01",
+          "ip": "10.0.2.10",
+          "status": "green",
+          "cpu": "72%",
+          "mem": "68%",
+          "conn": "834",
+          "healthPct": 90
+        },
+        {
+          "hostname": "app-prod-02",
+          "ip": "10.0.2.11",
+          "status": "yellow",
+          "cpu": "89%",
+          "mem": "82%",
+          "conn": "921",
+          "healthPct": 78
+        },
+        {
+          "hostname": "app-prod-03",
+          "ip": "10.0.2.12",
+          "status": "green",
+          "cpu": "61%",
+          "mem": "58%",
+          "conn": "756",
+          "healthPct": 92
+        }
+      ]
+    },
+    "db": {
+      "label": "Database",
+      "nodes": [
+        {
+          "hostname": "db-prod-primary",
+          "ip": "10.0.3.10",
+          "status": "green",
+          "cpu": "55%",
+          "mem": "74%",
+          "conn": "412",
+          "healthPct": 93
+        },
+        {
+          "hostname": "db-prod-replica",
+          "ip": "10.0.3.11",
+          "status": "green",
+          "cpu": "32%",
+          "mem": "61%",
+          "conn": "287",
+          "healthPct": 95
+        }
+      ]
+    }
+  },
+  "stats": {
+    "bandwidth": { "label": "Bandwidth", "value": "4.7 Gbps" },
+    "activeConnections": { "label": "Active Conn.", "value": "5,560" },
+    "packetLoss": { "label": "Packet Loss", "value": "0.02%" }
+  },
+  "incidents": {
+    "title": "Recent Incidents",
+    "items": [
+      { "severity": "critical", "message": "App server app-prod-02 high CPU", "time": "2m ago" },
+      { "severity": "warning", "message": "Elevated latency between LB and App tier", "time": "18m ago" },
+      { "severity": "info", "message": "Database replica sync completed", "time": "1h ago" }
+    ]
+  },
+  "bandwidthChart": {
+    "title": "Bandwidth (24h)",
+    "series": [
+      { "time": "00", "value": 3.1 },
+      { "time": "04", "value": 3.6 },
+      { "time": "08", "value": 4.2 },
+      { "time": "12", "value": 4.7 },
+      { "time": "16", "value": 4.0 },
+      { "time": "20", "value": 4.4 },
+      { "time": "24", "value": 3.8 }
+    ]
+  }
+}

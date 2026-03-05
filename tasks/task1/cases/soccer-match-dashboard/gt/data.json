@@ -1,0 +1,79 @@
+{
+  "competition": "UEFA Champions League - Quarter Final",
+  "venue": "Santiago Bernabeu, Madrid",
+  "referee": "Daniele Orsato (ITA)",
+  "attendance": 78342,
+  "matchTime": "73'",
+  "matchStatus": "2nd Half",
+  "home": {
+    "name": "Real Madrid",
+    "shortName": "RMA",
+    "score": 2,
+    "color": "#ffffff",
+    "formation": "4-3-3",
+    "players": [
+      { "number": 1, "name": "Courtois", "pos": [50, 95], "role": "GK" },
+      { "number": 2, "name": "Carvajal", "pos": [85, 78], "role": "RB" },
+      { "number": 4, "name": "Alaba", "pos": [62, 80], "role": "CB" },
+      { "number": 5, "name": "Rudiger", "pos": [38, 80], "role": "CB" },
+      { "number": 23, "name": "Mendy", "pos": [15, 78], "role": "LB" },
+      { "number": 8, "name": "Kroos", "pos": [35, 60], "role": "CM" },
+      { "number": 10, "name": "Modric", "pos": [50, 55], "role": "CM" },
+      { "number": 12, "name": "Camavinga", "pos": [65, 60], "role": "CM" },
+      { "number": 7, "name": "Vinicius", "pos": [15, 35], "role": "LW" },
+      { "number": 9, "name": "Bellingham", "pos": [50, 30], "role": "ST" },
+      { "number": 11, "name": "Rodrygo", "pos": [85, 35], "role": "RW" }
+    ]
+  },
+  "away": {
+    "name": "Bayern Munich",
+    "shortName": "BAY",
+    "score": 1,
+    "color": "#dc2626",
+    "formation": "4-2-3-1",
+    "players": [
+      { "number": 1, "name": "Neuer", "pos": [50, 5], "role": "GK" },
+      { "number": 19, "name": "Davies", "pos": [15, 22], "role": "LB" },
+      { "number": 21, "name": "Hernandez", "pos": [38, 20], "role": "CB" },
+      { "number": 2, "name": "Upamecano", "pos": [62, 20], "role": "CB" },
+      { "number": 5, "name": "Kimmich", "pos": [85, 22], "role": "RB" },
+      { "number": 6, "name": "Goretzka", "pos": [38, 38], "role": "CDM" },
+      { "number": 8, "name": "Laimer", "pos": [62, 38], "role": "CDM" },
+      { "number": 10, "name": "Sane", "pos": [20, 50], "role": "LAM" },
+      { "number": 42, "name": "Musiala", "pos": [50, 48], "role": "CAM" },
+      { "number": 11, "name": "Coman", "pos": [80, 50], "role": "RAM" },
+      { "number": 9, "name": "Kane", "pos": [50, 60], "role": "ST" }
+    ]
+  },
+  "stats": [
+    { "key": "possession", "label": "Possession", "home": 58, "away": 42 },
+    { "key": "shots", "label": "Shots", "home": 14, "away": 9 },
+    { "key": "ontarget", "label": "On Target", "home": 7, "away": 4 },
+    { "key": "passes", "label": "Passes", "home": 487, "away": 352 },
+    { "key": "corners", "label": "Corners", "home": 6, "away": 3 },
+    { "key": "fouls", "label": "Fouls", "home": 8, "away": 12 }
+  ],
+  "events": [
+    { "minute": "12'", "type": "goal", "team": "home", "player": "Bellingham", "detail": "Assisted by Vinicius Jr." },
+    { "minute": "28'", "type": "yellow", "team": "away", "player": "Goretzka", "detail": "Reckless challenge" },
+    { "minute": "35'", "type": "goal", "team": "away", "player": "Kane", "detail": "Penalty kick" },
+    { "minute": "58'", "type": "sub", "team": "home", "player": "Camavinga", "detail": "Valverde on" },
+    { "minute": "64'", "type": "red", "team": "away", "player": "Upamecano", "detail": "Second yellow" },
+    { "minute": "71'", "type": "goal", "team": "home", "player": "Vinicius Jr.", "detail": "Assisted by Modric" }
+  ],
+  "ratings": [
+    { "name": "Vinicius Jr.", "team": "home", "rating": 8.9 },
+    { "name": "Bellingham", "team": "home", "rating": 8.5 },
+    { "name": "Kane", "team": "away", "rating": 7.8 },
+    { "name": "Modric", "team": "home", "rating": 7.6 },
+    { "name": "Musiala", "team": "away", "rating": 7.4 },
+    { "name": "Courtois", "team": "home", "rating": 7.2 }
+  ],
+  "heatmap": [
+    [2, 5, 8, 6, 3, 1, 4, 7],
+    [4, 8, 12, 10, 7, 5, 6, 9],
+    [3, 6, 15, 18, 14, 8, 7, 5],
+    [5, 9, 11, 14, 12, 10, 8, 6],
+    [1, 3, 6, 8, 5, 4, 2, 3]
+  ]
+}

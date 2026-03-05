@@ -1,0 +1,24 @@
+{
+  "chartData": [
+    { "name": "Jan", "Portfolio": 98, "S&P 500": 100, "Bonds": 100 },
+    { "name": "Feb", "Portfolio": 102, "S&P 500": 102, "Bonds": 101 },
+    { "name": "Mar", "Portfolio": 105, "S&P 500": 104, "Bonds": 101 },
+    { "name": "Apr", "Portfolio": 108, "S&P 500": 107, "Bonds": 102 },
+    { "name": "May", "Portfolio": 110, "S&P 500": 109, "Bonds": 103 },
+    { "name": "Jun", "Portfolio": 112, "S&P 500": 110, "Bonds": 103 },
+    { "name": "Jul", "Portfolio": 113, "S&P 500": 111, "Bonds": 104 },
+    { "name": "Aug", "Portfolio": 116, "S&P 500": 113, "Bonds": 104 },
+    { "name": "Sep", "Portfolio": 118, "S&P 500": 115, "Bonds": 105 },
+    { "name": "Oct", "Portfolio": 119, "S&P 500": 116, "Bonds": 106 },
+    { "name": "Nov", "Portfolio": 120, "S&P 500": 117, "Bonds": 106 },
+    { "name": "Dec", "Portfolio": 121, "S&P 500": 118, "Bonds": 107 }
+  ],
+  "summaryMetrics": [
+    { "label": "Total Return", "value": "+24.67%" },
+    { "label": "Annualized Return", "value": "+24.67%" },
+    { "label": "Sharpe Ratio", "value": "1.847" },
+    { "label": "Max Drawdown", "value": "-4.50%" },
+    { "label": "Volatility", "value": "14.23%" },
+    { "label": "Beta", "value": "1.02" }
+  ]
+}

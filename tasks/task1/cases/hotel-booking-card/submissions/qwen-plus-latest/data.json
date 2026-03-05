@@ -1,0 +1,16 @@
+{
+  "hotelTag": "Boutique Hotel",
+  "hotelName": "The Grand Horizon",
+  "ratingValue": "4.5",
+  "hotelAddress": "123 Ocean Drive, Miami Beach, FL 33139",
+  "checkInDate": "Jun 15, 2023",
+  "checkOutDate": "Jun 18, 2023",
+  "nightsCount": "3 nights",
+  "guestsCount": "2 guests",
+  "roomType": "Deluxe King",
+  "roomRateAmount": "$567.00",
+  "taxesAmount": "$68.40",
+  "resortFeeAmount": "$45.00",
+  "totalAmount": "$635.40",
+  "confirmationNumber": "GH-884291"
+}

@@ -1,0 +1,96 @@
+{
+  "header": {
+    "indexName": "S&P 500",
+    "indexValue": "5,218.47",
+    "indexChangeAmount": "+32.61",
+    "indexChangePercent": "+0.63%",
+    "indexChangePositive": true,
+    "lastUpdated": "Mar 4, 2025 4:00 PM EST"
+  },
+  "stocks": [
+    {
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "price": "$178.72",
+      "changePercent": "+1.24%",
+      "changePositive": true
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corp.",
+      "price": "$428.35",
+      "changePercent": "+0.87%",
+      "changePositive": true
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc.",
+      "price": "$153.91",
+      "changePercent": "-0.53%",
+      "changePositive": false
+    },
+    {
+      "ticker": "AMZN",
+      "company": "Amazon.com",
+      "price": "$186.43",
+      "changePercent": "+2.18%",
+      "changePositive": true
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp.",
+      "price": "$878.36",
+      "changePercent": "+3.42%",
+      "changePositive": true
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "price": "$502.14",
+      "changePercent": "-1.37%",
+      "changePositive": false
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla Inc.",
+      "price": "$201.28",
+      "changePercent": "-2.84%",
+      "changePositive": false
+    },
+    {
+      "ticker": "JPM",
+      "company": "JPMorgan Chase",
+      "price": "$198.57",
+      "changePercent": "+0.41%",
+      "changePositive": true
+    },
+    {
+      "ticker": "V",
+      "company": "Visa Inc.",
+      "price": "$282.93",
+      "changePercent": "+0.16%",
+      "changePositive": true
+    },
+    {
+      "ticker": "JNJ",
+      "company": "Johnson & Johnson",
+      "price": "$156.81",
+      "changePercent": "-0.72%",
+      "changePositive": false
+    },
+    {
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "price": "$172.45",
+      "changePercent": "+1.53%",
+      "changePositive": true
+    },
+    {
+      "ticker": "UNH",
+      "company": "UnitedHealth Grp.",
+      "price": "$527.19",
+      "changePercent": "-0.28%",
+      "changePositive": false
+    }
+  ]
+}

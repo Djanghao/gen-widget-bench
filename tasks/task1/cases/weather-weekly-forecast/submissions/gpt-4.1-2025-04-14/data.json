@@ -1,0 +1,67 @@
+{
+  "city": "Portland, OR",
+  "current": {
+    "temp": 58,
+    "condition": {
+      "icon": "partly-cloudy",
+      "text": "Partly Cloudy"
+    }
+  },
+  "daily": [
+    {
+      "day": "MON",
+      "shortDay": "Mon",
+      "hi": 62,
+      "lo": 45,
+      "icon": "cloud-sun",
+      "precip": "10%"
+    },
+    {
+      "day": "TUE",
+      "shortDay": "Tue",
+      "hi": 58,
+      "lo": 43,
+      "icon": "cloud-rain",
+      "precip": "65%"
+    },
+    {
+      "day": "WED",
+      "shortDay": "Wed",
+      "hi": 55,
+      "lo": 41,
+      "icon": "cloud-rain"
+    },
+    {
+      "day": "THU",
+      "shortDay": "Thu",
+      "hi": 60,
+      "lo": 44,
+      "icon": "cloud"
+    },
+    {
+      "day": "FRI",
+      "shortDay": "Fri",
+      "hi": 64,
+      "lo": 47,
+      "icon": "sun"
+    },
+    {
+      "day": "SAT",
+      "shortDay": "Sat",
+      "hi": 67,
+      "lo": 49,
+      "icon": "cloud-sun"
+    },
+    {
+      "day": "SUN",
+      "shortDay": "Sun",
+      "hi": 63,
+      "lo": 46,
+      "icon": "cloud-sun"
+    }
+  ],
+  "sunrise": "6:47 AM",
+  "sunset": "5:58 PM",
+  "humidity": "72%",
+  "uv": 3
+}

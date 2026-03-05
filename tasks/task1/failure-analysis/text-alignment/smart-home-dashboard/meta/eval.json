@@ -1,0 +1,7 @@
+{
+  "caseId": "smart-home-dashboard",
+  "name": "Smart Home Dashboard",
+  "subtask": "instruction-image-target",
+  "styleProperties": ["borderRadius", "maxWidth"],
+  "screenshot": { "weight": 10, "maxPixelDiffPercent": 15, "viewportWidth": 500, "viewportHeight": 1100 }
+}

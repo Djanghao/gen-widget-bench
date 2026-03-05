@@ -1,0 +1,18 @@
+{
+  "city": "Portland, OR",
+  "currentTemp": 58,
+  "condition": "Partly Cloudy",
+  "days": [
+    { "name": "Mon", "high": 62, "low": 45, "precipPct": 10, "icon": "cloud-sun" },
+    { "name": "Tue", "high": 58, "low": 43, "precipPct": 65, "icon": "cloud-rain" },
+    { "name": "Wed", "high": 55, "low": 41, "precipPct": 80, "icon": "cloud-rain" },
+    { "name": "Thu", "high": 60, "low": 44, "precipPct": 30, "icon": "cloud" },
+    { "name": "Fri", "high": 64, "low": 47, "precipPct": 5, "icon": "sun" },
+    { "name": "Sat", "high": 67, "low": 49, "precipPct": 0, "icon": "sun" },
+    { "name": "Sun", "high": 63, "low": 46, "precipPct": 20, "icon": "cloud-sun" }
+  ],
+  "sunrise": "6:47 AM",
+  "sunset": "5:58 PM",
+  "humidity": 72,
+  "uvIndex": 3
+}

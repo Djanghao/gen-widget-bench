@@ -1,0 +1,21 @@
+{
+  "indexName": "S&P 500",
+  "indexValue": 5218.47,
+  "indexChange": 32.61,
+  "indexChangePct": 0.63,
+  "lastUpdated": "Mar 4, 2025 4:00 PM EST",
+  "stocks": [
+    { "ticker": "AAPL", "company": "Apple Inc.", "price": 178.72, "changePct": 1.24 },
+    { "ticker": "MSFT", "company": "Microsoft Corp.", "price": 428.35, "changePct": 0.87 },
+    { "ticker": "GOOGL", "company": "Alphabet Inc.", "price": 153.91, "changePct": -0.53 },
+    { "ticker": "AMZN", "company": "Amazon.com", "price": 186.43, "changePct": 2.18 },
+    { "ticker": "NVDA", "company": "NVIDIA Corp.", "price": 878.36, "changePct": 3.42 },
+    { "ticker": "META", "company": "Meta Platforms", "price": 502.14, "changePct": -1.37 },
+    { "ticker": "TSLA", "company": "Tesla Inc.", "price": 201.28, "changePct": -2.84 },
+    { "ticker": "JPM", "company": "JPMorgan Chase", "price": 198.57, "changePct": 0.41 },
+    { "ticker": "V", "company": "Visa Inc.", "price": 282.93, "changePct": 0.16 },
+    { "ticker": "JNJ", "company": "Johnson & Johnson", "price": 156.81, "changePct": -0.72 },
+    { "ticker": "WMT", "company": "Walmart Inc.", "price": 172.45, "changePct": 1.53 },
+    { "ticker": "UNH", "company": "UnitedHealth Grp.", "price": 527.19, "changePct": -0.28 }
+  ]
+}

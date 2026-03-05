@@ -1,0 +1,71 @@
+{
+  "mission": {
+    "name": "ARTEMIS IV",
+    "id": "ART-2026-004",
+    "status": "NOMINAL",
+    "phase": "Transit",
+    "metHours": 142,
+    "metMinutes": 37,
+    "metSeconds": 12,
+    "signalStrength": 94
+  },
+  "countdown": {
+    "label": "Time to Lunar Orbit Insertion",
+    "days": 2,
+    "hours": 14,
+    "minutes": 37,
+    "seconds": 52
+  },
+  "telemetry": {
+    "altitude": { "value": 284750, "max": 400000, "unit": "km" },
+    "velocity": { "value": 7.82, "max": 11.2, "unit": "km/s" },
+    "fuel": { "value": 72.4, "max": 100, "unit": "%" },
+    "gforce": { "value": 0.02, "max": 9.0, "unit": "G" },
+    "temperature": { "value": 21.3, "max": 45, "unit": "°C" },
+    "pressure": { "value": 101.2, "max": 110, "unit": "kPa" }
+  },
+  "trajectory": [
+    { "time": "T+0h", "altitude": 0 },
+    { "time": "T+12h", "altitude": 12400 },
+    { "time": "T+24h", "altitude": 38200 },
+    { "time": "T+48h", "altitude": 95600 },
+    { "time": "T+72h", "altitude": 148300 },
+    { "time": "T+96h", "altitude": 198700 },
+    { "time": "T+120h", "altitude": 245100 },
+    { "time": "T+142h", "altitude": 284750 }
+  ],
+  "crew": [
+    { "name": "Cmdr. Elena Vasquez", "role": "Commander", "status": "nominal", "heartRate": 68 },
+    { "name": "Lt. James Chen", "role": "Pilot", "status": "nominal", "heartRate": 72 },
+    { "name": "Dr. Aisha Patel", "role": "Mission Specialist", "status": "nominal", "heartRate": 65 },
+    { "name": "Dr. Yuki Tanaka", "role": "Mission Specialist", "status": "elevated", "heartRate": 88 },
+    { "name": "Eng. Marcus Webb", "role": "Flight Engineer", "status": "nominal", "heartRate": 70 }
+  ],
+  "systems": [
+    { "name": "Life Support", "status": "pass" },
+    { "name": "Navigation", "status": "pass" },
+    { "name": "Communications", "status": "pass" },
+    { "name": "Propulsion", "status": "pass" },
+    { "name": "Thermal Control", "status": "pass" },
+    { "name": "Power Systems", "status": "pass" },
+    { "name": "Guidance Computer", "status": "pass" },
+    { "name": "Docking Mechanism", "status": "warn" },
+    { "name": "Solar Arrays", "status": "pass" },
+    { "name": "Radiation Shield", "status": "pass" }
+  ],
+  "comms": [
+    { "time": "14:22:01", "source": "HOUSTON", "message": "Artemis IV, you are GO for trajectory correction burn." },
+    { "time": "14:22:18", "source": "ART-IV", "message": "Roger Houston, initiating TCB sequence delta-v 1.2 m/s." },
+    { "time": "14:23:45", "source": "ART-IV", "message": "TCB complete. Residuals within tolerance. New ETA confirmed." },
+    { "time": "14:25:02", "source": "HOUSTON", "message": "Copy that. Telemetry looks good. Proceed with scheduled EVA prep." },
+    { "time": "14:26:30", "source": "ART-IV", "message": "Wilco. Crew commencing EVA suit checkout procedures." }
+  ],
+  "phases": [
+    { "name": "Launch", "status": "complete" },
+    { "name": "Ascent", "status": "complete" },
+    { "name": "Orbit Insert", "status": "complete" },
+    { "name": "Transit", "status": "current" },
+    { "name": "Approach", "status": "upcoming" },
+    { "name": "Docking", "status": "upcoming" }
+  ]
+}

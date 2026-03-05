@@ -1,0 +1,86 @@
+{
+  "missionName": "SENTINEL-6A",
+  "orbitType": "LEO",
+  "elapsedTime": "847d 14h 32m",
+  "orbitalParams": {
+    "altitude": "1,336 km",
+    "velocity": "7.45 km/s",
+    "inclination": "66.04 deg",
+    "period": "112.4 min",
+    "eccentricity": "0.000095"
+  },
+  "groundTrack": {
+    "position": 65,
+    "latitude": "42.3° N",
+    "longitude": "71.1° W"
+  },
+  "passes": [
+    {
+      "time": "14:22 UTC",
+      "duration": "12 min 34s",
+      "elevation": "Max: 42°",
+      "direction": "NW → SE"
+    },
+    {
+      "time": "15:56 UTC",
+      "duration": "11 min 18s",
+      "elevation": "Max: 38°",
+      "direction": "SW → NE"
+    },
+    {
+      "time": "17:30 UTC",
+      "duration": "10 min 42s",
+      "elevation": "Max: 35°",
+      "direction": "NW → SE"
+    },
+    {
+      "time": "19:04 UTC",
+      "duration": "12 min 07s",
+      "elevation": "Max: 45°",
+      "direction": "SW → NE"
+    },
+    {
+      "time": "20:38 UTC",
+      "duration": "11 min 22s",
+      "elevation": "Max: 40°",
+      "direction": "NW → SE"
+    }
+  ],
+  "telemetry": {
+    "power": {
+      "value": "842W",
+      "status": "nominal"
+    },
+    "comms": {
+      "value": "256 kbps",
+      "status": "nominal"
+    },
+    "thermal": {
+      "value": "22.4 C",
+      "status": "nominal"
+    },
+    "adcs": {
+      "value": "0.003 deg/s",
+      "status": "nominal"
+    }
+  },
+  "signal": {
+    "value": "-68.2 dBm",
+    "strengthPercentage": 72,
+    "quality": "Good"
+  },
+  "altitudeHistory": [
+    { "time": "00:00", "altitude": 1334 },
+    { "time": "02:00", "altitude": 1335 },
+    { "time": "04:00", "altitude": 1335.5 },
+    { "time": "06:00", "altitude": 1336 },
+    { "time": "08:00", "altitude": 1336.2 },
+    { "time": "10:00", "altitude": 1336.1 },
+    { "time": "12:00", "altitude": 1336 },
+    { "time": "14:00", "altitude": 1335.8 },
+    { "time": "16:00", "altitude": 1335.5 },
+    { "time": "18:00", "altitude": 1335.2 },
+    { "time": "20:00", "altitude": 1335 },
+    { "time": "22:00", "altitude": 1334.8 }
+  ]
+}

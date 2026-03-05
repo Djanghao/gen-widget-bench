@@ -1,0 +1,91 @@
+{
+  "gene_name": "BRCA1",
+  "gene_fullname": "BRCA1 DNA Repair Associated",
+  "chromosome": "chr17:43044295",
+  "strand": "- strand",
+  "length": "60 bp",
+  "sequence_tracks": [
+    {
+      "label": "Reference",
+      "seq": [
+        "A","T","C","G","A","T","A","C","T","A","G","C","T","A","C","A","G","C","T","G","A","T","A","C","T","A"
+      ],
+      "coverage": "120x"
+    },
+    {
+      "label": "Sample A",
+      "seq": [
+        "A","T","C","G","A","T","G","C","T","A","G","C","T","A","G","A","G","C","T","G","A","T","A","T","T","A"
+      ],
+      "coverage": "85x"
+    },
+    {
+      "label": "Sample B",
+      "seq": [
+        "A","T","C","G","A","T","A","C","T","A","G","C","T","C","C","A","G","T","T","G","A","T","A","T","T","A"
+      ],
+      "coverage": "92x"
+    },
+    {
+      "label": "Consensus",
+      "seq": [
+        "A","T","C","G","A","T","A","C","T","A","G","C","T","A","C","A","G","C","T","G","A","T","A","C","T","A"
+      ],
+      "coverage": "99x"
+    }
+  ],
+  "variants": [
+    {
+      "pos": 7,
+      "change": "A>G",
+      "type": "Missense",
+      "impact": "High",
+      "af": "0.032"
+    },
+    {
+      "pos": 13,
+      "change": "T>C",
+      "type": "Synonymous",
+      "impact": "Low",
+      "af": "0.148"
+    },
+    {
+      "pos": 18,
+      "change": "G>T",
+      "type": "Nonsense",
+      "impact": "Critical",
+      "af": "0.004"
+    }
+  ],
+  "quality_avg": 37.5,
+  "quality_scores": [
+    { "pos": 1, "score": 35 },
+    { "pos": 2, "score": 36 },
+    { "pos": 3, "score": 38 },
+    { "pos": 4, "score": 36 },
+    { "pos": 5, "score": 37 },
+    { "pos": 6, "score": 35 },
+    { "pos": 7, "score": 33 },
+    { "pos": 8, "score": 31 },
+    { "pos": 9, "score": 29 },
+    { "pos": 10, "score": 31 },
+    { "pos": 11, "score": 33 },
+    { "pos": 12, "score": 34 },
+    { "pos": 13, "score": 36 },
+    { "pos": 14, "score": 34 },
+    { "pos": 15, "score": 33 },
+    { "pos": 16, "score": 32 },
+    { "pos": 17, "score": 28 },
+    { "pos": 18, "score": 23 },
+    { "pos": 19, "score": 30 },
+    { "pos": 20, "score": 32 }
+  ],
+  "gene_info": {
+    "name": "BRCA1",
+    "function": "DNA repair",
+    "pathway": "Homologous Recombination",
+    "disease": "Breast/Ovarian Cancer",
+    "expression": 87,
+    "expression_level": "High"
+  }
+}

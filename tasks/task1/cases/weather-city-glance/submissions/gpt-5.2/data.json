@@ -1,0 +1,21 @@
+{
+  "alert": "Patchy fog near shoreline",
+  "currentTemp": "65F",
+  "highLow": "H:72F | L:55F",
+  "headerIcon": "moon",
+  "city": "Tiburon",
+  "condition": "Clear",
+  "stats": {
+    "feels": "Feels 64F",
+    "humidity": "Humidity 48%",
+    "wind": "Wind 9mph"
+  },
+  "forecastHours": [
+    { "time": "9PM", "icon": "moon", "temp": "65F" },
+    { "time": "10PM", "icon": "moon", "temp": "63F" },
+    { "time": "11PM", "icon": "moon", "temp": "62F" },
+    { "time": "12AM", "icon": "moon", "temp": "60F" },
+    { "time": "1AM", "icon": "moon", "temp": "58F" },
+    { "time": "2AM", "icon": "moon", "temp": "56F" }
+  ]
+}

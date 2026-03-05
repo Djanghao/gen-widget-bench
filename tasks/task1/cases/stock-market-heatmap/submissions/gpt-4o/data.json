@@ -1,0 +1,103 @@
+{
+  "indexValue": "5,218.47",
+  "indexChange": "+32.61 (+0.63%)",
+  "lastUpdated": "Mar 4, 2025 4:00 PM EST",
+  "stocks": [
+    {
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "price": "$178.72",
+      "change": "+1.24%",
+      "backgroundColor": "#1c3c2e",
+      "changeColor": "#00c966"
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corp.",
+      "price": "$428.35",
+      "change": "+0.87%",
+      "backgroundColor": "#26433f",
+      "changeColor": "#00c966"
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc.",
+      "price": "$153.91",
+      "change": "-0.53%",
+      "backgroundColor": "#2f2433",
+      "changeColor": "#ff3b30"
+    },
+    {
+      "ticker": "AMZN",
+      "company": "Amazon.com",
+      "price": "$186.43",
+      "change": "+2.18%",
+      "backgroundColor": "#295431",
+      "changeColor": "#00c966"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp.",
+      "price": "$878.36",
+      "change": "+3.42%",
+      "backgroundColor": "#367f47",
+      "changeColor": "#00c966"
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "price": "$502.14",
+      "change": "-1.37%",
+      "backgroundColor": "#3f2a2d",
+      "changeColor": "#ff3b30"
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla Inc.",
+      "price": "$201.28",
+      "change": "-2.84%",
+      "backgroundColor": "#431d1d",
+      "changeColor": "#ff3b30"
+    },
+    {
+      "ticker": "JPM",
+      "company": "JPMorgan Chase",
+      "price": "$198.57",
+      "change": "+0.41%",
+      "backgroundColor": "#28463a",
+      "changeColor": "#00c966"
+    },
+    {
+      "ticker": "V",
+      "company": "Visa Inc.",
+      "price": "$282.93",
+      "change": "+0.16%",
+      "backgroundColor": "#2c3d34",
+      "changeColor": "#00c966"
+    },
+    {
+      "ticker": "JNJ",
+      "company": "Johnson & Johnson",
+      "price": "$156.81",
+      "change": "-0.72%",
+      "backgroundColor": "#362332",
+      "changeColor": "#ff3b30"
+    },
+    {
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "price": "$172.45",
+      "change": "+1.53%",
+      "backgroundColor": "#315a3a",
+      "changeColor": "#00c966"
+    },
+    {
+      "ticker": "UNH",
+      "company": "UnitedHealth Grp.",
+      "price": "$527.19",
+      "change": "-0.28%",
+      "backgroundColor": "#39282f",
+      "changeColor": "#ff3b30"
+    }
+  ]
+}

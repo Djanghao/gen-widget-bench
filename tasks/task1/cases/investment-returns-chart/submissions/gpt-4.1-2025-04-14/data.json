@@ -1,0 +1,26 @@
+{
+  "portfolioName": "Growth Portfolio Alpha",
+  "dateRange": "Jan 2024 - Dec 2024",
+  "chartData": [
+    { "month": "Jan", "portfolio": 100, "sp500": 100, "bonds": 100 },
+    { "month": "Feb", "portfolio": 104, "sp500": 103, "bonds": 101 },
+    { "month": "Mar", "portfolio": 106, "sp500": 105, "bonds": 101.5 },
+    { "month": "Apr", "portfolio": 108, "sp500": 107, "bonds": 102 },
+    { "month": "May", "portfolio": 111, "sp500": 110, "bonds": 102.2 },
+    { "month": "Jun", "portfolio": 113, "sp500": 111, "bonds": 102.9 },
+    { "month": "Jul", "portfolio": 119, "sp500": 114, "bonds": 103.3 },
+    { "month": "Aug", "portfolio": 116, "sp500": 113, "bonds": 103.7 },
+    { "month": "Sep", "portfolio": 114, "sp500": 112, "bonds": 104 },
+    { "month": "Oct", "portfolio": 115, "sp500": 113, "bonds": 104.2 },
+    { "month": "Nov", "portfolio": 117, "sp500": 115, "bonds": 104.5 },
+    { "month": "Dec", "portfolio": 121, "sp500": 117, "bonds": 105 }
+  ],
+  "metrics": [
+    { "label": "Total Return", "value": "+24.67%" },
+    { "label": "Annualized Return", "value": "+24.67%" },
+    { "label": "Sharpe Ratio", "value": "1.847" },
+    { "label": "Max Drawdown", "value": "-4.50%" },
+    { "label": "Volatility", "value": "14.23%" },
+    { "label": "Beta", "value": "0.88" }
+  ]
+}

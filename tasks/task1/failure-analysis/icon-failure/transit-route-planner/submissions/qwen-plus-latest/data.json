@@ -1,0 +1,39 @@
+{
+  "origin": "Downtown",
+  "destination": "Airport",
+  "totalTime": "47 min",
+  "departureTime": "10:24 AM",
+  "segments": [
+    {
+      "mode": "Walk",
+      "duration": "5 min",
+      "from": "Downtown Station",
+      "to": "Main St & 5th Ave"
+    },
+    {
+      "route": "Route 45",
+      "duration": "28 min",
+      "stops": "12 stops",
+      "departTime": "10:29 AM",
+      "arriveTime": "11:07 AM",
+      "from": "Main St & 5th Ave",
+      "to": "Airport Terminal"
+    },
+    {
+      "mode": "Walk",
+      "duration": "4 min",
+      "from": "Airport Terminal",
+      "to": "Departure Gate A"
+    }
+  ],
+  "alternatives": [
+    {
+      "route": "Route 12 & Bus 45",
+      "time": "52 min"
+    },
+    {
+      "route": "Subway Line B",
+      "time": "58 min"
+    }
+  ]
+}

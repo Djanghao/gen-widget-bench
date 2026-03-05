@@ -1,0 +1,27 @@
+{
+  "language": "Japanese",
+  "flag": "\ud83c\uddef\ud83c\uddf5",
+  "level": "N3 Intermediate",
+  "overallProgress": 47,
+  "skills": [
+    { "name": "Reading", "progress": 62, "level": "B1", "color": "#60a5fa" },
+    { "name": "Writing", "progress": 35, "level": "A2", "color": "#f472b6" },
+    { "name": "Listening", "progress": 71, "level": "B2", "color": "#34d399" },
+    { "name": "Speaking", "progress": 28, "level": "A2", "color": "#fbbf24" },
+    { "name": "Grammar", "progress": 53, "level": "B1", "color": "#a78bfa" }
+  ],
+  "todayStats": {
+    "xpEarned": 340,
+    "streakDays": 23,
+    "wordsReviewed": 67,
+    "accuracyPercent": 89
+  },
+  "upcomingLessons": [
+    { "title": "Kanji Radicals - Set 12", "icon": "book-open", "estimatedMin": 15 },
+    { "title": "Verb Conjugation Practice", "icon": "pencil", "estimatedMin": 20 },
+    { "title": "Listening Comprehension N3", "icon": "headphones", "estimatedMin": 25 }
+  ],
+  "radialData": [
+    { "name": "Progress", "value": 47, "fill": "#8b5cf6" }
+  ]
+}

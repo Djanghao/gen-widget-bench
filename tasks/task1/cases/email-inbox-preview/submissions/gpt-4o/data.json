@@ -1,0 +1,58 @@
+{
+  "emails": [
+    {
+      "initial": "A",
+      "sender": "Alex Chen",
+      "subject": "Q1 Revenue Report - Final Numbers",
+      "time": "2m ago",
+      "starred": true,
+      "read": false,
+      "avatarColor": "#3b82f6"
+    },
+    {
+      "initial": "M",
+      "sender": "Maria Santos",
+      "subject": "Re: Design System Updates v3.2",
+      "time": "18m ago",
+      "starred": false,
+      "read": false,
+      "avatarColor": "#ef4444"
+    },
+    {
+      "initial": "D",
+      "sender": "DevOps Bot",
+      "subject": "ALERT: Deployment pipeline failed",
+      "time": "1h ago",
+      "starred": false,
+      "read": false,
+      "avatarColor": "#f59e0b"
+    },
+    {
+      "initial": "J",
+      "sender": "Jordan Park",
+      "subject": "Meeting notes - Product roadmap sync",
+      "time": "3h ago",
+      "starred": true,
+      "read": true,
+      "avatarColor": "#10b981"
+    },
+    {
+      "initial": "P",
+      "sender": "Priya Sharma",
+      "subject": "Interview feedback - Senior Frontend",
+      "time": "Yesterday",
+      "starred": false,
+      "read": true,
+      "avatarColor": "#8b5cf6"
+    },
+    {
+      "initial": "G",
+      "sender": "GitHub",
+      "subject": "[widget-bench] PR #238 merged to main",
+      "time": "Yesterday",
+      "starred": false,
+      "read": true,
+      "avatarColor": "#3b82f6"
+    }
+  ]
+}

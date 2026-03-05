@@ -1,0 +1,7 @@
+{
+  "caseId": "network-topology-status",
+  "name": "Network Topology Status",
+  "subtask": "instruction-image-target",
+  "styleProperties": ["borderRadius", "maxWidth"],
+  "screenshot": { "weight": 10, "maxPixelDiffPercent": 15, "viewportWidth": 500, "viewportHeight": 1100 }
+}

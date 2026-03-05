@@ -1,0 +1,228 @@
+{
+  "stats": {
+    "total": 248,
+    "ontime": 212,
+    "delayed": 28,
+    "landed": 194
+  },
+  "airports": [
+    {
+      "code": "JFK",
+      "name": "John F. Kennedy International Airport",
+      "lat": 40.6413,
+      "lng": -73.7781
+    },
+    {
+      "code": "LAX",
+      "name": "Los Angeles International Airport",
+      "lat": 33.9416,
+      "lng": -118.4085
+    },
+    {
+      "code": "ORD",
+      "name": "O'Hare International Airport",
+      "lat": 41.9742,
+      "lng": -87.9073
+    },
+    {
+      "code": "ATL",
+      "name": "Hartsfield-Jackson Atlanta International Airport",
+      "lat": 33.6407,
+      "lng": -84.4277
+    },
+    {
+      "code": "SFO",
+      "name": "San Francisco International Airport",
+      "lat": 37.6213,
+      "lng": -122.3790
+    },
+    {
+      "code": "SEA",
+      "name": "Seattle-Tacoma International Airport",
+      "lat": 47.4502,
+      "lng": -122.3088
+    },
+    {
+      "code": "DEN",
+      "name": "Denver International Airport",
+      "lat": 39.8561,
+      "lng": -104.6737
+    },
+    {
+      "code": "MIA",
+      "name": "Miami International Airport",
+      "lat": 25.7959,
+      "lng": -80.2870
+    },
+    {
+      "code": "BOS",
+      "name": "Boston Logan International Airport",
+      "lat": 42.3643,
+      "lng": -71.0052
+    },
+    {
+      "code": "DCA",
+      "name": "Ronald Reagan Washington National Airport",
+      "lat": 38.8521,
+      "lng": -77.0377
+    },
+    {
+      "code": "PHX",
+      "name": "Phoenix Sky Harbor International Airport",
+      "lat": 33.4343,
+      "lng": -112.0129
+    },
+    {
+      "code": "FLL",
+      "name": "Fort Lauderdale-Hollywood International Airport",
+      "lat": 26.0726,
+      "lng": -80.1527
+    },
+    {
+      "code": "DTW",
+      "name": "Detroit Metropolitan Airport",
+      "lat": 42.2124,
+      "lng": -83.3534
+    },
+    {
+      "code": "HNL",
+      "name": "Daniel K. Inouye International Airport",
+      "lat": 21.3187,
+      "lng": -157.9225
+    }
+  ],
+  "flights": [
+    {
+      "number": "AA 1024",
+      "route": "JFK -> LAX",
+      "status": "On Time",
+      "departTime": "6AM",
+      "arriveTime": "3PM",
+      "departGate": "A12",
+      "arriveGate": "T4",
+      "progress": 75,
+      "weatherDep": "Clear, 68°F",
+      "weatherArr": "Partly Cloudy, 72°F"
+    },
+    {
+      "number": "UA 587",
+      "route": "SFO -> ORD",
+      "status": "Delayed",
+      "departTime": "9AM",
+      "arriveTime": "6PM",
+      "departGate": "C21",
+      "arriveGate": "K15",
+      "progress": 40,
+      "weatherDep": "Light Rain, 58°F",
+      "weatherArr": "Cloudy, 52°F"
+    },
+    {
+      "number": "DL 302",
+      "route": "ATL -> MIA",
+      "status": "On Time",
+      "departTime": "12PM",
+      "arriveTime": "3PM",
+      "departGate": "T2",
+      "arriveGate": "D19",
+      "progress": 100,
+      "weatherDep": "Sunny, 84°F",
+      "weatherArr": "Sunny, 88°F"
+    },
+    {
+      "number": "SW 1455",
+      "route": "DEN -> SEA",
+      "status": "On Time",
+      "departTime": "3PM",
+      "arriveTime": "6PM",
+      "departGate": "B32",
+      "arriveGate": "S3",
+      "progress": 25,
+      "weatherDep": "Partly Cloudy, 62°F",
+      "weatherArr": "Rain, 56°F"
+    },
+    {
+      "number": "B6 822",
+      "route": "BOS -> DCA",
+      "status": "Delayed",
+      "departTime": "6PM",
+      "arriveTime": "9PM",
+      "departGate": "C8",
+      "arriveGate": "D4",
+      "progress": 0,
+      "weatherDep": "Cloudy, 65°F",
+      "weatherArr": "Partly Cloudy, 69°F"
+    },
+    {
+      "number": "AS 204",
+      "route": "SEA -> PHX",
+      "status": "On Time",
+      "departTime": "9PM",
+      "arriveTime": "12PM",
+      "departGate": "S6",
+      "arriveGate": "B24",
+      "progress": 0,
+      "weatherDep": "Rain, 56°F",
+      "weatherArr": "Sunny, 82°F"
+    },
+    {
+      "number": "NK 610",
+      "route": "FLL -> DTW",
+      "status": "On Time",
+      "departTime": "6AM",
+      "arriveTime": "9AM",
+      "departGate": "E15",
+      "arriveGate": "A18",
+      "progress": 60,
+      "weatherDep": "Sunny, 85°F",
+      "weatherArr": "Cloudy, 62°F"
+    },
+    {
+      "number": "HA 51",
+      "route": "HNL -> LAX",
+      "status": "Delayed",
+      "departTime": "9AM",
+      "arriveTime": "6PM",
+      "departGate": "G1",
+      "arriveGate": "T4",
+      "progress": 15,
+      "weatherDep": "Partly Cloudy, 78°F",
+      "weatherArr": "Partly Cloudy, 72°F"
+    }
+  ],
+  "timeline": {
+    "hours": ["6AM", "9AM", "12PM", "3PM", "6PM", "9PM"]
+  },
+  "weather": [
+    {
+      "airport": "JFK",
+      "temp": "68",
+      "condition": "Clear"
+    },
+    {
+      "airport": "LAX",
+      "temp": "72",
+      "condition": "Partly Cloudy"
+    },
+    {
+      "airport": "ORD",
+      "temp": "52",
+      "condition": "Cloudy"
+    },
+    {
+      "airport": "ATL",
+      "temp": "84",
+      "condition": "Sunny"
+    },
+    {
+      "airport": "SFO",
+      "temp": "58",
+      "condition": "Light Rain"
+    },
+    {
+      "airport": "SEA",
+      "temp": "56",
+      "condition": "Rain"
+    }
+  ],
+  "lastUpdated": "2023-10-15 14:32:18"
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Property Comparison",
+  "subtitle": "3 Active Listings",
+  "location": "San Francisco, CA",
+  "priceRange": "$1.1M - $1.5M",
+  "properties": [
+    {
+      "address": "742 Evergreen Terrace",
+      "neighborhood": "Sunset District",
+      "status": "Active",
+      "statusColor": "#4ade80",
+      "price": "$1,285,000",
+      "pricePerSqft": "$642/sqft",
+      "beds": 4,
+      "baths": 3,
+      "sqft": "2,002",
+      "gradient": "linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%)",
+      "priceHistory": [1150, 1180, 1200, 1230, 1250, 1270, 1280, 1285],
+      "features": [
+        { "label": "Year Built", "value": "2018" },
+        { "label": "Lot Size", "value": "5,200 sqft" },
+        { "label": "HOA", "value": "$450/mo" },
+        { "label": "Taxes", "value": "$15,420/yr" },
+        { "label": "Days on Market", "value": "12" },
+        { "label": "Walk Score", "value": "92" }
+      ],
+      "score": 88
+    },
+    {
+      "address": "1401 Mission St",
+      "neighborhood": "SoMa",
+      "status": "Hot",
+      "statusColor": "#f87171",
+      "price": "$1,450,000",
+      "pricePerSqft": "$725/sqft",
+      "beds": 3,
+      "baths": 2,
+      "sqft": "2,000",
+      "gradient": "linear-gradient(135deg, #2d1b4e 0%, #4a2d7a 100%)",
+      "priceHistory": [1320, 1350, 1380, 1400, 1420, 1430, 1445, 1450],
+      "features": [
+        { "label": "Year Built", "value": "2021" },
+        { "label": "Lot Size", "value": "4,800 sqft" },
+        { "label": "HOA", "value": "$380/mo" },
+        { "label": "Taxes", "value": "$17,400/yr" },
+        { "label": "Days on Market", "value": "5" },
+        { "label": "Walk Score", "value": "96" }
+      ],
+      "score": 91
+    },
+    {
+      "address": "88 Pacific Heights Blvd",
+      "neighborhood": "Pacific Heights",
+      "status": "Price Cut",
+      "statusColor": "#fbbf24",
+      "price": "$1,125,000",
+      "pricePerSqft": "$580/sqft",
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": "1,940",
+      "gradient": "linear-gradient(135deg, #1a3a2a 0%, #2d6b4a 100%)",
+      "priceHistory": [1250, 1240, 1220, 1200, 1180, 1160, 1140, 1125],
+      "features": [
+        { "label": "Year Built", "value": "2015" },
+        { "label": "Lot Size", "value": "6,100 sqft" },
+        { "label": "HOA", "value": "$0/mo" },
+        { "label": "Taxes", "value": "$13,500/yr" },
+        { "label": "Days on Market", "value": "28" },
+        { "label": "Walk Score", "value": "78" }
+      ],
+      "score": 74
+    }
+  ],
+  "verdict": {
+    "title": "Best Value",
+    "winner": "1401 Mission St",
+    "winnerScore": 91,
+    "reason": "Highest overall score with modern construction, best walk score, and lowest days on market despite premium pricing."
+  }
+}

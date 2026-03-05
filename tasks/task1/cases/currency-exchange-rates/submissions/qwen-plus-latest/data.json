@@ -1,0 +1,73 @@
+{
+  "baseCurrency": "USD",
+  "baseAmount": "1.00 USD",
+  "lastUpdated": "2023-09-15 14:32 UTC",
+  "currencies": [
+    {
+      "flag": "🇪🇺",
+      "code": "EUR",
+      "name": "Euro",
+      "rate": "0.9321",
+      "change": 0.12
+    },
+    {
+      "flag": "🇬🇧",
+      "code": "GBP",
+      "name": "British Pound",
+      "rate": "0.7915",
+      "change": -0.08
+    },
+    {
+      "flag": "🇯🇵",
+      "code": "JPY",
+      "name": "Japanese Yen",
+      "rate": "149.23",
+      "change": 0.25
+    },
+    {
+      "flag": "🇦🇺",
+      "code": "AUD",
+      "name": "Australian Dollar",
+      "rate": "1.5234",
+      "change": 0.31
+    },
+    {
+      "flag": "🇨🇦",
+      "code": "CAD",
+      "name": "Canadian Dollar",
+      "rate": "1.3521",
+      "change": -0.15
+    },
+    {
+      "flag": "🇨🇭",
+      "code": "CHF",
+      "name": "Swiss Franc",
+      "rate": "0.9023",
+      "change": 0.07
+    },
+    {
+      "flag": "🇨🇳",
+      "code": "CNY",
+      "name": "Chinese Yuan",
+      "rate": "7.2431",
+      "change": 0.19
+    },
+    {
+      "flag": "🇮🇳",
+      "code": "INR",
+      "name": "Indian Rupee",
+      "rate": "83.2145",
+      "change": -0.22
+    }
+  ],
+  "chartData": [
+    { "currency": "EUR", "strength": 92 },
+    { "currency": "GBP", "strength": 78 },
+    { "currency": "JPY", "strength": 85 },
+    { "currency": "AUD", "strength": 89 },
+    { "currency": "CAD", "strength": 75 },
+    { "currency": "CHF", "strength": 87 },
+    { "currency": "CNY", "strength": 83 },
+    { "currency": "INR", "strength": 72 }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "mission_name": "SENTINEL-6A",
+  "orbit_type": "LEO",
+  "elapsed_time": "847d 14h 32m",
+  "orbital_parameters": {
+    "altitude": { "value": "1,336", "unit": "km" },
+    "velocity": { "value": "7.45", "unit": "km/s" },
+    "inclination": { "value": "66.04", "unit": "deg" },
+    "period": { "value": "112.4", "unit": "min" },
+    "eccentricity": { "value": "0.000095" }
+  },
+  "ground_track": {
+    "lat": "34.2 deg",
+    "lon": "-42.7 deg"
+  },
+  "passes": [
+    {
+      "time": "14:23 UTC",
+      "duration": "8m 42s",
+      "elevation": "72 deg",
+      "direction": "NW-SE"
+    },
+    {
+      "time": "16:01 UTC",
+      "duration": "6m 18s",
+      "elevation": "45 deg",
+      "direction": "N-S"
+    },
+    {
+      "time": "17:44 UTC",
+      "duration": "4m 51s",
+      "elevation": "28 deg",
+      "direction": "NE-SW"
+    },
+    {
+      "time": "19:22 UTC",
+      "duration": "7m 33s",
+      "elevation": "61 deg",
+      "direction": "NW-SE"
+    },
+    {
+      "time": "21:05 UTC",
+      "duration": "5m 12s",
+      "elevation": "34 deg",
+      "direction": "N-S"
+    }
+  ]
+}

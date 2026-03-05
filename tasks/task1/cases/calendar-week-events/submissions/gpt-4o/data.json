@@ -1,0 +1,12 @@
+{
+  "events": [
+    { "id": 0, "eid": "event-0", "name": "Team Standup", "time": "9 AM", "top": 40, "height": 40, "bgColor": "#4180f7" },
+    { "id": 1, "eid": "event-1", "name": "Design Review", "time": "2 PM", "top": 320, "height": 60, "bgColor": "#8e44ad" },
+    { "id": 2, "eid": "event-2", "name": "Sprint Planning", "time": "10 AM", "top": 120, "height": 60, "bgColor": "#8e44ad" },
+    { "id": 3, "eid": "event-3", "name": "Dentist Appt", "time": "3 PM", "top": 360, "height": 40, "bgColor": "#5c9e57" },
+    { "id": 4, "eid": "event-4", "name": "API Integration", "time": "9 AM", "top": 40, "height": 120, "bgColor": "#4180f7" },
+    { "id": 5, "eid": "event-5", "name": "Lunch w/ Sarah", "time": "12 PM", "top": 240, "height": 40, "bgColor": "#5c9e57" },
+    { "id": 6, "eid": "event-6", "name": "Client Call", "time": "11 AM", "top": 160, "height": 40, "bgColor": "#8e44ad" },
+    { "id": 7, "eid": "event-7", "name": "Code Deploy", "time": "2 PM", "top": 320, "height": 80, "bgColor": "#4180f7" }
+  ]
+}

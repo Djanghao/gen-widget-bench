@@ -1,0 +1,36 @@
+{
+  "geneName": "BRCA1",
+  "geneFullName": "BRCA1 DNA Repair Associated",
+  "chromosome": "chr17:43044295",
+  "strand": "- strand",
+  "sequenceLength": "60 bp",
+  "rulerMarks": [10, 20, 30, 40, 50, 60],
+  "tracks": [
+    { "label": "Reference", "sequence": "ATCGATGCTAGCTTACGATCG", "coverage": "120x" },
+    { "label": "Sample A", "sequence": "ATCGATGCTAGCCTACGATCG", "coverage": "85x" },
+    { "label": "Sample B", "sequence": "ATCGATCCTAGCTTACTATCG", "coverage": "92x" },
+    { "label": "Consensus", "sequence": "ATCGATGCTAGCTTACGATCG", "coverage": "99x" }
+  ],
+  "variants": [
+    { "position": 7, "change": "A>G", "type": "Missense", "impact": "High", "alleleFreq": 0.032 },
+    { "position": 13, "change": "T>C", "type": "Synonymous", "impact": "Low", "alleleFreq": 0.148 },
+    { "position": 18, "change": "G>T", "type": "Nonsense", "impact": "Critical", "alleleFreq": 0.004 }
+  ],
+  "qualityScores": [38, 40, 39, 42, 35, 41, 28, 40, 39, 37, 42, 38, 30, 41, 39, 40, 36, 22, 40, 38],
+  "qualityAvg": 37.5,
+  "regions": [
+    { "id": "exon1", "label": "Exon 1", "widthPct": 18, "type": "exon" },
+    { "id": "intron1", "label": "Intron 1", "widthPct": 22, "type": "intron" },
+    { "id": "exon2", "label": "Exon 2", "widthPct": 15, "type": "exon" },
+    { "id": "intron2", "label": "Intron 2", "widthPct": 25, "type": "intron" },
+    { "id": "exon3", "label": "Exon 3", "widthPct": 20, "type": "exon" }
+  ],
+  "geneInfo": {
+    "name": "BRCA1",
+    "fullName": "BRCA1 DNA Repair Associated",
+    "function": "DNA repair, cell cycle checkpoint",
+    "pathway": "Homologous Recombination",
+    "disease": "Breast/Ovarian Cancer",
+    "expressionLevel": 87
+  }
+}

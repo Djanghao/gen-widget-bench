@@ -1,0 +1,32 @@
+{
+  "pair": "BTC/USDT",
+  "currentPrice": "97,284.50",
+  "priceChange24h": "+2.34%",
+  "asks": [
+    { "price": "97,428.30", "amount": "0.891", "total": 3.636 },
+    { "price": "97,401.60", "amount": "0.412", "total": 2.745 },
+    { "price": "97,385.40", "amount": "0.733", "total": 2.333 },
+    { "price": "97,362.10", "amount": "0.294", "total": 1.600 },
+    { "price": "97,348.90", "amount": "0.561", "total": 1.306 },
+    { "price": "97,325.50", "amount": "0.218", "total": 0.745 },
+    { "price": "97,310.20", "amount": "0.385", "total": 0.527 },
+    { "price": "97,296.80", "amount": "0.142", "total": 0.142 }
+  ],
+  "bids": [
+    { "price": "97,284.50", "amount": "0.328", "total": 0.328 },
+    { "price": "97,270.10", "amount": "0.195", "total": 0.523 },
+    { "price": "97,252.80", "amount": "0.467", "total": 0.990 },
+    { "price": "97,238.40", "amount": "0.284", "total": 1.274 },
+    { "price": "97,215.60", "amount": "0.612", "total": 1.886 },
+    { "price": "97,198.90", "amount": "0.349", "total": 2.235 }
+  ],
+  "spread": {
+    "value": "$12.30",
+    "pct": "0.013%"
+  },
+  "footer": {
+    "volume": "9,873.56 BTC",
+    "high": "97,560.00",
+    "low": "95,824.70"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "progress": 62,
+  "today": "Mar 2",
+  "milestones": [
+    {
+      "label": "Design Approval",
+      "date": "Feb 7"
+    },
+    {
+      "label": "Beta Release",
+      "date": "Mar 28"
+    },
+    {
+      "label": "Go Live",
+      "date": "Apr 18"
+    }
+  ],
+  "tasks": [
+    {
+      "avatar": "AK",
+      "assigneeName": "Anna Kim",
+      "name": "User Research",
+      "category": "Design",
+      "start": "Jan 6",
+      "end": "Jan 24",
+      "status": "Complete",
+      "progress": 100
+    },
+    {
+      "avatar": "LM",
+      "assigneeName": "Leo Martinez",
+      "name": "Wireframes",
+      "category": "Design",
+      "start": "Jan 20",
+      "end": "Feb 7",
+      "status": "Complete",
+      "progress": 100
+    },
+    {
+      "avatar": "LM",
+      "assigneeName": "Leo Martinez",
+      "name": "Visual Design",
+      "category": "Design",
+      "start": "Feb 3",
+      "end": "Feb 28",
+      "status": "In Progress",
+      "progress": 40
+    },
+    {
+      "avatar": "RJ",
+      "assigneeName": "Raj Joshi",
+      "name": "Frontend Dev",
+      "category": "Development",
+      "start": "Feb 10",
+      "end": "Mar 21",
+      "status": "In Progress",
+      "progress": 23
+    },
+    {
+      "avatar": "TS",
+      "assigneeName": "Tina Su",
+      "name": "Backend API",
+      "category": "Development",
+      "start": "Feb 3",
+      "end": "Mar 21",
+      "status": "In Progress",
+      "progress": 18
+    },
+    {
+      "avatar": "PN",
+      "assigneeName": "Priya Nair",
+      "name": "Integration Te...",
+      "category": "QA",
+      "start": "Mar 16",
+      "end": "Apr 4",
+      "status": "Not Started"
+    },
+    {
+      "avatar": "PN",
+      "assigneeName": "Priya Nair",
+      "name": "UAT Testing",
+      "category": "QA",
+      "start": "Mar 28",
+      "end": "Apr 11",
+      "status": "Not Started"
+    },
+    {
+      "avatar": "AK",
+      "assigneeName": "Anna Kim",
+      "name": "Launch Prep",
+      "category": "Launch",
+      "start": "Mar 31",
+      "end": "Apr 18",
+      "status": "Not Started"
+    }
+  ],
+  "team": [
+    {
+      "avatar": "AK",
+      "name": "Anna Kim",
+      "role": "Product Lead"
+    },
+    {
+      "avatar": "LM",
+      "name": "Leo Martinez",
+      "role": "Designer"
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "completed": 2,
+    "inProgress": 3,
+    "onTrack": 87
+  }
+}

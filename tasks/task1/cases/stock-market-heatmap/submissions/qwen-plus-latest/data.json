@@ -1,0 +1,82 @@
+{
+  "header": {
+    "indexName": "S&P 500",
+    "indexValue": "5,324.42",
+    "indexChange": "+0.42%",
+    "lastUpdated": "Last updated: May 15, 2024 • 4:00 PM ET"
+  },
+  "stocks": [
+    {
+      "ticker": "AAPL",
+      "company": "Apple",
+      "price": 192.34,
+      "change": 1.24
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "price": 412.38,
+      "change": 0.87
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet",
+      "price": 142.65,
+      "change": 0.56
+    },
+    {
+      "ticker": "AMZN",
+      "company": "Amazon",
+      "price": 178.22,
+      "change": 1.03
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "price": 945.67,
+      "change": 2.45
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "price": 472.89,
+      "change": 0.92
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla",
+      "price": 172.45,
+      "change": -0.34
+    },
+    {
+      "ticker": "JPM",
+      "company": "JPMorgan",
+      "price": 184.23,
+      "change": 0.21
+    },
+    {
+      "ticker": "V",
+      "company": "Visa",
+      "price": 278.91,
+      "change": 0.45
+    },
+    {
+      "ticker": "JNJ",
+      "company": "Johnson & Johnson",
+      "price": 154.76,
+      "change": -0.12
+    },
+    {
+      "ticker": "WMT",
+      "company": "Walmart",
+      "price": 158.32,
+      "change": 0.67
+    },
+    {
+      "ticker": "UNH",
+      "company": "UnitedHealth",
+      "price": 528.44,
+      "change": 0.33
+    }
+  ]
+}

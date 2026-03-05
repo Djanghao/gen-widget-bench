@@ -1,0 +1,59 @@
+{
+  "header": {
+    "db": "ecommerce_prod",
+    "engine": "PostgreSQL",
+    "version": "v3.14"
+  },
+  "tables": {
+    "users": {
+      "name": "users",
+      "meta": "84,230 rows   4 indices",
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK" },
+        { "name": "email", "type": "varchar", "nullable": "NN" },
+        { "name": "username", "type": "varchar", "nullable": "NN" },
+        { "name": "created_at", "type": "timestamp" },
+        { "name": "is_active", "type": "bool" }
+      ]
+    },
+    "orders": {
+      "name": "orders",
+      "meta": "312,847 rows   3 indices",
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK" },
+        { "name": "user_id", "type": "int", "key": "FK" },
+        { "name": "total_amount", "type": "decimal", "nullable": "NN" },
+        { "name": "status", "type": "varchar" },
+        { "name": "created_at", "type": "timestamp" },
+        { "name": "shipped_at", "type": "timestamp", "nullable": "NULL" }
+      ]
+    },
+    "products": {
+      "name": "products",
+      "meta": "5,621 rows   3 indices",
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK" },
+        { "name": "name", "type": "varchar", "nullable": "NN" },
+        { "name": "price", "type": "decimal", "nullable": "NN" },
+        { "name": "category_id", "type": "int", "key": "FK" },
+        { "name": "stock_qty", "type": "int" }
+      ]
+    },
+    "categories": {
+      "name": "categories",
+      "meta": "147 rows   2 indices",
+      "columns": [
+        { "name": "id", "type": "int", "key": "PK" },
+        { "name": "name", "type": "varchar", "nullable": "NN" },
+        { "name": "slug", "type": "varchar" },
+        { "name": "parent_id", "type": "int", "key": "FK", "nullable": "NULL" }
+      ]
+    }
+  },
+  "stats": {
+    "tables": 4,
+    "columns": 20,
+    "indices": 12,
+    "size": "2.4 GB"
+  }
+}

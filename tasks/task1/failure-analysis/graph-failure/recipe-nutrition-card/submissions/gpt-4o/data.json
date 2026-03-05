@@ -1,0 +1,12 @@
+{
+  "ingredients": [
+    { "quantity": "2 tbsp", "name": "vegetable oil" },
+    { "quantity": "1 lb", "name": "chicken thighs, diced" },
+    { "quantity": "3 cloves", "name": "garlic, minced" },
+    { "quantity": "2", "name": "Thai chilies, sliced" },
+    { "quantity": "1 cup", "name": "Thai basil leaves" },
+    { "quantity": "2 tbsp", "name": "oyster sauce" },
+    { "quantity": "1 tbsp", "name": "fish sauce" },
+    { "quantity": "1 tbsp", "name": "soy sauce" }
+  ]
+}

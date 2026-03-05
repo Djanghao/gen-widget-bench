@@ -1,0 +1,48 @@
+{
+  "elements": [
+    { "number": 11, "symbol": "Na", "name": "Sodium", "mass": "22.99", "category": "Alkali Metal" },
+    { "number": 12, "symbol": "Mg", "name": "Magnesium", "mass": "24.305", "category": "Alkaline Earth" },
+    { "number": 13, "symbol": "Al", "name": "Aluminium", "mass": "26.982", "category": "Post-Transition" },
+    { "number": 14, "symbol": "Si", "name": "Silicon", "mass": "28.085", "category": "Metalloid" },
+    { "number": 19, "symbol": "K", "name": "Potassium", "mass": "39.098", "category": "Alkali Metal" },
+    { "number": 20, "symbol": "Ca", "name": "Calcium", "mass": "40.078", "category": "Alkaline Earth" },
+    { "number": 21, "symbol": "Sc", "name": "Scandium", "mass": "44.956", "category": "Transition Metal" },
+    { "number": 22, "symbol": "Ti", "name": "Titanium", "mass": "47.867", "category": "Transition Metal" },
+    { "number": 23, "symbol": "V", "name": "Vanadium", "mass": "50.942", "category": "Transition Metal" },
+    { "number": 24, "symbol": "Cr", "name": "Chromium", "mass": "51.996", "category": "Transition Metal" },
+    { "number": 25, "symbol": "Mn", "name": "Manganese", "mass": "54.938", "category": "Transition Metal" },
+    { "number": 26, "symbol": "Fe", "name": "Iron", "mass": "55.845", "category": "Transition Metal" },
+    { "number": 27, "symbol": "Co", "name": "Cobalt", "mass": "58.933", "category": "Transition Metal" },
+    { "number": 28, "symbol": "Ni", "name": "Nickel", "mass": "58.693", "category": "Transition Metal" },
+    { "number": 29, "symbol": "Cu", "name": "Copper", "mass": "63.546", "category": "Transition Metal" },
+    { "number": 30, "symbol": "Zn", "name": "Zinc", "mass": "65.38", "category": "Transition Metal" },
+    { "number": 31, "symbol": "Ga", "name": "Gallium", "mass": "69.723", "category": "Post-Transition" },
+    { "number": 32, "symbol": "Ge", "name": "Germanium", "mass": "72.63", "category": "Metalloid" },
+    { "number": 37, "symbol": "Rb", "name": "Rubidium", "mass": "85.468", "category": "Alkali Metal" },
+    { "number": 38, "symbol": "Sr", "name": "Strontium", "mass": "87.62", "category": "Alkaline Earth" }
+  ],
+  "selected": {
+    "symbol": "Fe",
+    "name": "Iron",
+    "number": 26,
+    "mass": "55.845",
+    "electronConfig": "[Ar] 3d6 4s2",
+    "category": "Transition Metal",
+    "period": 4,
+    "group": 8,
+    "props": {
+      "melting": 1538,
+      "boiling": 2862,
+      "density": 7.874,
+      "electronegativity": 1.83
+    }
+  },
+  "chart": [
+    { "symbol": "Sc", "melting": 1541 },
+    { "symbol": "Ti", "melting": 1668 },
+    { "symbol": "V", "melting": 1910 },
+    { "symbol": "Cr", "melting": 1907 },
+    { "symbol": "Mn", "melting": 1246 },
+    { "symbol": "Fe", "melting": 1538 }
+  ]
+}

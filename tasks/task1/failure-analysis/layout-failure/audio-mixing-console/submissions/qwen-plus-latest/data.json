@@ -1,0 +1,78 @@
+{
+  "header": {
+    "projectName": "Midnight Sessions",
+    "bpm": 128
+  },
+  "channels": [
+    {
+      "name": "Kick",
+      "number": "CH 1",
+      "meter": 42,
+      "panLabel": "C",
+      "panPosition": 50,
+      "mute": false,
+      "solo": false,
+      "volume": "-3.2 dB"
+    },
+    {
+      "name": "Snare",
+      "number": "CH 2",
+      "meter": 58,
+      "panLabel": "L15",
+      "panPosition": 35,
+      "mute": false,
+      "solo": false,
+      "volume": "-5.1 dB"
+    },
+    {
+      "name": "Hi-Hat",
+      "number": "CH 3",
+      "meter": 32,
+      "panLabel": "R30",
+      "panPosition": 65,
+      "mute": false,
+      "solo": false,
+      "volume": "-8.4 dB"
+    },
+    {
+      "name": "Bass",
+      "number": "CH 4",
+      "meter": 67,
+      "panLabel": "C",
+      "panPosition": 50,
+      "mute": false,
+      "solo": false,
+      "volume": "-1.8 dB"
+    },
+    {
+      "name": "Synth",
+      "number": "CH 5",
+      "meter": 51,
+      "panLabel": "L45",
+      "panPosition": 27.5,
+      "mute": false,
+      "solo": false,
+      "volume": "-6.7 dB"
+    },
+    {
+      "name": "Vocals",
+      "number": "CH 6",
+      "meter": 73,
+      "panLabel": "C",
+      "panPosition": 50,
+      "mute": false,
+      "solo": true,
+      "volume": "-0.5 dB"
+    }
+  ],
+  "master": {
+    "meter": 78,
+    "volume": "0.0 dB"
+  },
+  "output": {
+    "leftMeter": 62,
+    "rightMeter": 59,
+    "leftVolume": "-2.4 dB",
+    "rightVolume": "-2.1 dB"
+  }
+}

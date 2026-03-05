@@ -1,0 +1,75 @@
+{
+  "title": "Mix Console",
+  "project": "Midnight Sessions",
+  "bpm": "128 BPM",
+  "channels": [
+    {
+      "name": "Kick",
+      "nameColor": "#fc4444",
+      "meter": 0.68,
+      "pan": "C",
+      "mute": false,
+      "solo": false,
+      "db": "-3.2 dB"
+    },
+    {
+      "name": "Snare",
+      "nameColor": "#ffd700",
+      "meter": 0.57,
+      "pan": "L15",
+      "mute": false,
+      "solo": false,
+      "db": "-5.1 dB"
+    },
+    {
+      "name": "Hi-Hat",
+      "nameColor": "#21d07a",
+      "meter": 0.42,
+      "pan": "R30",
+      "mute": false,
+      "solo": true,
+      "db": "-8.4 dB"
+    },
+    {
+      "name": "Bass",
+      "nameColor": "#7eb1ff",
+      "meter": 0.7,
+      "pan": "C",
+      "mute": false,
+      "solo": false,
+      "db": "-1.8 dB"
+    },
+    {
+      "name": "Synth",
+      "nameColor": "#fc399c",
+      "meter": 0.54,
+      "pan": "L45",
+      "mute": false,
+      "solo": false,
+      "db": "-6.7 dB"
+    },
+    {
+      "name": "Vocals",
+      "nameColor": "#fff",
+      "meter": 0.86,
+      "pan": "C",
+      "mute": false,
+      "solo": true,
+      "db": "-0.5 dB"
+    }
+  ],
+  "master": {
+    "meter": 0.84,
+    "db": "0.0 dB"
+  },
+  "output": {
+    "left": {
+      "meter": 0.77,
+      "db": "-2.4 dB"
+    },
+    "right": {
+      "meter": 0.67,
+      "db": "-2.1 dB"
+    }
+  }
+}

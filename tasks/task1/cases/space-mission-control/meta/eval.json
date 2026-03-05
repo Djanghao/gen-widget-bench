@@ -1,0 +1,12 @@
+{
+  "caseId": "space-mission-control",
+  "name": "Space Mission Control Widget",
+  "subtask": "instruction-image-target",
+  "styleProperties": ["borderRadius", "maxWidth"],
+  "screenshot": {
+    "weight": 10,
+    "maxPixelDiffPercent": 15,
+    "viewportWidth": 500,
+    "viewportHeight": 1200
+  }
+}

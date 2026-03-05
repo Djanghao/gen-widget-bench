@@ -1,0 +1,20 @@
+{
+  "alertBanner": "Patchy fog near shoreline",
+  "currentTemp": "65F",
+  "highLow": "H:72F L:55F",
+  "cityName": "Tiburon",
+  "conditionText": "Clear",
+  "stats": {
+    "feels": "64F",
+    "humidity": "48%",
+    "wind": "9mph"
+  },
+  "forecast": [
+    { "time": "9PM",  "temp": "65F" },
+    { "time": "10PM", "temp": "63F" },
+    { "time": "11PM", "temp": "62F" },
+    { "time": "12AM", "temp": "60F" },
+    { "time": "1AM",  "temp": "58F" },
+    { "time": "2AM",  "temp": "56F" }
+  ]
+}
