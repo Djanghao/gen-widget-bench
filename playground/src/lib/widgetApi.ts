@@ -1,3 +1,5 @@
+import { defaultDataSource, defaultWidgetSource, examples } from './exampleStore'
+
 export type WidgetOrigin = 'example' | 'local'
 
 export interface WidgetSourceResponse {
@@ -31,30 +33,30 @@ export interface WidgetExampleSourceResponse {
   widgetFiles: string[]
 }
 
-interface ApiErrorPayload {
-  error?: string
-}
-
-async function parseApiError(response: Response): Promise<string> {
-  try {
-    const payload = (await response.json()) as ApiErrorPayload
-    if (payload.error) {
-      return payload.error
-    }
-  } catch {
-    // noop: fall back to generic message
-  }
-
-  return `Request failed with status ${response.status}.`
-}
+const LOCAL_WIDGET_KEY = 'playground:widget-source'
+const LOCAL_DATA_KEY = 'playground:data-source'
 
 export async function fetchWidgetSource(): Promise<WidgetSourceResponse> {
-  const response = await fetch('/api/widget/source')
-  if (!response.ok) {
-    throw new Error(await parseApiError(response))
+  const localWidget = localStorage.getItem(LOCAL_WIDGET_KEY)
+  const localData = localStorage.getItem(LOCAL_DATA_KEY)
+
+  if (localWidget) {
+    return {
+      dataSource: localData ?? defaultDataSource,
+      exampleDataSource: defaultDataSource,
+      exampleSource: defaultWidgetSource,
+      origin: 'local',
+      source: localWidget,
+    }
   }
 
-  return response.json() as Promise<WidgetSourceResponse>
+  return {
+    dataSource: defaultDataSource,
+    exampleDataSource: defaultDataSource,
+    exampleSource: defaultWidgetSource,
+    origin: 'example',
+    source: defaultWidgetSource,
+  }
 }
 
 export async function saveWidgetSource(
@@ -62,57 +64,56 @@ export async function saveWidgetSource(
   dataSource: string,
   name?: string,
 ): Promise<SaveWidgetResponse> {
-  const response = await fetch('/api/widget/source', {
-    body: JSON.stringify(name ? { dataSource, name, source } : { dataSource, source }),
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    method: 'PUT',
-  })
+  localStorage.setItem(LOCAL_WIDGET_KEY, source)
+  localStorage.setItem(LOCAL_DATA_KEY, dataSource)
 
-  if (!response.ok) {
-    throw new Error(await parseApiError(response))
+  if (name) {
+    return { ok: true, snapshotPath: name }
   }
 
-  return response.json() as Promise<SaveWidgetResponse>
+  return { ok: true }
 }
 
 export async function resetWidgetSource(): Promise<WidgetSourceResponse> {
-  const response = await fetch('/api/widget/source', {
-    method: 'DELETE',
-  })
+  localStorage.removeItem(LOCAL_WIDGET_KEY)
+  localStorage.removeItem(LOCAL_DATA_KEY)
 
-  if (!response.ok) {
-    throw new Error(await parseApiError(response))
+  return {
+    dataSource: defaultDataSource,
+    exampleDataSource: defaultDataSource,
+    exampleSource: defaultWidgetSource,
+    origin: 'example',
+    source: defaultWidgetSource,
   }
-
-  return response.json() as Promise<WidgetSourceResponse>
 }
 
 export async function fetchWidgetExamples(): Promise<WidgetExamplesResponse> {
-  const response = await fetch('/api/widget/examples')
-  if (!response.ok) {
-    throw new Error(await parseApiError(response))
+  return {
+    examples: examples.map((e) => ({ id: e.id, name: e.name })),
   }
-
-  return response.json() as Promise<WidgetExamplesResponse>
 }
 
 export async function fetchWidgetExampleSource(
   exampleId: string,
   widgetFileName?: string,
 ): Promise<WidgetExampleSourceResponse> {
-  const params = new URLSearchParams()
-  if (widgetFileName) {
-    params.set('file', widgetFileName)
-  }
-  const queryText = params.toString()
-  const requestUrl = `/api/widget/examples/${encodeURIComponent(exampleId)}${queryText ? `?${queryText}` : ''}`
-
-  const response = await fetch(requestUrl)
-  if (!response.ok) {
-    throw new Error(await parseApiError(response))
+  const example = examples.find((e) => e.id === exampleId)
+  if (!example) {
+    throw new Error(`Example "${exampleId}" not found.`)
   }
 
-  return response.json() as Promise<WidgetExampleSourceResponse>
+  const selectedFile = widgetFileName ?? example.widgetFiles[0]
+  const source = example.sources[selectedFile]
+  if (!source) {
+    throw new Error(`Widget file "${selectedFile}" not found in example "${exampleId}".`)
+  }
+
+  return {
+    dataSource: example.dataSource,
+    id: example.id,
+    name: example.name,
+    source,
+    widgetFileName: selectedFile,
+    widgetFiles: example.widgetFiles,
+  }
 }

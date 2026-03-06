@@ -1,5 +1,6 @@
-import { type ComponentType, type ErrorInfo, type MouseEvent as ReactMouseEvent, type ReactNode, useEffect, useState } from 'react'
+import { type ComponentType, type ErrorInfo, type MouseEvent as ReactMouseEvent, type ReactNode, useEffect, useRef, useState } from 'react'
 import { Component, createElement } from 'react'
+import { toPng } from 'html-to-image'
 
 interface WidgetViewerProps {
   compileError: string | null
@@ -126,6 +127,8 @@ export function WidgetViewer({ compileError, component, refreshToken }: WidgetVi
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [frameSize, setFrameSize] = useState<FrameSize>(() => getDefaultFrameSize())
   const [resizeSession, setResizeSession] = useState<ResizeSession | null>(null)
+  const [isCapturing, setIsCapturing] = useState(false)
+  const widgetStageRef = useRef<HTMLDivElement>(null)
   const modalOpenDisabled = Boolean(compileError) || !component
 
   useEffect(() => {
@@ -224,7 +227,27 @@ export function WidgetViewer({ compileError, component, refreshToken }: WidgetVi
     })
   }
 
-  const renderWidget = (stageClassName: string): ReactNode => {
+  const downloadImage = async () => {
+    const widgetElement = widgetStageRef.current?.firstElementChild
+    if (!(widgetElement instanceof HTMLElement)) return
+
+    setIsCapturing(true)
+    try {
+      const dataUrl = await toPng(widgetElement, {
+        pixelRatio: 2,
+      })
+      const link = document.createElement('a')
+      link.download = 'widget.png'
+      link.href = dataUrl
+      link.click()
+    } catch {
+      // capture failed silently
+    } finally {
+      setIsCapturing(false)
+    }
+  }
+
+  const renderWidget = (stageClassName: string, ref?: React.RefObject<HTMLDivElement | null>): ReactNode => {
     if (compileError) {
       return (
         <div className="error-panel">
@@ -239,7 +262,7 @@ export function WidgetViewer({ compileError, component, refreshToken }: WidgetVi
     }
 
     return (
-      <div className={stageClassName}>
+      <div ref={ref} className={stageClassName}>
         <RuntimeBoundary key={refreshToken}>{createElement(component)}</RuntimeBoundary>
       </div>
     )
@@ -257,8 +280,16 @@ export function WidgetViewer({ compileError, component, refreshToken }: WidgetVi
         >
           Responsive Preview
         </button>
+        <button
+          className="viewer-modal-trigger"
+          disabled={modalOpenDisabled || isCapturing}
+          onClick={() => void downloadImage()}
+          type="button"
+        >
+          {isCapturing ? 'Capturing...' : 'Download PNG'}
+        </button>
       </div>
-      <div className="panel-body viewer-body">{renderWidget('viewer-widget-stage')}</div>
+      <div className="panel-body viewer-body">{renderWidget('viewer-widget-stage', widgetStageRef)}</div>
 
       {isModalOpen ? (
         <div className="widget-modal-backdrop" role="dialog" aria-modal="true">
