@@ -521,6 +521,21 @@ button:disabled {
   padding: 12px;
 }
 
+.guide-section-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guide-copy-button {
+  background: #1e293b;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 0.72rem;
+  min-height: 26px;
+  padding: 0 10px;
+}
+
 .guide-chip-list {
   display: flex;
   flex-wrap: wrap;
@@ -581,6 +596,13 @@ button:disabled {
 .guide-code-list {
   max-height: 320px;
   min-height: 180px;
+}
+
+.guide-prompt-code {
+  max-height: 480px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .guide-error {

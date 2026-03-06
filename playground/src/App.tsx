@@ -14,6 +14,71 @@ import {
 
 const COMPILE_DEBOUNCE_MS = 400
 
+const WIDGET_SPEC_PROMPT = `## Widget File Specification
+
+You must generate two files: \`widget.tsx\` and \`data.json\`. They will be compiled and rendered in a browser-side sandbox. Follow these constraints strictly.
+
+### data.json
+
+- Must be valid JSON (parseable by \`JSON.parse()\`).
+- All data needed for display must be defined here — widget.tsx must not hard-code business data.
+
+### widget.tsx
+
+#### Import Rules
+
+Only the following 4 imports are allowed — no others:
+
+\`\`\`
+import data from './data.json'
+import React from 'react'
+import { ... } from 'recharts'       // charting library (as needed)
+import { ... } from 'lucide-react'   // icon library (as needed)
+\`\`\`
+
+#### Data Type Contract
+
+You must define a full TypeScript type for \`data.json\` and bind it via type assertion. This type serves as the schema that \`data.json\` must conform to — the two must match exactly.
+
+Supported type patterns:
+
+\`\`\`tsx
+import data from './data.json'
+
+// Extract child types for readability
+type ChildItem = {
+  key1: string                         // primitive type
+  key2: number | null                  // nullable
+  key3: boolean
+}
+
+type DataType = {
+  primitiveField: string               // primitives: string / number / boolean
+  nullableField: number | null         // nullable field
+  literalUnion: 'a' | 'b' | 'c'       // literal union
+  nestedObject: {                      // nested object
+    sub1: string
+    sub2: number
+  }
+  arrayOfPrimitive: number[]           // primitive array
+  arrayOfObject: Array<ChildItem>      // object array (referencing child type)
+}
+
+const typedData = data as DataType
+\`\`\`
+
+#### Export Rules
+
+You must use \`export default\` to export a React component. The component receives no props.
+
+#### Styling Rules
+
+Only inline styles (\`style={{ ... }}\`) are allowed. No className references to external styles, CSS files, CSS Modules, Tailwind, or CSS-in-JS libraries.
+
+#### Self-Contained
+
+The component must be fully self-contained — no Router, Context Provider, or external state management. All data comes from \`./data.json\`.`
+
 function formatTimestamp(timestamp: number): string {
   return new Date(timestamp).toLocaleTimeString()
 }
@@ -42,6 +107,7 @@ function App() {
   const [rechartsComponents, setRechartsComponents] = useState<string[]>([])
   const [guideLoadError, setGuideLoadError] = useState<string | null>(null)
   const [isGuideLoading, setIsGuideLoading] = useState(false)
+  const [isPromptCopied, setIsPromptCopied] = useState(false)
   const [lastSavedAt, setLastSavedAt] = useState<number | null>(null)
   const [lastSavedPath, setLastSavedPath] = useState<string | null>(null)
   const [saveError, setSaveError] = useState<string | null>(null)
@@ -415,6 +481,25 @@ function App() {
                     <code className="guide-chip" key={name}>{name}</code>
                   ))}
                 </div>
+              </section>
+
+              <section className="guide-section">
+                <div className="guide-section-header">
+                  <h3 className="guide-subtitle">Widget Spec Prompt</h3>
+                  <button
+                    className="guide-copy-button"
+                    onClick={() => {
+                      void navigator.clipboard.writeText(WIDGET_SPEC_PROMPT).then(() => {
+                        setIsPromptCopied(true)
+                        setTimeout(() => setIsPromptCopied(false), 2000)
+                      })
+                    }}
+                    type="button"
+                  >
+                    {isPromptCopied ? 'Copied!' : 'Copy'}
+                  </button>
+                </div>
+                <pre className="guide-code guide-prompt-code">{WIDGET_SPEC_PROMPT}</pre>
               </section>
 
               {guideLoadError ? <p className="guide-text guide-error">{guideLoadError}</p> : null}
