@@ -33,8 +33,44 @@ export interface WidgetExampleSourceResponse {
   widgetFiles: string[]
 }
 
+export interface SavedWidget {
+  id: string
+  name: string
+  widgetSource: string
+  dataSource: string
+}
+
 const LOCAL_WIDGET_KEY = 'playground:widget-source'
 const LOCAL_DATA_KEY = 'playground:data-source'
+const SAVED_WIDGETS_KEY = 'playground:saved-widgets'
+
+export function getSavedWidgets(): SavedWidget[] {
+  const raw = localStorage.getItem(SAVED_WIDGETS_KEY)
+  if (!raw) return []
+  try {
+    return JSON.parse(raw) as SavedWidget[]
+  } catch {
+    return []
+  }
+}
+
+export function saveNewWidget(name: string, widgetSource: string, dataSource: string): void {
+  const saved = getSavedWidgets()
+  const id = `saved:${name}`
+  const existing = saved.findIndex((w) => w.id === id)
+  const entry: SavedWidget = { id, name, widgetSource, dataSource }
+  if (existing >= 0) {
+    saved[existing] = entry
+  } else {
+    saved.push(entry)
+  }
+  localStorage.setItem(SAVED_WIDGETS_KEY, JSON.stringify(saved))
+}
+
+export function deleteSavedWidget(id: string): void {
+  const saved = getSavedWidgets().filter((w) => w.id !== id)
+  localStorage.setItem(SAVED_WIDGETS_KEY, JSON.stringify(saved))
+}
 
 export async function fetchWidgetSource(): Promise<WidgetSourceResponse> {
   const localWidget = localStorage.getItem(LOCAL_WIDGET_KEY)
@@ -88,8 +124,10 @@ export async function resetWidgetSource(): Promise<WidgetSourceResponse> {
 }
 
 export async function fetchWidgetExamples(): Promise<WidgetExamplesResponse> {
+  const bundled = examples.map((e) => ({ id: e.id, name: e.name }))
+  const saved = getSavedWidgets().map((w) => ({ id: w.id, name: `[Saved] ${w.name}` }))
   return {
-    examples: examples.map((e) => ({ id: e.id, name: e.name })),
+    examples: [...bundled, ...saved],
   }
 }
 
@@ -97,6 +135,21 @@ export async function fetchWidgetExampleSource(
   exampleId: string,
   widgetFileName?: string,
 ): Promise<WidgetExampleSourceResponse> {
+  if (exampleId.startsWith('saved:')) {
+    const saved = getSavedWidgets().find((w) => w.id === exampleId)
+    if (!saved) {
+      throw new Error(`Saved widget "${exampleId}" not found.`)
+    }
+    return {
+      dataSource: saved.dataSource,
+      id: saved.id,
+      name: saved.name,
+      source: saved.widgetSource,
+      widgetFileName: 'widget.tsx',
+      widgetFiles: ['widget.tsx'],
+    }
+  }
+
   const example = examples.find((e) => e.id === exampleId)
   if (!example) {
     throw new Error(`Example "${exampleId}" not found.`)

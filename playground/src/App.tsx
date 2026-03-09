@@ -7,6 +7,8 @@ import {
   fetchWidgetExamples,
   fetchWidgetSource,
   resetWidgetSource,
+  deleteSavedWidget,
+  saveNewWidget,
   saveWidgetSource,
   type WidgetExample,
   type WidgetOrigin,
@@ -316,6 +318,38 @@ function App() {
     }
   }
 
+  async function onSaveWidget(): Promise<void> {
+    const name = window.prompt('Enter widget name, e.g. ios-tahoe-widget(houston)')
+    if (name === null) return
+
+    const trimmedName = name.trim()
+    if (!trimmedName) {
+      setSaveError('Please provide a non-empty widget name.')
+      return
+    }
+
+    try {
+      saveNewWidget(trimmedName, widgetSource, dataSource)
+      const examplesPayload = await fetchWidgetExamples()
+      setExamples(examplesPayload.examples)
+      setSaveError(null)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Failed to save widget.'
+      setSaveError(message)
+    }
+  }
+
+  async function onDeleteExample(): Promise<void> {
+    if (!selectedExampleId.startsWith('saved:')) return
+
+    deleteSavedWidget(selectedExampleId)
+    setSelectedExampleId('')
+    setSelectedExampleWidgetFile('')
+    setExampleWidgetFiles([])
+    const examplesPayload = await fetchWidgetExamples()
+    setExamples(examplesPayload.examples)
+  }
+
   function onRefresh(): void {
     setRefreshToken((prev) => prev + 1)
   }
@@ -446,6 +480,7 @@ function App() {
           exampleWidgetFiles={exampleWidgetFiles}
           examples={examples}
           isExampleLoading={isExampleLoading}
+          onDeleteExample={() => void onDeleteExample()}
           onExampleChange={(exampleId) => void onExampleChange(exampleId)}
           onExampleWidgetFileChange={(widgetFileName) => void onExampleWidgetFileChange(widgetFileName)}
           onActiveFileChange={setActiveEditorFile}
@@ -453,7 +488,7 @@ function App() {
           onWidgetSourceChange={setWidgetSource}
           widgetSource={widgetSource}
         />
-        <WidgetViewer compileError={compileError} component={component} refreshToken={refreshToken} />
+        <WidgetViewer compileError={compileError} component={component} onSaveWidget={() => void onSaveWidget()} refreshToken={refreshToken} />
       </section>
 
       {isGuideOpen ? (

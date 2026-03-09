@@ -5,6 +5,7 @@ import { toPng } from 'html-to-image'
 interface WidgetViewerProps {
   compileError: string | null
   component: ComponentType | null
+  onSaveWidget: () => void
   refreshToken: number
 }
 
@@ -123,7 +124,7 @@ class RuntimeBoundary extends Component<{ children: ReactNode }, RuntimeBoundary
   }
 }
 
-export function WidgetViewer({ compileError, component, refreshToken }: WidgetViewerProps) {
+export function WidgetViewer({ compileError, component, onSaveWidget, refreshToken }: WidgetViewerProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [frameSize, setFrameSize] = useState<FrameSize>(() => getDefaultFrameSize())
   const [resizeSession, setResizeSession] = useState<ResizeSession | null>(null)
@@ -287,6 +288,14 @@ export function WidgetViewer({ compileError, component, refreshToken }: WidgetVi
           type="button"
         >
           {isCapturing ? 'Capturing...' : 'Download PNG'}
+        </button>
+        <button
+          className="viewer-modal-trigger"
+          disabled={modalOpenDisabled}
+          onClick={onSaveWidget}
+          type="button"
+        >
+          Save Widget
         </button>
       </div>
       <div className="panel-body viewer-body">{renderWidget('viewer-widget-stage', widgetStageRef)}</div>
