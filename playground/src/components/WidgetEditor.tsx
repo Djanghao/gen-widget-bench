@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import Editor, { type OnMount } from '@monaco-editor/react'
 import type { editor as MonacoEditor } from 'monaco-editor'
 
-type EditorFile = 'data' | 'widget'
+type EditorFile = 'data' | 'prompt' | 'widget'
 
 interface WidgetExampleOption {
   id: string
@@ -21,7 +21,9 @@ interface WidgetEditorProps {
   onExampleWidgetFileChange: (widgetFileName: string) => void
   onActiveFileChange: (file: EditorFile) => void
   onDataSourceChange: (nextSource: string) => void
+  onPromptSourceChange: (nextSource: string) => void
   onWidgetSourceChange: (nextSource: string) => void
+  promptSource: string
   widgetSource: string
 }
 
@@ -37,13 +39,16 @@ export function WidgetEditor({
   onExampleWidgetFileChange,
   onActiveFileChange,
   onDataSourceChange,
+  onPromptSourceChange,
   onWidgetSourceChange,
+  promptSource,
   widgetSource,
 }: WidgetEditorProps) {
   const editorRef = useRef<MonacoEditor.IStandaloneCodeEditor | null>(null)
   const isWidgetTab = activeFile === 'widget'
+  const isPromptTab = activeFile === 'prompt'
   const resolvedWidgetFileName = exampleWidgetFile || 'widget.tsx'
-  const filename = isWidgetTab ? resolvedWidgetFileName : 'data.json'
+  const filename = isWidgetTab ? resolvedWidgetFileName : isPromptTab ? 'prompt' : 'data.json'
 
   useEffect(() => {
     if (!editorRef.current) {
@@ -109,11 +114,18 @@ export function WidgetEditor({
               widget.tsx
             </button>
             <button
-              className={`editor-file-tab${!isWidgetTab ? ' is-active' : ''}`}
+              className={`editor-file-tab${activeFile === 'data' ? ' is-active' : ''}`}
               onClick={() => onActiveFileChange('data')}
               type="button"
             >
               data.json
+            </button>
+            <button
+              className={`editor-file-tab${isPromptTab ? ' is-active' : ''}`}
+              onClick={() => onActiveFileChange('prompt')}
+              type="button"
+            >
+              prompt
             </button>
           </div>
         </div>
@@ -121,15 +133,17 @@ export function WidgetEditor({
       </div>
       <div className="panel-body">
         <Editor
-          defaultLanguage={isWidgetTab ? 'typescript' : 'json'}
-          language={isWidgetTab ? 'typescript' : 'json'}
+          defaultLanguage={isWidgetTab ? 'typescript' : isPromptTab ? 'markdown' : 'json'}
+          language={isWidgetTab ? 'typescript' : isPromptTab ? 'markdown' : 'json'}
           onMount={handleEditorMount}
           onChange={(value) => {
             if (isWidgetTab) {
               onWidgetSourceChange(value ?? '')
-              return
+            } else if (isPromptTab) {
+              onPromptSourceChange(value ?? '')
+            } else {
+              onDataSourceChange(value ?? '')
             }
-            onDataSourceChange(value ?? '')
           }}
           options={{
             automaticLayout: true,
@@ -142,7 +156,7 @@ export function WidgetEditor({
           }}
           path={filename}
           theme="vs-light"
-          value={isWidgetTab ? widgetSource : dataSource}
+          value={isWidgetTab ? widgetSource : isPromptTab ? promptSource : dataSource}
         />
       </div>
     </div>

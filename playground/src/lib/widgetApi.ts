@@ -28,6 +28,7 @@ export interface WidgetExampleSourceResponse {
   dataSource: string
   id: string
   name: string
+  prompt?: string
   source: string
   widgetFileName: string
   widgetFiles: string[]
@@ -38,6 +39,7 @@ export interface SavedWidget {
   name: string
   widgetSource: string
   dataSource: string
+  prompt?: string
 }
 
 const LOCAL_WIDGET_KEY = 'playground:widget-source'
@@ -54,11 +56,15 @@ export function getSavedWidgets(): SavedWidget[] {
   }
 }
 
-export function saveNewWidget(name: string, widgetSource: string, dataSource: string): void {
+export function hasSavedWidget(name: string): boolean {
+  return getSavedWidgets().some((w) => w.id === `saved:${name}`)
+}
+
+export function saveNewWidget(name: string, widgetSource: string, dataSource: string, prompt?: string): void {
   const saved = getSavedWidgets()
   const id = `saved:${name}`
   const existing = saved.findIndex((w) => w.id === id)
-  const entry: SavedWidget = { id, name, widgetSource, dataSource }
+  const entry: SavedWidget = { id, name, widgetSource, dataSource, prompt: prompt || undefined }
   if (existing >= 0) {
     saved[existing] = entry
   } else {
@@ -144,6 +150,7 @@ export async function fetchWidgetExampleSource(
       dataSource: saved.dataSource,
       id: saved.id,
       name: saved.name,
+      prompt: saved.prompt,
       source: saved.widgetSource,
       widgetFileName: 'widget.tsx',
       widgetFiles: ['widget.tsx'],

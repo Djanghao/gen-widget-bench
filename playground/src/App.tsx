@@ -6,6 +6,7 @@ import {
   fetchWidgetExampleSource,
   fetchWidgetExamples,
   fetchWidgetSource,
+  hasSavedWidget,
   resetWidgetSource,
   deleteSavedWidget,
   saveNewWidget,
@@ -85,11 +86,12 @@ function formatTimestamp(timestamp: number): string {
   return new Date(timestamp).toLocaleTimeString()
 }
 
-type EditorFile = 'data' | 'widget'
+type EditorFile = 'data' | 'prompt' | 'widget'
 
 function App() {
   const [widgetSource, setWidgetSource] = useState('')
   const [dataSource, setDataSource] = useState('{}')
+  const [promptSource, setPromptSource] = useState('')
   const [activeEditorFile, setActiveEditorFile] = useState<EditorFile>('widget')
   const [examples, setExamples] = useState<WidgetExample[]>([])
   const [exampleWidgetFiles, setExampleWidgetFiles] = useState<string[]>([])
@@ -303,6 +305,7 @@ function App() {
       const payload = await resetWidgetSource()
       setWidgetSource(payload.source)
       setDataSource(payload.dataSource)
+      setPromptSource('')
       setExampleWidgetFiles([])
       setSelectedExampleId('')
       setSelectedExampleWidgetFile('')
@@ -328,8 +331,12 @@ function App() {
       return
     }
 
+    if (hasSavedWidget(trimmedName) && !window.confirm(`Widget "${trimmedName}" already exists. Overwrite?`)) {
+      return
+    }
+
     try {
-      saveNewWidget(trimmedName, widgetSource, dataSource)
+      saveNewWidget(trimmedName, widgetSource, dataSource, promptSource)
       const examplesPayload = await fetchWidgetExamples()
       setExamples(examplesPayload.examples)
       setSaveError(null)
@@ -383,6 +390,7 @@ function App() {
       setSelectedExampleWidgetFile(payload.widgetFileName)
       setWidgetSource(payload.source)
       setDataSource(payload.dataSource)
+      setPromptSource(payload.prompt ?? '')
       setActiveEditorFile('widget')
       setOrigin('example')
       setLastSavedAt(null)
@@ -485,7 +493,9 @@ function App() {
           onExampleWidgetFileChange={(widgetFileName) => void onExampleWidgetFileChange(widgetFileName)}
           onActiveFileChange={setActiveEditorFile}
           onDataSourceChange={setDataSource}
+          onPromptSourceChange={setPromptSource}
           onWidgetSourceChange={setWidgetSource}
+          promptSource={promptSource}
           widgetSource={widgetSource}
         />
         <WidgetViewer compileError={compileError} component={component} isSavedExample={selectedExampleId.startsWith('saved:')} onDeleteExample={() => void onDeleteExample()} onSaveWidget={() => void onSaveWidget()} refreshToken={refreshToken} />
