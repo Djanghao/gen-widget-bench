@@ -341,6 +341,7 @@ function App() {
 
   async function onDeleteExample(): Promise<void> {
     if (!selectedExampleId.startsWith('saved:')) return
+    if (!window.confirm(`Delete saved widget "${selectedExampleId.slice('saved:'.length)}"?`)) return
 
     deleteSavedWidget(selectedExampleId)
     setSelectedExampleId('')
@@ -480,7 +481,6 @@ function App() {
           exampleWidgetFiles={exampleWidgetFiles}
           examples={examples}
           isExampleLoading={isExampleLoading}
-          onDeleteExample={() => void onDeleteExample()}
           onExampleChange={(exampleId) => void onExampleChange(exampleId)}
           onExampleWidgetFileChange={(widgetFileName) => void onExampleWidgetFileChange(widgetFileName)}
           onActiveFileChange={setActiveEditorFile}
@@ -488,7 +488,7 @@ function App() {
           onWidgetSourceChange={setWidgetSource}
           widgetSource={widgetSource}
         />
-        <WidgetViewer compileError={compileError} component={component} onSaveWidget={() => void onSaveWidget()} refreshToken={refreshToken} />
+        <WidgetViewer compileError={compileError} component={component} isSavedExample={selectedExampleId.startsWith('saved:')} onDeleteExample={() => void onDeleteExample()} onSaveWidget={() => void onSaveWidget()} refreshToken={refreshToken} />
       </section>
 
       {isGuideOpen ? (

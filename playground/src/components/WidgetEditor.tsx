@@ -17,7 +17,6 @@ interface WidgetEditorProps {
   exampleWidgetFiles: string[]
   examples: WidgetExampleOption[]
   isExampleLoading: boolean
-  onDeleteExample: () => void
   onExampleChange: (exampleId: string) => void
   onExampleWidgetFileChange: (widgetFileName: string) => void
   onActiveFileChange: (file: EditorFile) => void
@@ -34,7 +33,6 @@ export function WidgetEditor({
   exampleWidgetFiles,
   examples,
   isExampleLoading,
-  onDeleteExample,
   onExampleChange,
   onExampleWidgetFileChange,
   onActiveFileChange,
@@ -85,14 +83,6 @@ export function WidgetEditor({
                 </option>
               ))}
             </select>
-            <button
-              className="editor-delete-example"
-              disabled={isExampleLoading || !exampleId.startsWith('saved:')}
-              onClick={onDeleteExample}
-              type="button"
-            >
-              Delete Example
-            </button>
           </div>
           <div className="editor-example-picker">
             <select

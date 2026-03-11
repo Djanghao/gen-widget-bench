@@ -5,6 +5,8 @@ import { toPng } from 'html-to-image'
 interface WidgetViewerProps {
   compileError: string | null
   component: ComponentType | null
+  isSavedExample: boolean
+  onDeleteExample: () => void
   onSaveWidget: () => void
   refreshToken: number
 }
@@ -124,7 +126,7 @@ class RuntimeBoundary extends Component<{ children: ReactNode }, RuntimeBoundary
   }
 }
 
-export function WidgetViewer({ compileError, component, onSaveWidget, refreshToken }: WidgetViewerProps) {
+export function WidgetViewer({ compileError, component, isSavedExample, onDeleteExample, onSaveWidget, refreshToken }: WidgetViewerProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [frameSize, setFrameSize] = useState<FrameSize>(() => getDefaultFrameSize())
   const [resizeSession, setResizeSession] = useState<ResizeSession | null>(null)
@@ -296,6 +298,14 @@ export function WidgetViewer({ compileError, component, onSaveWidget, refreshTok
           type="button"
         >
           Save Widget
+        </button>
+        <button
+          className="viewer-modal-trigger"
+          disabled={!isSavedExample}
+          onClick={onDeleteExample}
+          type="button"
+        >
+          Delete Example
         </button>
       </div>
       <div className="panel-body viewer-body">{renderWidget('viewer-widget-stage', widgetStageRef)}</div>
