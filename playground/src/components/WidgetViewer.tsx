@@ -131,8 +131,31 @@ export function WidgetViewer({ compileError, component, isSavedExample, onDelete
   const [frameSize, setFrameSize] = useState<FrameSize>(() => getDefaultFrameSize())
   const [resizeSession, setResizeSession] = useState<ResizeSession | null>(null)
   const [isCapturing, setIsCapturing] = useState(false)
+  const [isCopying, setIsCopying] = useState(false)
+  const [widgetSize, setWidgetSize] = useState<{ width: number; height: number } | null>(null)
   const widgetStageRef = useRef<HTMLDivElement>(null)
   const modalOpenDisabled = Boolean(compileError) || !component
+
+  useEffect(() => {
+    const stage = widgetStageRef.current
+    if (!stage) {
+      setWidgetSize(null)
+      return
+    }
+
+    const observer = new ResizeObserver(() => {
+      const child = stage.firstElementChild
+      if (child) {
+        const rect = child.getBoundingClientRect()
+        setWidgetSize({ width: Math.round(rect.width), height: Math.round(rect.height) })
+      } else {
+        setWidgetSize(null)
+      }
+    })
+
+    observer.observe(stage)
+    return () => observer.disconnect()
+  }, [component, refreshToken])
 
   useEffect(() => {
     if (!isModalOpen) {
@@ -250,6 +273,25 @@ export function WidgetViewer({ compileError, component, isSavedExample, onDelete
     }
   }
 
+  const copyImage = async () => {
+    const widgetElement = widgetStageRef.current?.firstElementChild
+    if (!(widgetElement instanceof HTMLElement)) return
+
+    setIsCopying(true)
+    try {
+      const dataUrl = await toPng(widgetElement, {
+        pixelRatio: 2,
+      })
+      const response = await fetch(dataUrl)
+      const blob = await response.blob()
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
+    } catch {
+      // copy failed silently
+    } finally {
+      setTimeout(() => setIsCopying(false), 1000)
+    }
+  }
+
   const renderWidget = (stageClassName: string, ref?: React.RefObject<HTMLDivElement | null>): ReactNode => {
     if (compileError) {
       return (
@@ -274,7 +316,7 @@ export function WidgetViewer({ compileError, component, isSavedExample, onDelete
   return (
     <div className="panel viewer-panel">
       <div className="panel-header">
-        <h2>Widget Viewer</h2>
+        <h2>Widget Viewer{widgetSize ? ` (${widgetSize.width}×${widgetSize.height})` : ''}</h2>
         <button
           className="viewer-modal-trigger"
           disabled={modalOpenDisabled}
@@ -290,6 +332,14 @@ export function WidgetViewer({ compileError, component, isSavedExample, onDelete
           type="button"
         >
           {isCapturing ? 'Capturing...' : 'Download PNG'}
+        </button>
+        <button
+          className="viewer-modal-trigger"
+          disabled={modalOpenDisabled || isCopying}
+          onClick={() => void copyImage()}
+          type="button"
+        >
+          {isCopying ? 'Copied!' : 'Copy PNG'}
         </button>
         <button
           className="viewer-modal-trigger"
